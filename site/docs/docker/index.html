@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="IT projects and resources.. along the way..">
+        <meta name="author" content="mbiscarra">
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Docker - document</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/bootstrap-theme.min.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">document</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">home</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../introduction.md">Openshift VS Kubernetes</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../javaee-to-cloud-native.md">From Java EE To Cloud Native</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../faq.md">Microservices FAQ & Kubernetes Native</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../sre.md">Site Reliability Engineering (SRE)</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../serverless.md">Serverless Architectures & Frameworks. OpenFaaS, Knative & Kubeless</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">DevOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../devops.md">DevOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cheatsheets.md">Cheat Sheets</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../gitops.md">GitOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../demos.md">Demos & Screencasts. OpenShift, Kubernetes, Jenkins Pipelines with JCasC and more</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">NoOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../noops.md">NoOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../serverless.md">Serverless Architectures & Frameworks. OpenFaaS, Knative & Kubeless</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../finops.md">FinOps - Cloud Financial Management</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../testops.md">TestOps and Continuous Testing</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Project Management Methodology <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../project-management-methodology.md">Project Management Methodology</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../workfromhome.md">Work From Home</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../appointment-scheduling.md">Appointment Scheduling</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../docker.md">Docker</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kubernetes <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../kubernetes.md">Kubernetes</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../matrix-table.md">Kubernetes Matrix Table</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../kubernetes-alternatives.md">Kubernetes alternatives</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">OpenShift <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../openshift.md">OpenShift docs</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Software Delivery Pipeline <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cicd.md">CI/CD - Continuous Integration & Continuous Delivery</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../git.md">Git & Git Patterns. Trunk Devel, Git Flow & Feature Flags. Merge BOTs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jenkins.md">Jenkins & Cloudbees</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../openshift-pipelines.md">OpenShift Pipelines with Jenkins, Tekton and more...</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../performance-testing-with-jenkins-and-jmeter.md">Performance testing with Jenkins and JMeter or Gatling</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jenkins-alternatives.md">Jenkins Alternatives for Continuous Integration</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../..">Toolchain</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Java Memory Management <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../java-and-java-performance-optimization.md">Java Memory Management & Java Performance Optimization</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jvm-parameters-matrix-table.md">Java Parameters Matrix Table</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../caching.md">Caching Solutions</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../monitoring.md">Monitoring and Performance. Prometheus, Grafana, APMs and more</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Configuration Management <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../ansible.md">Ansible</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../liquibase.md">Liquibase</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../terraform.md">Terraform & Packer</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Databases on Kubernetes <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../databases.md">Relational Databases and Database DevOps. CrunchyData Postgres Operator</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../nosql.md">NoSQL Databases</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../message-queue.md">Cloud Based Integration & Messaging. Data Processing & Streaming (aka Data Pipeline)</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Service Mesh <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../servicemesh.md">Service Mesh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../consul.md">Consul</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../envoyproxy.md">Envoy & xDS protocol</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../istio.md">Istio</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../linkerd.md">Linkerd</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../maesh.md">Maesh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../trafficdirector.md">Traffic Director</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Security and DevSecOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../devsecops.md">DevSecOps. Container Security</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../securityascode.md">Security Policy as Code</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../storage.md">Cloud Native Storage</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">APIs <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../api.md">APIs with SOAP, REST and gRPC</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../swagger-code-generator-for-rest-apis.md">Swagger code generator for REST APIs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../postman.md">API Test Automation with Postman</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../developerportals.md">API Marketplaces. API Management with API Gateways & Developer Portals</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Development & Frameworks <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../angular.md">Angular</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dom.md">Document Object Model (DOM)</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringFramework.md">Java - Spring Framework</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringBoot.md">Java - SpringBoot</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringCloud.md">Java - Spring Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../quarkus.md">Java - Quarkus</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../javascript.md">JavaScript - node.js & npm</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../python.md">Python - Django & Flask</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../xamarin.md">Xamarin</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev Environment <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../visual-studio.md">Visual Studio Code</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../linux-dev-env.md">WSL - Linux Dev Environment on Windows</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../scaffolding.md">Scaffolding Tools</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ChromeDevTools.md">ChromeDevTools</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Public Cloud <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../public-cloud-solutions.md">Public Cloud Solutions</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../edge-computing.md">Edge Computing</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cloud-arch-diagrams.md">Cloud Architecture Diagram Tools</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../aws.md">AWS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../GoogleCloudPlatform.md">Google Cloud Platform</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../azure.md">Microsoft Azure</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ibm_cloud.md">IBM Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../oraclecloud.md">Oracle Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../digitalocean.md">Digital Ocean</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cloudflare.md">Cloudflare</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../elearning.md">E-Learning</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../customer.md">Customer Success Stories</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../newsfeeds.md">Subreddits</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../other-awesome-lists.md">Other Awesome Lists</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../about.md">About</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li>
+                    <a href="https://github.com/melvinpetix/documents.git/">
+                        
+                        github/melvinpetix/dpcuments
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+      
+    
+        <li class="main active"><a href="#docker">Docker</a></li>
+        
+            <li><a href="#introduction">Introduction</a></li>
+        
+            <li><a href="#docker-and-wsl2">Docker and WSL2</a></li>
+        
+            <li><a href="#docker-cheat-sheet">Docker Cheat sheet</a></li>
+        
+            <li><a href="#docker-compose">Docker Compose</a></li>
+        
+            <li><a href="#moving-linux-services-into-containers">Moving Linux Services Into Containers</a></li>
+        
+            <li><a href="#portainer">Portainer</a></li>
+        
+            <li><a href="#linux-container-base-images">Linux Container Base Images</a></li>
+        
+            <li><a href="#blogs">Blogs</a></li>
+        
+            <li><a href="#awesome-lists">Awesome Lists</a></li>
+        
+    
+    
+    </ul>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="docker">Docker<a class="headerlink" href="#docker" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#docker-and-wsl2">Docker and WSL2</a></li>
+<li><a href="#docker-cheat-sheet">Docker Cheat sheet</a></li>
+<li><a href="#docker-compose">Docker Compose</a></li>
+<li><a href="#moving-linux-services-into-containers">Moving Linux Services Into Containers</a></li>
+<li><a href="#portainer">Portainer</a></li>
+<li><a href="#linux-container-base-images">Linux Container Base Images</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#awesome-lists">Awesome Lists</a></li>
+</ul>
+<h3 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Docker_(software)">Wikipedia.org: Docker</a></li>
+<li><a href="https://github.com/veggiemonk/awesome-docker">Awesome Docker</a></li>
+<li><a href="https://dzone.com/refcardz/getting-started-with-docker-1">Dzone refcard: Getting Started with Docker</a></li>
+<li><a href="https://dzone.com/refcardz/java-containerization">Dzone refcard: Java Containerization 🌟</a></li>
+<li><a href="https://americanexpress.io/do-not-run-dockerized-applications-as-root/">americanexpress.io: <strong>Do Not Run Dockerized Applications as Root</strong> 🌟</a></li>
+<li><a href="https://medium.com/@jon.froiland/removing-docker-images-containers-and-volumes-with-ease-fdf16bebccec">medium.com: Removing Docker Images, Containers, and Volumes with Ease</a></li>
+<li><a href="https://medium.freecodecamp.com/a-beginner-friendly-introduction-to-containers-vms-and-docker-79a9e3e119b">medium.freecodecamp.com: A Beginner-Friendly Introduction to Containers, VMs and Docker</a></li>
+<li><a href="https://developers.redhat.com/blog/2016/03/09/more-about-docker-images-size/">developers.redhat.com: Keep it small: a closer look at Docker image sizing</a></li>
+<li><a href="https://play.google.com/store/apps/details?id=com.LearningSolution.LearnDocker&amp;hl=en">Google Play: Learning Solution - Learn Docker 🌟</a></li>
+<li><a href="https://labs.play-with-docker.com/">Play with docker 🌟</a> A simple, interactive and fun playground to learn Docker</li>
+<li><a href="https://blog.docker.com/2019/07/intro-guide-to-dockerfile-best-practices/">blog.docker.com: Intro Guide to Dockerfile Best Practices 🌟</a></li>
+<li><a href="https://medium.com/sciforce/strategies-of-docker-images-optimization-2ca9cc5719b6">medium: Strategies of docker images optimization</a></li>
+<li><a href="https://dzone.com/articles/docker-explained-an-introductory-guide-to-docker">Dzone: Docker explained, an introductory guide to docker</a></li>
+<li><a href="https://dzone.com/articles/everything-you-need-to-know-about-docker">Dzone: everything you need to know about docker</a></li>
+<li><a href="https://dzone.com/articles/a-start-to-finish-guide-to-docker-with-java">Dzone: a start to finish guide to docker with java</a></li>
+<li><a href="https://www.docker.com/blog/intro-guide-to-dockerfile-best-practices/">docker.com: Intro Guide to Dockerfile Best Practices</a></li>
+<li><a href="https://github.com/docker/build-push-action"><strong>GitHub build-push-action</strong></a> Build+push official Docker GitHub action</li>
+<li><a href="https://www.docker.com/blog/speed-up-your-development-flow-with-these-dockerfile-best-practices/">docker.com: Speed Up Your Development Flow With These Dockerfile Best Practices</a></li>
+<li><a href="https://itnext.io/getting-started-with-docker-facts-you-should-know-d000e5815598">itnext.io: Getting Started with Docker: Facts You Should Know 🌟</a></li>
+<li><a href="https://jfrog.com/knowledge-base/a-beginners-guide-to-understanding-and-building-docker-images/">jfrog.com: A Beginner’s Guide to Understanding and Building Docker Images 🌟</a></li>
+</ul>
+<h3 id="docker-and-wsl2">Docker and WSL2<a class="headerlink" href="#docker-and-wsl2" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.docker.com/blog/creating-the-best-linux-development-experience-on-windows-wsl-2/">Creating the best Linux Development experience on Windows &amp; WSL 2</a></li>
+</ul>
+<h3 id="docker-cheat-sheet">Docker Cheat sheet<a class="headerlink" href="#docker-cheat-sheet" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="../cheatsheets/">Docker Cheat Sheets</a></li>
+</ul>
+<h3 id="docker-compose">Docker Compose<a class="headerlink" href="#docker-compose" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.freecodecamp.org/news/a-beginners-guide-to-docker-how-to-create-a-client-server-side-with-docker-compose-12c8cf0ae0aa/">freecodecamp.org: a beginners guide to docker - how to create a client server side with docker compose</a></li>
+<li><a href="https://www.docker.com/blog/announcing-the-compose-specification/">docker.com: Announcing the Compose Specification 🌟</a></li>
+<li><a href="https://www.infoworld.com/article/3536573/dockers-compose-specification-is-now-an-open-standard.html">infoworld.com: Docker&rsquo;s Compose specification is now an open standard</a> Docker’s system for creating applications from multiple containers is now available on GitHub for all to contribute to.</li>
+<li><a href="https://www.theregister.co.uk/2020/04/08/docker_opens_up_compose_specification/">theregister.co.uk: Compose yourselves – Docker has published multi-container app spec, needs contributors to help maintain and develop it</a> Now focused on developers, firm wants its tools to be more universally useful. Keep it light(weight), though.</li>
+<li><a href="https://github.com/docker/awesome-compose">Awesome Compose</a></li>
+</ul>
+<h3 id="moving-linux-services-into-containers">Moving Linux Services Into Containers<a class="headerlink" href="#moving-linux-services-into-containers" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://crunchtools.com/moving-linux-services-to-containers/">crunchtools.com: A Hacker’s Guide to Moving Linux Services into Containers. Epic 15 page blog post showing people how to move Wordpress (php), Mediawiki (php), and Request Tracker (perl) into containers</a></li>
+</ul>
+<h3 id="portainer">Portainer<a class="headerlink" href="#portainer" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.portainer.io/">Portainer 🌟</a> Making Docker management easy</li>
+</ul>
+<h3 id="linux-container-base-images">Linux Container Base Images<a class="headerlink" href="#linux-container-base-images" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://crunchtools.com/comparison-linux-container-images/">crunchtools.com: A Comparison of Linux Container Images</a></li>
+<li><a href="https://kubedex.com/base-images/">kubedex.com: Base images comparison</a></li>
+<li><a href="https://developers.redhat.com/blog/2020/03/24/red-hat-universal-base-images-for-docker-users/">developers.redhat.com: Red Hat Universal Base Images for Docker users</a></li>
+</ul>
+<h3 id="blogs">Blogs<a class="headerlink" href="#blogs" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tags/docker">Digital Ocean: Docker Tutorials</a></li>
+</ul>
+<h3 id="awesome-lists">Awesome Lists<a class="headerlink" href="#awesome-lists" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://github.com/veggiemonk/awesome-docker">Awesome Docker 🌟</a></li>
+<li><a href="https://github.com/docker/awesome-compose">Awesome Compose 🌟</a></li>
+</ul>
+<iframe scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/273312823&amp;color=ff5500"></iframe>
+
+<iframe src="https://www.youtube.com/embed/n-JwAM6XF88" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<iframe src="https://www.youtube.com/embed/EnJ7qX9fkcU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+                </div>
+        </div>
+
+    <hr>
+    <footer class="container">
+        
+        <center>Documentation built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="http://kristopolous.github.io/BOOTSTRA.386">BOOTSTRA.386</a>.</center>
+    </footer>
+        <script src="../../../../search/main.js"></script>
+    </body>
+</html>

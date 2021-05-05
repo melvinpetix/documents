@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="IT projects and resources.. along the way..">
+        <meta name="author" content="mbiscarra">
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Caching Solutions - document</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/bootstrap-theme.min.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">document</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">home</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../introduction.md">Openshift VS Kubernetes</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../javaee-to-cloud-native.md">From Java EE To Cloud Native</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../faq.md">Microservices FAQ & Kubernetes Native</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../sre.md">Site Reliability Engineering (SRE)</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../serverless.md">Serverless Architectures & Frameworks. OpenFaaS, Knative & Kubeless</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">DevOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../devops.md">DevOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cheatsheets.md">Cheat Sheets</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../gitops.md">GitOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../demos.md">Demos & Screencasts. OpenShift, Kubernetes, Jenkins Pipelines with JCasC and more</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">NoOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../noops.md">NoOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../serverless.md">Serverless Architectures & Frameworks. OpenFaaS, Knative & Kubeless</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../finops.md">FinOps - Cloud Financial Management</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../testops.md">TestOps and Continuous Testing</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Project Management Methodology <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../project-management-methodology.md">Project Management Methodology</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../workfromhome.md">Work From Home</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../appointment-scheduling.md">Appointment Scheduling</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../docker.md">Docker</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kubernetes <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../kubernetes.md">Kubernetes</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../matrix-table.md">Kubernetes Matrix Table</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../kubernetes-alternatives.md">Kubernetes alternatives</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">OpenShift <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../openshift.md">OpenShift docs</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Software Delivery Pipeline <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cicd.md">CI/CD - Continuous Integration & Continuous Delivery</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../git.md">Git & Git Patterns. Trunk Devel, Git Flow & Feature Flags. Merge BOTs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jenkins.md">Jenkins & Cloudbees</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../openshift-pipelines.md">OpenShift Pipelines with Jenkins, Tekton and more...</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../performance-testing-with-jenkins-and-jmeter.md">Performance testing with Jenkins and JMeter or Gatling</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jenkins-alternatives.md">Jenkins Alternatives for Continuous Integration</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../..">Toolchain</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Java Memory Management <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../java-and-java-performance-optimization.md">Java Memory Management & Java Performance Optimization</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jvm-parameters-matrix-table.md">Java Parameters Matrix Table</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../caching.md">Caching Solutions</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../monitoring.md">Monitoring and Performance. Prometheus, Grafana, APMs and more</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Configuration Management <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../ansible.md">Ansible</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../liquibase.md">Liquibase</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../terraform.md">Terraform & Packer</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Databases on Kubernetes <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../databases.md">Relational Databases and Database DevOps. CrunchyData Postgres Operator</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../nosql.md">NoSQL Databases</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../message-queue.md">Cloud Based Integration & Messaging. Data Processing & Streaming (aka Data Pipeline)</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Service Mesh <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../servicemesh.md">Service Mesh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../consul.md">Consul</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../envoyproxy.md">Envoy & xDS protocol</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../istio.md">Istio</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../linkerd.md">Linkerd</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../maesh.md">Maesh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../trafficdirector.md">Traffic Director</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Security and DevSecOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../devsecops.md">DevSecOps. Container Security</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../securityascode.md">Security Policy as Code</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../storage.md">Cloud Native Storage</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">APIs <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../api.md">APIs with SOAP, REST and gRPC</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../swagger-code-generator-for-rest-apis.md">Swagger code generator for REST APIs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../postman.md">API Test Automation with Postman</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../developerportals.md">API Marketplaces. API Management with API Gateways & Developer Portals</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Development & Frameworks <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../angular.md">Angular</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dom.md">Document Object Model (DOM)</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringFramework.md">Java - Spring Framework</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringBoot.md">Java - SpringBoot</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringCloud.md">Java - Spring Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../quarkus.md">Java - Quarkus</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../javascript.md">JavaScript - node.js & npm</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../python.md">Python - Django & Flask</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../xamarin.md">Xamarin</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev Environment <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../visual-studio.md">Visual Studio Code</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../linux-dev-env.md">WSL - Linux Dev Environment on Windows</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../scaffolding.md">Scaffolding Tools</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ChromeDevTools.md">ChromeDevTools</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Public Cloud <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../public-cloud-solutions.md">Public Cloud Solutions</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../edge-computing.md">Edge Computing</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cloud-arch-diagrams.md">Cloud Architecture Diagram Tools</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../aws.md">AWS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../GoogleCloudPlatform.md">Google Cloud Platform</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../azure.md">Microsoft Azure</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ibm_cloud.md">IBM Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../oraclecloud.md">Oracle Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../digitalocean.md">Digital Ocean</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cloudflare.md">Cloudflare</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../elearning.md">E-Learning</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../customer.md">Customer Success Stories</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../newsfeeds.md">Subreddits</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../other-awesome-lists.md">Other Awesome Lists</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../about.md">About</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li>
+                    <a href="https://github.com/melvinpetix/documents.git/">
+                        
+                        github/melvinpetix/dpcuments
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+      
+    
+        <li class="main active"><a href="#caching-solutions">Caching Solutions</a></li>
+        
+            <li><a href="#caching">Caching</a></li>
+        
+            <li><a href="#java-caching">Java Caching</a></li>
+        
+            <li><a href="#infinispan">Infinispan</a></li>
+        
+            <li><a href="#red-hat-data-grid-commercial-version-of-infinispan">Red Hat Data Grid (commercial version of Infinispan)</a></li>
+        
+            <li><a href="#cdn-content-delivery-network">CDN Content Delivery Network</a></li>
+        
+            <li><a href="#haproxy">HAProxy</a></li>
+        
+            <li><a href="#varnish">Varnish</a></li>
+        
+            <li><a href="#memcached">Memcached</a></li>
+        
+            <li><a href="#redis">Redis</a></li>
+        
+            <li><a href="#nginx-high-performance-caching">Nginx High-performance caching</a></li>
+        
+    
+    
+    </ul>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="caching-solutions">Caching Solutions<a class="headerlink" href="#caching-solutions" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#caching">Caching</a></li>
+<li><a href="#java-caching">Java Caching</a></li>
+<li><a href="#infinispan">Infinispan</a></li>
+<li><a href="#red-hat-data-grid-commercial-version-of-infinispan">Red Hat Data Grid (commercial version of Infinispan)</a></li>
+<li><a href="#cdn-content-delivery-network">CDN Content Delivery Network</a></li>
+<li><a href="#haproxy">HAProxy</a></li>
+<li><a href="#varnish">Varnish</a></li>
+<li><a href="#memcached">Memcached</a></li>
+<li><a href="#redis">Redis</a></li>
+<li><a href="#nginx-high-performance-caching">Nginx High-performance caching</a></li>
+</ul>
+<h3 id="caching">Caching<a class="headerlink" href="#caching" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Web_cache">Wikipedia: Web cache</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Dynamic_site_acceleration">Wikipedia: Dynamic site acceleration</a></li>
+<li><a href="http://www.slideshare.net/NasceniaIT/brown-bag-caching-rafi-faisal-48694442">Slideshare: Caching</a></li>
+<li><a href="https://www.cyberciti.biz/open-source/http-web-performance-proxy-load-balancer-accelerator-software/">nixCraft: 9 Awesome Open Source Web Performance Software For Linux and Unix-like Systems</a></li>
+<li><a href="https://dzone.com/articles/introducing-amp-assimilating-caching-quick-read-fo">Dzone: An Introduction to Caching: How and Why We Do It 🌟</a> When it comes to caching, what was once a nice-to-have it now a must-have. Check out this detailed article to learn everything you need to know about caching!</li>
+</ul>
+<h3 id="java-caching">Java Caching<a class="headerlink" href="#java-caching" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://dzone.com/refcardz/java-caching">DZone refcard: Java Caching</a> Strategies and the JCache API. Explores the building blocks of JCache and other caching APIs, as well as multiple strategies for implementing temporary data storage in your application.</li>
+</ul>
+<h3 id="infinispan">Infinispan<a class="headerlink" href="#infinispan" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://infinispan.org/about/">Introduction to Infinispan</a> Distributed in-memory key/value data grid and cache</li>
+<li><a href="https://dzone.com/refcardz/getting-started-infinispan">Dzone: Getting Started with Infinispan</a> Enhance Performance With Scalable, Highly Available Data Stores. Infinispan is an open-source, ASL 2.0-licensed, in-memory data grid platform based on Java 8. This newly updated Refcard offers tips for implementing Infinispan, gives a practical example for using it in embedded mode, and lists key APIs and cache features. Learn more about running Infinispan in containers and how to integrate the platform with Hibernate ORM, Apache Hadoop, Apache Spark, and Apache Camel.</li>
+</ul>
+<h3 id="red-hat-data-grid-commercial-version-of-infinispan">Red Hat Data Grid (commercial version of Infinispan)<a class="headerlink" href="#red-hat-data-grid-commercial-version-of-infinispan" title="Permanent link">&para;</a></h3>
+<ul>
+<li>In 2011, Red Hat began producing a commercial version of Infinispan, dubbed JBoss Enterprise Data Grid. </li>
+<li><a href="https://developers.redhat.com/products/datagrid/overview">Red Hat Data Grid Overview</a></li>
+<li><a href="https://www.redhat.com/en/technologies/jboss-middleware/data-grid">Red Hat Data Grid</a></li>
+<li><a href="https://thenewstack.io/red-hat-jboss-data-grid-not-just-storing-java-objects-anymore/">Red Hat JBoss Data Grid is Not Just for Caching Java Objects Anymore 🌟</a></li>
+<li><a href="https://developers.redhat.com/blog/2020/04/13/red-hat-data-grid-8-0-brings-new-server-architecture-improved-rest-api-and-more/">developers.redhat.com: Red Hat Data Grid 8.0 brings new server architecture, improved REST API, and more</a></li>
+</ul>
+<h3 id="cdn-content-delivery-network">CDN Content Delivery Network<a class="headerlink" href="#cdn-content-delivery-network" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Content_delivery_network">Wikipedia: CDN Content Delivery Network</a><ul>
+<li><a href="https://en.wikipedia.org/wiki/Content_delivery_network#Traditional_commercial_CDNs">Traditional commercial CDNs 🌟</a></li>
+</ul>
+</li>
+<li><a href="https://humanwhocodes.com/blog/2011/11/29/how-content-delivery-networks-cdns-work/">How content delivery networks (CDNs) work</a></li>
+<li><a href="https://www.imperva.com/learn/performance/cdn-caching/">imperva.com: CDN Caching</a></li>
+<li><a href="https://www.nczonline.net/blog/2011/11/29/how-content-delivery-networks-cdns-work/">nczonline: How content delivery networks (CDNs) work - Nov 2011</a></li>
+</ul>
+<h3 id="haproxy">HAProxy<a class="headerlink" href="#haproxy" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://www.haproxy.org">HAProxy</a></li>
+<li><a href="http://www.slideshare.net/haproxytech/haproxy-web-performance-55536394">slideshare: Haproxy web performance</a></li>
+<li><a href="http://www.slideshare.net/Severalnines/load-balancing-mysql-with-haproxy-webinar-replay-english-44071270">slideshare: Load Balancing MySQL with HAProxy</a></li>
+<li><a href="http://www.slideshare.net/haproxytech/haproxy-best-practice">slideshare: Haproxy best practice</a></li>
+<li><a href="http://www.slideshare.net/Severalnines/severalnines-ha-proxyjul20143">slideshare: How To Set Up SQL Load Balancing with HAProxy</a></li>
+<li><a href="http://www.slideshare.net/Severalnines/haproxy-mysql-slides">slideshare: Performance Tuning of HAProxy for Database Load Balancing</a></li>
+</ul>
+<p><center></p>
+<div class="container">
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/hkcICcrntApXsr" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen class="video"> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/haproxytech/haproxy-best-practice" title="Haproxy best practice" target="_blank">Haproxy best practice</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/haproxytech">haproxytech</a></strong> </div>
+</div>
+<p></center>
+<br/></p>
+<h3 id="varnish">Varnish<a class="headerlink" href="#varnish" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.varnish-cache.org/">Varnish Cache</a></li>
+<li><a href="https://www.varnish-software.com">varnish-software.com</a> Varnish Software is the company behind Varnish Cache, the open source HTTP accelerator.<ul>
+<li><a href="http://info.varnish-software.com/the-varnish-book">The Varnish Book</a> Download the Varnish Book to learn how you can optimize your Varnish instance.</li>
+</ul>
+</li>
+<li><a href="https://fedoramagazine.org/varnish-site-faster-stable/">fedoramagazine.org: Varnish: Your site faster and more stable</a></li>
+<li><a href="https://developerblog.redhat.com/tag/varnish/">Red Hat Developer Blog. Tag: Varnish</a></li>
+<li><a href="http://rhelblog.redhat.com/tag/varnish/">Red Hat Enterprise Linux Blog. Tag: Varnish</a></li>
+<li><a href="https://www.varnish-cache.org/installation/redhat">varnish-cache.org: Installation on RedHat</a></li>
+<li><a href="https://hitch-tls.org/">Hitch - scalable TLS proxy. Hitch is a libev-based high performance SSL/TLS proxy by Varnish Software</a></li>
+<li><a href="http://www.slideshare.net/piotrpasich/varnish-47199139">slideshare: Varnish - Tips &amp; Tricks - 4Developers 2015</a></li>
+</ul>
+<p><center></p>
+<div class="container">
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/fQrbxcE741QjvX" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen class="video"> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/kimlindholm/varnish-configuration-step-by-step" title="Varnish Configuration Step by Step" target="_blank">Varnish Configuration Step by Step</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/kimlindholm">Kim Stefan Lindholm</a></strong> </div>
+</div>
+<p></center>
+<br/></p>
+<p><center></p>
+<div class="container">
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/JlHlus2tBHDZVi" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen class="video"> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/ivanchepurnyi/advanced-varnishusage" title="Varnish Cache and its usage in the real world!" target="_blank">Varnish Cache and its usage in the real world!</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/ivanchepurnyi">Ivan Chepurnyi</a></strong> </div>
+</div>
+<p></center>
+<br/></p>
+<p><center></p>
+<div class="container">
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/crhLrhAgnlZmLv" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen class="video"> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/samanthaquinonestembies/superchargin-varnish" title="Supercharging Content Delivery with Varnish" target="_blank">Supercharging Content Delivery with Varnish</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/samanthaquinonestembies">Samantha Quiñones</a></strong> </div>
+</div>
+<p></center>
+<br/></p>
+<h3 id="memcached">Memcached<a class="headerlink" href="#memcached" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://memcached.org">memcached.org</a></li>
+<li><a href="http://www.slideshare.net/oemebamo/introduction-to-memcached">Slideshare: Introduction to memcached</a></li>
+<li><a href="https://dzone.com/articles/the-power-of-the-proxy-request-routing-memcached">DZone - The Power of the Proxy: Request Routing Memcached</a></li>
+</ul>
+<p><center></p>
+<div class="container">
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/rqpOlUNkU6NOvo" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen class="video"> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/oemebamo/introduction-to-memcached" title="Introduction to memcached" target="_blank">Introduction to memcached</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/oemebamo">Jurriaan Persyn</a></strong> </div></div>
+<p></center>
+<br/></p>
+<h3 id="redis">Redis<a class="headerlink" href="#redis" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://redis.io">redis.io</a></li>
+<li><a href="http://www.slideshare.net/dvirsky/introduction-to-redis">Slideshare: Introduction to Redis</a></li>
+</ul>
+<p><center></p>
+<div class="container">
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/3nvYR34GEVLEei" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen class="video"> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/dvirsky/introduction-to-redis" title="Introduction to Redis" target="_blank">Introduction to Redis</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/dvirsky">Dvir Volk</a></strong> </div>
+</div>
+<p></center>
+<br/></p>
+<p><center></p>
+<div class="container">
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/42WDX39CPeO9e6" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen class="video"> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/NasceniaIT/brown-bag-caching-rafi-faisal-48694442" title="Caching" target="_blank">Caching</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/NasceniaIT">Nascenia IT</a></strong> </div></div>
+<p></center>
+<br/></p>
+<p><center></p>
+<div class="container">
+<iframe src="https://www.youtube.com/embed/bjXNWBaIWjM?rel=0" frameborder="0" allowfullscreen class="video"></iframe>
+</div>
+<p></center>
+<br/></p>
+<h3 id="nginx-high-performance-caching">Nginx High-performance caching<a class="headerlink" href="#nginx-high-performance-caching" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=OssIuHbgzJY">Nginxconf 2014. When Dynamic Becomes Static:The Next Step in Web Caching Techniques: Wim Godden</a></li>
+<li><a href="https://dzone.com/articles/the-benefits-of-microcaching-with-nginx">dzone: The Benefits of Microcaching with NGINX</a></li>
+<li><a href="https://dzone.com/articles/scaling-web-applications-with-nginx-part-ii-cachin">dzone: Scaling Web Applications with NGINX – Part II: Caching and Monitoring</a></li>
+<li><a href="http://charlesleifer.com/blog/nginx-a-caching-thumbnailing-reverse-proxying-image-server-/">Nginx: a caching, thumbnailing, reverse proxying image server? 🌟</a></li>
+<li><a href="http://highscalability.com/blog/2016/2/17/building-nginx-and-tarantool-based-services.html">highscalability.com: Building nginx and Tarantool based services 🌟</a></li>
+</ul>
+<p><center></p>
+<div class="container">
+<iframe src="https://www.youtube.com/embed/OssIuHbgzJY?rel=0" frameborder="0" allowfullscreen class="video"></iframe>
+</div>
+<p></center>
+<br/></p>
+<p><center></p>
+<div class="container">
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/wC5wngKnh2iydS" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen class="video"> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/Nginx/nginx-highperformance-caching" title="NGINX High-performance Caching" target="_blank">NGINX High-performance Caching</a> </strong> from <strong><a href="//www.slideshare.net/Nginx" target="_blank">NGINX, Inc.</a></strong> </div></div>
+<p></center>
+<br/></p></div>
+                </div>
+        </div>
+
+    <hr>
+    <footer class="container">
+        
+        <center>Documentation built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="http://kristopolous.github.io/BOOTSTRA.386">BOOTSTRA.386</a>.</center>
+    </footer>
+        <script src="../../../../search/main.js"></script>
+    </body>
+</html>

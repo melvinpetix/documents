@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="IT projects and resources.. along the way..">
+        <meta name="author" content="mbiscarra">
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Cloud Based Integration & Messaging. Data Processing & Streaming (aka Data Pipeline) - document</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/bootstrap-theme.min.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">document</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">home</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../introduction.md">Openshift VS Kubernetes</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../javaee-to-cloud-native.md">From Java EE To Cloud Native</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../faq.md">Microservices FAQ & Kubernetes Native</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../sre.md">Site Reliability Engineering (SRE)</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../serverless.md">Serverless Architectures & Frameworks. OpenFaaS, Knative & Kubeless</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">DevOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../devops.md">DevOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cheatsheets.md">Cheat Sheets</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../gitops.md">GitOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../demos.md">Demos & Screencasts. OpenShift, Kubernetes, Jenkins Pipelines with JCasC and more</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">NoOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../noops.md">NoOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../serverless.md">Serverless Architectures & Frameworks. OpenFaaS, Knative & Kubeless</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../finops.md">FinOps - Cloud Financial Management</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../testops.md">TestOps and Continuous Testing</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Project Management Methodology <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../project-management-methodology.md">Project Management Methodology</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../workfromhome.md">Work From Home</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../appointment-scheduling.md">Appointment Scheduling</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../docker.md">Docker</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kubernetes <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../kubernetes.md">Kubernetes</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../matrix-table.md">Kubernetes Matrix Table</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../kubernetes-alternatives.md">Kubernetes alternatives</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">OpenShift <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../openshift.md">OpenShift docs</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Software Delivery Pipeline <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cicd.md">CI/CD - Continuous Integration & Continuous Delivery</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../git.md">Git & Git Patterns. Trunk Devel, Git Flow & Feature Flags. Merge BOTs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jenkins.md">Jenkins & Cloudbees</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../openshift-pipelines.md">OpenShift Pipelines with Jenkins, Tekton and more...</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../performance-testing-with-jenkins-and-jmeter.md">Performance testing with Jenkins and JMeter or Gatling</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jenkins-alternatives.md">Jenkins Alternatives for Continuous Integration</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../..">Toolchain</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Java Memory Management <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../java-and-java-performance-optimization.md">Java Memory Management & Java Performance Optimization</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jvm-parameters-matrix-table.md">Java Parameters Matrix Table</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../caching.md">Caching Solutions</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../monitoring.md">Monitoring and Performance. Prometheus, Grafana, APMs and more</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Configuration Management <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../ansible.md">Ansible</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../liquibase.md">Liquibase</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../terraform.md">Terraform & Packer</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Databases on Kubernetes <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../databases.md">Relational Databases and Database DevOps. CrunchyData Postgres Operator</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../nosql.md">NoSQL Databases</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../message-queue.md">Cloud Based Integration & Messaging. Data Processing & Streaming (aka Data Pipeline)</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Service Mesh <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../servicemesh.md">Service Mesh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../consul.md">Consul</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../envoyproxy.md">Envoy & xDS protocol</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../istio.md">Istio</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../linkerd.md">Linkerd</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../maesh.md">Maesh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../trafficdirector.md">Traffic Director</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Security and DevSecOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../devsecops.md">DevSecOps. Container Security</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../securityascode.md">Security Policy as Code</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../storage.md">Cloud Native Storage</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">APIs <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../api.md">APIs with SOAP, REST and gRPC</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../swagger-code-generator-for-rest-apis.md">Swagger code generator for REST APIs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../postman.md">API Test Automation with Postman</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../developerportals.md">API Marketplaces. API Management with API Gateways & Developer Portals</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Development & Frameworks <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../angular.md">Angular</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dom.md">Document Object Model (DOM)</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringFramework.md">Java - Spring Framework</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringBoot.md">Java - SpringBoot</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringCloud.md">Java - Spring Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../quarkus.md">Java - Quarkus</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../javascript.md">JavaScript - node.js & npm</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../python.md">Python - Django & Flask</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../xamarin.md">Xamarin</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev Environment <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../visual-studio.md">Visual Studio Code</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../linux-dev-env.md">WSL - Linux Dev Environment on Windows</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../scaffolding.md">Scaffolding Tools</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ChromeDevTools.md">ChromeDevTools</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Public Cloud <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../public-cloud-solutions.md">Public Cloud Solutions</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../edge-computing.md">Edge Computing</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cloud-arch-diagrams.md">Cloud Architecture Diagram Tools</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../aws.md">AWS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../GoogleCloudPlatform.md">Google Cloud Platform</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../azure.md">Microsoft Azure</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ibm_cloud.md">IBM Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../oraclecloud.md">Oracle Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../digitalocean.md">Digital Ocean</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cloudflare.md">Cloudflare</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../elearning.md">E-Learning</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../customer.md">Customer Success Stories</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../newsfeeds.md">Subreddits</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../other-awesome-lists.md">Other Awesome Lists</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../about.md">About</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li>
+                    <a href="https://github.com/melvinpetix/documents.git/">
+                        
+                        github/melvinpetix/dpcuments
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+      
+    
+        <li class="main active"><a href="#cloud-based-integration-messaging-data-processing-streaming-aka-data-pipeline">Cloud Based Integration &amp; Messaging. Data Processing &amp; Streaming (aka Data Pipeline)</a></li>
+        
+            <li><a href="#message-queue-in-kubernetes-event-driven-messaging-real-time-data-streaming">Message Queue in Kubernetes. Event-driven Messaging. Real-Time Data Streaming</a></li>
+        
+            <li><a href="#message-brokers">Message Brokers</a></li>
+        
+            <li><a href="#cloud-based-integration-integration-platform-as-a-service-ipaas-solutions">Cloud Based Integration. Integration Platform-as-a-Service (iPaaS) solutions</a></li>
+        
+            <li><a href="#debezium-open-source-distributed-platform-for-change-data-capture-cdc-software-design-pattern">Debezium open source distributed platform for Change Data Capture (CDC) software design pattern</a></li>
+        
+            <li><a href="#red-hat-integration-service-registry-and-apicurio">Red Hat Integration service registry and Apicurio</a></li>
+        
+            <li><a href="#data-processing-aka-streaming-data-data-pipeline-or-big-data-pipeline">Data Processing (aka Streaming Data, Data Pipeline or Big Data Pipeline)</a></li>
+        
+            <li><a href="#red-hat-amq-activemq-artemis-broker-and-apache-kafka">Red Hat AMQ (ActiveMQ Artemis broker and Apache Kafka)</a></li>
+        
+            <li><a href="#ebooks">eBooks</a></li>
+        
+            <li><a href="#related">Related</a></li>
+        
+    
+    
+    </ul>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="cloud-based-integration-messaging-data-processing-streaming-aka-data-pipeline">Cloud Based Integration &amp; Messaging. Data Processing &amp; Streaming (aka Data Pipeline)<a class="headerlink" href="#cloud-based-integration-messaging-data-processing-streaming-aka-data-pipeline" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#message-queue-in-kubernetes-event-driven-messaging-real-time-data-streaming">Message Queue in Kubernetes. Event-driven Messaging. Real-Time Data Streaming</a></li>
+<li><a href="#message-brokers">Message Brokers</a><ul>
+<li><a href="#activemq-message-broker">ActiveMQ message broker</a></li>
+<li><a href="#rabbitmq-message-broker">RabbitMQ message broker</a></li>
+<li><a href="#redis-message-broker">Redis message broker</a></li>
+<li><a href="#apache-camel-message-broker">Apache Camel message broker</a><ul>
+<li><a href="#apache-camel-k">Apache Camel K</a></li>
+</ul>
+</li>
+<li><a href="#kubemq-message-broker">KubeMQ message broker</a></li>
+</ul>
+</li>
+<li><a href="#cloud-based-integration-integration-platform-as-a-service-ipaas-solutions">Cloud Based Integration. Integration Platform-as-a-Service (iPaaS) solutions</a><ul>
+<li><a href="#red-hat-fuse-and-red-hat-fuse-online">Red Hat Fuse and Red Hat Fuse Online</a></li>
+<li><a href="#syndesis-open-source-integration-platform">Syndesis open source integration platform</a></li>
+</ul>
+</li>
+<li><a href="#debezium-open-source-distributed-platform-for-change-data-capture-cdc-software-design-pattern">Debezium open source distributed platform for Change Data Capture (CDC) software design pattern</a></li>
+<li><a href="#red-hat-integration-service-registry-and-apicurio">Red Hat Integration service registry and Apicurio</a></li>
+<li><a href="#data-processing-aka-streaming-data-data-pipeline-or-big-data-pipeline">Data Processing (aka Streaming Data, Data Pipeline or Big Data Pipeline)</a><ul>
+<li><a href="#apache-kafka">Apache Kafka</a></li>
+<li><a href="#banzai-cloud-supertubes-cloud-native-kafka-implementation">Banzai Cloud Supertubes (Cloud Native Kafka implementation)</a></li>
+<li><a href="#apache-flink">Apache Flink</a></li>
+</ul>
+</li>
+<li><a href="#red-hat-amq-activemq-artemis-broker-and-apache-kafka">Red Hat AMQ (ActiveMQ Artemis broker and Apache Kafka)</a><ul>
+<li><a href="#red-hat-amq-broker-activemq-artemis">Red Hat AMQ Broker (ActiveMQ Artemis)</a></li>
+<li><a href="#red-hat-amq-streams">Red Hat AMQ Streams</a></li>
+</ul>
+</li>
+<li><a href="#ebooks">eBooks</a></li>
+<li><a href="#related">Related</a></li>
+</ul>
+<h3 id="message-queue-in-kubernetes-event-driven-messaging-real-time-data-streaming">Message Queue in Kubernetes. Event-driven Messaging. Real-Time Data Streaming<a class="headerlink" href="#message-queue-in-kubernetes-event-driven-messaging-real-time-data-streaming" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Message_broker">Wikipedia: Message Broker</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Event-driven_messaging">Wikipedia: Event-driven messaging</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Streaming_data">Wikipedia: Streaming Data</a></li>
+</ul>
+<h3 id="message-brokers">Message Brokers<a class="headerlink" href="#message-brokers" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://activemq.apache.org/">Apache ActiveMQ</a></li>
+<li><a href="https://dzone.com/articles/introduction-to-message-brokers-part-1-apache-kafk">Dzone: Introduction to Message Brokers. Part 1: Apache Kafka vs. RabbitMQ</a></li>
+<li><a href="https://dzone.com/articles/introduction-to-message-brokers-part-2-activemq-vs">Dzone: Introduction to Message Brokers. Part 2: ActiveMQ vs. Redis Pub/Sub</a></li>
+</ul>
+<h4 id="activemq-message-broker">ActiveMQ message broker<a class="headerlink" href="#activemq-message-broker" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://activemq.apache.org/components/classic/">ActiveMQ 5.x &ldquo;classic&rdquo;</a></li>
+<li><a href="https://activemq.apache.org/components/artemis/">ActiveMQ Artemis</a> Apache ActiveMQ is a subproject of Apache ActiveMQ. It has been donated to the Apache Software Foundation in 2015. There were lots of changes in project names in the past. The Artemis project first started as JBoss Messaging and got renamed to HornetQ in August 2009.</li>
+<li><a href="https://github.com/apache/activemq-artemis/tree/master/examples/perf/jmeter">Apache Artemis JMeter</a> Running the ActiveMQ Artemis JMeter Performance Testing Examples.</li>
+</ul>
+<h4 id="rabbitmq-message-broker">RabbitMQ message broker<a class="headerlink" href="#rabbitmq-message-broker" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://itnext.io/k8s-prevent-queue-worker-pod-from-being-killed-during-deployment-4252ea7c13f6">K8s prevent queue worker Pod from being killed during deployment</a> How to prevent a Kubernetes (like RabbitMQ) queue worker Pod from being killed during deployment while handling a message?</li>
+<li><a href="https://medium.com/better-programming/rabbitmq-vs-kafka-1ef22a041793">medium.com: <strong>RabbitMQ vs. Kafka</strong></a> An architect’s dilemma</li>
+</ul>
+<h4 id="redis-message-broker">Redis message broker<a class="headerlink" href="#redis-message-broker" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://redis.io/">Redis</a></li>
+<li><a href="https://redis.io/topics/pubsub">Redis Pub/sub</a></li>
+</ul>
+<h4 id="apache-camel-message-broker">Apache Camel message broker<a class="headerlink" href="#apache-camel-message-broker" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://camel.apache.org/">Apache Camel</a></li>
+<li><a href="https://www.quora.com/Whats-the-difference-between-Apache-Camel-and-Kafka">Quora.com: What&rsquo;s the difference between Apache Camel and Kafka?</a></li>
+</ul>
+<h5 id="apache-camel-k">Apache Camel K<a class="headerlink" href="#apache-camel-k" title="Permanent link">&para;</a></h5>
+<ul>
+<li><a href="https://camel.apache.org/camel-k/latest/">Apache Camel K</a> is a lightweight cloud-integration platform that runs natively on Kubernetes. Based on the famous Apache Camel, Camel K is designed and optimized for serverless and microservices architectures.</li>
+<li><a href="https://developers.redhat.com/blog/2020/05/12/six-reasons-to-love-camel-k/">developers.redhat.com: Six reasons to love Camel K</a></li>
+</ul>
+<h4 id="kubemq-message-broker">KubeMQ message broker<a class="headerlink" href="#kubemq-message-broker" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://kubemq.io/">KubeMQ.io: Kubernetes Native Message Queue Broker</a></li>
+<li><a href="https://devops.com/implementing-message-queue-in-kubernetes/">devops.com: Best of 2019: Implementing Message Queue in Kubernetes</a></li>
+<li><a href="https://kubemq.io/kafka-vs-kubemq/">kubemq.io: Kafka VS KubeMQ 🌟</a></li>
+</ul>
+<h3 id="cloud-based-integration-integration-platform-as-a-service-ipaas-solutions">Cloud Based Integration. Integration Platform-as-a-Service (iPaaS) solutions<a class="headerlink" href="#cloud-based-integration-integration-platform-as-a-service-ipaas-solutions" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Cloud-based_integration">Wikipedia: Cloud Based Integration (iPaaS)</a></li>
+<li>Integration Platform as a Service (iPaaS) is a suite of cloud services enabling development, execution and governance of integration flows connecting any combination of on premises and cloud-based processes, services, applications and data within individual or across multiple organizations.</li>
+<li>Integration platform as a service (iPaaS) is a set of automated tools for connecting software applications that are deployed in different environments. iPaaS is often used by large business-to-business (B2B) enterprises that need to integrate on-premises applications and data with cloud applications and data.</li>
+<li><a href="https://blog.axway.com/hybrid-integration/whats-ipaas">blog.axway.com: What is iPaaS?</a></li>
+<li><a href="https://www.ibm.com/cloud/learn/ipaas">ibm.com: iPaaS (Integration-Platform-as-a-Service)</a>: iPaaS is a cloud-based solution that simplifies application integration across on-premises and cloud environments, to help you accelerate innovation and lower your integration and operations costs.</li>
+</ul>
+<h4 id="red-hat-fuse-and-red-hat-fuse-online">Red Hat Fuse and Red Hat Fuse Online<a class="headerlink" href="#red-hat-fuse-and-red-hat-fuse-online" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://www.redhat.com/en/technologies/jboss-middleware/fuse"><strong>Red Hat Fuse</strong></a></li>
+<li><a href="https://www.redhat.com/en/technologies/jboss-middleware/fuse-online"><strong>Red Hat Fuse Online</strong></a></li>
+</ul>
+<h4 id="syndesis-open-source-integration-platform">Syndesis open source integration platform<a class="headerlink" href="#syndesis-open-source-integration-platform" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://syndesis.io/"><strong>Syndesis</strong> open source integration platform</a> (OpenSource Project for <strong>Red Hat Fuse Online</strong>)</li>
+<li><a href="https://developers.redhat.com/blog/2020/03/25/low-code-microservices-orchestration-with-syndesis/">developers.redhat.com: Low-code microservices orchestration with Syndesis</a></li>
+</ul>
+<h3 id="debezium-open-source-distributed-platform-for-change-data-capture-cdc-software-design-pattern">Debezium open source distributed platform for Change Data Capture (CDC) software design pattern<a class="headerlink" href="#debezium-open-source-distributed-platform-for-change-data-capture-cdc-software-design-pattern" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Change Data Capture</strong>, or <strong>CDC</strong>, is a well-established <strong>software design pattern</strong> for a system that monitors and captures the changes in data so that other software can respond to those changes. CDC captures row-level changes to database tables and passes corresponding change events to a data streaming bus. Applications can read these change event streams and access these change events in the order in which they occurred.</li>
+<li><a href="https://debezium.io/"><strong>Debezium</strong>:</a> Stream changes from your database</li>
+<li><a href="https://developers.redhat.com/blog/2019/11/19/decoupling-microservices-with-apache-camel-and-debezium/">developers.redhat.com: Decoupling microservices with Apache Camel and Debezium</a></li>
+<li><a href="https://medium.com/trendyol-tech/transaction-log-tailing-with-debezium-part-1-aeb968d72220">A good explanation of how to avoid distributed transactions using outbox pattern: Transaction Log Tailing With Debezium</a></li>
+<li><a href="https://developers.redhat.com/blog/2020/04/14/capture-database-changes-with-debezium-apache-kafka-connectors/">developers.redhat.com: Capture database changes with Debezium Apache Kafka connectors</a></li>
+</ul>
+<h3 id="red-hat-integration-service-registry-and-apicurio">Red Hat Integration service registry and Apicurio<a class="headerlink" href="#red-hat-integration-service-registry-and-apicurio" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://developers.redhat.com/blog/2019/12/16/getting-started-with-red-hat-integration-service-registry/">Red Hat Integration service registry</a></li>
+<li><a href="https://github.com/apicurio/apicurio-registry"><strong>Apicurio</strong> Registry</a> An API/Schema registry - stores APIs and Schemas.</li>
+</ul>
+<h3 id="data-processing-aka-streaming-data-data-pipeline-or-big-data-pipeline">Data Processing (aka Streaming Data, Data Pipeline or Big Data Pipeline)<a class="headerlink" href="#data-processing-aka-streaming-data-data-pipeline-or-big-data-pipeline" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://github.com/manuzhang/awesome-streaming">Awesome Streaming</a> A curated list of awesome <a href="https://www.oreilly.com/radar/the-world-beyond-batch-streaming-101/">streaming (stream processing)</a> frameworks, applications, readings and other resources.</li>
+</ul>
+<h4 id="apache-kafka">Apache Kafka<a class="headerlink" href="#apache-kafka" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://kafka.apache.org/">Apache Kafka</a></li>
+<li><a href="https://developers.redhat.com/blog/2020/02/14/using-secrets-in-apache-kafka-connect-configuration/">developers.redhat.com: how easy to deploy and configure a Kafka Connect on Kubernetes through strimziio operator and use secrets</a></li>
+<li><a href="https://developers.redhat.com/blog/2020/02/14/using-secrets-in-apache-kafka-connect-configuration/">developers.redhat.com: Using secrets in Kafka Connect configuration</a></li>
+<li><a href="https://developers.redhat.com/blog/2020/04/14/capture-database-changes-with-debezium-apache-kafka-connectors/">developers.redhat.com: Capture database changes with Debezium Apache Kafka connectors</a></li>
+<li><a href="https://github.com/monksy/awesome-kafka/blob/master/tools.md">Awesome Kafka</a></li>
+</ul>
+<h4 id="banzai-cloud-supertubes-cloud-native-kafka-implementation">Banzai Cloud Supertubes (Cloud Native Kafka implementation)<a class="headerlink" href="#banzai-cloud-supertubes-cloud-native-kafka-implementation" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://banzaicloud.com/">Banzai Cloud</a></li>
+<li><a href="https://github.com/banzaicloud/kafka-operator">Banzai Kafka Operator</a></li>
+<li><a href="https://banzaicloud.com/blog/kafka-on-istio-benefits/">The benefits of integrating Apache Kafka with Istio</a></li>
+</ul>
+<h4 id="apache-flink">Apache Flink<a class="headerlink" href="#apache-flink" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://flink.apache.org/">Apache Flink</a> Apache Flink is a framework and distributed processing engine for stateful computations over unbounded and bounded data streams. Flink has been designed to run in all common cluster environments, perform computations at in-memory speed and at any scale.</li>
+<li><a href="https://ci.apache.org/projects/flink/flink-docs-stable/ops/deployment/kubernetes.html">How to set up Apache Flink on Kubernetes for real time data processing</a></li>
+</ul>
+<h3 id="red-hat-amq-activemq-artemis-broker-and-apache-kafka">Red Hat AMQ (ActiveMQ Artemis broker and Apache Kafka)<a class="headerlink" href="#red-hat-amq-activemq-artemis-broker-and-apache-kafka" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://developers.redhat.com/products/amq/overview"><strong>Red Hat AMQ overview</strong></a></li>
+<li><a href="https://www.redhat.com/en/technologies/jboss-middleware/amq">Red Hat AMQ</a> = AMQ Broker (Apache ActiveMQ Artemis) + AMQ Streams (Apache Kafka)</li>
+</ul>
+<h4 id="red-hat-amq-broker-activemq-artemis">Red Hat AMQ Broker (ActiveMQ Artemis)<a class="headerlink" href="#red-hat-amq-broker-activemq-artemis" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://activemq.apache.org/components/artemis/">Apache ActiveMQ Artemis broker</a></li>
+<li><a href="https://developers.redhat.com/blog/2017/10/05/jdbc-master-slave-persistence-setup-activemq-using-postgresql-database">developers.redhat.com: JDBC Master-Slave Persistence setup with Activemq using Postgresql database</a></li>
+</ul>
+<h4 id="red-hat-amq-streams">Red Hat AMQ Streams<a class="headerlink" href="#red-hat-amq-streams" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://developers.redhat.com/blog/2019/12/04/understanding-red-hat-amq-streams-components-for-openshift-and-kubernetes-part-1/">Understanding Red Hat AMQ Streams components for OpenShift and Kubernetes 🌟</a></li>
+<li><a href="https://www.redhat.com/en/resources/amq-streams-datasheet">Red Hat <strong>AMQ streams</strong> (kafka): Simplify Apache Kafka on Red Hat OpenShift</a></li>
+<li><a href="https://developers.redhat.com/blog/2020/04/01/set-up-red-hat-amq-streams-custom-certificates-on-openshift-update/">Set up <strong>Red Hat AMQ Streams</strong> custom certificates on OpenShift</a></li>
+</ul>
+<p><a href="https://developers.redhat.com/products/amq/overview"><img alt="AMQ in a nutshell" src="images/AMQ.png" /></a></p>
+<table>
+<thead>
+<tr>
+<th align="left">Product</th>
+<th align="left">Also Known As</th>
+<th align="left">Components</th>
+<th align="left">URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Red Hat AMQ 6</td>
+<td align="left">JBoss AMQ 6</td>
+<td align="left">Apache ActiveMQ</td>
+<td align="left"><a href="https://access.redhat.com/documentation/en-us/red_hat_amq/6.3/">Ref</a></td>
+</tr>
+<tr>
+<td align="left">Red Hat AMQ 7</td>
+<td align="left">JBoss AMQ 7 (Broker) or Red Hat AMQ 7 Suite</td>
+<td align="left">AMQ Broker + AMQ Streams</td>
+<td align="left"><a href="https://access.redhat.com/documentation/en-us/red_hat_amq/6.3/">Ref</a></td>
+</tr>
+<tr>
+<td align="left">Red Hat AMQ 7</td>
+<td align="left">JBoss AMQ 7 (Broker) or Red Hat AMQ 7 Suite</td>
+<td align="left">JBoss AMQ 7 (Broker) + Apache Kafka</td>
+<td align="left"><a href="https://access.redhat.com/documentation/en-us/red_hat_amq/6.3/">Ref</a></td>
+</tr>
+<tr>
+<td align="left">Red Hat AMQ 7</td>
+<td align="left">JBoss AMQ 7 (Broker) or Red Hat AMQ 7 Suite</td>
+<td align="left">Apache ActiveMQ Artemis + Apache Kafka</td>
+<td align="left"><a href="https://access.redhat.com/documentation/en-us/red_hat_amq/6.3/">Ref</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="ebooks">eBooks<a class="headerlink" href="#ebooks" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://streamingsystems.net/">O&rsquo;Really: Streaming data</a></li>
+</ul>
+<h3 id="related">Related<a class="headerlink" href="#related" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://learnk8s.io/kubernetes-long-lived-connections">Service meshes to the rescue: Load balancing and scaling long-lived connections in Kubernetes</a></li>
+</ul></div>
+                </div>
+        </div>
+
+    <hr>
+    <footer class="container">
+        
+        <center>Documentation built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="http://kristopolous.github.io/BOOTSTRA.386">BOOTSTRA.386</a>.</center>
+    </footer>
+        <script src="../../../../search/main.js"></script>
+    </body>
+</html>

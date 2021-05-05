@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="IT projects and resources.. along the way..">
+        <meta name="author" content="mbiscarra">
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Amazon Web Services - document</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/bootstrap-theme.min.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">document</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">home</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../introduction.md">Openshift VS Kubernetes</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../javaee-to-cloud-native.md">From Java EE To Cloud Native</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../faq.md">Microservices FAQ & Kubernetes Native</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../sre.md">Site Reliability Engineering (SRE)</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../serverless.md">Serverless Architectures & Frameworks. OpenFaaS, Knative & Kubeless</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">DevOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../devops.md">DevOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cheatsheets.md">Cheat Sheets</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../gitops.md">GitOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../demos.md">Demos & Screencasts. OpenShift, Kubernetes, Jenkins Pipelines with JCasC and more</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">NoOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../noops.md">NoOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../serverless.md">Serverless Architectures & Frameworks. OpenFaaS, Knative & Kubeless</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../finops.md">FinOps - Cloud Financial Management</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../testops.md">TestOps and Continuous Testing</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Project Management Methodology <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../project-management-methodology.md">Project Management Methodology</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../workfromhome.md">Work From Home</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../appointment-scheduling.md">Appointment Scheduling</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../docker.md">Docker</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kubernetes <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../kubernetes.md">Kubernetes</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../matrix-table.md">Kubernetes Matrix Table</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../kubernetes-alternatives.md">Kubernetes alternatives</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">OpenShift <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../openshift.md">OpenShift docs</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Software Delivery Pipeline <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cicd.md">CI/CD - Continuous Integration & Continuous Delivery</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../git.md">Git & Git Patterns. Trunk Devel, Git Flow & Feature Flags. Merge BOTs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jenkins.md">Jenkins & Cloudbees</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../openshift-pipelines.md">OpenShift Pipelines with Jenkins, Tekton and more...</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../performance-testing-with-jenkins-and-jmeter.md">Performance testing with Jenkins and JMeter or Gatling</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jenkins-alternatives.md">Jenkins Alternatives for Continuous Integration</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../..">Toolchain</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Java Memory Management <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../java-and-java-performance-optimization.md">Java Memory Management & Java Performance Optimization</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jvm-parameters-matrix-table.md">Java Parameters Matrix Table</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../caching.md">Caching Solutions</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../monitoring.md">Monitoring and Performance. Prometheus, Grafana, APMs and more</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Configuration Management <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../ansible.md">Ansible</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../liquibase.md">Liquibase</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../terraform.md">Terraform & Packer</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Databases on Kubernetes <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../databases.md">Relational Databases and Database DevOps. CrunchyData Postgres Operator</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../nosql.md">NoSQL Databases</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../message-queue.md">Cloud Based Integration & Messaging. Data Processing & Streaming (aka Data Pipeline)</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Service Mesh <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../servicemesh.md">Service Mesh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../consul.md">Consul</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../envoyproxy.md">Envoy & xDS protocol</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../istio.md">Istio</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../linkerd.md">Linkerd</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../maesh.md">Maesh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../trafficdirector.md">Traffic Director</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Security and DevSecOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../devsecops.md">DevSecOps. Container Security</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../securityascode.md">Security Policy as Code</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../storage.md">Cloud Native Storage</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">APIs <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../api.md">APIs with SOAP, REST and gRPC</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../swagger-code-generator-for-rest-apis.md">Swagger code generator for REST APIs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../postman.md">API Test Automation with Postman</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../developerportals.md">API Marketplaces. API Management with API Gateways & Developer Portals</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Development & Frameworks <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../angular.md">Angular</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dom.md">Document Object Model (DOM)</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringFramework.md">Java - Spring Framework</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringBoot.md">Java - SpringBoot</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringCloud.md">Java - Spring Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../quarkus.md">Java - Quarkus</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../javascript.md">JavaScript - node.js & npm</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../python.md">Python - Django & Flask</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../xamarin.md">Xamarin</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev Environment <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../visual-studio.md">Visual Studio Code</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../linux-dev-env.md">WSL - Linux Dev Environment on Windows</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../scaffolding.md">Scaffolding Tools</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ChromeDevTools.md">ChromeDevTools</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Public Cloud <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../public-cloud-solutions.md">Public Cloud Solutions</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../edge-computing.md">Edge Computing</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cloud-arch-diagrams.md">Cloud Architecture Diagram Tools</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../aws.md">AWS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../GoogleCloudPlatform.md">Google Cloud Platform</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../azure.md">Microsoft Azure</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ibm_cloud.md">IBM Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../oraclecloud.md">Oracle Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../digitalocean.md">Digital Ocean</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cloudflare.md">Cloudflare</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../elearning.md">E-Learning</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../customer.md">Customer Success Stories</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../newsfeeds.md">Subreddits</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../other-awesome-lists.md">Other Awesome Lists</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../about.md">About</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li>
+                    <a href="https://github.com/melvinpetix/documents.git/">
+                        
+                        github/melvinpetix/dpcuments
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+      
+    
+        <li class="main active"><a href="#amazon-web-services">Amazon Web Services</a></li>
+        
+            <li><a href="#amazon-web-services_1">Amazon Web Services</a></li>
+        
+            <li><a href="#awesome-aws">Awesome AWS</a></li>
+        
+            <li><a href="#aws-glossary">AWS Glossary</a></li>
+        
+            <li><a href="#aws-on-twitter">AWS on Twitter</a></li>
+        
+            <li><a href="#aws-calculator">AWS Calculator</a></li>
+        
+            <li><a href="#aws-application-architecture">AWS Application Architecture</a></li>
+        
+            <li><a href="#aws-stacks">AWS Stacks</a></li>
+        
+            <li><a href="#aws-youtube-channel-and-podcasts">AWS Youtube channel and Podcasts</a></li>
+        
+            <li><a href="#closed-groups-for-aws-certified-professionals">Closed groups for AWS certified professionals</a></li>
+        
+            <li><a href="#aws-reinvent-2015">AWS re:Invent 2015</a></li>
+        
+            <li><a href="#aws-slides">AWS Slides</a></li>
+        
+            <li><a href="#aws-architecture-blog-official-blog-aws-labs-aws-quick-start">AWS Architecture Blog, Official Blog, AWS Labs, AWS Quick Start</a></li>
+        
+            <li><a href="#aws-case-studies">AWS Case Studies</a></li>
+        
+            <li><a href="#aws-tips-aws-performance-handling-aws-failures-and-outages">AWS tips. AWS Performance. Handling AWS Failures and Outages</a></li>
+        
+            <li><a href="#aws-clients">AWS Clients</a></li>
+        
+            <li><a href="#aws-new-features">AWS New Features</a></li>
+        
+            <li><a href="#aws-management-console">AWS Management Console</a></li>
+        
+            <li><a href="#aws-management-tools-blog">AWS Management Tools Blog</a></li>
+        
+            <li><a href="#aws-schema-conversion-tool">AWS Schema Conversion Tool</a></li>
+        
+            <li><a href="#aws-rds">AWS RDS</a></li>
+        
+            <li><a href="#aws-application-discovery-service">AWS Application Discovery Service</a></li>
+        
+            <li><a href="#new-aws-competency-aws-migration">New AWS Competency. AWS Migration</a></li>
+        
+            <li><a href="#aws-database-migration-service">AWS Database Migration Service</a></li>
+        
+            <li><a href="#aws-redshift">AWS Redshift</a></li>
+        
+            <li><a href="#aws-devops-aws-codepipeline">AWS DevOps. AWS CodePipeline</a></li>
+        
+            <li><a href="#aws-elastic-beanstalk">AWS Elastic Beanstalk</a></li>
+        
+            <li><a href="#aws-opsworks">AWS OpsWorks</a></li>
+        
+            <li><a href="#aws-networking">AWS Networking</a></li>
+        
+            <li><a href="#aws-route-53">AWS Route 53</a></li>
+        
+            <li><a href="#aws-elastic-load-balancing">AWS Elastic Load Balancing</a></li>
+        
+            <li><a href="#aws-application-load-balancer">AWS Application Load Balancer</a></li>
+        
+            <li><a href="#nginx">NGINX</a></li>
+        
+            <li><a href="#aws-latency">AWS Latency</a></li>
+        
+            <li><a href="#amazon-ecs-optimized-ami">Amazon ECS optimized AMI</a></li>
+        
+            <li><a href="#aws-ec2-container-registry-docker">AWS EC2 Container Registry (Docker)</a></li>
+        
+            <li><a href="#docker-for-aws">Docker for AWS</a></li>
+        
+            <li><a href="#aws-cli">AWS CLI</a></li>
+        
+            <li><a href="#aws-vpc">AWS VPC</a></li>
+        
+            <li><a href="#aws-sqs-amazon-simple-queue-service">AWS SQS. Amazon Simple Queue Service</a></li>
+        
+            <li><a href="#aws-application-discovery-service-update-agentless-discovery-for-vmware">AWS Application Discovery Service Update. Agentless Discovery for VMware</a></li>
+        
+            <li><a href="#vmware-cloud-on-aws">VMware Cloud on AWS</a></li>
+        
+            <li><a href="#aws-developer-blog">AWS Developer Blog</a></li>
+        
+            <li><a href="#aws-lambda-serverless">AWS Lambda Serverless</a></li>
+        
+            <li><a href="#aws-cloud-formation">AWS Cloud Formation</a></li>
+        
+            <li><a href="#aws-for-windows">AWS for Windows</a></li>
+        
+            <li><a href="#continuous-deployment-with-aws">Continuous Deployment with AWS</a></li>
+        
+            <li><a href="#aws-security">AWS Security</a></li>
+        
+            <li><a href="#aws-s3-ebs-aws-storage-gateway">AWS S3 &amp; EBS. AWS Storage Gateway</a></li>
+        
+            <li><a href="#amazon-efs-elastic-file-system">Amazon EFS Elastic File System</a></li>
+        
+            <li><a href="#aws-fargate">AWS Fargate</a></li>
+        
+            <li><a href="#aws-backup-and-recovery-design-for-failure">AWS Backup and Recovery. Design for failure</a></li>
+        
+            <li><a href="#aws-diagrams">AWS Diagrams</a></li>
+        
+            <li><a href="#aws-config-rules">AWS Config Rules</a></li>
+        
+            <li><a href="#aws-big-data">AWS Big Data</a></li>
+        
+            <li><a href="#aws-nosql-dynamodb">AWS NoSQL DynamoDB</a></li>
+        
+            <li><a href="#aws-iot">AWS IoT</a></li>
+        
+            <li><a href="#aws-elastic-transcoder-video-streaming">AWS Elastic Transcoder. Video streaming</a></li>
+        
+            <li><a href="#aws-and-splunk">AWS and Splunk</a></li>
+        
+            <li><a href="#aws-monitoring">AWS Monitoring</a></li>
+        
+            <li><a href="#amazon-alexa-voice-user-interface">Amazon Alexa. Voice User Interface</a></li>
+        
+            <li><a href="#aws-partner-network-apn">AWS Partner Network (APN)</a></li>
+        
+            <li><a href="#aws-startup-collection-for-startups-building-on-aws">AWS Startup Collection. For startups building on AWS</a></li>
+        
+            <li><a href="#eks">EKS</a></li>
+        
+            <li><a href="#interview-questions">Interview Questions</a></li>
+        
+            <li><a href="#localstack">Localstack</a></li>
+        
+            <li><a href="#migrating-on-premise-vm-to-aws">Migrating On Premise VM to AWS</a></li>
+        
+            <li><a href="#spain">Spain</a></li>
+        
+            <li><a href="#blogs">Blogs</a></li>
+        
+            <li><a href="#aws-pricing">AWS Pricing</a></li>
+        
+            <li><a href="#videos">Videos</a></li>
+        
+    
+    
+    </ul>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="amazon-web-services">Amazon Web Services<a class="headerlink" href="#amazon-web-services" title="Permanent link">&para;</a></h2>
+<p><br/></p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/donnemartin/data-science-ipython-notebooks/master/images/aws.png">
+</p>
+<p><br/></p>
+<!-- MarkdownTOC -->
+
+<ul>
+<li><a href="#amazon-web-services">Amazon Web Services</a></li>
+<li><a href="#awesome-aws">Awesome AWS</a></li>
+<li><a href="#aws-glossary">AWS Glossary</a></li>
+<li><a href="#aws-on-twitter">AWS on Twitter</a></li>
+<li><a href="#aws-calculator">AWS Calculator</a></li>
+<li><a href="#aws-application-architecture">AWS Application Architecture</a></li>
+<li><a href="#aws-stacks">AWS Stacks</a></li>
+<li><a href="#aws-youtube-channel-and-podcasts">AWS Youtube channel and Podcasts</a></li>
+<li><a href="#closed-groups-for-aws-certified-professionals">Closed groups for AWS certified professionals</a></li>
+<li><a href="#aws-reinvent-2015">AWS re:Invent 2015</a></li>
+<li><a href="#aws-slides">AWS Slides</a></li>
+<li><a href="#aws-architecture-blog-official-blog-aws-labs-aws-quick-start">AWS Architecture Blog, Official Blog, AWS Labs, AWS Quick Start</a></li>
+<li><a href="#aws-case-studies">AWS Case Studies</a></li>
+<li><a href="#aws-tips-aws-performance-handling-aws-failures-and-outages">AWS tips. AWS Performance. Handling AWS Failures and Outages</a></li>
+<li><a href="#aws-clients">AWS Clients</a></li>
+<li><a href="#aws-new-features">AWS New Features</a></li>
+<li><a href="#aws-management-console">AWS Management Console</a></li>
+<li><a href="#aws-management-tools-blog">AWS Management Tools Blog</a></li>
+<li><a href="#aws-schema-conversion-tool">AWS Schema Conversion Tool</a></li>
+<li><a href="#aws-rds">AWS RDS</a></li>
+<li><a href="#aws-application-discovery-service">AWS Application Discovery Service</a></li>
+<li><a href="#new-aws-competency-aws-migration">New AWS Competency. AWS Migration</a></li>
+<li><a href="#aws-database-migration-service">AWS Database Migration Service</a></li>
+<li><a href="#aws-redshift">AWS Redshift</a></li>
+<li><a href="#aws-devops-aws-codepipeline">AWS DevOps. AWS CodePipeline</a></li>
+<li><a href="#aws-elastic-beanstalk">AWS Elastic Beanstalk</a></li>
+<li><a href="#aws-opsworks">AWS OpsWorks</a></li>
+<li><a href="#aws-networking">AWS Networking</a></li>
+<li><a href="#aws-route-53">AWS Route 53</a></li>
+<li><a href="#aws-elastic-load-balancing">AWS Elastic Load Balancing</a></li>
+<li><a href="#aws-application-load-balancer">AWS Application Load Balancer</a></li>
+<li><a href="#nginx">NGINX</a></li>
+<li><a href="#aws-latency">AWS Latency</a></li>
+<li><a href="#amazon-ecs-optimized-ami">Amazon ECS optimized AMI</a></li>
+<li><a href="#aws-ec2-container-registry-docker">AWS EC2 Container Registry (Docker)</a></li>
+<li><a href="#docker-for-aws">Docker for AWS</a></li>
+<li><a href="#aws-cli">AWS CLI</a></li>
+<li><a href="#aws-vpc">AWS VPC</a></li>
+<li><a href="#aws-sqs-amazon-simple-queue-service">AWS SQS. Amazon Simple Queue Service</a></li>
+<li><a href="#aws-application-discovery-service-update-agentless-discovery-for-vmware">AWS Application Discovery Service Update. Agentless Discovery for VMware</a></li>
+<li><a href="#vmware-cloud-on-aws">VMware Cloud on AWS</a></li>
+<li><a href="#aws-developer-blog">AWS Developer Blog</a></li>
+<li><a href="#aws-lambda-serverless">AWS Lambda Serverless</a></li>
+<li><a href="#aws-cloud-formation">AWS Cloud Formation</a></li>
+<li><a href="#aws-for-windows">AWS for Windows</a></li>
+<li><a href="#continuous-deployment-with-aws">Continuous Deployment with AWS</a></li>
+<li><a href="#aws-security">AWS Security</a><ul>
+<li><a href="#payment-card-industry-data-security-standard-compliance">Payment Card Industry Data Security Standard compliance</a></li>
+<li><a href="#aws-iam">AWS IAM</a></li>
+<li><a href="#aws-cloudfront">AWS CloudFront</a></li>
+<li><a href="#aws-waf-web-application-firewall">AWS WAF Web Application Firewall</a></li>
+<li><a href="#aws-vault">AWS Vault</a></li>
+</ul>
+</li>
+<li><a href="#aws-s3--ebs-aws-storage-gateway">AWS S3 &amp; EBS. AWS Storage Gateway</a></li>
+<li><a href="#amazon-efs-elastic-file-system">Amazon EFS Elastic File System</a></li>
+<li><a href="#aws-fargate">AWS Fargate</a></li>
+<li><a href="#aws-backup-and-recovery-design-for-failure">AWS Backup and Recovery. Design for failure</a></li>
+<li><a href="#aws-diagrams">AWS Diagrams</a></li>
+<li><a href="#aws-config-rules">AWS Config Rules</a></li>
+<li><a href="#aws-big-data">AWS Big Data</a><ul>
+<li><a href="#aws-data-lake">AWS Data Lake</a></li>
+<li><a href="#aws-data-pipeline-aka-big-data-pipelines-or-data-streams">AWS Data Pipeline (aka Big Data Pipelines or Data Streams)</a></li>
+</ul>
+</li>
+<li><a href="#aws-nosql-dynamodb">AWS NoSQL DynamoDB</a></li>
+<li><a href="#aws-iot">AWS IoT</a></li>
+<li><a href="#aws-elastic-transcoder-video-streaming">AWS Elastic Transcoder. Video streaming</a></li>
+<li><a href="#aws-and-splunk">AWS and Splunk</a></li>
+<li><a href="#aws-monitoring">AWS Monitoring</a></li>
+<li><a href="#amazon-alexa-voice-user-interface">Amazon Alexa. Voice User Interface</a></li>
+<li><a href="#aws-partner-network-apn">AWS Partner Network (APN)</a></li>
+<li><a href="#aws-startup-collection-for-startups-building-on-aws">AWS Startup Collection. For startups building on AWS</a></li>
+<li><a href="#eks">EKS</a></li>
+<li><a href="#interview-questions">Interview Questions</a></li>
+<li><a href="#localstack">Localstack</a></li>
+<li><a href="#migrating-on-premise-vm-to-aws">Migrating On Premise VM to AWS</a></li>
+<li><a href="#spain">Spain</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#aws-pricing">AWS Pricing</a></li>
+<li><a href="#videos">Videos</a></li>
+</ul>
+<!-- /MarkdownTOC -->
+
+<h3 id="amazon-web-services_1">Amazon Web Services<a class="headerlink" href="#amazon-web-services_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://forums.aws.amazon.com">AWS Forums 🌟</a></li>
+<li><a href="https://aws.amazon.com/en/premiumsupport/knowledge-center/">AWS Knowledge Center</a></li>
+<li><a href="https://aws.amazon.com/en/premiumsupport/">AWS Support</a></li>
+<li><a href="https://github.com/awslabs">github.com/awslabs 🌟</a></li>
+<li><a href="http://www.slideshare.net/AmazonWebServices">slideshare.net/AmazonWebServices 🌟</a></li>
+<li><a href="https://aws.amazon.com/getting-started/tutorials/">AWS 10-Minute Tutorials 🌟</a></li>
+<li><a href="https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/">How do I create and activate a new Amazon Web Services account?</a></li>
+<li><a href="https://onlineitguru.com/tutorial/aws-services">onlineitguru.com: AWS Services 🌟</a></li>
+</ul>
+<h3 id="awesome-aws">Awesome AWS<a class="headerlink" href="#awesome-aws" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://github.com/donnemartin/awesome-aws">Awesome AWS</a></li>
+</ul>
+<h3 id="aws-glossary">AWS Glossary<a class="headerlink" href="#aws-glossary" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://docs.aws.amazon.com/general/latest/gr/glos-chap.html">AWS Glossary</a></li>
+</ul>
+<h3 id="aws-on-twitter">AWS on Twitter<a class="headerlink" href="#aws-on-twitter" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://twitter.com/awscloud">twitter.com/awscloud</a></li>
+<li><a href="https://twitter.com/AWSreInvent">twitter.com/AWSreInvent</a></li>
+<li><a href="https://twitter.com/jeffbarr">twitter.com/jeffbarr</a></li>
+<li><a href="https://twitter.com/AWSstartups">twitter.com/AWSstartups</a></li>
+<li><a href="https://twitter.com/AWS_Partners">twitter.com/AWS_Partners</a></li>
+</ul>
+<h3 id="aws-calculator">AWS Calculator<a class="headerlink" href="#aws-calculator" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://aws.amazon.com/tco-calculator/">AWS Total Cost of Ownership (TCO) Calculators 🌟</a></li>
+<li><a href="https://aws.amazon.com/blogs/aws-cost-management/understanding-your-aws-cost-datasets-a-cheat-sheet/">Understanding your AWS Cost Datasets: A Cheat Sheet</a></li>
+</ul>
+<h3 id="aws-application-architecture">AWS Application Architecture<a class="headerlink" href="#aws-application-architecture" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://www.conceptdraw.com/examples/application-architecture">AWS application-architecture 🌟</a></li>
+</ul>
+<h3 id="aws-stacks">AWS Stacks<a class="headerlink" href="#aws-stacks" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://segment.com/blog/the-segment-aws-stack/">The Segment AWS Stack</a></li>
+</ul>
+<h3 id="aws-youtube-channel-and-podcasts">AWS Youtube channel and Podcasts<a class="headerlink" href="#aws-youtube-channel-and-podcasts" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.youtube.com/user/AmazonWebServices">Amazon Web Services Youtube</a></li>
+<li><a href="https://www.youtube.com/user/awstutorialseries">AWS Tutorial Series 🌟</a></li>
+<li><a href="https://www.youtube.com/user/AWSwebinars">AWS Webinar Channel 🌟</a></li>
+<li><a href="https://aws.amazon.com/podcasts/aws-podcast/">AWS Podcasts</a></li>
+<li><a href="https://aws.amazon.com/podcasts/aws-techchat">AWS Techchat</a></li>
+<li><a href="http://www.stitcher.com/podcast/amazon-web-services/aws-podcast">Stitcher AWS Podcasts</a></li>
+</ul>
+<h3 id="closed-groups-for-aws-certified-professionals">Closed groups for AWS certified professionals<a class="headerlink" href="#closed-groups-for-aws-certified-professionals" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://awscerts.slack.com">awscerts.slack.com</a></li>
+<li><a href="http://walkintocloud.com/index.php/2016/06/04/amazon-aws-certification-preparation-tips/">Amazon AWS Certification Preparation Tips 🌟</a></li>
+<li><a href="https://gist.github.com/leonardofed">A curated list of AWS resources to prepare for the AWS Certifications 🌟</a></li>
+<li><a href="https://blue-clouds.com/category/study-guide/">AWS Certified Solutions Architect Professional – Study Guide 🌟</a></li>
+<li><a href="https://aws.amazon.com/es/about-aws/whats-new/2016/10/first-aws-certification-study-guide-now-available/">aws.amazon.com: First AWS Certification Study Guide Now Available 🌟</a></li>
+<li><a href="https://www.linkedin.com/pulse/passed-aws-certified-solutions-architect-level-harshit-agarwal">Tips on Passing AWS Certified Solutions Architect - Professional Level</a></li>
+</ul>
+<h3 id="aws-reinvent-2015">AWS re:Invent 2015<a class="headerlink" href="#aws-reinvent-2015" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://www.siliconweek.es/data-storage/business-intelligence/festin-de-novedades-en-reinvent-2015-89129">Festín de novedades en re:Invent 2015</a></li>
+<li><a href="https://aws.amazon.com/es/new/">What&rsquo;s New from Amazon Web Services</a></li>
+<li><a href="https://d0.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf">AWS Well Architected Framework</a></li>
+<li><a href="https://www.youtube.com/watch?v=y-0Wf2Zyi5Q">AWS re:Invent 2015 Keynote | Werner Vogels</a><ul>
+<li><a href="https://www.youtube.com/watch?v=D5-ifl7KJ00">AWS re:Invent 2015 Keynote | Andy Jassy</a></li>
+</ul>
+</li>
+<li><a href="http://www.zdnet.com/article/aws-reinvent-five-takeaways-on-new-services/">AWS re:Invent: Five takeaways on Amazon&rsquo;s new cloud services</a></li>
+<li><a href="http://www.zdnet.com/article/amazon-web-services-big-data-analytics-enterprise-datacenters/">Amazon Web Services gets serious about big data analytics with bevy of new services</a></li>
+<li><a href="https://aws.amazon.com/es/quicksight/">Amazon QuickSight: Fast, easy to use, in-memory, Cloud BI service for everyone in an organization (not only technical people). It is 1/10 the cost of traditional BI tools</a></li>
+<li><a href="http://oak.ctx.ly/r/3tfr7">Revealed at AWS re:Invent: Amazon Kinesis Firehose - easily load streaming data into Amazon S3 &amp; Amazon RedShift</a></li>
+<li><a href="https://aws.amazon.com/es/streaming-data/">What is Streaming Data?</a></li>
+<li><a href="https://aws.amazon.com/blogs/aws/amazon-rds-update-mariadb-is-now-available">Amazon RDS Update – MariaDB is Now Available</a></li>
+<li><a href="http://aws.amazon.com/es/dms/">AWS Database Migration Service with AWS Schema Conversion Tool</a></li>
+<li><a href="https://aws.amazon.com/blogs/aws/aws-importexport-snowball-transfer-1-petabyte-per-week-using-amazon-owned-storage-appliances/">AWS Import/Export Snowball – Transfer 1 Petabyte Per Week Using Amazon-Owned Storage Appliances</a></li>
+<li><a href="https://aws.amazon.com/blogs/aws/category/aws-web-application-firewall/">AWS Web Application Firewall</a></li>
+<li><a href="https://aws.amazon.com/blogs/aws/aws-config-rules-dynamic-compliance-checking-for-cloud-resources/">AWS Config Rules – Dynamic Compliance Checking for Cloud Resources</a></li>
+<li><a href="https://aws.amazon.com/blogs/aws/amazon-inspector-automated-security-assessment-service">Amazon Inspector – Automated Security Assessment Service</a></li>
+<li><a href="https://aws.amazon.com/blogs/aws/coming-soon-ec2-dedicated-hosts">Coming Soon – EC2 Dedicated Hosts</a></li>
+<li><a href="http://aws.amazon.com/es/device-farm">AWS Device Farm Pruebe su aplicación en dispositivos reales en la nube de AWS. Mejore la calidad de sus aplicaciones iOS, Android y Fire OS al probarlas en smartphones y tablets reales en la nube de AWS</a></li>
+<li><a href="https://aws.amazon.com/blogs/aws/ec2-instance-update-x1-sap-hana-t2-nano-websites">EC2 Instance Update – X1 (SAP HANA) &amp; T2.Nano (Websites)</a></li>
+<li><a href="https://aws.amazon.com/blogs/aws/ec2-container-service-update-container-registry-ecs-cli-az-aware-scheduling-and-more">EC2 Container Service Update – Container Registry, ECS CLI, AZ-Aware Scheduling, and More</a></li>
+<li><a href="https://aws.amazon.com/blogs/aws/cloudwatch-dashboards-create-use-customized-metrics-views">CloudWatch Dashboards – Create &amp; Use Customized Metrics Views</a></li>
+<li><a href="https://aws.amazon.com/blogs/aws/aws-lambda-update-python-vpc-increased-function-duration-scheduling-and-more">AWS Lambda Update – Python, VPC, Increased Function Duration, Scheduling, and More</a></li>
+<li><a href="http://techcrunch.com/2015/10/08/amazon-launches-aws-mobile-hub-to-help-mobile-developers-build-back-end-processes/">Amazon Launches AWS Mobile Hub To Help Mobile Developers Build Back-End Processes</a></li>
+<li><a href="https://aws.amazon.com/blogs/aws/aws-iot-cloud-services-for-connected-devices">AWS IoT – Cloud Services for Connected Devices</a></li>
+<li><a href="https://aws.amazon.com/blogs/aws/aws-mobile-hub-build-test-and-monitor-mobile-applications">AWS Mobile Hub – Build, Test, and Monitor Mobile Applications</a></li>
+</ul>
+<h3 id="aws-slides">AWS Slides<a class="headerlink" href="#aws-slides" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://www.slideshare.net/AmazonWebServices">slideshare.net/AmazonWebServices</a></li>
+</ul>
+<h3 id="aws-architecture-blog-official-blog-aws-labs-aws-quick-start">AWS Architecture Blog, Official Blog, AWS Labs, AWS Quick Start<a class="headerlink" href="#aws-architecture-blog-official-blog-aws-labs-aws-quick-start" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.awsarchitectureblog.com">AWS Architecture Blog</a></li>
+<li><a href="http://blogs.aws.amazon.com/">AWS Official Blog</a></li>
+<li><a href="https://github.com/awslabs">AWS Labs GitHub</a></li>
+<li><a href="http://aws.amazon.com/es/quickstart/">AWS Quick Start Reference Deployments</a><ul>
+<li><a href="https://github.com/awslabs/aws-quickstart">AWS Quick Start - GitHub</a></li>
+</ul>
+</li>
+<li><a href="https://aws.amazon.com/blogs/aws/infoworld-review-amazon-aurora-rocks-mysql/">InfoWorld Review – Amazon Aurora Rocks MySQL</a></li>
+<li><a href="https://aws.amazon.com/blogs/aws/aws-cost-explorer-update-access-to-ec2-usage-data/">AWS Cost Explorer Update – Access to EC2 Usage Data</a></li>
+</ul>
+<h3 id="aws-case-studies">AWS Case Studies<a class="headerlink" href="#aws-case-studies" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://aws.amazon.com/solutions/case-studies/thomas-publishing/">Thomas Publishing Case Study</a>  After moving to AWS, we were able to shut down our largest data center, eliminating hundreds of thousands of dollars in associated real estate, facility operations, and power and cooling costs.   </li>
+</ul>
+<h3 id="aws-tips-aws-performance-handling-aws-failures-and-outages">AWS tips. AWS Performance. Handling AWS Failures and Outages<a class="headerlink" href="#aws-tips-aws-performance-handling-aws-failures-and-outages" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://wblinks.com/notes/aws-tips-i-wish-id-known-before-i-started/">AWS Tips I Wish I&rsquo;d Known Before I Started (Feb 2014) 🌟</a> A collection of random tips for Amazon Web Services (AWS) that I wish I&rsquo;d been told a few years ago, based on what I&rsquo;ve learned by building and deploying various applications on AWS.</li>
+<li><a href="http://www.tekhead.org/blog/2016/02/amazon-aws-tips-and-gotchas-part-1/">Amazon AWS Tips and Gotchas – Part 1 (Feb 2016)</a></li>
+<li><a href="https://dzone.com/articles/5-tips-for-better-aws-performance">DZone: 5 Tips for Better AWS Performance 🌟</a> The Ngnix team has a nice list of tips for better performance when using the AWS services. Some of them are related to Ngnix, but others are completely usable for anyone.</li>
+<li><a href="https://aws.amazon.com/premiumsupport/knowledge-center/get-started-aws/">How do I get started with AWS cloud computing? 🌟</a></li>
+<li><a href="https://dzone.com/articles/dude-wheres-my-performance">DZone: Dude, Where&rsquo;s My Performance? 🌟</a></li>
+<li><a href="https://blog.appdynamics.com/cloud/a-guide-to-performance-challenges-with-aws-ec2-part-1/">DZone: A Guide to Performance Challenges with AWS EC2: Part 1</a> </li>
+<li><a href="https://dzone.com/articles/a-guide-to-performance-challenges-with-aws-ec2-par-1">DZone: A Guide to Performance Challenges With AWS EC2: Part 2</a> Using Amazon Web Services? Learn how to get your Elastic Compute Cloud instances to perform better than your competitors.</li>
+<li><a href="https://dzone.com/articles/a-guide-to-performance-challenges-with-aws-ec2-par-2">DZone: A Guide to Performance Challenges With AWS EC2: Part 3</a> In the second part of his guide covering performance challenges in AWS EC2, Saba Anees covers instances and the right applications for your workloads.</li>
+<li><a href="https://dzone.com/articles/a-guide-to-performance-challenges-with-aws-ec2-par-3">DZone: A Guide to Performance Challenges With AWS EC2: Part 4 🌟</a> In the final part of his series covering performance challenges with AWS EC2, Saba Anees goes over poor ELB performance and handling AWS failures and outages.</li>
+<li><a href="http://blog.datapath.io/dynamic-web-accelerator-for-aws-hosted-applications">blog.datapath.io: Dynamic Web Accelerator for AWS Hosted Applications 🌟</a></li>
+<li><a href="http://cloud.netapp.com/blog/prepare-for-the-day-of-all-cloud">The Truth About Downtime in the Cloud</a></li>
+</ul>
+<h3 id="aws-clients">AWS Clients<a class="headerlink" href="#aws-clients" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://www.theregister.co.uk/2016/07/13/trainline_dumps_oracle_microsoft_goes_full_aws_cto_interview/">Trainline.com dumps Oracle and Microsoft, gulps AWS Kool-Aid 🌟</a></li>
+<li><a href="https://www.youtube.com/watch?v=IUvUmqu1MBQ">London DevOps - Trainline, A DevOps Journey - Chris Turvil 🌟</a></li>
+<li><a href="https://aws.amazon.com/solutions/case-studies/trainline/">aws.amazon.com: Trainline Case Study</a></li>
+</ul>
+<h3 id="aws-new-features">AWS New Features<a class="headerlink" href="#aws-new-features" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://aws.amazon.com/releasenotes">aws.amazon.com/releasenotes</a></li>
+<li><a href="https://aws.amazon.com/blogs/aws/amazon-elastic-file-system-shared-file-storage-for-amazon-ec2/">Amazon EFS: Amazon Elastic File System – Shared File Storage for Amazon EC2</a></li>
+<li><a href="https://aws.amazon.com/blogs/aws/new-encrypted-ebs-boot-volumes">New – Encrypted EBS Boot Volumes</a><ul>
+<li><a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html">Amazon EBS Encryption</a></li>
+</ul>
+</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2015/12/now-add-or-modify-request-headers-forwarded-from-amazon-cloudfront-to-origin/">Now Add or Modify Request Headers Forwarded From Amazon CloudFront to Origin</a></li>
+<li><a href="https://aws.amazon.com/es/about-aws/whats-new/2015/12/aws-cloudformation-adds-support-for-aws-waf-and-aws-directory-service-for-microsoft-active-directory/">AWS CloudFormation Adds Support for AWS WAF and AWS Directory Service for Microsoft Active Directory</a></li>
+<li><a href="https://aws.amazon.com/blogs/aws/amazon-workmail-now-generally-available/">Amazon WorkMail – Now Generally Available</a></li>
+<li><a href="http://www.allthingsdistributed.com/2015/11/aws-announces-uk-region.html">London Calling! An AWS Region is coming to the UK!</a></li>
+<li><a href="https://aws.amazon.com/blogs/aws/new-scheduled-reserved-instances/">New – Scheduled Reserved Instances</a></li>
+</ul>
+<h3 id="aws-management-console">AWS Management Console<a class="headerlink" href="#aws-management-console" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/getting-started.html">Working with the AWS Management Console 🌟</a></li>
+</ul>
+<h3 id="aws-management-tools-blog">AWS Management Tools Blog<a class="headerlink" href="#aws-management-tools-blog" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://aws.amazon.com/blogs/mt/">AWS Management Tools Blog</a></li>
+</ul>
+<h3 id="aws-schema-conversion-tool">AWS Schema Conversion Tool<a class="headerlink" href="#aws-schema-conversion-tool" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://cloudacademy.com/blog/migrating-data-to-aws/">cloudacademy.com: Migrating Data to AWS Using the AWS Schema Conversion Tool: A Preview</a></li>
+<li><a href="http://aws.amazon.com/about-aws/whats-new/2016/01/aws-schema-conversion-tool-postgresql-support/">AWS Schema Conversion Tool now supports PostgreSQL as conversion target</a></li>
+<li><a href="http://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP_SchemaConversionTool.Converting.CreateProject.html">Creating an AWS Schema Conversion Tool Project 🌟</a> Use SSL to connect to your source DB with the AWS Schema Conversion Tool. </li>
+<li><a href="https://aws.amazon.com/es/about-aws/whats-new/2016/07/aws-schema-conversion-tool-now-supports-conversions-from-oracle-dw-and-teradata-to-amazon-redshift-embedded-code-conversion-and-cloud-native-code-optimization">AWS Schema Conversion Tool now supports conversions from Oracle DW and Teradata to Amazon Redshift, Embedded Code Conversion, and Cloud native Code Optimization</a></li>
+</ul>
+<h3 id="aws-rds">AWS RDS<a class="headerlink" href="#aws-rds" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Tutorials.RestoringFromSnapshot.html">Tutorial: Restoring a DB Instance from a DB Snapshot</a></li>
+<li><a href="https://medium.com/airbnb-engineering/how-we-partitioned-airbnb-s-main-database-in-two-weeks-55f7e006ff21">Partitioning MySQL on RDS: &ldquo;How We Partitioned Airbnb’s Main Database in Two Weeks&rdquo; 🌟</a></li>
+<li><a href="https://aws.amazon.com/blogs/aws/amazon-rds-for-sql-server-support-for-windows-authentication/">Amazon RDS for SQL Server – Support for Windows Authentication</a></li>
+<li><a href="http://blog.rubyroidlabs.com/2016/04/postgresql-9-5/">Why Support of PostgreSQL 9.5 by Amazon RDS is Such Great News</a></li>
+<li><a href="https://aws.amazon.com/getting-started/tutorials/create-mysql-db/">AWS Tutorials: Create and Connect to a MySQL Database with Amazon RDS 🌟</a></li>
+<li><a href="http://cantrill.io/howto/aws/2016/06/06/migrating-from-mysql-to-aurora-with-almost-no-downtime.html">Migrating from MySQL (RDS) to Aurora with no downtime 🌟</a></li>
+<li><a href="http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Aurora.Replication.CrossRegion.html">Replicating Amazon Aurora DB Clusters Across AWS Regions 🌟</a></li>
+<li><a href="http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.html">Working with PostgreSQL, MySQL, and MariaDB Read Replicas - Amazon 🌟</a> Use RDS PostgreSQL cross-region Read Replicas to get data close to customers. </li>
+<li><a href="http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_VPC.WorkingWithRDSInstanceinaVPC.html">Working with an Amazon RDS DB Instance in a VPC</a></li>
+<li><a href="http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_CreateOracleInstance.html">Creating a DB Instance Running the Oracle Database Engine</a> In RDS, create Oracle Standard Edition 2 DB instances with the License Included model.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2016/09/amazon-rds-for-postgresql-enhancements-support-for-new-minor-versions-logical-replication-and-amazon-rds-postgresql-as-a-source-for-aws-dms/">Amazon RDS for PostgreSQL Enhancements: Support for new minor versions, Logical Replication, and Amazon RDS PostgreSQL as a source for AWS DMS</a></li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2016/10/oracle-database-on-the-aws-cloud-quick-start-reference-deployment/">Oracle Database on the AWS Cloud: Quick Start Reference Deployment</a></li>
+<li><a href="https://www.besanttechnologies.com/amazon-web-services-relational-database">besanttechnologies.com: AWS – Relational Database Service</a></li>
+</ul>
+<h3 id="aws-application-discovery-service">AWS Application Discovery Service<a class="headerlink" href="#aws-application-discovery-service" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://docs.aws.amazon.com/application-discovery/latest/userguide/what-is-appdiscovery.html">AWS Application Discovery Service 🌟</a></li>
+</ul>
+<h3 id="new-aws-competency-aws-migration">New AWS Competency. AWS Migration<a class="headerlink" href="#new-aws-competency-aws-migration" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://aws.amazon.com/blogs/aws/new-aws-competency-aws-migration/">New AWS Competency – AWS Migration 🌟</a></li>
+</ul>
+<h3 id="aws-database-migration-service">AWS Database Migration Service<a class="headerlink" href="#aws-database-migration-service" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://aws.amazon.com/es/blogs/aws/aws-database-migration-service/">AWS Database Migration Service 🌟</a></li>
+<li><a href="https://aws.amazon.com/es/dms/learn-more/">Whitepaper: Migrating Your Databases to AWS</a></li>
+</ul>
+<h3 id="aws-redshift">AWS Redshift<a class="headerlink" href="#aws-redshift" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://docs.aws.amazon.com/redshift/latest/dg/tutorial-tuning-tables.html">Tutorial: Tuning Table Design 🌟</a> In this tutorial, you will learn how to optimize the design of your tables.</li>
+</ul>
+<h3 id="aws-devops-aws-codepipeline">AWS DevOps. AWS CodePipeline<a class="headerlink" href="#aws-devops-aws-codepipeline" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://aws.amazon.com/devops/">AWS DevOps 🌟</a></li>
+<li><a href="https://blogs.aws.amazon.com/application-management/">AWS DevOps Blog</a></li>
+<li><a href="https://blogs.aws.amazon.com/application-management/post/TxMJROUIFQZ4HS/Setting-Up-the-Jenkins-Plugin-for-AWS-CodeDeploy">Setting Up the Jenkins Plugin for AWS CodeDeploy</a></li>
+<li><a href="https://blogs.aws.amazon.com/application-management/post/TxYSRRBH57NP2P/Continuous-Delivery-for-a-PHP-Application-Using-AWS-CodePipeline-AWS-Elastic-Bea">Continuous Delivery for a PHP Application Using AWS CodePipeline, AWS Elastic Beanstalk, and Solano Labs</a></li>
+<li><a href="https://blogs.aws.amazon.com/application-management/post/Tx34AXRMYLXG5OT/Building-Continuous-Deployment-on-AWS-with-AWS-CodePipeline-Jenkins-and-AWS-Elas">Building Continuous Deployment on AWS with AWS CodePipeline, Jenkins and AWS Elastic Beanstalk</a></li>
+<li><a href="http://blogs.aws.amazon.com/application-management/post/Tx3PE3JTSVJSFI7/AWS-CodeDeploy-Deploying-from-a-Development-Account-to-a-Production-Account">AWS CodeDeploy: Deploying from a Development Account to a Production Account</a></li>
+<li><a href="https://blazemeter.com/blog/three-ways-devops-benefit-aws-codepipeline">blazemeter.com: Three Ways DevOps Benefit from AWS CodePipeline</a></li>
+<li><a href="https://aws.amazon.com/es/codepipeline/product-integrations/">AWS Partner Network - CodePipeline Integrations</a></li>
+<li><a href="https://aws.amazon.com/solutions/multi-region-infrastructure-deployment/"><strong>Multi-Region Infrastructure Deployment</strong> 🌟</a> This solution automatically provisions and configures AWS CodePipeline to automate the CI/CD pipeline for CloudFormation templates</li>
+</ul>
+<h3 id="aws-elastic-beanstalk">AWS Elastic Beanstalk<a class="headerlink" href="#aws-elastic-beanstalk" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://aws.amazon.com/documentation/elastic-beanstalk/">AWS Elastic Beanstalk Documentation</a></li>
+<li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/php-ha-tutorial.html">Deploying a High-Availability PHP Application with an External Amazon RDS Database to Elastic Beanstalk 🌟</a></li>
+<li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_PHP_eb.html">Creating and Deploying PHP Applications on AWS Elastic Beanstalk</a></li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2016/08/aws-elastic-beanstalk-supports-asp-net-core-and-multi-app-net-support/">AWS Elastic Beanstalk Supports ASP.NET Core and Multi-App .NET Support</a></li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2016/08/aws-elastic-beanstalk-supports-application-load-balancer/">AWS Elastic Beanstalk Supports Application Load Balancer</a></li>
+<li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environments-cfg-applicationloadbalancer.html">Configuring an Application Load Balancer</a></li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2016/08/aws-elastic-beanstalk-supports-nginx-proxy-server-with-tomcat/">AWS Elastic Beanstalk Supports Nginx Proxy Server with Tomcat</a> </li>
+</ul>
+<h3 id="aws-opsworks">AWS OpsWorks<a class="headerlink" href="#aws-opsworks" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://aws.amazon.com/opsworks/">AWS OpsWorks</a></li>
+<li><a href="http://docs.aws.amazon.com/opsworks/latest/userguide/workingcookbook-chef11.html">AWS OpsWorks - Chef Versions</a></li>
+<li><a href="https://www.youtube.com/watch?v=cj_LoG6C2xk&amp;list=PLR3sVanzLpJN6BiYS20K4BMPpiDGifbZy">youtube: AWS OpsWorks Overview and Demo</a></li>
+<li><a href="https://docs.aws.amazon.com/opsworks/latest/userguide/workinginstances-os-linux.html?adbsc=docs_20160709_63418706&amp;adbid=UPDATE-c2382910-6157610151248490496&amp;adbpl=li&amp;adbpr=2382910#workinginstances-os-linux-centos">Use OpsWorks to create and manage instances that run CentOS 7</a></li>
+</ul>
+<h3 id="aws-networking">AWS Networking<a class="headerlink" href="#aws-networking" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://aws.amazon.com/es/blogs/apn/aws-networking-for-developers/">AWS Networking for Developers</a></li>
+<li><a href="https://aws.amazon.com/blogs/aws/elastic-network-adapter-high-performance-network-interface-for-amazon-ec2">Elastic Network Adapter</a></li>
+<li><a href="http://www.netdesignarena.com/index.php/2020/04/15/new-blog-series-aws-cloud-networking-zero-to-hero/">AWS Cloud Networking – Zero to Hero 🌟</a></li>
+</ul>
+<h3 id="aws-route-53">AWS Route 53<a class="headerlink" href="#aws-route-53" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://aws.amazon.com/premiumsupport/knowledge-center/transfer-domain-to-aws/">How do I transfer a domain to AWS from another registrar?</a></li>
+</ul>
+<h3 id="aws-elastic-load-balancing">AWS Elastic Load Balancing<a class="headerlink" href="#aws-elastic-load-balancing" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=HinwLb2lpLQ">AWS Summit Series 2016 | London: Deep Dive on Elastic Load Balancing</a></li>
+<li><a href="http://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancing.html">docs.aws.amazon.com: What Is Elastic Load Balancing?</a></li>
+</ul>
+<h3 id="aws-application-load-balancer">AWS Application Load Balancer<a class="headerlink" href="#aws-application-load-balancer" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://aws.amazon.com/elasticloadbalancing/applicationloadbalancer/">Application Load Balancer 🌟</a></li>
+<li><a href="https://aws.amazon.com/blogs/aws/new-aws-application-load-balancer/">aws blogs - New – AWS Application Load Balancer</a></li>
+</ul>
+<h3 id="nginx">NGINX<a class="headerlink" href="#nginx" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2016/09/nginx-plus-on-the-aws-cloud-quick-start-reference-deployment/">NGINX Plus on the AWS Cloud: Quick Start Reference Deployment</a></li>
+</ul>
+<h3 id="aws-latency">AWS Latency<a class="headerlink" href="#aws-latency" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://aws-latency.altaircp.com/">Find the fastest region from your location</a> Check AWS response time from you browser. Sharing my mini-project, it measures response time from AWS services from different regions base on your location. let me know what you think.</li>
+<li><a href="https://www.linkedin.com/groups/49531/49531-6092152919937794052">Linkedin Discussion</a><blockquote>
+<ol>
+<li>Don&rsquo;t do just a single check, the first check will be a lot slower as DNS lookups will need to be done, etc.</li>
+<li>I&rsquo;d recommend doing at least 3 checks getting an average.</li>
+</ol>
+</blockquote>
+</li>
+<li>Run 6 checks (with a random 3-10 second delay between each one), the first can be ignored, the highest one is also ignored (as a likely outlier), then for the next 4 show the minimum, maximum and average (mean).</li>
+<li><a href="https://medium.com/aws-activate-startup-blog/optimizing-latency-and-bandwidth-for-aws-traffic-cdfd18d0d0f7">medium.com: Optimizing Latency and Bandwidth for AWS Traffic</a></li>
+</ul>
+<h3 id="amazon-ecs-optimized-ami">Amazon ECS optimized AMI<a class="headerlink" href="#amazon-ecs-optimized-ami" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-optimized_AMI.html">Amazon ECS-optimized AMI</a></li>
+</ul>
+<h3 id="aws-ec2-container-registry-docker">AWS EC2 Container Registry (Docker)<a class="headerlink" href="#aws-ec2-container-registry-docker" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://medium.com/aws-activate-startup-blog/a-better-dev-test-experience-docker-and-aws-291da5ab1238">A Better Dev/Test Experience: Docker and AWS</a></li>
+<li><a href="http://aws.amazon.com/es/documentation/ecr/">Amazon EC2 Container Registry Documentation</a></li>
+<li><a href="http://docs.aws.amazon.com/AmazonECR/latest/userguide/ECR_GetStarted.html">Get started with Amazon EC2 Container Registry (Amazon ECR)</a></li>
+<li><a href="http://blog.scottlowe.org/2016/03/22/using-docker-machine-with-aws/">Using Docker Machine with AWS</a></li>
+<li><a href="https://aws.amazon.com/es/about-aws/whats-new/2016/06/docker-datacenter-on-the-aws-cloud-quick-start-reference-deployment/">Docker Datacenter on the AWS Cloud: Quick Start Reference Deployment 🌟</a></li>
+</ul>
+<h3 id="docker-for-aws">Docker for AWS<a class="headerlink" href="#docker-for-aws" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://dzone.com/articles/getting-started-with-docker-for-aws-and-scaling-no">DZone: Getting Started With Docker for AWS and Scaling Nodes</a> This blog will explain how to get started with Docker for AWS and deploy a multi-host Swarm cluster on Amazon.</li>
+<li><a href="http://blog.couchbase.com/2016/july/docker-for-aws-getting-started-scaling-nodes">blog.couchbase.com: Getting Started with Docker for AWS and Scaling Nodes</a></li>
+</ul>
+<h3 id="aws-cli">AWS CLI<a class="headerlink" href="#aws-cli" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://aws.amazon.com/cli">Amazon CLI Documentation</a></li>
+<li><a href="http://docs.aws.amazon.com/cli/latest/index.html">AWS CLI Command Reference</a></li>
+<li><a href="http://docs.aws.amazon.com/cli/latest/reference/codepipeline/index.html">New usage examples have been added to the CLI for CodePipeline API Reference</a></li>
+<li><a href="https://pypi.python.org/pypi/ec2-ssh-yplan/">ec2-ssh-yplan: A pair of command line utilities for finding and SSH-ing into your Amazon EC2 instances by tag (such as ‘Name’)</a></li>
+<li>List running instances using &lsquo;awscli&rsquo;:</li>
+</ul>
+<pre><code class="language-bash">aws ec2 describe-instances --filters Name=instance-state-name,Values=running --query 'Reservations[].Instances[].[InstanceID]'
+</code></pre>
+<ul>
+<li>List all AWS instances in a table format using &lsquo;awscli&rsquo;:</li>
+</ul>
+<pre><code class="language-bash">aws ec2 describe-instances --query 'Reservations[].Instances[].[Placement.AvailabilityZone, State.Name, InstanceID,InstanceType,Platform,Tags.Value,State.Code,Tags.Values]' --output table
+</code></pre>
+<h3 id="aws-vpc">AWS VPC<a class="headerlink" href="#aws-vpc" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://www.linuxjournal.com/content/aws-ec2-vpc-cli">linuxjournal.com: AWS EC2 VPC CLI</a></li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2016/07/build-a-modular-and-scalable-amazon-vpc-architecture-with-new-quick-start">Build a Modular and Scalable Amazon VPC Architecture with New Quick Start 🌟</a> Build a modular virtual network architecture with Amazon VPC in 5 minutes with our new Quick Start</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2016/08/specifying-the-vpc-for-your-amazon-rds-db-instance/">Specifying the VPC for your Amazon RDS DB Instance</a> You can now easily change the Amazon VPC used by your Amazon RDS DB instance!</li>
+<li><a href="https://awsfundamentals.blogspot.com/2019/12/aws-vpc-fundamental.html">awsfundamentals.blogspot.com: AWS Virtual Private Cloud - VPC 🌟</a></li>
+</ul>
+<h3 id="aws-sqs-amazon-simple-queue-service">AWS SQS. Amazon Simple Queue Service<a class="headerlink" href="#aws-sqs-amazon-simple-queue-service" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-limits.html">Limits in Amazon SQS</a></li>
+<li><a href="https://aws.amazon.com/sqs/faqs/">Amazon SQS FAQs</a></li>
+</ul>
+<h3 id="aws-application-discovery-service-update-agentless-discovery-for-vmware">AWS Application Discovery Service Update. Agentless Discovery for VMware<a class="headerlink" href="#aws-application-discovery-service-update-agentless-discovery-for-vmware" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://aws.amazon.com/es/blogs/aws/aws-application-discovery-service-update-agentless-discovery-for-vmware/">AWS Application Discovery Service Update – Agentless Discovery for VMware</a></li>
+</ul>
+<h3 id="vmware-cloud-on-aws">VMware Cloud on AWS<a class="headerlink" href="#vmware-cloud-on-aws" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://aws.amazon.com/es/vmware/">VMware Cloud on AWS</a> The Only Way to Extend Your VMware Environment into AWS</li>
+<li><a href="http://www.infoworld.com/article/3131347/hybrid-cloud/4-no-bull-insights-into-the-awsvmware-deal.html">infoworld.com: 4 no-bull insights into the AWS/VMware deal</a></li>
+</ul>
+<h3 id="aws-developer-blog">AWS Developer Blog<a class="headerlink" href="#aws-developer-blog" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://aws.amazon.com/blogs/developer/">The AWS Developer Blog now includes Python &amp; GoLang</a></li>
+<li><a href="http://docs.aws.amazon.com/apigateway/latest/developerguide/create-api-using-import-export-api.html">Create an API Using the Swagger Specification and the API Gateway Extensions</a></li>
+</ul>
+<h3 id="aws-lambda-serverless">AWS Lambda Serverless<a class="headerlink" href="#aws-lambda-serverless" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://martinfowler.com/articles/serverless.html">martinfowler.com: Serverless Architectures 🌟</a></li>
+<li><a href="http://docs.aws.amazon.com/lambda/latest/dg/lambda-python-how-to-create-deployment-package.html">you can use Python with AWS Lambda</a></li>
+<li><a href="http://www.giantflyingsaucer.com/blog/?p=5730">Build a Python Microservice with Amazon Web Services Lambda &amp; API Gateway</a></li>
+<li><a href="http://www.logicworks.net/blog/2016/01/aws-lambda-echo-cloud-automation/">AWS Lambda, Echo, and the Future of Cloud Automation</a> A fantastic blog article by Logicworks on Lambda, the coming move to serverless architecture and even the possibility of using Amazon&rsquo;s Echo to launch entire AWS environments by using just your voice</li>
+<li><a href="https://read.acloud.guru/serverless-the-future-of-software-architecture-d4473ffed864#.uk7setw47">Serverless: The Future of Software Architecture?</a></li>
+<li><a href="https://www.npmjs.com/package/lambda-load-test">npmjs.com: Lambda load test</a></li>
+<li><a href="http://docs.aws.amazon.com/lambda/latest/dg/limits.html">AWS Lambda Limits</a></li>
+<li><a href="http://blog.powerupcloud.com/2016/02/07/aws-inventory-details-in-csv-using-lambda">blog.powerupcloud.com: AWS inventory details in CSV using lambda 🌟</a></li>
+<li><a href="https://aws.amazon.com/premiumsupport/knowledge-center/start-stop-lambda-cloudwatch/">How do I stop and start EC2 instances at regular intervals using AWS Lambda? (Video) 🌟</a></li>
+<li><a href="https://www.youtube.com/channel/UC_vJsnqdpuEoRseFmlkHMkA">Youtube channel: AWS Serverless</a></li>
+</ul>
+<h3 id="aws-cloud-formation">AWS Cloud Formation<a class="headerlink" href="#aws-cloud-formation" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/ReleaseHistory.html">AWS Cloud Formation Release History</a></li>
+<li><a href="http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html">All the AWS Resource Types Reference for AWS CloudFormation </a></li>
+</ul>
+<h3 id="aws-for-windows">AWS for Windows<a class="headerlink" href="#aws-for-windows" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://blog.rackspace.com/patch-and-ami-management-for-windows-on-aws">blog.rackspace.com: Patch and AMI Management for Windows on AWS</a> step-by-step guide about patch and AMI management for Windows on AWS</li>
+</ul>
+<h3 id="continuous-deployment-with-aws">Continuous Deployment with AWS<a class="headerlink" href="#continuous-deployment-with-aws" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://aws.amazon.com/blogs/devops/tag/continuous-deployment/">Continuous Deployment with AWS</a></li>
+</ul>
+<h3 id="aws-security">AWS Security<a class="headerlink" href="#aws-security" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://blogs.aws.amazon.com/security">AWS Security Blog 🌟</a></li>
+<li><a href="https://aws.amazon.com/security/">AWS Security 🌟</a></li>
+<li><a href="https://docs.aws.amazon.com/security/">AWS Security docs 🌟</a></li>
+<li><a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/SSL-on-an-instance.html">Tutorial: Configure Apache Web Server on Amazon Linux to use SSL/TLS</a></li>
+<li><a href="http://blogs.aws.amazon.com/security/post/Tx4QX7W51NDSLO/The-Most-Popular-AWS-Security-Blog-Posts-in-2015">The Most Popular AWS Security Blog Posts in 2015</a></li>
+<li><a href="https://dzone.com/articles/private-subnets-are-broken-on-aws">dzone: Private Subnets Are Broken on AWS</a></li>
+<li><a href="https://medium.com/@espringe/amazon-s-customer-service-backdoor-be375b3428c4#.qyixu5mu3">Amazon’s customer service backdoor</a></li>
+<li><a href="http://blogs.aws.amazon.com/security/post/Tx3PTTZB14FWPBA/Announcing-Industry-Best-Practices-for-Securing-AWS-Resources">Announcing Industry Best Practices for Securing AWS Resources 🌟</a></li>
+<li><a href="http://blogs.aws.amazon.com/security/post/Tx2N52FR8XGJVL3/The-Most-Viewed-AWS-Security-Blog-Posts-so-Far-in-2016">The Most Viewed AWS Security Blog Posts so Far in 2016 🌟</a></li>
+<li><a href="https://aws.amazon.com/es/blogs/apn/oracle-database-encryption-options-on-amazon-rds/">Oracle Database Encryption Options on Amazon RDS</a></li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2016/06/learn-aws-security-fundamentals-with-free-and-online-training">Learn AWS Security Fundamentals with Free and Online Training 🌟</a></li>
+<li><a href="http://blogs.aws.amazon.com/security/post/TxK5WUJK3DG9G8/How-to-Restrict-Amazon-S3-Bucket-Access-to-a-Specific-IAM-Role">How to Restrict Amazon S3 Bucket Access to a Specific IAM Role</a></li>
+<li><a href="http://blogs.aws.amazon.com/security/post/Tx6QAIBSQTJPHB/Updated-Whitepaper-Available-AWS-Best-Practices-for-DDoS-Resiliency">Updated Whitepaper Available: AWS Best Practices for DDoS Resiliency 🌟</a></li>
+<li><a href="http://blogs.aws.amazon.com/security/post/Tx3KVD6T490MM47/In-Case-You-Missed-These-AWS-Security-Blog-Posts-from-June-July-and-August">AWS Security Blog: In Case You Missed These: AWS Security Blog Posts from June, July, and August 2016</a></li>
+<li><a href="https://aws.amazon.com/es/about-aws/whats-new/2016/08/amazon-inspector-announces-general-availability-for-windows/">Amazon Inspector Announces General Availability for Windows</a></li>
+<li><a href="https://docs.aws.amazon.com/kms/latest/developerguide/importing-keys.html">encrypt and decrypt data: Importing Key Material in AWS Key Management Service (AWS KMS)</a> Use your own encryption keys with AWS Key Management Service.</li>
+<li><a href="http://blogs.aws.amazon.com/security/post/TxLEHNNDPUFDU9/Automated-Reasoning-and-Amazon-s2n">Amazon s2n: AWS’s new Open Source implementation of the SSL/TLS network encryption protocols</a></li>
+</ul>
+<h4 id="payment-card-industry-data-security-standard-compliance">Payment Card Industry Data Security Standard compliance<a class="headerlink" href="#payment-card-industry-data-security-standard-compliance" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2016/05/pci-dss-standardized-architecture-on-the-aws-cloud-quick-start-reference-deployment/">PCI DSS Standardized Architecture on the AWS Cloud: Quick Start Reference Deployment 🌟</a></li>
+</ul>
+<h4 id="aws-iam">AWS IAM<a class="headerlink" href="#aws-iam" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="http://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started.html">AWS Identity and Access Management - Getting Started 🌟</a></li>
+<li><a href="http://blogs.aws.amazon.com/security/post/Tx2OB7YGHMB7WCM/Adhere-to-IAM-Best-Practices-in-2016">AWS Identity and Access Management (IAM) best practices in 2016</a></li>
+<li><a href="http://blogs.aws.amazon.com/security/post/Tx14ADBJOCAT9NS/How-to-Record-and-Govern-Your-IAM-Resource-Configurations-Using-AWS-Config">How to Record and Govern Your IAM Resource Configurations Using AWS Config</a></li>
+<li><a href="http://blogs.aws.amazon.com/security/post/Tx2CGWIB8SBYW2J/How-to-Use-SAML-to-Automatically-Direct-Federated-Users-to-a-Specific-AWS-Manage">How to Use SAML to Automatically Direct Federated Users to a Specific AWS Management Console Page</a></li>
+</ul>
+<h4 id="aws-cloudfront">AWS CloudFront<a class="headerlink" href="#aws-cloudfront" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2016/09/amazon-cloudfront-now-supports-http2/">Amazon CloudFront now supports HTTP/2 🌟</a></li>
+</ul>
+<h4 id="aws-waf-web-application-firewall">AWS WAF Web Application Firewall<a class="headerlink" href="#aws-waf-web-application-firewall" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://aws.amazon.com/waf/">AWS WAF - Web Application Firewall</a></li>
+<li><a href="http://blogs.aws.amazon.com/security/post/Tx1LPI2H6Q6S5KC/How-to-Automatically-Update-Your-Security-Groups-for-Amazon-CloudFront-and-AWS-W">How to Automatically Update Your Security Groups for Amazon CloudFront and AWS WAF by Using AWS Lambda (boto3 python)</a></li>
+<li><a href="http://blogs.aws.amazon.com/security/post/Tx223ZW25YRPRKV/How-to-Use-AWS-WAF-to-Block-IP-Addresses-That-Generate-Bad-Requests">How to Use AWS WAF to Block IP Addresses That Generate Bad Requests 🌟</a></li>
+<li><a href="http://blogs.aws.amazon.com/security/post/Tx1G747SE1R2ZWE/How-to-Reduce-Security-Threats-and-Operating-Costs-Using-AWS-WAF-and-Amazon-Clou">How to Reduce Security Threats and Operating Costs Using AWS WAF and Amazon CloudFront</a></li>
+<li><a href="https://github.com/awslabs/aws-waf-sample">AWS WAF sample rules</a></li>
+</ul>
+<h4 id="aws-vault">AWS Vault<a class="headerlink" href="#aws-vault" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://github.com/99designs/aws-vault">AWS Vault</a> is a tool to securely store and access AWS credentials in a development environment.</li>
+<li><a href="https://thomas.geens.be/2020/05/24/aws-sourcing-aws-cli-credentials-using-a-custom-aws-cli-credential-provider-and-aws-vault/">AWS: Sourcing AWS CLI Credentials using a Custom AWS CLI Credential Provider and AWS Vault</a></li>
+</ul>
+<h3 id="aws-s3-ebs-aws-storage-gateway">AWS S3 &amp; EBS. AWS Storage Gateway<a class="headerlink" href="#aws-s3-ebs-aws-storage-gateway" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://aws.amazon.com/s3/faqs/">S3 FAQ 🌟</a></li>
+<li><a href="http://docs.aws.amazon.com/AmazonS3/latest/dev/ipv6-access.html">Making Requests to Amazon S3 over IPv6</a> Amazon Simple Storage Service (Amazon S3) supports the ability to access S3 buckets using the Internet Protocol version 6 (IPv6), in addition to the IPv4 protocol.</li>
+<li><a href="https://aws.amazon.com/blogs/apn/how-to-build-sparse-ebs-volumes-for-fun-and-easy-snapshotting/">How to Build Sparse EBS Volumes for Fun and Easy Snapshotting</a></li>
+<li><a href="http://docs.aws.amazon.com/storagegateway/latest/userguide/GettingStarted-common.html">Getting Started with AWS Storage Gateway</a></li>
+</ul>
+<h3 id="amazon-efs-elastic-file-system">Amazon EFS Elastic File System<a class="headerlink" href="#amazon-efs-elastic-file-system" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://aws.amazon.com/es/blogs/aws/amazon-elastic-file-system-production-ready-in-three-regions">EFS Elastic File System</a></li>
+</ul>
+<h3 id="aws-fargate">AWS Fargate<a class="headerlink" href="#aws-fargate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://aws.amazon.com/es/blogs/containers/developers-guide-to-using-amazon-efs-with-amazon-ecs-and-aws-fargate-part-1/">Amazon EFS with Amazon ECS and AWS Fargate – Part 1 🌟</a></li>
+</ul>
+<h3 id="aws-backup-and-recovery-design-for-failure">AWS Backup and Recovery. Design for failure<a class="headerlink" href="#aws-backup-and-recovery-design-for-failure" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://www.infostor.com/backup-and_recovery/quantum-taps-aws-for-cloud-powered-disaster-recovery.html">Quantum Taps AWS for Cloud-Powered Disaster Recovery</a></li>
+<li><a href="https://www.linkedin.com/groups/49531/49531-6093375473969090562">Linkedin discussion: Need help on Backup and restore methods of EC2 using s3 services</a></li>
+<li><a href="https://www.hava.io/blog/design-for-failure-lessons-learnt-from-the-sydney-aws-outage">Design for failure lessons learnt from the Sydney AWS outage 🌟</a></li>
+<li><a href="https://github.com/Netflix/SimianArmy/wiki/Chaos-Monkey">Chaos Monkey 🌟</a> The Netflix Chaos Monkey tool allows you to proactively launch attack code against your infrastructure to cause failures and give you the chance to fix potential problems before they occur on their own. </li>
+<li><a href="https://www.udemy.com/how-to-architect-with-a-design-for-failure-approach/">Udemy - AWS: How to Architect with a Design for Failure Approach</a></li>
+<li><a href="https://www.cloudinsidr.com/content/how-to-restore-your-instance-data-from-a-backup-using-snapshots-on-aws-ec2ebs/">How to Restore Your Instance Data from a Backup using Snapshots on AWS EC2/EBS</a></li>
+<li><a href="https://aws.amazon.com/es/about-aws/whats-new/2016/08/backup-and-archive-to-aws-storage-gateway-vtl-with-veeam-backup-and-replication-v9/">Backup and archive to AWS Storage Gateway VTL with Veeam Backup &amp; Replication v9 🌟</a></li>
+</ul>
+<h3 id="aws-diagrams">AWS Diagrams<a class="headerlink" href="#aws-diagrams" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://aws.amazon.com/architecture/icons/">AWS Architecture Icons</a> The official AWS icon set for building architecture diagrams</li>
+<li><a href="https://cloudcraft.co/">cloudcraft.co</a></li>
+<li><a href="https://www.hava.io/">hava.io</a></li>
+<li><a href="https://duo.com/blog/introducing-cloudmapper-an-aws-visualization-tool">CloudMapper (OSS)</a></li>
+<li><a href="https://www.lucidchart.com/pages/integrations/aws-architecture-import">Lucidchart</a></li>
+<li><a href="https://infviz.io/">infviz.io</a></li>
+<li><a href="https://www.hyperglance.com/">hyperglance</a></li>
+<li>AWS CloudFormer + AWS CloudFormation Designer</li>
+<li><a href="https://acloud.guru/forums/aws-certified-advanced-networking-specialty/discussion/-LELSWplsuDI8q8_KtjN/What%20is%20the%20best%20way%20to%20generate%20a%20visual%20diagram%20of%20the%20AWS%20environment%20which%20includes%20VPC,%20VPN,%20EC2,%20and%20AMIs%3F">What is the best way to generate a visual diagram of the AWS environment which includes VPC, VPN, EC2, and AMIs?</a></li>
+<li><a href="https://www.cloudskew.com/">CloudSkew</a> Free AWS, Azure, GCP, Kubernetes Architecture Diagram Tool</li>
+</ul>
+<h3 id="aws-config-rules">AWS Config Rules<a class="headerlink" href="#aws-config-rules" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://aws.amazon.com/es/about-aws/whats-new/2016/04/aws-config-rules-now-available-in-4-new-regions-us-west-oregon-eu-ireland-eu-frankfurt-and-asia-pacific-tokyo/">AWS Config Rules now available in 4 new regions: US West (Oregon), EU (Ireland), EU (Frankfurt) and Asia Pacific (Tokyo)</a></li>
+</ul>
+<h3 id="aws-big-data">AWS Big Data<a class="headerlink" href="#aws-big-data" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://aws.amazon.com/big-data">aws.amazon.com/big-data 🌟</a></li>
+<li><a href="http://blogs.aws.amazon.com/bigdata/">blogs.aws.amazon.com/bigdata</a></li>
+<li><a href="http://blogs.aws.amazon.com/bigdata/post/Tx3916WCIUPVA3T/Querying-Amazon-Kinesis-Streams-Directly-with-SQL-and-Spark-Streaming">Querying Amazon Kinesis Streams Directly with SQL and Spark Streaming</a></li>
+<li><a href="http://blogs.aws.amazon.com/bigdata/post/Tx1G4SQRV049UL0/Analyze-Your-Data-on-Amazon-DynamoDB-with-Apache-Spark">Analyze Your Data on Amazon DynamoDB with Apache Spark 🌟</a></li>
+<li><a href="http://blogs.aws.amazon.com/bigdata/post/Tx2D93GZRHU3TES/Using-Spark-SQL-for-ETL">Using Spark SQL for ETL</a></li>
+</ul>
+<h4 id="aws-data-lake">AWS Data Lake<a class="headerlink" href="#aws-data-lake" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://aws.amazon.com/big-data/data-lake-on-aws/">Building a Data Lake on AWS</a> AWS provides a highly scalable, flexible, secure, and cost-effective solution for your organization to build a Data Lake – a data repository for both structured and unstructured data that is designed to be easily accessible for on-demand data analytics enabling you to answer questions as they arise.</li>
+</ul>
+<h4 id="aws-data-pipeline-aka-big-data-pipelines-or-data-streams">AWS Data Pipeline (aka Big Data Pipelines or Data Streams)<a class="headerlink" href="#aws-data-pipeline-aka-big-data-pipelines-or-data-streams" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://aws.amazon.com/datapipeline/">AWS Data Pipeline</a></li>
+<li><a href="https://docs.aws.amazon.com/data-pipeline/index.html">AWS Data Pipeline Documentation 🌟</a></li>
+<li><a href="https://medium.com/@dima.statz_89242/no-code-data-collect-api-on-aws-d79e3681d204">medium: No-Code Data Collect API on AWS 🌟</a> A No-Code Data Collections mechanism for Big Data Pipelines on AWS.</li>
+<li><a href="https://aws.amazon.com/blogs/big-data/category/analytics/aws-data-pipeline/">AWS Big Data Blog: Category - AWS Data Pipeline</a></li>
+</ul>
+<h3 id="aws-nosql-dynamodb">AWS NoSQL DynamoDB<a class="headerlink" href="#aws-nosql-dynamodb" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://aws.amazon.com/es/about-aws/whats-new/2016/06/easily-model-your-app-data-in-a-nosql-database-with-aws-mobile-hub/">Easily model your app data in a NoSQL database with AWS Mobile Hub</a></li>
+</ul>
+<h3 id="aws-iot">AWS IoT<a class="headerlink" href="#aws-iot" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://aws.amazon.com/en/iot">aws.amazon.com/en/iot</a></li>
+<li><a href="http://docs.aws.amazon.com/iot/latest/developerguide/what-is-aws-iot.html">What Is AWS IoT?</a></li>
+</ul>
+<h3 id="aws-elastic-transcoder-video-streaming">AWS Elastic Transcoder. Video streaming<a class="headerlink" href="#aws-elastic-transcoder-video-streaming" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://docs.aws.amazon.com/elastictranscoder/latest/developerguide/job-settings.html">Settings that You Specify When You Create an Elastic Transcoder Job</a></li>
+</ul>
+<h3 id="aws-and-splunk">AWS and Splunk<a class="headerlink" href="#aws-and-splunk" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://blogs.splunk.com/2016/06/22/aws-video/">blogs.splunk.com: AWS Agility + Splunk Visibility = Customer Success</a></li>
+</ul>
+<h3 id="aws-monitoring">AWS Monitoring<a class="headerlink" href="#aws-monitoring" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://github.com/andrewpuch/nagios_setup">github: Steps I used to install Nagios in the cloud</a></li>
+<li><a href="https://github.com/jonrau1/ElectricEye/blob/master/README.md">github: ElectricEye 🌟</a> is a set of Python scripts (affectionately called Auditors) that continuously monitor your AWS infrastructure looking for configurations related to confidentiality, integrity and availability that do not align with AWS best practices.</li>
+</ul>
+<h3 id="amazon-alexa-voice-user-interface">Amazon Alexa. Voice User Interface<a class="headerlink" href="#amazon-alexa-voice-user-interface" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://developer.amazon.com/public/community/post/TxDJWS16KUPVKO/New-Alexa-Skills-Kit-Template-Build-a-Trivia-Skill-in-under-an-Hour">New Alexa Skills Kit Template: Build a Trivia Skill in under an Hour</a></li>
+</ul>
+<h3 id="aws-partner-network-apn">AWS Partner Network (APN)<a class="headerlink" href="#aws-partner-network-apn" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://aws.amazon.com/partners/">AWS Partner Network</a><ul>
+<li><a href="https://aws.amazon.com/partners/technology/">APN Technology Partners</a></li>
+<li><a href="https://aws.amazon.com/partners/consulting/">APN Consulting Partners</a></li>
+</ul>
+</li>
+<li><a href="https://aws.amazon.com/blogs/apn/">AWS Partner Network (APN) blog</a><ul>
+<li><a href="https://aws.amazon.com/blogs/apn/active-directory-single-sign-on-sso-on-aws-with-bitium">Active Directory Single Sign-On (SSO) on AWS with Bitium</a></li>
+<li><a href="https://aws.amazon.com/blogs/apn/how-to-deploy-a-high-availability-web-service-on-aws-using-spotinst/">How to Deploy a High Availability Web Service on AWS Using Spotinst</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="aws-startup-collection-for-startups-building-on-aws">AWS Startup Collection. For startups building on AWS<a class="headerlink" href="#aws-startup-collection-for-startups-building-on-aws" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://medium.com/aws-activate-startup-blog/bitmovin-improving-video-quality-on-the-web-8670039c4334">bitmovin: Improving Video Quality on the Web</a></li>
+<li><a href="https://medium.com/aws-activate-startup-blog/what-startups-should-know-about-amazon-vpc-part-1-bebe94b7f228">What Startups Should Know about Amazon VPC — Part 1</a></li>
+<li><a href="https://medium.com/aws-activate-startup-blog/scaling-on-aws-part-3-500k-users-3750b227b761">Scaling on AWS (Part 3): &gt;500K Users</a></li>
+<li><a href="https://medium.com/aws-activate-startup-blog/building-a-serverless-dynamic-dns-system-with-aws-a32256f0a1d8#.qq54pucbd">medium.com: Building a Serverless Dynamic DNS System with AWS</a></li>
+<li><a href="https://medium.com/aws-activate-startup-blog/the-top-10-aws-startup-blog-posts-of-2015-d2975e3778bb">medium.com: The Top 10 AWS Startup Blog Posts of 2015</a></li>
+</ul>
+<h3 id="eks">EKS<a class="headerlink" href="#eks" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://aws.amazon.com/blogs/aws/eks-price-reduction/">Amazon EKS Price Reduction</a></li>
+<li><a href="https://cloudonaut.io/scaling-container-clusters-on-aws-ecs-eks/">cloudonaut.io: Scaling Container Clusters on AWS: ECS and EKS 🌟</a></li>
+</ul>
+<h3 id="interview-questions">Interview Questions<a class="headerlink" href="#interview-questions" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://intellipaat.com/blog/interview-question/amazon-aws-interview-questions/">intellipaat.com: Top Amazon AWS Interview Questions – Most Asked</a></li>
+</ul>
+<h3 id="localstack">Localstack<a class="headerlink" href="#localstack" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://localstack.cloud/">localstack.cloud 🌟</a> Develop and test your cloud apps offline. A fully functional local AWS cloud stack. Develop and test your cloud &amp; Serverless apps offline! </li>
+<li><a href="https://github.com/localstack/localstack">github.com/localstack/localstack</a></li>
+</ul>
+<h3 id="migrating-on-premise-vm-to-aws">Migrating On Premise VM to AWS<a class="headerlink" href="#migrating-on-premise-vm-to-aws" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://youtu.be/buzusNljpy4">youtube: Migrating On Premise VM to AWS | VM Import/Export | Create EC2 instance based on on-premises server</a></li>
+</ul>
+<h3 id="spain">Spain<a class="headerlink" href="#spain" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.xataka.com/servicios/que-amazon-ha-elegido-aragon-para-instalar-sus-tres-primeros-centros-datos-espana">xataka.com: Por qué Amazon ha elegido Aragón para instalar sus tres primeros centros de datos en España</a></li>
+<li><a href="https://emea-resources.awscloud.com/spain-events-webinars">RESOURCE HUB: Eventos y webinars de AWS</a></li>
+</ul>
+<h3 id="blogs">Blogs<a class="headerlink" href="#blogs" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://jayendrapatil.com/">Jayendra&rsquo;s Blog 🌟🌟🌟</a></li>
+</ul>
+<h3 id="aws-pricing">AWS Pricing<a class="headerlink" href="#aws-pricing" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://aws.amazon.com/es/blogs/aws/ec2-price-reduction-for-ec2-instance-saving-plans-and-standard-reserved-instances/">May 2020: EC2 Price Reduction – For EC2 Instance Saving Plans and Standard Reserved Instances 🌟</a></li>
+</ul>
+<h3 id="videos">Videos<a class="headerlink" href="#videos" title="Permanent link">&para;</a></h3>
+<p><center></p>
+<iframe src="https://www.youtube.com/embed/GBLPi-mno7M" frameborder="0" allow="accelerometer; autoplay; encrypted-media" allowfullscreen></iframe>
+<p></center></p>
+<p><center>
+<a href="https://aws.amazon.com/compliance/shared-responsibility-model/"><img alt="aws responsability model" src="images/aws_shared_responsability_model.jpg" /></a>
+</center></p></div>
+                </div>
+        </div>
+
+    <hr>
+    <footer class="container">
+        
+        <center>Documentation built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="http://kristopolous.github.io/BOOTSTRA.386">BOOTSTRA.386</a>.</center>
+    </footer>
+        <script src="../../../../search/main.js"></script>
+    </body>
+</html>

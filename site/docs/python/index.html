@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="IT projects and resources.. along the way..">
+        <meta name="author" content="mbiscarra">
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Python - document</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/bootstrap-theme.min.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">document</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">home</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../introduction.md">Openshift VS Kubernetes</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../javaee-to-cloud-native.md">From Java EE To Cloud Native</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../faq.md">Microservices FAQ & Kubernetes Native</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../sre.md">Site Reliability Engineering (SRE)</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../serverless.md">Serverless Architectures & Frameworks. OpenFaaS, Knative & Kubeless</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">DevOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../devops.md">DevOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cheatsheets.md">Cheat Sheets</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../gitops.md">GitOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../demos.md">Demos & Screencasts. OpenShift, Kubernetes, Jenkins Pipelines with JCasC and more</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">NoOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../noops.md">NoOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../serverless.md">Serverless Architectures & Frameworks. OpenFaaS, Knative & Kubeless</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../finops.md">FinOps - Cloud Financial Management</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../testops.md">TestOps and Continuous Testing</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Project Management Methodology <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../project-management-methodology.md">Project Management Methodology</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../workfromhome.md">Work From Home</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../appointment-scheduling.md">Appointment Scheduling</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../docker.md">Docker</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kubernetes <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../kubernetes.md">Kubernetes</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../matrix-table.md">Kubernetes Matrix Table</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../kubernetes-alternatives.md">Kubernetes alternatives</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">OpenShift <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../openshift.md">OpenShift docs</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Software Delivery Pipeline <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cicd.md">CI/CD - Continuous Integration & Continuous Delivery</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../git.md">Git & Git Patterns. Trunk Devel, Git Flow & Feature Flags. Merge BOTs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jenkins.md">Jenkins & Cloudbees</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../openshift-pipelines.md">OpenShift Pipelines with Jenkins, Tekton and more...</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../performance-testing-with-jenkins-and-jmeter.md">Performance testing with Jenkins and JMeter or Gatling</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jenkins-alternatives.md">Jenkins Alternatives for Continuous Integration</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../..">Toolchain</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Java Memory Management <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../java-and-java-performance-optimization.md">Java Memory Management & Java Performance Optimization</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jvm-parameters-matrix-table.md">Java Parameters Matrix Table</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../caching.md">Caching Solutions</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../monitoring.md">Monitoring and Performance. Prometheus, Grafana, APMs and more</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Configuration Management <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../ansible.md">Ansible</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../liquibase.md">Liquibase</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../terraform.md">Terraform & Packer</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Databases on Kubernetes <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../databases.md">Relational Databases and Database DevOps. CrunchyData Postgres Operator</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../nosql.md">NoSQL Databases</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../message-queue.md">Cloud Based Integration & Messaging. Data Processing & Streaming (aka Data Pipeline)</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Service Mesh <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../servicemesh.md">Service Mesh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../consul.md">Consul</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../envoyproxy.md">Envoy & xDS protocol</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../istio.md">Istio</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../linkerd.md">Linkerd</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../maesh.md">Maesh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../trafficdirector.md">Traffic Director</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Security and DevSecOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../devsecops.md">DevSecOps. Container Security</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../securityascode.md">Security Policy as Code</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../storage.md">Cloud Native Storage</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">APIs <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../api.md">APIs with SOAP, REST and gRPC</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../swagger-code-generator-for-rest-apis.md">Swagger code generator for REST APIs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../postman.md">API Test Automation with Postman</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../developerportals.md">API Marketplaces. API Management with API Gateways & Developer Portals</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Development & Frameworks <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../angular.md">Angular</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dom.md">Document Object Model (DOM)</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringFramework.md">Java - Spring Framework</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringBoot.md">Java - SpringBoot</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringCloud.md">Java - Spring Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../quarkus.md">Java - Quarkus</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../javascript.md">JavaScript - node.js & npm</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../python.md">Python - Django & Flask</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../xamarin.md">Xamarin</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev Environment <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../visual-studio.md">Visual Studio Code</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../linux-dev-env.md">WSL - Linux Dev Environment on Windows</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../scaffolding.md">Scaffolding Tools</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ChromeDevTools.md">ChromeDevTools</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Public Cloud <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../public-cloud-solutions.md">Public Cloud Solutions</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../edge-computing.md">Edge Computing</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cloud-arch-diagrams.md">Cloud Architecture Diagram Tools</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../aws.md">AWS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../GoogleCloudPlatform.md">Google Cloud Platform</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../azure.md">Microsoft Azure</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ibm_cloud.md">IBM Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../oraclecloud.md">Oracle Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../digitalocean.md">Digital Ocean</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cloudflare.md">Cloudflare</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../elearning.md">E-Learning</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../customer.md">Customer Success Stories</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../newsfeeds.md">Subreddits</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../other-awesome-lists.md">Other Awesome Lists</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../about.md">About</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li>
+                    <a href="https://github.com/melvinpetix/documents.git/">
+                        
+                        github/melvinpetix/dpcuments
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+      
+    
+        <li class="main active"><a href="#python">Python</a></li>
+        
+            <li><a href="#python-blogs-and-forums">Python Blogs and Forums</a></li>
+        
+            <li><a href="#python-docs">Python docs</a></li>
+        
+            <li><a href="#python-django-framework">Python Django Framework</a></li>
+        
+            <li><a href="#python-flask-lightweight-framework-microframework">Python Flask Lightweight Framework (microframework)</a></li>
+        
+            <li><a href="#python-pip-and-pips-wheel">Python pip and pip's wheel</a></li>
+        
+            <li><a href="#python-feature-flags">Python Feature Flags</a></li>
+        
+            <li><a href="#python-testing">Python testing</a></li>
+        
+            <li><a href="#data-science-python-pandas-and-pivot-tables">Data Science. Python Pandas and pivot tables</a></li>
+        
+            <li><a href="#python-standard-library-modules-and-code">Python standard library Modules and Code</a></li>
+        
+            <li><a href="#python-and-aws">Python and AWS</a></li>
+        
+            <li><a href="#python-tools">Python Tools</a></li>
+        
+            <li><a href="#jython">Jython</a></li>
+        
+            <li><a href="#eclipse-ide">Eclipse IDE</a></li>
+        
+    
+    
+    </ul>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="python">Python<a class="headerlink" href="#python" title="Permanent link">&para;</a></h2>
+<!-- MarkdownTOC -->
+
+<ul>
+<li><a href="#python-blogs-and-forums">Python Blogs and Forums</a></li>
+<li><a href="#python-docs">Python docs</a></li>
+<li><a href="#python-django-framework">Python Django Framework</a></li>
+<li><a href="#python-flask-lightweight-framework-microframework">Python Flask Lightweight Framework (microframework)</a></li>
+<li><a href="#python-pip-and-pips-wheel">Python pip and pip&rsquo;s wheel</a></li>
+<li><a href="#python-feature-flags">Python Feature Flags</a></li>
+<li><a href="#python-testing">Python testing</a></li>
+<li><a href="#data-science-python-pandas-and-pivot-tables">Data Science. Python Pandas and pivot tables</a><ul>
+<li><a href="#pandasdatabase">PandasDatabase</a></li>
+</ul>
+</li>
+<li><a href="#python-standard-library-modules-and-code">Python standard library Modules and Code</a></li>
+<li><a href="#python-and-aws">Python and AWS</a></li>
+<li><a href="#python-tools">Python Tools</a><ul>
+<li><a href="#web-scraping-with-python">Web Scraping with Python</a></li>
+</ul>
+</li>
+<li><a href="#jython">Jython</a></li>
+<li><a href="#eclipse-ide">Eclipse IDE</a></li>
+</ul>
+<!-- /MarkdownTOC -->
+
+<h3 id="python-blogs-and-forums">Python Blogs and Forums<a class="headerlink" href="#python-blogs-and-forums" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tags/python">digitalocean.com python 🌟</a></li>
+<li><a href="https://www.reddit.com/r/learnpython">Learn Python &lsquo;subreddit&rsquo;</a><ul>
+<li><a href="https://www.reddit.com/r/learnpython/comments/3r2hsq/python_cheat_sheet/">reddit: python cheat sheet</a></li>
+</ul>
+</li>
+<li><a href="http://www.fullstackpython.com/">Full Stack Python is an open book that explains each Python web application stack layer and provides the best web resources for those topics</a><ul>
+<li><a href="http://www.fullstackpython.com/best-python-resources.html">Full Stack Python: Best Python Resources</a></li>
+</ul>
+</li>
+<li><a href="http://realpython.com">realpython.com</a></li>
+<li><a href="http://www.learnpython.org">LearnPython.org interactive Python tutorial</a></li>
+<li><a href="https://doughellmann.com">Dough Hellmann - Python, OpenStack and Open Source</a></li>
+<li><a href="http://docker-py.readthedocs.org">The docker-py repository: an API client for docker written in Python</a></li>
+<li><a href="https://github.com/vinta/awesome-python/">Awesome Python. A curated list of awesome Python frameworks, libraries and software</a></li>
+<li><a href="https://gitlab.com/rosarior/awesome-django">Awesome Django. A curated list of awesome Django apps, projects and resources</a></li>
+<li><a href="http://pyvideo.org">pyvideo.org</a></li>
+<li><a href="http://talkpython.fm">Talk Python To Me Podcast</a><ul>
+<li><a href="http://talkpython.fm/episodes/transcript/39/getting-your-first-dev-job-as-a-python-developer-part-1">Transcript for Episode #39: Getting your first dev job as a Python developer (part 1)</a></li>
+</ul>
+</li>
+<li><a href="https://blogs.msdn.microsoft.com/pythonengineering/">Microsoft: Python Engineering</a></li>
+<li><a href="http://www.blog.pythonlibrary.org/">blog.pythonlibrary.org 🌟</a></li>
+<li><a href="http://www.cyberciti.biz/faq/python-execute-unix-linux-command-examples/">nixCraft: Python Execute Unix/Linux Command Examples 🌟</a></li>
+</ul>
+<h3 id="python-docs">Python docs<a class="headerlink" href="#python-docs" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://stackoverflow.com/questions/2573135/python-progression-path-from-apprentice-to-guru">Python progression path - From apprentice to guru</a></li>
+<li><a href="https://www.reddit.com/r/Python/comments/3ylxmk/why_python/">reddit: Why Python</a></li>
+<li><a href="http://docs.quantifiedcode.com/python-code-patterns/">Python Anti-Patterns. The Little Book of Python Anti-Patterns and Worst Practice</a></li>
+<li><a href="http://staticnat.com/setting-up-python-on-osx/">Setting up Python on OSX: UPDATED</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL6gx4Cwl9DGAcbMi1sH6oAMk4JHw91mC_">Python 3.4 Programming Tutorials - YouTube</a><ul>
+<li><a href="http://ai.berkeley.edu/tutorial.html#PythonBasics">Python mini-course</a></li>
+<li><a href="https://www.mysliderule.com/learning-paths/web-development-python-django/">Web Development using Python &amp; Django</a></li>
+<li><a href="http://www.tangowithdjango.com/">A beginner&rsquo;s guide to web development with Python 2.7 / Django 1.7</a></li>
+<li><a href="http://bugra.github.io/work/notes/2015-01-03/i-wish-i-knew-these-things-when-i-first-learned-python/">I wish I knew these things when I learned Python</a></li>
+<li><a href="http://migrateup.com/main-difference-python-3/">The Bottom-Line Single Main Difference Between Python 2 and 3</a></li>
+</ul>
+</li>
+<li><a href="https://www.codementor.io/python/tutorial/essential-python-interview-questions">15 Essential Python Interview Questions</a><ul>
+<li><a href="http://www.mypythonquiz.com/">Python mini-quiz</a></li>
+</ul>
+</li>
+<li><a href="http://www.vertabelo.com/blog/technical-articles/orms-under-the-hood">How do you handle the ORM problem? When do you say YES or NO to using ORM?</a></li>
+<li><a href="http://pyvideo.org/video/3460/dont-make-us-say-we-told-you-so-virtualenv-for">Don&rsquo;t Make Us Say We Told You So: virtualenv for New Pythonistas</a></li>
+<li><a href="http://www.commandlinefu.com/commands/view/17656/pip-install-into-current-directory-without-virtualenv">commandlinefu.com: pip install into current directory without virtualenv</a></li>
+<li><a href="http://blogs.perceptionsystem.com/infographic/java-vs-python-programming-language-productive">Java Vs. Python - Which Programming Language is More Productive? - Infographic</a></li>
+<li><a href="http://talkpython.fm/episodes/show/36/python-ides-with-the-pycharm-team">Talk Python To Me Podcast. Episode #36: Python IDEs with the PyCharm team</a></li>
+<li><a href="http://blog.rtwilson.com/my-top-5-new-python-modules-of-2015/">My top 5 ‘new’ Python modules of 2015</a></li>
+<li><a href="https://www.reddit.com/r/Python/comments/3yg2u4/modules_every_python_developer_should_know/">reddit.com: Modules every python developer should know</a></li>
+<li><a href="https://www.reddit.com/r/Python/comments/3yjlim/my_thoughts_about_moving_from_python_27_to_python/">reddit.com: My thoughts about moving from Python 2.7 to Python 3.x</a></li>
+<li><a href="http://www.snarky.ca/why-python-3-exists">Why Python 3 exists</a></li>
+<li><a href="http://stackoverflow.com/questions/34319156/create-dictionary-from-splitted-strings-from-list-of-strings">stackoverflow: Create dictionary from splitted strings from list of strings</a></li>
+<li><a href="https://github.com/kootenpv/yagmail">Yagmail: Python e-mail library</a></li>
+<li><a href="https://emptysqua.re/blog/getaddrinfo-deadlock/">How To Deadlock Your Python With getaddrinfo()</a></li>
+<li><a href="https://zerokspot.com/weblog/2015/12/31/new-string-formatting-in-python/">New String Formatting in Python 3.6</a></li>
+<li><a href="https://upload.wikimedia.org/wikipedia/commons/9/91/Python_Programming.pdf">en.wikibooks.org: Python Programming</a></li>
+<li><a href="https://github.com/noamraph/tqdm">tqdm: Instantly make your python loops show a progress meter - just wrap any iterator with &ldquo;tqdm(iterator)&rdquo;, and you&rsquo;re done!</a></li>
+<li><a href="http://stupidpythonideas.blogspot.com.es/2015/05/if-you-dont-like-exceptions-you-dont.html">If you don&rsquo;t like exceptions, you don&rsquo;t like Python</a></li>
+<li><a href="http://astrofrog.github.io/blog/2016/01/12/stop-writing-python-4-incompatible-code/">Stop writing code that will break on Python 4!</a> With the end of support for Python 2 on the horizon (in 2020), many package developers have made their packages compatible with both Python 2 and Python 3. </li>
+<li><a href="https://github.com/coodict/python3-in-one-pic">github: Python3 in one pic</a></li>
+<li><a href="https://www.reddit.com/r/learnpython/comments/40rieo/functions_vs_classes/">reddit.com: Functions vs. Classes</a></li>
+<li><a href="https://www.ics.uci.edu/~pattis/ICS-33/lectures/complexitypython.txt">Complexity of Python Operations</a></li>
+<li><a href="https://www.reddit.com/r/learnpython/comments/418z8b/multiprocessing_vs_threading/">reddit.com: Multiprocessing vs Threading?</a><ul>
+<li><a href="http://jessenoller.com/blog/2009/02/01/python-threads-and-the-global-interpreter-lock">Python Threads and the Global Interpreter Lock</a></li>
+</ul>
+</li>
+<li><a href="http://www.devbattles.com/en/sand/post-1754-Python_list_Functions_and_Methods_lists">devbattles.com: Python list. Functions and Methods lists</a></li>
+<li><a href="http://www.devbattles.com/en/sand/post-1752-Python_sorting_lists_by_sort__with__in_simple_words">devbattles.com: Python: sorting lists by .sort () with - in simple words</a></li>
+<li><a href="http://www.digitalpeer.com/blog/create-a-gui-application-using-qt-and-python-in-minutes-example-web-browser">Create a GUI Application Using Qt and Python in Minutes: Example Web Browser</a></li>
+<li><a href="http://www.vurt.ru/2013/02/python-command-line-oneliners">Python command line oneliners</a></li>
+<li><a href="https://dzone.com/articles/learn-python-overtakes-learn-java">&ldquo;Learn Python&rdquo; Overtakes &ldquo;Learn Java&rdquo; on Google Trends 🌟</a></li>
+<li><a href="http://www.infoworld.com/article/3029681/java/python-gains-the-upper-hand-against-perl-php-and-ruby.html">Python gains the upper hand against Perl, PHP, and Ruby</a></li>
+<li><a href="https://eev.ee/blog/2016/07/31/python-faq-why-should-i-use-python-3/">Python FAQ: Why should I use Python 3? 🌟</a></li>
+<li><a href="http://stackoverflow.com/questions/8087184/problems-installing-python3-on-rhel">stackoverflow: Problems installing python3 on RHEL 🌟</a></li>
+<li><a href="https://es.scribd.com/document/207247675/PEP-8-Cheatsheet-2009">PEP 8 Cheatsheet 🌟</a></li>
+<li><a href="http://nedbatchelder.com/blog/201608/lists_vs_tuples.html">Lists vs. Tuples</a> A common beginner Python question: what&rsquo;s the difference between a list and a tuple?</li>
+<li><a href="https://linuxconfig.org/python-tuples">linuxconfig.org: python tuples 🌟</a></li>
+</ul>
+<p><center></p>
+<blockquote class="twitter-tweet tw-align-center" data-lang="es"><p lang="en" dir="ltr">29 common beginner Python errors on one page via <a href="https://t.co/Ctvy84KXKx">https://t.co/Ctvy84KXKx</a> <a href="https://twitter.com/hashtag/Python?src=hash">#Python</a> <a href="https://twitter.com/hashtag/Sysadmin?src=hash">#Sysadmin</a> <a href="https://twitter.com/hashtag/Programming?src=hash">#Programming</a> <a href="https://twitter.com/hashtag/Unix?src=hash">#Unix</a> <a href="https://twitter.com/hashtag/Linux?src=hash">#Linux</a> <a href="https://t.co/vaZaJETNPU">pic.twitter.com/vaZaJETNPU</a></p>&mdash; nixCraft (@nixcraft) <a href="https://twitter.com/nixcraft/status/706530828092731393">6 de marzo de 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p></center>
+<br/></p>
+<p><center></p>
+<div class="container">
+<p  style=" margin: 12px auto 6px auto; font-family: Helvetica,Arial,Sans-serif; font-style: normal; font-variant: normal; font-weight: normal; font-size: 14px; line-height: normal; font-size-adjust: none; font-stretch: normal; -x-system-font: none; display: block;">   <a title="View PEP-8 Cheatsheet (2009) on Scribd" href="https://www.scribd.com/document/207247675/PEP-8-Cheatsheet-2009#from_embed"  style="text-decoration: underline;" >PEP-8 Cheatsheet (2009)</a> by <a title="View Veeraj Shenoy's profile on Scribd" href="https://www.scribd.com/user/247744721/Veeraj-Shenoy#from_embed"  style="text-decoration: underline;" >Veeraj Shenoy</a> on Scribd</p><iframe class="scribd_iframe_embed" src="https://www.scribd.com/embeds/207247675/content?start_page=1&view_mode=scroll&access_key=key-10eg916shk5wa33gdrtb&show_recommendations=true" data-auto-height="false" data-aspect-ratio="1.2941176470588236" scrolling="no" id="doc_1222" width="100%" height="600" frameborder="0"></iframe>
+</div>
+<p></center>
+<br/>
+<br/>
+<br/></p>
+<h3 id="python-django-framework">Python Django Framework<a class="headerlink" href="#python-django-framework" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://gettopical.com/djangoframework">gettopical.com: Get Django Latest News</a></li>
+<li><a href="https://dzone.com/articles/learn-python-django-in-4-hours">Learn Python Django in 4 Hours</a></li>
+<li><a href="https://realpython.com/blog/python/django-development-with-docker-compose-and-machine/">realpython.com: Django Development With Docker Compose and Machine</a></li>
+<li><a href="https://realpython.com/blog/python/fun-with-djangos-new-postgres-features/">realpython.com: Fun With Django&rsquo;s New Postgres Features</a></li>
+<li><a href="https://realpython.com/blog/python/deploying-a-django-app-to-aws-elastic-beanstalk/">realpython.com: Deploying a Django App to AWS Elastic Beanstalk</a></li>
+<li><a href="http://www.marinamele.com/taskbuster-django-tutorial">TaskBuster Django Tutorial, made with Django 1.8 and Python 3</a></li>
+<li><a href="http://www.pyvideo.org/video/3509/tdd-with-django-from-scratch-a-beginners-intro">TDD with Django, from scratch: a beginner&rsquo;s intro to testing and web development</a></li>
+<li><a href="http://www.genbetadev.com/desarrolloparastartups/como-crear-un-servicio-rest-en-30-lineas-de-codigo-de-django-y-python">Cómo crear un servicio REST en 30 líneas de código de Django y Python</a></li>
+<li><a href="https://realpython.com/blog/python/django-development-with-docker-compose-and-machine/">Django Development With Docker Compose and Machine</a></li>
+<li><a href="http://www.tecmint.com/install-and-configure-django-web-framework-in-centos-debian-ubuntu/">Installing and Configuring Django Web Framework with Virtual Environments in CentOS/Debian</a></li>
+<li><a href="https://realpython.com/blog/python/development-and-deployment-of-cookiecutter-django-via-docker/">realpython.com: Development and Deployment of Cookiecutter-Django via Docker</a> A Cookiecutter template for creating production-ready Django projects quickly.</li>
+<li><a href="https://github.com/presslabs/silver/">github.com: Django app + RESTful API for automatic billing</a></li>
+<li><a href="https://www.youtube.com/user/CodingEntrepreneurs">CodingEntrepreneurs youtube channel</a><ul>
+<li><a href="https://www.youtube.com/playlist?list=PLEsfXFp6DpzQFqfCur9CJ4QnKQTVXUsRy">Interested in Learn Django 1.9? Check out my free series on YouTube</a></li>
+</ul>
+</li>
+<li><a href="http://engineroom.trackmaven.com/blog/getting-started-drf-angularjs-part-1/">Getting Started with Django REST Framework (DRF) and AngularJS (Part 1)</a><ul>
+<li><a href="http://engineroom.trackmaven.com/blog/getting-started-drf-angularjs-part-2/">Getting Started with Django REST Framework (DRF) and AngularJS (Part 2)</a></li>
+<li><a href="https://github.com/TrackMaven/getting-started-with-drf-angular/tree/part-2">Part 2 Supplementary Code</a></li>
+</ul>
+</li>
+<li><a href="http://www.webcodegeeks.com/python/python-django-tutorial/">webcodegeeks.com: Python Django Tutorial</a></li>
+</ul>
+<h3 id="python-flask-lightweight-framework-microframework">Python Flask Lightweight Framework (microframework)<a class="headerlink" href="#python-flask-lightweight-framework-microframework" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Flask is a Python lightweight web application development framework with simplicity and extensibility. Flask is called <strong>“microframework”</strong> because of using a simple core and extensions are used to add other functions.</li>
+<li><a href="https://flask.palletsprojects.com/">Flask Documentation 🌟</a></li>
+<li><a href="http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-now-with-python-3-support">The Flask Mega-Tutorial: Now with Python 3 Support</a></li>
+<li><a href="https://realpython.com/blog/python/introduction-to-flask-part-1-setting-up-a-static-site/">realpython.com: Discover Flask, Part 1 - Setting Up a Static Site </a></li>
+<li><a href="https://www.twilio.com/docs/tutorials/walkthrough/two-factor-authentication/python/flask">Two-Factor Authentication with Authy</a></li>
+<li><a href="http://www.devbattles.com/en/sand/post-1757-Python_Flask_Part_1_Hello_World">devbattles.com: Python Flask, Part 1: Hello World!</a></li>
+</ul>
+<h3 id="python-pip-and-pips-wheel">Python pip and pip&rsquo;s wheel<a class="headerlink" href="#python-pip-and-pips-wheel" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://wheel.readthedocs.org">wheel replaces Python&rsquo;s eggs</a></li>
+<li><a href="http://blog.ionelmc.ro/2015/01/02/speedup-pip-install/">Speed up pip install</a></li>
+</ul>
+<h3 id="python-feature-flags">Python Feature Flags<a class="headerlink" href="#python-feature-flags" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://featureflags.io/python-feature-flags/">Python Feature Flag Resources/Solutions</a></li>
+<li><a href="https://www.reddit.com/r/Python/comments/3zl3g4/ship_better_python_using_feature_flags/">reddit: Ship Better Python Using Feature Flags</a></li>
+</ul>
+<h3 id="python-testing">Python testing<a class="headerlink" href="#python-testing" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.reddit.com/r/learnpython/comments/3zl0p6/real_examples_of_unit_testing/">reddit: Real examples of unit testing</a></li>
+<li><a href="http://it-ebooks.info/book/3778/">Testing Python</a></li>
+<li><a href="https://julien.danjou.info/blog/2015/guide-to-python-profiling-cprofile-concrete-case-carbonara">Profiling Python using cProfile: a concrete case</a></li>
+<li><a href="https://nylas.com/blog/performance">nylas.com: Profiling Python in Production</a> How We Reduced CPU Usage by 80% through Python Profiling </li>
+<li><a href="http://pypi.python.org/pypi/gabbi/">gabbi - Declarative HTTP testing library pypi</a></li>
+<li><a href="https://github.com/madisonmay/tracker">tracker: A time machine for debugging pesky stateful errors</a></li>
+</ul>
+<h3 id="data-science-python-pandas-and-pivot-tables">Data Science. Python Pandas and pivot tables<a class="headerlink" href="#data-science-python-pandas-and-pivot-tables" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.oreilly.com/learning/pivot-tables">oreilly.com: how to use pivot tables in Pandas step-by-step</a></li>
+<li><a href="http://pbpython.com/">pbpython.com: Practical Business Python</a><ul>
+<li><a href="http://pbpython.com/pandas-pivot-table-explained.html">pbpython.com: Pandas Pivot Table Explained</a></li>
+<li><a href="http://pbpython.com/pandas-google-forms-part1.html">pbpython.com: Collecting Data with Google Forms and Pandas</a></li>
+</ul>
+</li>
+<li><a href="https://nikolaygrozev.wordpress.com/2015/07/01/reshaping-in-pandas-pivot-pivot-table-stack-and-unstack-explained-with-pictures/">Reshaping in Pandas – Pivot, Pivot-Table, Stack and Unstack explained with Pictures</a></li>
+<li><a href="http://pandas.pydata.org/pandas-docs/stable/reshaping.html">pandas.pydata.org: Reshaping by pivoting DataFrame objects</a></li>
+<li><a href="http://www.analyticsvidhya.com/blog/2016/01/complete-tutorial-learn-data-science-python-scratch-2/">analyticsvidhya.com: A Complete Tutorial to Learn Data Science with Python from Scratch</a></li>
+<li><a href="http://www.analyticsvidhya.com/blog/2016/01/python-tutorial-list-comprehension-examples/">analyticsvidhya.com: Tutorial – Python List Comprehension With Examples</a></li>
+<li><a href="https://www.analyticsvidhya.com/blog/2015/06/infographic-cheat-sheet-data-exploration-python">analyticsvidhya.com: Cheat Sheet for Exploratory Data Analysis in Python 🌟</a></li>
+</ul>
+<h4 id="pandasdatabase">PandasDatabase<a class="headerlink" href="#pandasdatabase" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://pypi.python.org/pypi/pddb/">PandasDatabase is a RESTful database engine application built on top of Pandas</a></li>
+</ul>
+<h3 id="python-standard-library-modules-and-code">Python standard library Modules and Code<a class="headerlink" href="#python-standard-library-modules-and-code" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://pymotw.com">Python 3 standard library Module of the Week, Doug Hellmann</a></li>
+<li><a href="https://pymotw.com/2">Python 2 standard library Module of the Week, Doug Hellmann</a></li>
+<li><a href="http://blog.webhose.io/2015/08/16/dead-simple-for-devs-python-crawler-script-for-extracting-structured-data-from-any-almost-website-into-csv/">Dead simple {for devs} python crawler (script) for extracting structured data from any website into CSV</a></li>
+<li><a href="https://github.com/XI-lab/PyExPool">Python Multi-Process Execution Pool</a></li>
+</ul>
+<h3 id="python-and-aws">Python and AWS<a class="headerlink" href="#python-and-aws" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://cloudacademy.com/blog/ansible-aws/">Ansible and AWS: cloud IT automation management</a></li>
+<li><a href="http://it-ebooks.info/book/542/">Python and AWS Cookbook. Boto library</a></li>
+<li><a href="https://github.com/boto/boto">Boto</a></li>
+<li><a href="https://aws.amazon.com/es/blogs/developer/migrating-to-boto3/">Migrating to Boto3</a></li>
+<li><a href="http://pyvideo.org/video/2987/managing-the-cloud-with-a-few-lines-of-python">Managing the Cloud with a Few Lines of Python (EuroPython 2014)</a></li>
+<li><a href="https://pypi.python.org/pypi/ec2-ssh-yplan/">ec2-ssh-yplan: A pair of command line utilities for finding and SSH-ing into your Amazon EC2 instances by tag (such as ‘Name’)</a></li>
+</ul>
+<h3 id="python-tools">Python Tools<a class="headerlink" href="#python-tools" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://www.pyinstaller.org/">PyInstaller is a program that freezes (packages) Python programs into stand-alone executables, under Windows, Linux, Mac OS X, FreeBSD, Solaris and AIX</a><ul>
+<li><a href="https://github.com/pyinstaller/pyinstaller/">PyInstaller official GIT repository</a></li>
+</ul>
+</li>
+<li><a href="https://bitbucket.org/ssllab/zippy">ZipPy: Python3 on top of the JVM (faster than PyPy!)</a></li>
+<li><a href="https://github.com/ligyxy/DictMySQL">DictMySQL: A MySQL class for more convenient database manipulation with Python dictionary</a></li>
+<li><a href="http://sourceforge.net/projects/winpython/">WinPython: Portable Scientific Python 2/3 32/64bit Distribution for Windows</a></li>
+</ul>
+<h4 id="web-scraping-with-python">Web Scraping with Python<a class="headerlink" href="#web-scraping-with-python" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="http://scrapy.org/">Scrapy</a> An open source and collaborative framework for extracting the data you need from websites. In a fast, simple, yet extensible way.</li>
+<li><a href="https://first-web-scraper.readthedocs.org">First web scraper</a> A step-by-step guide to writing a web scraper with Python.</li>
+</ul>
+<h3 id="jython">Jython<a class="headerlink" href="#jython" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://www.oraclejavamagazine-digital.com/javamagazine_twitter/20151112?pg=43#pg43">Jython is a language that makes it easy to create projects with libraries from Python and Java.</a></li>
+</ul>
+<h3 id="eclipse-ide">Eclipse IDE<a class="headerlink" href="#eclipse-ide" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://opensource.com/life/16/2/how-use-python-hack-your-ide">opensource.com: How to use Python to hack your Eclipse IDE</a></li>
+</ul></div>
+                </div>
+        </div>
+
+    <hr>
+    <footer class="container">
+        
+        <center>Documentation built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="http://kristopolous.github.io/BOOTSTRA.386">BOOTSTRA.386</a>.</center>
+    </footer>
+        <script src="../../../../search/main.js"></script>
+    </body>
+</html>

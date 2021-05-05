@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="IT projects and resources.. along the way..">
+        <meta name="author" content="mbiscarra">
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>APIs with SOAP, REST and gRPC - document</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/bootstrap-theme.min.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">document</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">home</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../introduction.md">Openshift VS Kubernetes</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../javaee-to-cloud-native.md">From Java EE To Cloud Native</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../faq.md">Microservices FAQ & Kubernetes Native</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../sre.md">Site Reliability Engineering (SRE)</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../serverless.md">Serverless Architectures & Frameworks. OpenFaaS, Knative & Kubeless</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">DevOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../devops.md">DevOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cheatsheets.md">Cheat Sheets</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../gitops.md">GitOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../demos.md">Demos & Screencasts. OpenShift, Kubernetes, Jenkins Pipelines with JCasC and more</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">NoOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../noops.md">NoOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../serverless.md">Serverless Architectures & Frameworks. OpenFaaS, Knative & Kubeless</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../finops.md">FinOps - Cloud Financial Management</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../testops.md">TestOps and Continuous Testing</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Project Management Methodology <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../project-management-methodology.md">Project Management Methodology</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../workfromhome.md">Work From Home</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../appointment-scheduling.md">Appointment Scheduling</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../docker.md">Docker</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kubernetes <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../kubernetes.md">Kubernetes</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../matrix-table.md">Kubernetes Matrix Table</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../kubernetes-alternatives.md">Kubernetes alternatives</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">OpenShift <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../openshift.md">OpenShift docs</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Software Delivery Pipeline <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cicd.md">CI/CD - Continuous Integration & Continuous Delivery</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../git.md">Git & Git Patterns. Trunk Devel, Git Flow & Feature Flags. Merge BOTs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jenkins.md">Jenkins & Cloudbees</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../openshift-pipelines.md">OpenShift Pipelines with Jenkins, Tekton and more...</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../performance-testing-with-jenkins-and-jmeter.md">Performance testing with Jenkins and JMeter or Gatling</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jenkins-alternatives.md">Jenkins Alternatives for Continuous Integration</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../..">Toolchain</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Java Memory Management <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../java-and-java-performance-optimization.md">Java Memory Management & Java Performance Optimization</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jvm-parameters-matrix-table.md">Java Parameters Matrix Table</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../caching.md">Caching Solutions</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../monitoring.md">Monitoring and Performance. Prometheus, Grafana, APMs and more</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Configuration Management <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../ansible.md">Ansible</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../liquibase.md">Liquibase</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../terraform.md">Terraform & Packer</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Databases on Kubernetes <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../databases.md">Relational Databases and Database DevOps. CrunchyData Postgres Operator</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../nosql.md">NoSQL Databases</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../message-queue.md">Cloud Based Integration & Messaging. Data Processing & Streaming (aka Data Pipeline)</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Service Mesh <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../servicemesh.md">Service Mesh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../consul.md">Consul</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../envoyproxy.md">Envoy & xDS protocol</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../istio.md">Istio</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../linkerd.md">Linkerd</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../maesh.md">Maesh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../trafficdirector.md">Traffic Director</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Security and DevSecOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../devsecops.md">DevSecOps. Container Security</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../securityascode.md">Security Policy as Code</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../storage.md">Cloud Native Storage</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">APIs <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../api.md">APIs with SOAP, REST and gRPC</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../swagger-code-generator-for-rest-apis.md">Swagger code generator for REST APIs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../postman.md">API Test Automation with Postman</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../developerportals.md">API Marketplaces. API Management with API Gateways & Developer Portals</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Development & Frameworks <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../angular.md">Angular</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dom.md">Document Object Model (DOM)</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringFramework.md">Java - Spring Framework</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringBoot.md">Java - SpringBoot</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringCloud.md">Java - Spring Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../quarkus.md">Java - Quarkus</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../javascript.md">JavaScript - node.js & npm</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../python.md">Python - Django & Flask</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../xamarin.md">Xamarin</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev Environment <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../visual-studio.md">Visual Studio Code</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../linux-dev-env.md">WSL - Linux Dev Environment on Windows</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../scaffolding.md">Scaffolding Tools</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ChromeDevTools.md">ChromeDevTools</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Public Cloud <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../public-cloud-solutions.md">Public Cloud Solutions</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../edge-computing.md">Edge Computing</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cloud-arch-diagrams.md">Cloud Architecture Diagram Tools</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../aws.md">AWS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../GoogleCloudPlatform.md">Google Cloud Platform</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../azure.md">Microsoft Azure</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ibm_cloud.md">IBM Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../oraclecloud.md">Oracle Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../digitalocean.md">Digital Ocean</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cloudflare.md">Cloudflare</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../elearning.md">E-Learning</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../customer.md">Customer Success Stories</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../newsfeeds.md">Subreddits</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../other-awesome-lists.md">Other Awesome Lists</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../about.md">About</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li>
+                    <a href="https://github.com/melvinpetix/documents.git/">
+                        
+                        github/melvinpetix/dpcuments
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+      
+    
+        <li class="main active"><a href="#apis-with-soap-rest-and-grpc">APIs with SOAP, REST and gRPC</a></li>
+        
+            <li><a href="#apis">APIs</a></li>
+        
+            <li><a href="#motivation">Motivation</a></li>
+        
+            <li><a href="#types-of-api-protocols">Types of API Protocols</a></li>
+        
+            <li><a href="#comparisons">Comparisons</a></li>
+        
+            <li><a href="#tools">Tools</a></li>
+        
+            <li><a href="#free-web-services-public-apis">Free Web Services (Public APIs)</a></li>
+        
+            <li><a href="#related">Related</a></li>
+        
+    
+    
+    </ul>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="apis-with-soap-rest-and-grpc">APIs with SOAP, REST and gRPC<a class="headerlink" href="#apis-with-soap-rest-and-grpc" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#apis">APIs</a></li>
+<li><a href="#motivation">Motivation</a></li>
+<li><a href="#types-of-api-protocols">Types of API Protocols</a><ul>
+<li><a href="#soap-api-protocol-simple-object-access-protocol">SOAP API Protocol (Simple Object Access Protocol)</a></li>
+<li><a href="#rest-api-protocol-representational-state-transfer">REST API Protocol (Representational State Transfer)</a><ul>
+<li><a href="#openapi-specification-originally-known-as-the-swagger-specification">OpenAPI Specification (originally known as the Swagger Specification)</a></li>
+</ul>
+</li>
+<li><a href="#rpc-api-protocol-remote-procedure-call">RPC API Protocol (Remote Procedure Call)</a><ul>
+<li><a href="#grpc">gRPC</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#comparisons">Comparisons</a><ul>
+<li><a href="#soap-vs-rest">SOAP vs REST</a></li>
+<li><a href="#rest-vs-openapi-vs-grpc">REST vs OpenAPI vs gRPC</a></li>
+</ul>
+</li>
+<li><a href="#tools">Tools</a><ul>
+<li><a href="#api-testing">API Testing</a></li>
+<li><a href="#graphql">GraphQL</a></li>
+</ul>
+</li>
+<li><a href="#free-web-services-public-apis">Free Web Services (Public APIs)</a></li>
+<li><a href="#related">Related</a></li>
+</ul>
+<h3 id="apis">APIs<a class="headerlink" href="#apis" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://simple.wikipedia.org/wiki/Application_programming_interface">wikipedia: API Application Programming Interface</a></li>
+<li><a href="https://apifriends.com/api-management/what-is-an-api/">apifriends.com: What is an API?</a></li>
+<li><a href="https://www.axway.com/en/products/api-management/what-is-api-management">axway.com: What is API Management?</a></li>
+<li><a href="https://blogs.mulesoft.com/dev/api-dev/apis-versus-web-services/">mulesoft.com: APIs versus web services</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLM-7VG-sgbtBBnWb2Jc5kufgtWYEmiMAw">Youtube Playlist: Introduction to APIs</a></li>
+<li><a href="https://devdocs.io/">Devdocs.io API Documentation</a></li>
+</ul>
+<h3 id="motivation">Motivation<a class="headerlink" href="#motivation" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.zdnet.com/article/apis-published-apis-consumed-mainstream-enterprises-increasingly-behave-like-software-vendors/">APIs published, APIs consumed: mainstream enterprises increasingly behave like software vendors</a> Mainstream enterprises increasingly reach out to customers with APIs, digital services. Unlike software providers though, many still have mostly on-premises infrastructure. </li>
+</ul>
+<h3 id="types-of-api-protocols">Types of API Protocols<a class="headerlink" href="#types-of-api-protocols" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://apifriends.com/api-creation/different-types-apis/">apifriends.com: What are the different types of APIs? 🌟</a> Types of API Protocols: SOAP, REST and RPC</li>
+</ul>
+<h4 id="soap-api-protocol-simple-object-access-protocol">SOAP API Protocol (Simple Object Access Protocol)<a class="headerlink" href="#soap-api-protocol-simple-object-access-protocol" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/SOAP">wikipedia: SOAP</a></li>
+<li><a href="https://www.geeksforgeeks.org/basics-of-soap-simple-object-access-protocol/">geeksforgeeks.org: Basics of SOAP – Simple Object Access Protocol</a></li>
+<li>For information about the latest work on SOAP and a full list of SOAP specifications refer to the <a href="https://www.w3.org/TR/">W3C Technical Reports</a></li>
+<li><a href="https://www.guru99.com/soap-simple-object-access-protocol.html">guru99.com: SOAP Web Services Tutorial: Simple Object Access Protocol. What is SOAP?</a></li>
+<li><a href="http://www.jitendrazaa.com/blog/java/create-soap-message-using-java/">jitendrazaa.com: Create SOAP message using Java</a></li>
+<li><a href="https://dzone.com/articles/creating-a-soap-web-service-with-spring-boot-start">dzone: Creating a SOAP Web Service With Spring Boot Starter Web Services</a> In this post, we cover the concepts of SOAP and REST and show you all the code you need to use SOAP web services in a Spring Boot app.</li>
+</ul>
+<h4 id="rest-api-protocol-representational-state-transfer">REST API Protocol (Representational State Transfer)<a class="headerlink" href="#rest-api-protocol-representational-state-transfer" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Representational_state_transfer">wikipedia: REST</a></li>
+<li><a href="https://www.geeksforgeeks.org/rest-api-introduction/">geeksforgeeks.org: REST API (Introduction)</a></li>
+<li><a href="https://www.geeksforgeeks.org/rest-api-architectural-constraints/">geeksforgeeks.org: REST API Architectural Constraints</a></li>
+<li><a href="https://www.mulesoft.com/resources/api/restful-api">mulesoft.com: What is a RESTful API?</a></li>
+<li><a href="https://dzone.com/refcardz/rest-foundations-restful">Dzone refcard: Foundations of <strong>RESTful Architecture</strong> 🌟</a></li>
+<li><a href="https://dzone.com/articles/rest-api-tutorials">Dzone: REST API tutorials</a></li>
+</ul>
+<h5 id="openapi-specification-originally-known-as-the-swagger-specification">OpenAPI Specification (originally known as the Swagger Specification)<a class="headerlink" href="#openapi-specification-originally-known-as-the-swagger-specification" title="Permanent link">&para;</a></h5>
+<ul>
+<li><a href="https://www.openapis.org/">OpenAPI</a> evolved from the <a href="https://swagger.io/">Swagger</a> project. Swagger started out as a specification for documenting RESTful APIs. Later on, tools to generate client and server code and generating of test cases were added. While the original Swagger Specification was donated to the Linux Foundation and renamed the OpenAPI, Swagger remains one of the most widely used open-source toolsets for developing OpenAPIs.</li>
+<li><a href="https://en.wikipedia.org/wiki/OpenAPI_Specification">Wikipedia: OpenAPI Specification 🌟</a></li>
+<li><a href="https://www.openapis.org/faq">OpenAPI FAQ. What is OpenAPI Specification (OAS)? OpenAPI Specification</a> The OAS defines a standard, programming language-agnostic interface description for REST APIs, which allows both humans and computers to discover and understand the capabilities of a service without requiring access to source code, additional documentation, or inspection of network traffic.</li>
+<li><a href="https://apis.guru/openapi-directory/">apis.guru/openapi-directory: large archive of sample OpenAPI descriptions</a></li>
+</ul>
+<h4 id="rpc-api-protocol-remote-procedure-call">RPC API Protocol (Remote Procedure Call)<a class="headerlink" href="#rpc-api-protocol-remote-procedure-call" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Remote_procedure_call">wikipedia: RPC Remote Procedure Call</a></li>
+</ul>
+<h5 id="grpc">gRPC<a class="headerlink" href="#grpc" title="Permanent link">&para;</a></h5>
+<ul>
+<li><a href="https://grpc.io/">gRPC</a></li>
+<li><a href="https://en.wikipedia.org/wiki/GRPC">wikipedia: gRPC</a></li>
+</ul>
+<h3 id="comparisons">Comparisons<a class="headerlink" href="#comparisons" title="Permanent link">&para;</a></h3>
+<h4 id="soap-vs-rest">SOAP vs REST<a class="headerlink" href="#soap-vs-rest" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/difference-between-rest-api-and-soap-api/">geeksforgeeks.org: Difference between REST API and SOAP API</a></li>
+<li><a href="https://dzone.com/articles/comprehensive-guide-rest-vs-soap">dzone: A Comprehensive Guide to REST vs. SOAP</a> Learn the primary differences between REST and SOAP APIs, each one&rsquo;s benefits, and when it&rsquo;s appropriate to use the two.</li>
+<li><a href="https://dzone.com/articles/web-services-architecture">dzone: Web Services Architecture – When to Use SOAP vs REST</a> Learn why SOAP (Simple Object Access Protocol) and REST (Representation State Transfer) are popular with developers working on system integration projects.</li>
+<li><a href="https://dzone.com/articles/comparing-restful-apis-and-soap-apis">dzone: Comparing RESTful APIs and SOAP APIs Using MuleSoft as an Example</a> </li>
+<li><a href="https://www.reply.com/solidsoft-reply/en/content/webservices-soap-and-rest-a-simple-introduction">reply.com: Web Services: SOAP and REST - A Simple Introduction</a> <ul>
+<li>SOAP is a communications protocol while REST is a set of architectural principles for data transmission.</li>
+<li>REST was designed to be a more straightforward and easy to implement alternative to heavyweight SOAP for web service access. SOAP functions well in distributed environments where REST assumes a direct point to point communication. Also, SOAP allows for services to describe themselves to clients and in some languages allows for automation. On the other hand, REST is fast as less processing is required, uses less bandwidth and is closer to technologies used in web design. </li>
+<li>The choice on which to use is totally dependent on what the requirement. For example, SOAP is a better choice for applications that have complex API so as to describe the services and methods, where formal contracts are agreed for the exchange format, where a guaranteed level of security is required etc. REST will be preferred when limiting bandwidth and resources, when operations are can be stateless and the information can be cached.</li>
+</ul>
+</li>
+</ul>
+<h4 id="rest-vs-openapi-vs-grpc">REST vs OpenAPI vs gRPC<a class="headerlink" href="#rest-vs-openapi-vs-grpc" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://code.tutsplus.com/tutorials/rest-vs-grpc-battle-of-the-apis--cms-30711">REST vs. gRPC: Battle of the APIs</a></li>
+<li><a href="https://dzone.com/articles/comparing-openapi-with-grpc">Comparing OpenAPI With gRPC 🌟</a> OpenAPI is a great choice due to its interoperability. On the other hand, gRPC offers a better performance. Luckily, you don&rsquo;t have to choose one or the other.</li>
+</ul>
+<h3 id="tools">Tools<a class="headerlink" href="#tools" title="Permanent link">&para;</a></h3>
+<h4 id="api-testing">API Testing<a class="headerlink" href="#api-testing" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="http://www.softwaretestingportal.com/2020/03/31/api-testing/">softwaretestingportal.com: API Testing, Key Terminologies and more&hellip;</a></li>
+<li><a href="https://dzone.com/articles/10-api-testing-tips-for-beginners-soap-amp-rest">dzone.com: 10 API Testing Tips for Beginners (SOAP and REST)</a> Let&rsquo;s take a look at ten API testing tips for beginners with a focus on REST APIs and SOAP APIs. </li>
+</ul>
+<h4 id="graphql">GraphQL<a class="headerlink" href="#graphql" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://graphql.org/">GraphQL</a> A query language for your API</li>
+<li><a href="https://www.openapis.org/faq">How is the OpenAPI Specification different from GraphQL?</a> How are screws better than nails? Both are useful tools that solve similar problems in slightly different ways. OpenAPI Specification offers a declarative contract that defines the structure of API requests and responses as discrete operations. GraphQL prefers an interface style that is more like querying a database and is best suited to graph databases. </li>
+</ul>
+<h3 id="free-web-services-public-apis">Free Web Services (Public APIs)<a class="headerlink" href="#free-web-services-public-apis" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://free-web-services.com/">free-web-services.com</a></li>
+<li><a href="https://swagger.io/tools/swaggerhub/">SwaggerHub: Free Web Service</a></li>
+<li><a href="https://www.programmableweb.com/">programmableweb.com</a></li>
+<li><a href="https://any-api.com/">any-api.com</a></li>
+<li><a href="https://rapidapi.com/">Rapid API</a></li>
+</ul>
+<h3 id="related">Related<a class="headerlink" href="#related" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://blog.christianposta.com/microservices/do-i-need-an-api-gateway-if-i-have-a-service-mesh/">medium: Do I Need an API Gateway if I Use a Service Mesh? 🌟</a></li>
+<li><a href="https://dzone.com/articles/how-to-create-rest-api-with-spring-boot">Dzone: How to Create a REST API With Spring Boot</a></li>
+<li><a href="https://dzone.com/articles/spring-boot-restful-web-service-complete-example">Dzone: Step-By-Step Spring Boot RESTful Web Service Complete Example</a></li>
+<li><a href="https://www.oscarblancarteblog.com/2018/06/25/creando-un-api-rest-en-java-parte-1/">Creando un API REST en Java (parte 1)</a></li>
+</ul></div>
+                </div>
+        </div>
+
+    <hr>
+    <footer class="container">
+        
+        <center>Documentation built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="http://kristopolous.github.io/BOOTSTRA.386">BOOTSTRA.386</a>.</center>
+    </footer>
+        <script src="../../../../search/main.js"></script>
+    </body>
+</html>

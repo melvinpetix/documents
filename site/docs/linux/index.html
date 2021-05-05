@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="IT projects and resources.. along the way..">
+        <meta name="author" content="mbiscarra">
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Linux and SSH - document</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/bootstrap-theme.min.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">document</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">home</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../introduction.md">Openshift VS Kubernetes</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../javaee-to-cloud-native.md">From Java EE To Cloud Native</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../faq.md">Microservices FAQ & Kubernetes Native</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../sre.md">Site Reliability Engineering (SRE)</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../serverless.md">Serverless Architectures & Frameworks. OpenFaaS, Knative & Kubeless</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">DevOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../devops.md">DevOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cheatsheets.md">Cheat Sheets</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../gitops.md">GitOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../demos.md">Demos & Screencasts. OpenShift, Kubernetes, Jenkins Pipelines with JCasC and more</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">NoOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../noops.md">NoOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../serverless.md">Serverless Architectures & Frameworks. OpenFaaS, Knative & Kubeless</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../finops.md">FinOps - Cloud Financial Management</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../testops.md">TestOps and Continuous Testing</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Project Management Methodology <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../project-management-methodology.md">Project Management Methodology</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../workfromhome.md">Work From Home</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../appointment-scheduling.md">Appointment Scheduling</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../docker.md">Docker</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kubernetes <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../kubernetes.md">Kubernetes</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../matrix-table.md">Kubernetes Matrix Table</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../kubernetes-alternatives.md">Kubernetes alternatives</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">OpenShift <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../openshift.md">OpenShift docs</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Software Delivery Pipeline <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cicd.md">CI/CD - Continuous Integration & Continuous Delivery</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../git.md">Git & Git Patterns. Trunk Devel, Git Flow & Feature Flags. Merge BOTs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jenkins.md">Jenkins & Cloudbees</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../openshift-pipelines.md">OpenShift Pipelines with Jenkins, Tekton and more...</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../performance-testing-with-jenkins-and-jmeter.md">Performance testing with Jenkins and JMeter or Gatling</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jenkins-alternatives.md">Jenkins Alternatives for Continuous Integration</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../..">Toolchain</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Java Memory Management <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../java-and-java-performance-optimization.md">Java Memory Management & Java Performance Optimization</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jvm-parameters-matrix-table.md">Java Parameters Matrix Table</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../caching.md">Caching Solutions</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../monitoring.md">Monitoring and Performance. Prometheus, Grafana, APMs and more</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Configuration Management <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../ansible.md">Ansible</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../liquibase.md">Liquibase</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../terraform.md">Terraform & Packer</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Databases on Kubernetes <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../databases.md">Relational Databases and Database DevOps. CrunchyData Postgres Operator</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../nosql.md">NoSQL Databases</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../message-queue.md">Cloud Based Integration & Messaging. Data Processing & Streaming (aka Data Pipeline)</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Service Mesh <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../servicemesh.md">Service Mesh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../consul.md">Consul</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../envoyproxy.md">Envoy & xDS protocol</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../istio.md">Istio</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../linkerd.md">Linkerd</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../maesh.md">Maesh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../trafficdirector.md">Traffic Director</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Security and DevSecOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../devsecops.md">DevSecOps. Container Security</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../securityascode.md">Security Policy as Code</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../storage.md">Cloud Native Storage</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">APIs <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../api.md">APIs with SOAP, REST and gRPC</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../swagger-code-generator-for-rest-apis.md">Swagger code generator for REST APIs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../postman.md">API Test Automation with Postman</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../developerportals.md">API Marketplaces. API Management with API Gateways & Developer Portals</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Development & Frameworks <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../angular.md">Angular</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dom.md">Document Object Model (DOM)</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringFramework.md">Java - Spring Framework</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringBoot.md">Java - SpringBoot</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringCloud.md">Java - Spring Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../quarkus.md">Java - Quarkus</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../javascript.md">JavaScript - node.js & npm</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../python.md">Python - Django & Flask</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../xamarin.md">Xamarin</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev Environment <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../visual-studio.md">Visual Studio Code</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../linux-dev-env.md">WSL - Linux Dev Environment on Windows</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../scaffolding.md">Scaffolding Tools</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ChromeDevTools.md">ChromeDevTools</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Public Cloud <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../public-cloud-solutions.md">Public Cloud Solutions</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../edge-computing.md">Edge Computing</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cloud-arch-diagrams.md">Cloud Architecture Diagram Tools</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../aws.md">AWS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../GoogleCloudPlatform.md">Google Cloud Platform</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../azure.md">Microsoft Azure</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ibm_cloud.md">IBM Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../oraclecloud.md">Oracle Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../digitalocean.md">Digital Ocean</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cloudflare.md">Cloudflare</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../elearning.md">E-Learning</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../customer.md">Customer Success Stories</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../newsfeeds.md">Subreddits</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../other-awesome-lists.md">Other Awesome Lists</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../about.md">About</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li>
+                    <a href="https://github.com/melvinpetix/documents.git/">
+                        
+                        github/melvinpetix/dpcuments
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+      
+    
+        <li class="main active"><a href="#linux-and-ssh">Linux and SSH</a></li>
+        
+            <li><a href="#ssh">SSH</a></li>
+        
+            <li><a href="#linux-blogs">Linux Blogs</a></li>
+        
+            <li><a href="#spanish-linux-blogs">Spanish Linux Blogs</a></li>
+        
+            <li><a href="#youtube">Youtube</a></li>
+        
+            <li><a href="#reddit">Reddit</a></li>
+        
+            <li><a href="#linux-commands-and-tools">Linux Commands and Tools</a></li>
+        
+            <li><a href="#linux-networking">Linux Networking</a></li>
+        
+    
+    
+    </ul>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="linux-and-ssh">Linux and SSH<a class="headerlink" href="#linux-and-ssh" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#ssh">SSH</a></li>
+<li><a href="#linux-blogs">Linux Blogs</a></li>
+<li><a href="#spanish-linux-blogs">Spanish Linux Blogs</a></li>
+<li><a href="#youtube">Youtube</a></li>
+<li><a href="#reddit">Reddit</a></li>
+<li><a href="#linux-commands-and-tools">Linux Commands and Tools</a><ul>
+<li><a href="#systemd">Systemd</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#commandlinefu">CommandLineFu</a></li>
+<li><a href="#wait-until-your-dockerized-database-is-ready-before-continuing">Wait until Your Dockerized Database Is Ready before Continuing</a></li>
+<li><a href="#copr-build-system">Copr Build System</a></li>
+</ul>
+</li>
+<li><a href="#linux-networking">Linux Networking</a></li>
+</ul>
+<h3 id="ssh">SSH<a class="headerlink" href="#ssh" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://gravitational.com/blog/how-to-ssh-properly/">gravitational.com: How to SSH Properly 🌟</a></li>
+<li><a href="https://phoenixnap.com/kb/linux-ssh-commands">19 Common SSH Commands In Linux With Examples</a></li>
+<li><a href="https://www.commandlinefu.com/commands/matching/ssh/c3No/sort-by-votes">commandlinefu.com/commands/matching/ssh</a></li>
+<li><a href="https://github.com/mohanad86/secure-ssh-python">Auto-SSH for Linux security</a></li>
+<li><a href="https://github.com/suraksha-123/Grant-Revoke-ssh-access">Grant-Revoke-ssh-access</a> To automate the process of granting ssh access to a group of servers instances</li>
+</ul>
+<h3 id="linux-blogs">Linux Blogs<a class="headerlink" href="#linux-blogs" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://www.linuxfoundation.org/">The Linux Foundation</a></li>
+<li><a href="https://www.tecmint.com/">tecmint.com 🌟</a></li>
+<li><a href="https://www.cyberciti.biz/">nixCraft 🌟</a></li>
+<li><a href="https://unixmen.com/">unixmen.com 🌟</a></li>
+<li><a href="https://opensource.com/">opensource.com 🌟</a></li>
+<li><a href="https://www.linux.com/">linux.com 🌟</a></li>
+<li><a href="https://linoxide.com/">linoxide.com 🌟</a></li>
+<li><a href="https://linuxjourney.com/">linuxjourney.com</a></li>
+<li><a href="https://www.howtoforge.com/">howtoforge.com</a></li>
+<li><a href="https://tecadmin.net/">tecadmin.net</a></li>
+<li><a href="https://www.systemcodegeeks.com/">systemcodegeeks.com</a></li>
+<li><a href="https://www.linuxnix.com/">linuxnix.com</a></li>
+<li><a href="https://www.learnitguide.net/">learnitguide.net</a></li>
+<li><a href="http://fossforce.com/">FOSS Force</a></li>
+<li><a href="http://www.linuxhomenetworking.com/">linuxhomenetworking.com</a></li>
+<li><a href="http://www.linuxtoday.com/">linuxtoday.com</a></li>
+<li><a href="http://unixetc.co.uk/">unixetc.co.uk</a></li>
+<li><a href="http://lwn.net/">LWN.net</a></li>
+<li><a href="http://www.linux-tutorial.info/">Linux-tutorial.info</a></li>
+<li><a href="https://lonesysadmin.net/">The Lone Sysadmin</a></li>
+<li><a href="http://www.linuxlinks.com">LinuxLinks.com</a></li>
+<li><a href="http://unixmages.com">unixmages.com</a> </li>
+<li><a href="http://www.thegeekstuff.com/">The Geek Stuff</a></li>
+</ul>
+<h3 id="spanish-linux-blogs">Spanish Linux Blogs<a class="headerlink" href="#spanish-linux-blogs" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://systemadmin.es/">systemadmin.es</a></li>
+<li><a href="http://www.muylinux.com/">muylinux.com</a></li>
+<li><a href="http://www.linuxadictos.com">linuxadictos.com</a></li>
+</ul>
+<h3 id="youtube">Youtube<a class="headerlink" href="#youtube" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.youtube.com/channel/UCu2eNnWy-zc1xt_shCXQQfA">Linux Skills</a></li>
+<li><a href="https://www.youtube.com/user/climagic">CLImagic</a></li>
+</ul>
+<h3 id="reddit">Reddit<a class="headerlink" href="#reddit" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.reddit.com/r/linuxadmin/">reddit.com/r/linuxadmin</a> Expanding Linux SysAdmin knowledge</li>
+</ul>
+<h3 id="linux-commands-and-tools">Linux Commands and Tools<a class="headerlink" href="#linux-commands-and-tools" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.tecmint.com/watchman-monitor-file-changes-in-linux/"><strong>watchman command</strong>: A File and Directory Watching Tool for Changes</a></li>
+<li><a href="https://linoxide.com/linux-command/use-ip-command-linux/"><strong>ip command</strong>: How to use IP Command in Linux with Examples</a></li>
+<li><a href="https://nordicapis.com/understanding-the-hidden-powers-of-curl/"><strong>curl command</strong>: Understanding the Hidden Powers of curl</a></li>
+</ul>
+<h4 id="systemd">Systemd<a class="headerlink" href="#systemd" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://opensource.com/article/20/5/systemd-troubleshooting-tool">Start using systemd as a troubleshooting tool</a> While systemd is not really a troubleshooting tool, the information in its output points the way toward solving problems.</li>
+</ul>
+<h4 id="blogs">Blogs<a class="headerlink" href="#blogs" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="http://www.climagic.org">climagic.org</a></li>
+<li><a href="http://linux.101hacks.com/">Linux 101 Hacks</a></li>
+<li><a href="https://linuxjourney.com/lesson/the-shell#">linuxjourney.com commandline</a></li>
+<li><a href="https://github.com/jlevy/the-art-of-command-line">The Art of Command Line</a></li>
+</ul>
+<h4 id="commandlinefu">CommandLineFu<a class="headerlink" href="#commandlinefu" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://www.commandlinefu.com">CommandLineFu 🌟</a></li>
+<li><a href="https://twitter.com/commandlinefu">twitter.com/commandlinefu</a> Command line diamonds, created and voted on by our members</li>
+<li><a href="https://twitter.com/commandlinefu3">twitter.com/commandlinefu3</a> 3-star commands, a Linux afficionado&rsquo;s wet dream</li>
+<li><a href="https://twitter.com/commandlinefu10">twitter.com/commandlinefu10</a> 10 star command line gems - known to make experienced sysadmins weep with joy.</li>
+</ul>
+<h4 id="wait-until-your-dockerized-database-is-ready-before-continuing">Wait until Your Dockerized Database Is Ready before Continuing<a class="headerlink" href="#wait-until-your-dockerized-database-is-ready-before-continuing" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://nickjanetakis.com/blog/wait-until-your-dockerized-database-is-ready-before-continuing">Wait until Your Dockerized Database Is Ready before Continuing</a> A zero dependency Bash script that waits until a command of your choosing has run successfully<ul>
+<li><a href="https://github.com/nickjj/wait-until">github.com/nickjj/wait-until</a></li>
+</ul>
+</li>
+</ul>
+<h4 id="copr-build-system">Copr Build System<a class="headerlink" href="#copr-build-system" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Building a repo with RPM packages from PyPI is super easy using Copr.</li>
+<li><a href="https://copr.fedorainfracloud.org/">copr.fedorainfracloud.org</a> Copr is an easy-to-use automatic build system providing a package repository as its output.</li>
+<li><a href="https://pagure.io/copr/copr">Copr</a></li>
+</ul>
+<h3 id="linux-networking">Linux Networking<a class="headerlink" href="#linux-networking" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://www.ntop.org/">ntop</a></li>
+<li><a href="http://ngrep.sourceforge.net/">ngrep</a></li>
+<li><a href="http://angryip.org/">Angry IP Scanner (or simply ipscan)</a> to Nmap and cross-platform</li>
+<li><a href="http://www.cyberciti.biz/tips/linux-investigate-sockets-network-connections.html">cyberciti.biz - ss: Display Linux TCP / UDP Network and Socket Information</a></li>
+<li><a href="http://www.cyberciti.biz/files/ss.html">cyberciti.biz - SS Utility: Quick Intro</a></li>
+<li><a href="http://www.binarytides.com/linux-ss-command/">binarytides.com - 10 examples of Linux ss command to monitor network connections</a></li>
+<li><a href="http://unix.stackexchange.com/questions/252744/ss-linux-socket-statistics-utility-output-format">unix.stackexchange.com: ss - linux socket statistics utility output format</a></li>
+<li><a href="http://stackoverflow.com/questions/11763376/difference-between-netstat-and-ss-in-linux">stackoverflow.com: difference between netstat and ss in linux?</a></li>
+<li><a href="http://lintut.com/monitoring-network-connection-using-ss-command/">lintut.com: Monitoring network connection using ss command</a></li>
+<li><a href="https://github.com/knorrie/network-examples">Linux networking examples and tutorials for advanced users</a> Includes lab examples for lxc, bgp, vpn, &amp; more</li>
+<li><a href="https://blog.pandorafms.org/network-commands/">blog.pandorafms.org: Useful Network commands</a> VNStat, ping, traceroute, ping, arp, curl and wget, netstat, whois, ssh, tcpdump, ngrep, nmap, netcat, lsof, iptraf</li>
+<li><a href="https://www.redeszone.net/tutoriales/servidores/diferencias-proxy-vs-proxy-inverso/">Diferencias entre servidor proxy y servidor proxy inverso</a></li>
+</ul>
+<p><center>
+<a href="https://github.com/jlevy/the-art-of-command-line"><img alt="the art of command line" src="images/cli_tips.jpg" /></a>
+</center></p></div>
+                </div>
+        </div>
+
+    <hr>
+    <footer class="container">
+        
+        <center>Documentation built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="http://kristopolous.github.io/BOOTSTRA.386">BOOTSTRA.386</a>.</center>
+    </footer>
+        <script src="../../../../search/main.js"></script>
+    </body>
+</html>

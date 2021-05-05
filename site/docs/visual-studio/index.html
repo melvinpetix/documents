@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="IT projects and resources.. along the way..">
+        <meta name="author" content="mbiscarra">
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Visual Studio Code - document</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/bootstrap-theme.min.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">document</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">home</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../introduction.md">Openshift VS Kubernetes</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../javaee-to-cloud-native.md">From Java EE To Cloud Native</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../faq.md">Microservices FAQ & Kubernetes Native</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../sre.md">Site Reliability Engineering (SRE)</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../serverless.md">Serverless Architectures & Frameworks. OpenFaaS, Knative & Kubeless</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">DevOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../devops.md">DevOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cheatsheets.md">Cheat Sheets</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../gitops.md">GitOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../demos.md">Demos & Screencasts. OpenShift, Kubernetes, Jenkins Pipelines with JCasC and more</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">NoOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../noops.md">NoOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../serverless.md">Serverless Architectures & Frameworks. OpenFaaS, Knative & Kubeless</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../finops.md">FinOps - Cloud Financial Management</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../testops.md">TestOps and Continuous Testing</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Project Management Methodology <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../project-management-methodology.md">Project Management Methodology</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../workfromhome.md">Work From Home</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../appointment-scheduling.md">Appointment Scheduling</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../docker.md">Docker</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kubernetes <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../kubernetes.md">Kubernetes</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../matrix-table.md">Kubernetes Matrix Table</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../kubernetes-alternatives.md">Kubernetes alternatives</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">OpenShift <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../openshift.md">OpenShift docs</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Software Delivery Pipeline <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cicd.md">CI/CD - Continuous Integration & Continuous Delivery</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../git.md">Git & Git Patterns. Trunk Devel, Git Flow & Feature Flags. Merge BOTs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jenkins.md">Jenkins & Cloudbees</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../openshift-pipelines.md">OpenShift Pipelines with Jenkins, Tekton and more...</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../performance-testing-with-jenkins-and-jmeter.md">Performance testing with Jenkins and JMeter or Gatling</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jenkins-alternatives.md">Jenkins Alternatives for Continuous Integration</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../..">Toolchain</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Java Memory Management <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../java-and-java-performance-optimization.md">Java Memory Management & Java Performance Optimization</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jvm-parameters-matrix-table.md">Java Parameters Matrix Table</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../caching.md">Caching Solutions</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../monitoring.md">Monitoring and Performance. Prometheus, Grafana, APMs and more</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Configuration Management <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../ansible.md">Ansible</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../liquibase.md">Liquibase</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../terraform.md">Terraform & Packer</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Databases on Kubernetes <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../databases.md">Relational Databases and Database DevOps. CrunchyData Postgres Operator</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../nosql.md">NoSQL Databases</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../message-queue.md">Cloud Based Integration & Messaging. Data Processing & Streaming (aka Data Pipeline)</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Service Mesh <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../servicemesh.md">Service Mesh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../consul.md">Consul</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../envoyproxy.md">Envoy & xDS protocol</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../istio.md">Istio</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../linkerd.md">Linkerd</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../maesh.md">Maesh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../trafficdirector.md">Traffic Director</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Security and DevSecOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../devsecops.md">DevSecOps. Container Security</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../securityascode.md">Security Policy as Code</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../storage.md">Cloud Native Storage</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">APIs <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../api.md">APIs with SOAP, REST and gRPC</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../swagger-code-generator-for-rest-apis.md">Swagger code generator for REST APIs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../postman.md">API Test Automation with Postman</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../developerportals.md">API Marketplaces. API Management with API Gateways & Developer Portals</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Development & Frameworks <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../angular.md">Angular</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dom.md">Document Object Model (DOM)</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringFramework.md">Java - Spring Framework</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringBoot.md">Java - SpringBoot</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringCloud.md">Java - Spring Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../quarkus.md">Java - Quarkus</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../javascript.md">JavaScript - node.js & npm</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../python.md">Python - Django & Flask</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../xamarin.md">Xamarin</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev Environment <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../visual-studio.md">Visual Studio Code</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../linux-dev-env.md">WSL - Linux Dev Environment on Windows</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../scaffolding.md">Scaffolding Tools</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ChromeDevTools.md">ChromeDevTools</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Public Cloud <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../public-cloud-solutions.md">Public Cloud Solutions</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../edge-computing.md">Edge Computing</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cloud-arch-diagrams.md">Cloud Architecture Diagram Tools</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../aws.md">AWS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../GoogleCloudPlatform.md">Google Cloud Platform</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../azure.md">Microsoft Azure</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ibm_cloud.md">IBM Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../oraclecloud.md">Oracle Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../digitalocean.md">Digital Ocean</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cloudflare.md">Cloudflare</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../elearning.md">E-Learning</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../customer.md">Customer Success Stories</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../newsfeeds.md">Subreddits</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../other-awesome-lists.md">Other Awesome Lists</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../about.md">About</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li>
+                    <a href="https://github.com/melvinpetix/documents.git/">
+                        
+                        github/melvinpetix/dpcuments
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+      
+    
+        <li class="main active"><a href="#visual-studio-code">Visual Studio Code</a></li>
+        
+            <li><a href="#vscode">VSCode</a></li>
+        
+            <li><a href="#visual-studio-marketplace-and-extensions">Visual Studio MarketPlace and Extensions</a></li>
+        
+            <li><a href="#integrated-terminal-on-visual-studio-code">Integrated Terminal on Visual Studio Code</a></li>
+        
+            <li><a href="#test-debugging">Test Debugging</a></li>
+        
+            <li><a href="#videos">Videos</a></li>
+        
+    
+    
+    </ul>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="visual-studio-code">Visual Studio Code<a class="headerlink" href="#visual-studio-code" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#vscode">VSCode</a></li>
+<li><a href="#visual-studio-marketplace-and-extensions">Visual Studio MarketPlace and Extensions</a><ul>
+<li><a href="#publishers">Publishers</a></li>
+<li><a href="#extensions">Extensions</a><ul>
+<li><a href="#more-extensions">More Extensions</a></li>
+<li><a href="#themes">Themes</a></li>
+<li><a href="#devops-extensions">DevOps Extensions</a></li>
+<li><a href="#azure-devops-extensions">Azure DevOps Extensions</a></li>
+<li><a href="#git-flow-extensions">Git Flow Extensions</a></li>
+<li><a href="#jenkins-extensions">Jenkins Extensions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#integrated-terminal-on-visual-studio-code">Integrated Terminal on Visual Studio Code</a></li>
+<li><a href="#test-debugging">Test Debugging</a></li>
+<li><a href="#videos">Videos</a></li>
+</ul>
+<h3 id="vscode">VSCode<a class="headerlink" href="#vscode" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://code.visualstudio.com/">code.visualstudio.com: Visual Studio Code</a></li>
+<li><a href="https://visualstudio.microsoft.com/services/visual-studio-codespaces/">Visual Studio Online</a></li>
+<li><a href="https://github.com/viatsko/awesome-vscode">Awesome Visual Studio Code</a></li>
+<li><a href="https://code.visualstudio.com/docs/editor/versioncontrol">Using Version Control in VS Code</a></li>
+<li><a href="https://deepu.js.org/make-the-most-out-of-vscode/">deepu.js.org: My VS Code setup - Making the most out of VS Code</a></li>
+<li><a href="https://bitbucket.org/atlassianlabs/atlascode/issues/112/cannot-activate-the-atlassian-for-vscode">VScode run from WSL in Linux: Cannot activate the &lsquo;Atlassian for VSCode (Official)&rsquo; extension because &lsquo;git&rsquo; extension is not loaded</a></li>
+<li><a href="https://kite.com/">kite: Code Faster with AI Autocomplete</a></li>
+<li><a href="https://gist.github.com/hxlnt/60d0e62efdb973e221e585e2b990bfd6">With the Edge (Chromium) Tools for VS Code you can see the browser&rsquo;s Inspector and Dev Tools within VSCode, to debug your front-end code</a></li>
+</ul>
+<h3 id="visual-studio-marketplace-and-extensions">Visual Studio MarketPlace and Extensions<a class="headerlink" href="#visual-studio-marketplace-and-extensions" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://marketplace.visualstudio.com/">marketplace.visualstudio.com</a></li>
+</ul>
+<h4 id="publishers">Publishers<a class="headerlink" href="#publishers" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://marketplace.visualstudio.com/publishers/Microsoft">Microsoft 🌟</a></li>
+<li><a href="https://marketplace.visualstudio.com/publishers/redhat">Red Hat 🌟</a></li>
+<li><a href="https://marketplace.visualstudio.com/publishers/AmazonWebServices">AmazonWebServices</a></li>
+<li><a href="https://marketplace.visualstudio.com/publishers/GoogleCloudTools">Google Cloud</a></li>
+<li><a href="https://marketplace.visualstudio.com/publishers/Oracle">Oracle</a></li>
+</ul>
+<h4 id="extensions">Extensions<a class="headerlink" href="#extensions" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens">GitLens 🌟</a> Git supercharged</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph">Git Graph</a> View a Git Graph of your repository, and easily perform Git actions from the graph. Configurable to look the way you want!</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments">Better Comments</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer">Bracket Pair Colorizer</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one">Markdown All in One 🌟</a><ul>
+<li><a href="https://gist.github.com/pierrejoubert73/902cc94d79424356a8d20be2b382e1ab">A collapsible section containing markdown</a></li>
+</ul>
+</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=livepdm.auto-markdown-toc-ax1">Auto Markdown TOC By AX1</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode">Prettier:</a> Code formatter</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare">Live Share:</a> Real-time collaborative development from the comfort of your favorite tools (pair-programming).</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig">EditorConfig:</a> This plugin attempts to override user/workspace settings with settings found in .editorconfig files. No additional or vscode-specific files are required.</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=pnp.polacode">Polacode</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint">ESLint:</a> Integrates <a href="https://eslint.org/">ESLint</a> JavaScript into VS Code.</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow">Indent-Rainbow:</a> Indent-Rainbow
+A simple extension to make indentation more readable</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server:</a> Launch a development local Server with live reload feature for static &amp; dynamic pages</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=jock.svg">SVG:</a> SVG Coding, Minify, Pretty, Preview All-In-One.</li>
+<li><a href="https://github.com/microsoft/vscode-python">Python Visual Studio Code</a><ul>
+<li><a href="https://twitter.com/pythonvscode">twitter.com/pythonvscode</a></li>
+</ul>
+</li>
+</ul>
+<h5 id="more-extensions">More Extensions<a class="headerlink" href="#more-extensions" title="Permanent link">&para;</a></h5>
+<ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=rvest.vs-code-prettier-eslint">Prettier ESLint</a> Extension to format JavaScript code using prettier-eslint package</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=2gua.rainbow-brackets">Rainbow Brackets</a> A rainbow brackets extension for VS Code.</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight">TODO Highlight</a> Highlight TODOs, FIXMEs, and any keywords, annotations</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-todo-plus">Todo+</a> Manage todo lists with ease. Powerful, easy to use and customizable.</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree">Todo Tree</a> Show TODO, FIXME, etc. comment tags in a tree view</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=mgmcdermott.vscode-language-babel">Babel JavaScript</a> VSCode syntax highlighting for today&rsquo;s JavaScript, ported from gandm&rsquo;s language-babel for Atom. </li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens">Error Lens</a> Improve highlighting of errors, warnings and other language diagnostics.</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker">Docker</a> Makes it easy to create, manage, and debug containerized applications.</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv">DotENV</a> Support for <a href="https://github.com/zaynali53/DotENV">DotENV</a> file syntax</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest">Jest</a> Use Facebook&rsquo;s <a href="https://github.com/facebook/jest">Jest</a>, a delightful JavaScript Testing Framework.</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server</a> Launch a development local Server with live reload feature for static &amp; dynamic pages</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio">Draw.io Integration</a> This extension integrates Draw.io into VS Code.</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=ChakrounAnas.turbo-console-log">Turbo Console Log</a> Automating the process of writing meaningful log messages. </li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense">Path Intellisense</a> Visual Studio Code plugin that autocompletes filenames</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github">GitHub Pull Requests and Issues</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=angryobject.react-pure-to-class-vscode">React Pure To Class</a> Convert pure react components to class components</li>
+</ul>
+<h5 id="themes">Themes<a class="headerlink" href="#themes" title="Permanent link">&para;</a></h5>
+<ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme">Material Icon Theme</a> Material Design Icons for Visual Studio Code</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=juliettepretot.lucy-vscode">Lucy Theme</a> Soft but clear syntax theme</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode">Monokai Pro Theme</a> Professional theme and matching icons, from the author of the original Monokai color scheme.</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=salesforce.codey-midnight">Codey Midnight Theme</a> Dark theme configured for accessibility and Salesforce development</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=juanmnl.vscode-theme-1984">1984 Theme</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula">Dracula Official</a> Official Dracula Theme. A dark theme for many editors, shells, and more.<ul>
+<li><a href="https://draculatheme.com/pro">Dracula Pro Theme 🌟</a></li>
+</ul>
+</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=icrawl.discord-vscode">Discord Presence Theme</a> Update your discord status with the newly added rich presence.</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme">GitHub Theme 🌟</a> GitHub theme for VS Code</li>
+</ul>
+<h5 id="devops-extensions">DevOps Extensions<a class="headerlink" href="#devops-extensions" title="Permanent link">&para;</a></h5>
+<ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=Atlassian.atlascode">Jira and Bitbucket (Official)</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=fatihacet.gitlab-workflow">GitLab Workflow</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools">Kubernetes (by Microsoft)</a> Develop, deploy and debug Kubernetes applications</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.kind-vscode">Kubernetes Kind (by Microsoft)</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker">Docker (by Microsoft)</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=mauve.terraform">Terraform</a> Syntax highlighting, linting, formatting, and validation for Hashicorp&rsquo;s Terraform<ul>
+<li><a href="https://www.hashicorp.com/blog/supporting-the-hashicorp-terraform-extension-for-visual-studio-code/">hashicorp.com: Supporting the HashiCorp Terraform Extension for Visual Studio Code</a></li>
+</ul>
+</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=vscoss.vscode-ansible">Ansible</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=mongodb.mongodb-vscode">MongoDB for VS Code</a><ul>
+<li><a href="https://www.mongodb.com/blog/post/introducing-mongodb-for-vs-code">Introducing MongoDB for VS Code</a></li>
+</ul>
+</li>
+</ul>
+<h5 id="azure-devops-extensions">Azure DevOps Extensions<a class="headerlink" href="#azure-devops-extensions" title="Permanent link">&para;</a></h5>
+<ul>
+<li><a href="https://marketplace.visualstudio.com/azuredevops">Azure DevOps 🌟</a></li>
+</ul>
+<h5 id="git-flow-extensions">Git Flow Extensions<a class="headerlink" href="#git-flow-extensions" title="Permanent link">&para;</a></h5>
+<ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=vector-of-bool.gitflow">gitflow by vector-of-bool</a> Gitflow integration and support in Visual Studio Code</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=GreatMinds.gitflow4code">GitFlow 4 Code</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=SemihOnay.jiraux">JirAux (Jira integration)</a> Extension to list,view and create Git-flow like branches from issues</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=Fatih.baba-flow">BABA-Git Flow</a></li>
+</ul>
+<h5 id="jenkins-extensions">Jenkins Extensions<a class="headerlink" href="#jenkins-extensions" title="Permanent link">&para;</a></h5>
+<ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=jcasc-developers.jcasc-plugin">Jenkins JCasC-Plugin</a> This extension is used to integrate a live jenkins instance configuration with your editor. It can be used to edit and validate YAML files.</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=janjoerke.jenkins-pipeline-linter-connector">Jenkins Pipeline Linter Connector</a> Validates Jenkinsfiles by sending them to the Pipeline Linter of a Jenkins server.</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=secanis.jenkinsfile-support">secanis.ch: Jenkinsfile Support</a> Adds syntax highlighting support for Jenkinsfile&rsquo;s. In this version, it&rsquo;s the same like Groovy is.</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=ivory-lab.jenkinsfile-support">ivory-lab: JenkinsFile Support</a> Extension provides basic jenkinsfile support (highlighting, snippets and completion)</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=jmMeessen.jenkins-declarative-support">JM Meessen: Declarative Jenkinsfile Support</a> Adds syntax highlighting support for the declarative Jenkinsfile format flavour.</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=alefragnani.jenkins-status">Alessandro Fragnani: Jenkins Status</a></li>
+</ul>
+<h3 id="integrated-terminal-on-visual-studio-code">Integrated Terminal on Visual Studio Code<a class="headerlink" href="#integrated-terminal-on-visual-studio-code" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://code.visualstudio.com/docs/editor/integrated-terminal">Integrated Terminal</a></li>
+<li>This is an example of Visual Studio Code settings when adding Git Bash on Windows:</li>
+</ul>
+<pre><code>&quot;terminal.integrated.shell.windows&quot;: &quot;C:\\Program Files\\Git\\bin\\bash.exe&quot;
+</code></pre>
+<h3 id="test-debugging">Test Debugging<a class="headerlink" href="#test-debugging" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://medium.com/guidesmiths-dev/how-to-configure-visual-studio-code-for-test-debugging-39d0d7f24d79">How to configure Visual Studio Code for test debugging</a></li>
+</ul>
+<h3 id="videos">Videos<a class="headerlink" href="#videos" title="Permanent link">&para;</a></h3>
+<iframe src="https://www.youtube.com/embed/fnPhJHN0jTE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<iframe src="https://www.youtube.com/embed/VqCgcpAypFQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<iframe src="https://www.youtube.com/embed/Ijz1mXQm7KU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<iframe src="https://www.youtube.com/embed/AYbgqmyg7dk" frameborder="0" allow="accelerometer; autoplay; encrypted-media" allowfullscreen></iframe>
+
+<iframe src="https://www.youtube.com/embed/BO-nhyqpm7A" frameborder="0" allow="accelerometer; autoplay; encrypted-media" allowfullscreen></iframe>
+
+<iframe src="https://www.youtube.com/embed/9O1PZoo0IAU" frameborder="0" allow="accelerometer; autoplay; encrypted-media" allowfullscreen></iframe></div>
+                </div>
+        </div>
+
+    <hr>
+    <footer class="container">
+        
+        <center>Documentation built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="http://kristopolous.github.io/BOOTSTRA.386">BOOTSTRA.386</a>.</center>
+    </footer>
+        <script src="../../../../search/main.js"></script>
+    </body>
+</html>

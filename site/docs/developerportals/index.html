@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="IT projects and resources.. along the way..">
+        <meta name="author" content="mbiscarra">
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>API Marketplaces. API Management with API Gateways & Developer Portals - document</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/bootstrap-theme.min.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">document</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">home</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../introduction.md">Openshift VS Kubernetes</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../javaee-to-cloud-native.md">From Java EE To Cloud Native</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../faq.md">Microservices FAQ & Kubernetes Native</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../sre.md">Site Reliability Engineering (SRE)</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../serverless.md">Serverless Architectures & Frameworks. OpenFaaS, Knative & Kubeless</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">DevOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../devops.md">DevOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cheatsheets.md">Cheat Sheets</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../gitops.md">GitOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../demos.md">Demos & Screencasts. OpenShift, Kubernetes, Jenkins Pipelines with JCasC and more</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">NoOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../noops.md">NoOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../serverless.md">Serverless Architectures & Frameworks. OpenFaaS, Knative & Kubeless</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../finops.md">FinOps - Cloud Financial Management</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../testops.md">TestOps and Continuous Testing</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Project Management Methodology <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../project-management-methodology.md">Project Management Methodology</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../workfromhome.md">Work From Home</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../appointment-scheduling.md">Appointment Scheduling</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../docker.md">Docker</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kubernetes <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../kubernetes.md">Kubernetes</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../matrix-table.md">Kubernetes Matrix Table</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../kubernetes-alternatives.md">Kubernetes alternatives</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">OpenShift <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../openshift.md">OpenShift docs</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Software Delivery Pipeline <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cicd.md">CI/CD - Continuous Integration & Continuous Delivery</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../git.md">Git & Git Patterns. Trunk Devel, Git Flow & Feature Flags. Merge BOTs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jenkins.md">Jenkins & Cloudbees</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../openshift-pipelines.md">OpenShift Pipelines with Jenkins, Tekton and more...</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../performance-testing-with-jenkins-and-jmeter.md">Performance testing with Jenkins and JMeter or Gatling</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jenkins-alternatives.md">Jenkins Alternatives for Continuous Integration</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../..">Toolchain</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Java Memory Management <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../java-and-java-performance-optimization.md">Java Memory Management & Java Performance Optimization</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jvm-parameters-matrix-table.md">Java Parameters Matrix Table</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../caching.md">Caching Solutions</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../monitoring.md">Monitoring and Performance. Prometheus, Grafana, APMs and more</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Configuration Management <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../ansible.md">Ansible</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../liquibase.md">Liquibase</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../terraform.md">Terraform & Packer</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Databases on Kubernetes <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../databases.md">Relational Databases and Database DevOps. CrunchyData Postgres Operator</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../nosql.md">NoSQL Databases</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../message-queue.md">Cloud Based Integration & Messaging. Data Processing & Streaming (aka Data Pipeline)</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Service Mesh <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../servicemesh.md">Service Mesh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../consul.md">Consul</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../envoyproxy.md">Envoy & xDS protocol</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../istio.md">Istio</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../linkerd.md">Linkerd</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../maesh.md">Maesh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../trafficdirector.md">Traffic Director</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Security and DevSecOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../devsecops.md">DevSecOps. Container Security</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../securityascode.md">Security Policy as Code</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../storage.md">Cloud Native Storage</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">APIs <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../api.md">APIs with SOAP, REST and gRPC</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../swagger-code-generator-for-rest-apis.md">Swagger code generator for REST APIs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../postman.md">API Test Automation with Postman</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../developerportals.md">API Marketplaces. API Management with API Gateways & Developer Portals</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Development & Frameworks <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../angular.md">Angular</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dom.md">Document Object Model (DOM)</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringFramework.md">Java - Spring Framework</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringBoot.md">Java - SpringBoot</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringCloud.md">Java - Spring Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../quarkus.md">Java - Quarkus</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../javascript.md">JavaScript - node.js & npm</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../python.md">Python - Django & Flask</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../xamarin.md">Xamarin</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev Environment <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../visual-studio.md">Visual Studio Code</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../linux-dev-env.md">WSL - Linux Dev Environment on Windows</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../scaffolding.md">Scaffolding Tools</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ChromeDevTools.md">ChromeDevTools</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Public Cloud <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../public-cloud-solutions.md">Public Cloud Solutions</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../edge-computing.md">Edge Computing</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cloud-arch-diagrams.md">Cloud Architecture Diagram Tools</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../aws.md">AWS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../GoogleCloudPlatform.md">Google Cloud Platform</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../azure.md">Microsoft Azure</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ibm_cloud.md">IBM Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../oraclecloud.md">Oracle Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../digitalocean.md">Digital Ocean</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cloudflare.md">Cloudflare</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../elearning.md">E-Learning</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../customer.md">Customer Success Stories</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../newsfeeds.md">Subreddits</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../other-awesome-lists.md">Other Awesome Lists</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../about.md">About</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li>
+                    <a href="https://github.com/melvinpetix/documents.git/">
+                        
+                        github/melvinpetix/dpcuments
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+      
+    
+        <li class="main active"><a href="#api-marketplaces-api-management-with-api-gateways-developer-portals">API Marketplaces. API Management with API Gateways &amp; Developer Portals</a></li>
+        
+            <li><a href="#api-landscape-and-api-marketplaces">API Landscape and API Marketplaces</a></li>
+        
+            <li><a href="#api-managers-with-api-gateways-developer-portals">API Managers with API Gateways &amp; Developer Portals</a></li>
+        
+            <li><a href="#mobile-developer-portals">Mobile Developer Portals</a></li>
+        
+            <li><a href="#automotive">Automotive</a></li>
+        
+            <li><a href="#banking">Banking</a></li>
+        
+            <li><a href="#insurance">Insurance</a></li>
+        
+            <li><a href="#telecom">Telecom</a></li>
+        
+    
+    
+    </ul>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="api-marketplaces-api-management-with-api-gateways-developer-portals">API Marketplaces. API Management with API Gateways &amp; Developer Portals<a class="headerlink" href="#api-marketplaces-api-management-with-api-gateways-developer-portals" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#api-landscape-and-api-marketplaces">API Landscape and API Marketplaces</a><ul>
+<li><a href="#api-marketplaces">API Marketplaces</a></li>
+<li><a href="#rapid-api-marketplace-free-public--open-rest-apis">Rapid API Marketplace. Free Public &amp; Open REST APIs</a></li>
+<li><a href="#apisguru-large-archive-of-sample-openapi-descriptions">Apis.guru Large Archive of Sample OpenAPI Descriptions</a></li>
+</ul>
+</li>
+<li><a href="#api-managers-with-api-gateways--developer-portals">API Managers with API Gateways &amp; Developer Portals</a><ul>
+<li><a href="#api-management-vs-api-gateway-vs-developer-portals">API Management vs API Gateway vs Developer Portals</a></li>
+<li><a href="#3scale-api-manager">3scale API Manager</a></li>
+<li><a href="#google-apigee-api-manager">Google Apigee API Manager</a></li>
+<li><a href="#wso2-api-manager">WSO2 API Manager</a></li>
+<li><a href="#kong-api-manager">Kong API Manager</a></li>
+<li><a href="#tyk-api-manager">Tyk API Manager</a></li>
+<li><a href="#axway-api-manager">Axway API Manager</a></li>
+<li><a href="#mulesoft-api-manager">MuleSoft API Manager</a></li>
+<li><a href="#backstage-developer-portal">Backstage Developer Portal</a></li>
+</ul>
+</li>
+<li><a href="#mobile-developer-portals">Mobile Developer Portals</a></li>
+<li><a href="#automotive">Automotive</a><ul>
+<li><a href="#auto-api">Auto API</a></li>
+<li><a href="#smartcar">Smartcar</a></li>
+<li><a href="#others">Others</a></li>
+</ul>
+</li>
+<li><a href="#banking">Banking</a></li>
+<li><a href="#insurance">Insurance</a></li>
+<li><a href="#telecom">Telecom</a></li>
+</ul>
+<h3 id="api-landscape-and-api-marketplaces">API Landscape and API Marketplaces<a class="headerlink" href="#api-landscape-and-api-marketplaces" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.apidays.co/api-landscape">API Landscape</a></li>
+</ul>
+<h4 id="api-marketplaces">API Marketplaces<a class="headerlink" href="#api-marketplaces" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://www.chakray.com/api-strategy-how-to-create-an-api-marketplace/">chakray.com: API Strategy. How to create an API Marketplace</a></li>
+<li><a href="https://rapidapi.com/blog/api-glossary/api-marketplace/">rapidapi.com: What is an API Marketplace?</a></li>
+<li><a href="https://rapidapi.com/blog/api-marketplace-vs-api-gateway-whats-the-difference/">API Marketplace vs API Gateway (What’s the Difference?)</a></li>
+</ul>
+<h4 id="rapid-api-marketplace-free-public-open-rest-apis">Rapid API Marketplace. Free Public &amp; Open REST APIs<a class="headerlink" href="#rapid-api-marketplace-free-public-open-rest-apis" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://rapidapi.com/">Rapid API:</a> Find and Connect to Thousands of APIs. RapidAPI is the world&rsquo;s largest API Marketplace, is used by over one million developers to find, test, and connect to thousands of APIs — all with a single account, API Key, and SDK.</li>
+<li><a href="https://dzone.com/articles/rapidapi-provides-api-marketplace-and-insight">dzone: RapidAPI Provides API Marketplace and Insight</a> APIs are driving businesses and innovation.</li>
+</ul>
+<h4 id="apisguru-large-archive-of-sample-openapi-descriptions">Apis.guru Large Archive of Sample OpenAPI Descriptions<a class="headerlink" href="#apisguru-large-archive-of-sample-openapi-descriptions" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://apis.guru/openapi-directory/">apis.guru/openapi-directory: large archive of sample OpenAPI descriptions</a></li>
+</ul>
+<h3 id="api-managers-with-api-gateways-developer-portals">API Managers with API Gateways &amp; Developer Portals<a class="headerlink" href="#api-managers-with-api-gateways-developer-portals" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.moesif.com/blog/technical/api-gateways/How-to-Choose-The-Right-API-Gateway-For-Your-Platform-Comparison-Of-Kong-Tyk-Apigee-And-Alternatives/">moesif.com: How to choose the right API Gateway for your platform: Comparison of Kong, Tyk, Apigee, and alternatives</a></li>
+</ul>
+<h4 id="api-management-vs-api-gateway-vs-developer-portals">API Management vs API Gateway vs Developer Portals<a class="headerlink" href="#api-management-vs-api-gateway-vs-developer-portals" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>An API gateway</strong> refers to the individual proxy server.</li>
+<li><strong>API management</strong> refers to the overall solution of managing APIs in production which includes a <strong>set of API gateways</strong> acting in a cluster, an <strong>administrative UI</strong>, and may even include additional items such as a <strong>developer portal for customers</strong> to sign up and generate new API keys.</li>
+<li><a href="https://dzone.com/articles/api-management-vs-api-gateway-and-where-does-api-a">API Management vs API Gateway: Where Does API Analytics and Monitoring Fit?</a> </li>
+<li><a href="https://dev.to/moesif/api-management-vs-api-gateway-and-where-does-api-analytics-and-monitoring-fit-4g75">API Management vs API Gateway and where does API Analytics and Monitoring fit?</a></li>
+</ul>
+<h4 id="3scale-api-manager">3scale API Manager<a class="headerlink" href="#3scale-api-manager" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://www.3scale.net/">3scale API Manager</a></li>
+<li><a href="https://www.redhat.com/en/technologies/jboss-middleware/3scale">Red Hat 3scale API Management</a></li>
+<li><a href="https://www.youtube.com/watch?v=kBBBhpKIv9I">Red Hat 3Scale API Management @Youtube</a></li>
+<li><a href="https://blog.openshift.com/openshift-ecosystem-api-management-on-red-hat-openshift-with-3scale/">OpenShift Ecosystem: API Management on Red Hat OpenShift with 3scale</a></li>
+<li><a href="https://developers.redhat.com/blog/2018/05/30/3scale-api-gateway-policies/">Adding API Gateway Policies Now Easier With Red Hat 3scale API Management</a></li>
+<li><a href="https://developers.redhat.com/blog/2019/09/09/install-3scale-multitenant-in-7-commands/">Install Red Hat 3scale and configure tenants with 7 simple commands</a></li>
+<li><a href="https://dzone.com/articles/3scale-developer-portal-docs-per-application">dzone: 3Scale Developer Portal Docs Per Application</a> Using this open source platform, we to create a more effective version of your API documentation, allowing devs to only see that docs that are relevant to their work.</li>
+<li><a href="https://dzone.com/articles/why-red-hat-and-3scale-matter">dzone: Why Red Hat and 3scale Matter: A Developer&rsquo;s View</a></li>
+</ul>
+<h4 id="google-apigee-api-manager">Google Apigee API Manager<a class="headerlink" href="#google-apigee-api-manager" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://cloud.google.com/apigee/">Google Apigee API Manager</a> Apigee is an API management platform for developing, analyzing, securing &amp; scaling various APIs and apps. It provides API technology and services for a wide range of organizations and developers to stimulate the pace of digital business. Through API, Apigee assists businesses to securely share data and services across various channels/devices in order to enhance the customer experience. Companies can manage growth and spikes in API traffic with features like traffic isolation and independent scaling.  </li>
+<li><a href="https://www.youtube.com/user/apigee">Apigee @Youtube</a></li>
+</ul>
+<h4 id="wso2-api-manager">WSO2 API Manager<a class="headerlink" href="#wso2-api-manager" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://wso2.com/api-management/">WSO2 API Manager</a></li>
+<li><a href="https://www.youtube.com/user/WSO2TechFlicks">WSO2 @Youtube</a></li>
+</ul>
+<h4 id="kong-api-manager">Kong API Manager<a class="headerlink" href="#kong-api-manager" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://konghq.com/kong/">Kong API Manager</a></li>
+<li><a href="https://www.youtube.com/channel/UCJfQURxlI_pQdeJUGXtA_zw">Kong API Platform @Youtube</a></li>
+</ul>
+<h4 id="tyk-api-manager">Tyk API Manager<a class="headerlink" href="#tyk-api-manager" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://tyk.io/">Tyk API Manager</a></li>
+<li><a href="https://www.youtube.com/channel/UCe3VG8wgz03u73xiomGeQzQ">Tyk @Youtube</a></li>
+</ul>
+<h4 id="axway-api-manager">Axway API Manager<a class="headerlink" href="#axway-api-manager" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://www.axway.com/en/products/api-management/full-lifecycle-api-management">Axway API Management</a></li>
+<li><a href="https://www.youtube.com/channel/UCsRNLDnXvgtz6qsleSlVcqQ">Axway API Management @Youtube</a></li>
+<li><a href="https://axway.com/digitize">axway.com/digitize</a></li>
+</ul>
+<h4 id="mulesoft-api-manager">MuleSoft API Manager<a class="headerlink" href="#mulesoft-api-manager" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://www.mulesoft.com/platform/api/manager">MuleSoft API Manager</a></li>
+<li><a href="https://www.youtube.com/user/mulesoftvids">MuleSoft @Youtube</a></li>
+</ul>
+<h4 id="backstage-developer-portal">Backstage Developer Portal<a class="headerlink" href="#backstage-developer-portal" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://backstage.io/">Backstage Developer Portal:</a> Spotify has now open-sourced Backstage (under Apache-2.0), the platform of platforms to create a great developer experience across hundreds of squads at Spotify</li>
+<li><a href="https://www.youtube.com/channel/UCHBvqSwbfAf5Vx1jrwkG43Q">Backstage @Youtube</a></li>
+</ul>
+<h3 id="mobile-developer-portals">Mobile Developer Portals<a class="headerlink" href="#mobile-developer-portals" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://developer.mobileconnect.io/">developer.mobileconnect.io</a></li>
+<li><a href="https://developer.android.com/">developer.android.com</a></li>
+<li><a href="https://developer.apple.com/">developer.apple.com</a></li>
+</ul>
+<h3 id="automotive">Automotive<a class="headerlink" href="#automotive" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://medium.com/high-mobility/i-want-to-build-a-car-insurance-app-which-apis-should-i-use-6c0998267c33">medium: I want to build a car insurance app — which APIs should I use?</a></li>
+<li><a href="https://medium.com/high-mobility/integrate-bmw-cardata-in-the-high-mobility-platform-now-335b7d880dd6">medium.com: BMW CarData now integrated with Auto API</a></li>
+<li><a href="https://medium.com/high-mobility/field-test-using-the-auto-api-to-work-with-bmw-cardata-480c90148569">medium.com: Field test: Using the Auto API to work with BMW CarData</a></li>
+<li><a href="https://medium.com/high-mobility/field-test-accessing-mercedes-benz-data-with-the-auto-api-a43d88363dfd">medium.com: Field Test: Accessing Mercedes-Benz Data with the Auto API</a></li>
+</ul>
+<h4 id="auto-api">Auto API<a class="headerlink" href="#auto-api" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://auto-api.dev/">auto-api.dev</a><ul>
+<li><a href="https://github.com/highmobility">github.com/highmobility</a></li>
+</ul>
+</li>
+<li><a href="https://high-mobility.com/">high-mobility.com</a><ul>
+<li><a href="https://high-mobility.com/learn/tutorials/rest/">REST Auto API Tutorial</a></li>
+</ul>
+</li>
+<li><a href="https://www.youtube.com/channel/UCZNjYn1NXEgPa_ENPna9Atw">High Mobility @Youtube</a></li>
+</ul>
+<h4 id="smartcar">Smartcar<a class="headerlink" href="#smartcar" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://smartcar.com/">smartcar.com</a></li>
+<li><a href="https://smartcar.com/bmw/">Smartcar API for BMW</a></li>
+</ul>
+<h4 id="others">Others<a class="headerlink" href="#others" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://rapidapi.com/collection/car-api">rapidapi.com/collection/car-api</a></li>
+</ul>
+<h3 id="banking">Banking<a class="headerlink" href="#banking" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Open_banking">Wikipedia: Open Banking</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Payment_Services_Directive">Wikipedia: PSD2 - the Revised Payment Services Directive</a><ul>
+<li><a href="https://www.berlin-group.org/psd2-access-to-bank-accounts">berlin-group.org: PSD2 Access to Bank Accounts</a></li>
+</ul>
+</li>
+<li><a href="https://www.openbankingtracker.com/">openbankingtracker.com</a></li>
+<li><a href="https://developerhub.santander.com/">Santander APIs</a></li>
+<li><a href="https://www.bbvaapimarket.com/">BBVA API Market</a></li>
+<li><a href="https://apistore.caixabank.com/">CaixaBank API Store</a></li>
+<li><a href="http://docsbancosabadell.github.io/api/">Banco Sabadell Open API</a></li>
+<li><a href="https://developer.db.com/">Deutsche Bank API Program</a></li>
+<li><a href="https://apis.developer.tsb.co.uk/">TSB API Developer Portal</a></li>
+<li><a href="https://developer.ing.com/">ING Developer Portal</a><ul>
+<li><a href="https://developer.ing.com/api-marketplace/marketplace">ING API Marketplace</a></li>
+</ul>
+</li>
+<li><a href="https://orangebank.es/para-desarrolladores/">OrangeBank API PSD2</a></li>
+<li><a href="https://developer.rabobank.nl/">Rabobank Developer Portal</a><ul>
+<li><a href="https://developer.rabobank.nl/api-marketplace">Rabobank API Marketplace</a></li>
+</ul>
+</li>
+<li><a href="https://apimarket.cecabank.es/">Cecabank API Market</a></li>
+</ul>
+<h3 id="insurance">Insurance<a class="headerlink" href="#insurance" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://openinsurance.io/">Open Insurance</a></li>
+<li><a href="https://api-market.santalucia.es/">santalucia.es</a></li>
+</ul>
+<h3 id="telecom">Telecom<a class="headerlink" href="#telecom" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://ericssondeveloperapi.portal.azure-api.net/">Ericsson</a></li>
+<li><a href="https://thinking-cities.readthedocs.io/">Telefonica Thinking Cities</a></li>
+</ul></div>
+                </div>
+        </div>
+
+    <hr>
+    <footer class="container">
+        
+        <center>Documentation built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="http://kristopolous.github.io/BOOTSTRA.386">BOOTSTRA.386</a>.</center>
+    </footer>
+        <script src="../../../../search/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="IT projects and resources.. along the way..">
+        <meta name="author" content="mbiscarra">
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Jenkins & CloudBees - document</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/bootstrap-theme.min.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">document</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">home</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../introduction.md">Openshift VS Kubernetes</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../javaee-to-cloud-native.md">From Java EE To Cloud Native</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../faq.md">Microservices FAQ & Kubernetes Native</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../sre.md">Site Reliability Engineering (SRE)</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../serverless.md">Serverless Architectures & Frameworks. OpenFaaS, Knative & Kubeless</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">DevOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../devops.md">DevOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cheatsheets.md">Cheat Sheets</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../gitops.md">GitOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../demos.md">Demos & Screencasts. OpenShift, Kubernetes, Jenkins Pipelines with JCasC and more</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">NoOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../noops.md">NoOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../serverless.md">Serverless Architectures & Frameworks. OpenFaaS, Knative & Kubeless</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../finops.md">FinOps - Cloud Financial Management</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../testops.md">TestOps and Continuous Testing</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Project Management Methodology <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../project-management-methodology.md">Project Management Methodology</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../workfromhome.md">Work From Home</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../appointment-scheduling.md">Appointment Scheduling</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../docker.md">Docker</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kubernetes <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../kubernetes.md">Kubernetes</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../matrix-table.md">Kubernetes Matrix Table</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../kubernetes-alternatives.md">Kubernetes alternatives</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">OpenShift <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../openshift.md">OpenShift docs</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Software Delivery Pipeline <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cicd.md">CI/CD - Continuous Integration & Continuous Delivery</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../git.md">Git & Git Patterns. Trunk Devel, Git Flow & Feature Flags. Merge BOTs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jenkins.md">Jenkins & Cloudbees</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../openshift-pipelines.md">OpenShift Pipelines with Jenkins, Tekton and more...</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../performance-testing-with-jenkins-and-jmeter.md">Performance testing with Jenkins and JMeter or Gatling</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jenkins-alternatives.md">Jenkins Alternatives for Continuous Integration</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../..">Toolchain</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Java Memory Management <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../java-and-java-performance-optimization.md">Java Memory Management & Java Performance Optimization</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jvm-parameters-matrix-table.md">Java Parameters Matrix Table</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../caching.md">Caching Solutions</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../monitoring.md">Monitoring and Performance. Prometheus, Grafana, APMs and more</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Configuration Management <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../ansible.md">Ansible</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../liquibase.md">Liquibase</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../terraform.md">Terraform & Packer</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Databases on Kubernetes <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../databases.md">Relational Databases and Database DevOps. CrunchyData Postgres Operator</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../nosql.md">NoSQL Databases</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../message-queue.md">Cloud Based Integration & Messaging. Data Processing & Streaming (aka Data Pipeline)</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Service Mesh <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../servicemesh.md">Service Mesh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../consul.md">Consul</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../envoyproxy.md">Envoy & xDS protocol</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../istio.md">Istio</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../linkerd.md">Linkerd</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../maesh.md">Maesh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../trafficdirector.md">Traffic Director</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Security and DevSecOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../devsecops.md">DevSecOps. Container Security</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../securityascode.md">Security Policy as Code</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../storage.md">Cloud Native Storage</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">APIs <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../api.md">APIs with SOAP, REST and gRPC</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../swagger-code-generator-for-rest-apis.md">Swagger code generator for REST APIs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../postman.md">API Test Automation with Postman</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../developerportals.md">API Marketplaces. API Management with API Gateways & Developer Portals</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Development & Frameworks <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../angular.md">Angular</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dom.md">Document Object Model (DOM)</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringFramework.md">Java - Spring Framework</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringBoot.md">Java - SpringBoot</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringCloud.md">Java - Spring Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../quarkus.md">Java - Quarkus</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../javascript.md">JavaScript - node.js & npm</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../python.md">Python - Django & Flask</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../xamarin.md">Xamarin</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev Environment <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../visual-studio.md">Visual Studio Code</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../linux-dev-env.md">WSL - Linux Dev Environment on Windows</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../scaffolding.md">Scaffolding Tools</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ChromeDevTools.md">ChromeDevTools</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Public Cloud <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../public-cloud-solutions.md">Public Cloud Solutions</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../edge-computing.md">Edge Computing</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cloud-arch-diagrams.md">Cloud Architecture Diagram Tools</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../aws.md">AWS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../GoogleCloudPlatform.md">Google Cloud Platform</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../azure.md">Microsoft Azure</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ibm_cloud.md">IBM Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../oraclecloud.md">Oracle Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../digitalocean.md">Digital Ocean</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cloudflare.md">Cloudflare</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../elearning.md">E-Learning</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../customer.md">Customer Success Stories</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../newsfeeds.md">Subreddits</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../other-awesome-lists.md">Other Awesome Lists</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../about.md">About</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li>
+                    <a href="https://github.com/melvinpetix/documents.git/">
+                        
+                        github/melvinpetix/dpcuments
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+      
+    
+        <li class="main active"><a href="#jenkins-cloudbees">Jenkins &amp; CloudBees</a></li>
+        
+            <li><a href="#jenkins">Jenkins</a></li>
+        
+            <li><a href="#groovy">Groovy</a></li>
+        
+            <li><a href="#awesome-jenkins">Awesome Jenkins</a></li>
+        
+            <li><a href="#jenkins-cheat-sheet">Jenkins Cheat Sheet</a></li>
+        
+            <li><a href="#online-learning">Online Learning</a></li>
+        
+            <li><a href="#jenkins-configuration-as-code-solutions-3-available-dsls">Jenkins Configuration as Code Solutions. 3 available DSLs</a></li>
+        
+            <li><a href="#jenkins-architecture-performance-and-scalability">Jenkins Architecture. Performance and Scalability</a></li>
+        
+            <li><a href="#ansible-and-jenkins-running-ansible-playbooks-from-jenkins">Ansible and Jenkins. Running Ansible Playbooks From Jenkins</a></li>
+        
+            <li><a href="#jenkins-tools">Jenkins Tools</a></li>
+        
+            <li><a href="#jenkins-multibranch-pipeline">Jenkins Multibranch Pipeline</a></li>
+        
+            <li><a href="#jenkins-plugins">Jenkins Plugins</a></li>
+        
+            <li><a href="#monitoring-jenkins">Monitoring jenkins</a></li>
+        
+            <li><a href="#jenkins-and-spring-boot">Jenkins and Spring Boot</a></li>
+        
+            <li><a href="#kubernetes-native-jenkins-operator">Kubernetes Native Jenkins Operator</a></li>
+        
+            <li><a href="#cloudbees">CloudBees</a></li>
+        
+            <li><a href="#jervis-jenkins-as-a-service">Jervis: Jenkins as a service</a></li>
+        
+            <li><a href="#jenkins-x">Jenkins X</a></li>
+        
+    
+    
+    </ul>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="jenkins-cloudbees">Jenkins &amp; CloudBees<a class="headerlink" href="#jenkins-cloudbees" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#jenkins">Jenkins</a></li>
+<li><a href="#groovy">Groovy</a></li>
+<li><a href="#awesome-jenkins">Awesome Jenkins</a></li>
+<li><a href="#jenkins-cheat-sheet">Jenkins Cheat Sheet</a></li>
+<li><a href="#online-learning">Online Learning</a></li>
+<li><a href="#jenkins-configuration-as-code-solutions-3-available-dsls">Jenkins Configuration as Code Solutions. 3 available DSLs</a><ul>
+<li><a href="#dsl-1-job-dsl-plugin-from-freestyle-jobs-to-declarative-pipeline">DSL 1. Job DSL Plugin. From Freestyle jobs to Declarative Pipeline</a></li>
+<li><a href="#dsl-2-jenkins-pipeline-pipeline-as-code-with-jenkins">DSL 2. Jenkins Pipeline. Pipeline as Code with Jenkins</a><ul>
+<li><a href="#extending-with-shared-libraries">Extending with Shared Libraries</a><ul>
+<li><a href="#automating-service-level-indicatorsservice-level-objectives-based-build-validation-with-keptn-and-jenkins">Automating Service Level Indicators/Service Level Objectives based build validation with Keptn and Jenkins</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#dsl-3-jenkins-configuration-as-code-jcasc">DSL 3. Jenkins Configuration as Code (JCasC)</a></li>
+<li><a href="#read-only-jenkins-configuration">Read-only Jenkins Configuration</a></li>
+</ul>
+</li>
+<li><a href="#jenkins-architecture-performance-and-scalability">Jenkins Architecture. Performance and Scalability</a></li>
+<li><a href="#ansible-and-jenkins-running-ansible-playbooks-from-jenkins">Ansible and Jenkins. Running Ansible Playbooks From Jenkins</a></li>
+<li><a href="#jenkins-tools">Jenkins Tools</a></li>
+<li><a href="#jenkins-multibranch-pipeline">Jenkins Multibranch Pipeline</a><ul>
+<li><a href="#multibranch-pipelines-with-kubernetes">Multibranch Pipelines with Kubernetes</a></li>
+</ul>
+</li>
+<li><a href="#jenkins-plugins">Jenkins Plugins</a><ul>
+<li><a href="#selection-of-jenkins-plugins">Selection of Jenkins Plugins</a></li>
+<li><a href="#plugin-development-jenkins-plugin-parent-pom-40">Plugin Development. Jenkins Plugin Parent POM 4.0</a></li>
+<li><a href="#jenkins-blue-ocean">Jenkins Blue Ocean</a></li>
+<li><a href="#cloudbees-flow">Cloudbees Flow</a></li>
+</ul>
+</li>
+<li><a href="#monitoring-jenkins">Monitoring jenkins</a></li>
+<li><a href="#jenkins-and-spring-boot">Jenkins and Spring Boot</a></li>
+<li><a href="#kubernetes-native-jenkins-operator">Kubernetes Native Jenkins Operator</a></li>
+<li><a href="#cloudbees">CloudBees</a><ul>
+<li><a href="#cloudbees-rollout-and-feature-flags">CloudBees Rollout and Feature Flags</a><ul>
+<li><a href="#feature-flags-in-cloudbees-enterprise-on-premise">Feature Flags in CloudBees Enterprise On-Premise</a></li>
+</ul>
+</li>
+<li><a href="#cloudbees-accelerator">CloudBees Accelerator</a></li>
+</ul>
+</li>
+<li><a href="#jervis-jenkins-as-a-service">Jervis: Jenkins as a service</a></li>
+<li><a href="#jenkins-x">Jenkins X</a></li>
+</ul>
+<h3 id="jenkins">Jenkins<a class="headerlink" href="#jenkins" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.cloudbees.com/">CloudBees</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Jenkins_(software)">Wikipedia.org: Jenkins Software</a></li>
+<li><a href="https://jenkins.io/">Jenkins.io (new Jenkins 2.0 site) 🌟</a></li>
+<li><a href="http://jenkinsci.github.io/">jenkinsci.github.io 🌟</a></li>
+<li><a href="https://github.com/michaelneale/jenkins-ci.org-docker">Official Jenkins Docker image</a></li>
+<li><a href="https://github.com/jenkinsci">github.com/jenkinsci 🌟</a></li>
+<li><a href="https://www.reddit.com/r/jenkinsci">reddit.com/r/jenkinsci 🌟</a> </li>
+<li><a href="https://dzone.com/articles/getting-started-with-jenkins-the-ultimate-guide">dzone: getting started with jenkins the ultimate guide</a></li>
+<li><a href="https://dzone.com/articles/jenkins-in-a-nutshell">dzone: jenkins in a nutshell</a></li>
+<li><a href="https://opensource.com/article/18/4/running-jenkins-builds-containers">opensource.com: running jenkins builds containers 🌟</a></li>
+<li><a href="https://jenkins.io/blog/2020/02/02/web-socket/">WebSocket support in now available for Jenkins CLI and agent networking!</a></li>
+<li><a href="https://webhookrelay.com/blog/2017/11/23/github-jenkins-guide/">webhookrelay.com: Receive Github webhooks on Jenkins without public IP 🌟</a></li>
+<li><a href="https://dzone.com/refcardz/jenkins-paas">Dzone refcard: Jenkins on PaaS</a> Continuous Integration with Jenkins for Java Projects. Includes a review of the most useful plugins, best practices, security, integration to an enterprise environment, and more.</li>
+<li><a href="https://www.jenkins.io/blog/2020/05/06/docker-agent-image-renaming/">jenkins.io 2020-05-06: Slave to Agent renaming. Renaming of the official Docker images for Jenkins agents</a> We would like to announce the renaming of the official Docker images for Jenkins agents. The <strong>&ldquo;slave&rdquo; term is widely considered inappropriate in open source communities</strong>. It has been <strong>officially deprecated in Jenkins 2.0 in 2016</strong>, but there are remaining usages in some Jenkins components.</li>
+<li><a href="https://www.jenkins.io/blog/2020/05/11/docker-windows-agents/">Windows Docker Agent Images: General Availability 🌟</a></li>
+<li><a href="https://jenkinsistheway.io/">jenkinsistheway.io: Jenkins Is The Way 🌟</a> Jenkins Is The Way is a collection of experiences from all around the world showcasing how users are building, deploying, and automating great stuff with Jenkins. </li>
+</ul>
+<p><a href="https://jenkinsistheway.io"><img alt="Jenkins Is The Way" src="images/Jenkins-is-the-Way.png" /></a></p>
+<h3 id="groovy">Groovy<a class="headerlink" href="#groovy" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Apache_Groovy">Wikipedia.org: Groovy</a></li>
+<li><a href="https://dzone.com/articles/introduction-groovy">Dzone: Introduction to Groovy</a></li>
+<li><a href="https://dzone.com/refcardz/groovy">Dzone refcard: Groovy, a Rapid-Development JVM Language</a> </li>
+</ul>
+<h3 id="awesome-jenkins">Awesome Jenkins<a class="headerlink" href="#awesome-jenkins" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://github.com/sahilsk/awesome-jenkins">sahilsk/awesome-jenkins</a></li>
+<li><a href="https://github.com/orangetw/awesome-jenkins-rce-2019">Hacking jenkins</a></li>
+</ul>
+<h3 id="jenkins-cheat-sheet">Jenkins Cheat Sheet<a class="headerlink" href="#jenkins-cheat-sheet" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="../cheatsheets/">Jenkins Cheat Sheets</a></li>
+</ul>
+<h3 id="online-learning">Online Learning<a class="headerlink" href="#online-learning" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.udemy.com/the-complete-jenkins-course-for-developers-and-devops/">udemy.com: Master Jenkins CI For DevOps and Developers</a></li>
+<li><a href="https://www.udemy.com/learn-devops-ci-cd-with-jenkins-using-pipelines-and-docker/">udemy.com: Learn DevOps: CI/CD with Jenkins using Pipelines and Docker</a> Use Jenkins the DevOps way. Automate your Jenkins jobs by using Jenkins Pipelines, Docker, and the Jenkins Job DSL</li>
+<li><a href="https://github.com/wardviaene/jenkins-course">wardviaene/jenkins-course 🌟</a> </li>
+</ul>
+<h3 id="jenkins-configuration-as-code-solutions-3-available-dsls">Jenkins Configuration as Code Solutions. 3 available DSLs<a class="headerlink" href="#jenkins-configuration-as-code-solutions-3-available-dsls" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://plugins.jenkins.io/job-dsl/">Job DSL</a> was one of the first popular plugins for Jenkins which allows managing configuration as code and many other plugins dealing with this aspect have been created since then, most notably the <a href="https://www.jenkins.io/solutions/pipeline/">Jenkins Pipeline</a> and <a href="https://www.jenkins.io/projects/jcasc/">Configuration as Code</a> plugins. It is important to understand the differences between these plugins and Job DSL for managing Jenkins configuration efficiently.</li>
+<li>In consequence 3 <a href="https://en.wikipedia.org/wiki/Domain-specific_language">DSL</a>s are available to configure jenkins as code:<ul>
+<li>DSL 1: <a href="https://plugins.jenkins.io/job-dsl/">Job DSL</a></li>
+<li>DSL 2: <a href="https://www.jenkins.io/solutions/pipeline/">Jenkins (Declarative) Pipeline</a></li>
+<li>DSL 3: <a href="https://www.jenkins.io/projects/jcasc/">Jenkins Configuration as Code (JCasC)</a></li>
+</ul>
+</li>
+<li>Tip: Don&rsquo;t stay with manually configured freestyle jobs. Use JobDSL wrapper if you can&rsquo;t use Pipeline.</li>
+</ul>
+<h4 id="dsl-1-job-dsl-plugin-from-freestyle-jobs-to-declarative-pipeline">DSL 1. Job DSL Plugin. From Freestyle jobs to Declarative Pipeline<a class="headerlink" href="#dsl-1-job-dsl-plugin-from-freestyle-jobs-to-declarative-pipeline" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Jenkins Job DSL API used in jenkins declarative pipelines.</li>
+<li><a href="https://plugins.jenkins.io/job-dsl/">Job DSL Plugin 🌟</a><ul>
+<li><a href="https://github.com/jenkinsci/job-dsl-plugin/wiki">github.com/jenkinsci/job-dsl-plugin</a></li>
+<li><a href="https://github.com/jenkinsci/job-dsl-plugin#documentation">Jenkins Job DSL Plugin documentation</a> A Groovy DSL for Jenkins Jobs - Sweeeeet!</li>
+</ul>
+</li>
+<li><a href="http://jenkinsci.github.io/job-dsl-plugin/">Jenkins Job DSL API 🌟</a><ul>
+<li><a href="https://jenkinsci.github.io/job-dsl-plugin/#path/mavenJob">mavenJob</a></li>
+<li><a href="https://github.com/polarpoint-io/groovy-jenkins-pipelines/blob/master/jobs/parameterisedPipelines.groovy">Example of a pipeline with parameters</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/sheehan/job-dsl-gradle-example">job-dsl <strong>Gradle</strong> Example</a></li>
+<li><a href="https://accenture.github.io/adop-cartridges-cookbook/docs/recipes/archiving-artefact-to-nexus/">Jenkins DSL for <strong>Nexus</strong></a></li>
+<li>Jenkins DSL for <strong>Maven</strong>:<ul>
+<li><a href="https://jenkinsci.github.io/job-dsl-plugin/#method/javaposse.jobdsl.dsl.helpers.step.StepContext.maven">ref 1</a></li>
+<li><a href="https://deors.wordpress.com/2019/04/25/jenkins-ci-pipeline-java-spring-boot-maven-docker/">ref 2</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/jenkins-infra/pipeline-library">Pipeline Global Library for ci.jenkins.io</a> Collection of custom steps and variables for our Jenkins instance(s)</li>
+</ul>
+<h4 id="dsl-2-jenkins-pipeline-pipeline-as-code-with-jenkins">DSL 2. Jenkins Pipeline. Pipeline as Code with Jenkins<a class="headerlink" href="#dsl-2-jenkins-pipeline-pipeline-as-code-with-jenkins" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://www.jenkins.io/solutions/pipeline/">Pipeline as Code with Jenkins 🌟</a></li>
+<li><a href="https://jenkins.io/doc/book/pipeline/">jenkins.io - doc/book/pipeline 🌟</a></li>
+<li><a href="https://jenkins.io/doc/book/pipeline/jenkinsfile/">jenkins.io - <strong>jenkinsfile</strong> 🌟</a> With <strong>version 2</strong> of the Jenkins Continuous Integration/Continuous Delivery (CI/CD) server, <strong>a new job definition file has been introduced, called Jenkinsfile</strong>. The initial Jenkinsfile format was based on Groovy. As groovy knowledge is not that widespread, a new and more straight forward was published in spring 2017. <strong>This format is called Declarative Pipeline</strong>. <a href="https://marketplace.visualstudio.com/items?itemName=jmMeessen.jenkins-declarative-support">This visual studio code extension</a> is aimed at making the manipulation of this file type easier.</li>
+<li><a href="https://dzone.com/refcardz/continuous-delivery-with-jenkins-workflow">Dzone refcard: <strong>Continuous Delivery with Jenkins Workflow</strong> 🌟</a></li>
+<li><a href="https://gist.github.com/Faheetah/e11bd0315c34ed32e681616e41279ef4">GitHub Gist - Faheetah/Jenkinsfile.groovy: <strong>Jenkinsfile idiosynchrasies with escaping and quotes</strong></a></li>
+<li><a href="https://jenkins.io/solutions/pipeline/">jenkins.io: Jenkins CD and Pipelines Microsite</a></li>
+<li><a href="https://dzone.com/articles/jenkins-pipeline-software-delivery-made-easy">dzone.com: Jenkins Pipeline - Software Delivery Made Easy</a> Jenkins 2.0 has focused on solving the problem for organizations wanting to continuously deliver software.</li>
+<li><a href="https://dzone.com/refcardz/declarative-pipeline-with-jenkins">DZone refcard: declarative pipeline with jenkins 🌟</a></li>
+<li><a href="https://sdtimes.com/devops/ci-cd-pipelines-are-expanding/">sdtimes.com: CI/CD pipelines are expanding 🌟</a> The “basic” CI/CD pipeline includes five processes, which are: merge, build, test, package and deploy. All of these are individually defined so readers have a common reference point. The basic pipeline includes sub-pipelines associated with each step, such as moving artifacts from a build into a repository.</li>
+<li><a href="https://www.magalix.com/blog/create-a-ci/cd-pipeline-with-kubernetes-and-jenkins">magalix.com: Create a CI/CD pipeline with Kubernetes and Jenkins (Ansible, Docker, Golang App) 🌟</a></li>
+<li><a href="https://dzone.com/articles/learn-how-to-setup-a-cicd-pipeline-from-scratch">dzone: learn how to setup a cicd pipeline from scratch 🌟</a></li>
+<li><a href="https://dzone.com/articles/how-to-use-basic-jenkins-pipelines">dzone: how to use basic jenkins pipelines</a></li>
+<li><a href="https://opensource.com/article/19/9/intro-building-cicd-pipelines-jenkins">opensource.com - building cicd pipelines with jenkins 🌟</a></li>
+<li><a href="https://devopscube.com/jenkins-pipeline-as-code/">opensource.com: Jenkins Pipeline as Code Tutorial For Beginners 🌟</a></li>
+<li><a href="https://loves.cloud/ci-cd-pipeline-using-docker-and-jenkins/">loves.cloud: CI/CD Pipeline Using Docker and Jenkins</a><ul>
+<li><a href="https://github.com/LovesCloud/java-groovy-docker/">github.com/LovesCloud/java-groovy-docker</a> </li>
+</ul>
+</li>
+<li><a href="https://medium.com/@fvtool/jenkins-cicd-getting-started-with-groovy-and-docker-containers-part-2-b03a1b934a49">medium: jenkins cicd getting started with groovy and docker</a></li>
+<li><a href="https://dzone.com/articles/top-10-best-practices-for-jenkins-pipeline">Dzone: Top 10 Best Practices for Jenkins Pipeline</a></li>
+<li><a href="https://opensource.com/article/18/8/devops-jenkins-2">opensource.com - Introduction to writing pipelines-as-code and implementing DevOps with Jenkins 2</a></li>
+<li><a href="https://www.thoughtworks.com/es/insights/blog/modernizing-your-build-pipelines">thoughtworks.com: Modernizing your build pipelines 🌟</a></li>
+</ul>
+<h5 id="extending-with-shared-libraries">Extending with Shared Libraries<a class="headerlink" href="#extending-with-shared-libraries" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Shared-libraries are not recommended since more coding involves more maintenance issues. Use Declarative Pipelines as much as possible.</li>
+<li><a href="https://www.jenkins.io/doc/book/pipeline/shared-libraries/">Extending with Shared Libraries 🌟</a></li>
+</ul>
+<h6 id="automating-service-level-indicatorsservice-level-objectives-based-build-validation-with-keptn-and-jenkins">Automating Service Level Indicators/Service Level Objectives based build validation with Keptn and Jenkins<a class="headerlink" href="#automating-service-level-indicatorsservice-level-objectives-based-build-validation-with-keptn-and-jenkins" title="Permanent link">&para;</a></h6>
+<ul>
+<li><a href="https://www.keptn.sh">Keptn</a> provides <strong>automated SLI/SLO-based quality gates</strong></li>
+<li><a href="https://github.com/keptn-sandbox/keptn-jenkins-library">Keptn Jenkins Shared Library</a> <strong>integrates Jenkins and Keptn</strong> with just a couple of function calls.</li>
+<li><a href="https://www.meetup.com/Jenkins-online-meetup/events/270861119/">Jenkins Online Meetup</a> Andreas Grabner from Dynatrace will talk about <strong>automating Service Level Indicators/Service Level Objectives based build validation with Keptn and Jenkins.</strong> <ul>
+<li>In many organizations up to 80% of pipeline execution time is spent in manual build validation steps. How can we reduce that? One option is applying Google&rsquo;s SRE (Site Reliability Engineering) practices by <strong>automating SLI (Service Level Indicators) &amp; SLO (Service Level Objectives) based build validation</strong>. This method has proven to detect problematic issues in production and also allows us to automatically approve or reject builds being pushed through our pipelines.</li>
+<li>In this session you learn the basics of picking good <strong>SLIs &amp; SLOs</strong> and how to extract them from your monitoring tools. After this session you will be able to start implementing this integration yourself with Jenkins. To give you a jump start you will be introduced to the open source project <a href="https://www.keptn.sh">Keptn</a> which provides <strong>automated SLI/SLO-based quality gates</strong>. Then we&rsquo;ll talk about <a href="https://github.com/keptn-sandbox/keptn-jenkins-library">Keptn Jenkins Shared Library</a> which <strong>integrates Jenkins and Keptn</strong> with just a couple of function calls.</li>
+</ul>
+</li>
+<li><a href="https://www.youtube.com/watch?v=VYRdirdjOAg&amp;t=5s">youtube: Level-Up your Jenkins-based Delivery with Keptn</a></li>
+</ul>
+<h4 id="dsl-3-jenkins-configuration-as-code-jcasc">DSL 3. Jenkins Configuration as Code (JCasC)<a class="headerlink" href="#dsl-3-jenkins-configuration-as-code-jcasc" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://www.jenkins.io/projects/jcasc/">Jenkins Configuration as Code Plugin</a><ul>
+<li><a href="https://plugins.jenkins.io/configuration-as-code/">plugins.jenkins.io/configuration-as-code</a></li>
+<li><a href="https://github.com/jenkinsci/configuration-as-code-plugin">github.com/jenkinsci/configuration-as-code-plugin</a></li>
+</ul>
+</li>
+<li><a href="https://devops.com/using-jenkins-configuration-as-code/">devops.com: Using jenkins configuration as code</a></li>
+<li><a href="https://opensource.com/article/20/4/getting-started-jcasc-jenkins">opensource.com: Getting started with Jenkins Configuration as Code 🌟</a> JCasC uses YAML formats to set up Jenkins configurations.</li>
+<li><a href="https://dzone.com/articles/jenkins-configuration-as-code-need-for-speed">dzone.com: Jenkins Configuration as Code: Need for Speed! 🌟</a><ul>
+<li><a href="https://github.com/jenkinsci/configuration-as-code-plugin">https://github.com/jenkinsci/configuration-as-code-plugin</a></li>
+</ul>
+</li>
+<li><a href="https://dzone.com/articles/running-jenkins-server-with-configuration-as-code">Dzone: Running Jenkins Server With Configuration-as-Code 🌟</a> Take a look at the new plugin for Jenkins that allows you to to create pipelines using YAML! Let&rsquo;s check out the details and examples.</li>
+<li><a href="https://docs.cloudbees.com/docs/cloudbees-core/latest/cloud-admin-guide/core-casc-modern">docs.cloudbees.com: Configuration as Code for CloudBees Core on modern cloud platforms</a></li>
+<li><a href="https://www.previous.cloudbees.com/blog/cloudbees-core-configuration-code-preview">cloudbees.com: CloudBees Core Configuration as Code</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=jcasc-developers.jcasc-plugin">Visual Studio Code JCasC-Plugin 🌟</a> This extension is used to integrate a live jenkins instance configuration with your editor. It can be used to edit and validate YAML files.</li>
+<li><a href="https://github.com/figaw/configuration-as-code-jenkins-k8s">Example of Configuration as Code of Jenkins (for Kubernetes) 🌟</a></li>
+<li><a href="https://www.jenkins.io/events/online-hackfest/2020-uiux/">JEP-224: System Read permission: Improve experience of Jenkins Configuration-as-Code users</a> It improves the modifying Web UI configuration controls to support the read-only mode.</li>
+</ul>
+<h4 id="read-only-jenkins-configuration">Read-only Jenkins Configuration<a class="headerlink" href="#read-only-jenkins-configuration" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://www.jenkins.io/blog/2020/05/25/read-only-jenkins-announcement/">Read-only Jenkins Configuration 🌟</a> This feature allows restricting configuration UIs and APIs while providing access to essential Jenkins system configuration, diagnostics, and self-monitoring tools through Web UI. Such mode is critical for instances managed as code, e.g. with Jenkins <a href="https://plugins.jenkins.io/configuration-as-code">Configuration-as-Code plugin</a>. It is delivered as a part of the <a href="https://github.com/jenkinsci/jep/blob/master/jep/224/README.adoc">JEP-224: Read-only system configuration</a> effort.</li>
+</ul>
+<h3 id="jenkins-architecture-performance-and-scalability">Jenkins Architecture. Performance and Scalability<a class="headerlink" href="#jenkins-architecture-performance-and-scalability" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://devopscube.com/jenkins-architecture-explained/">devopscube.com: Jenkins Architecture Explained – Beginners Guide</a></li>
+<li><a href="https://dzone.com/articles/how-to-setup-scalable-jenkins-on-top-of-a-kubernet">dzone: how to setup scalable jenkins on top of a kubernetes cluster</a></li>
+<li><a href="https://devops.com/kubernetes-jenkins-master-slave-scaling-the-scalability-issue/">devops.com: kubernetes jenkins master slave scalability</a></li>
+<li><a href="https://rancher.com/blog/2018/2018-11-27-scaling-jenkins/">rancher.com: scaling jenkins</a></li>
+<li><a href="https://rancher.com/blog/2018/2018-11-27-scaling-jenkins/">rancher.com: Deploying and Scaling Jenkins on Kubernetes 🌟</a></li>
+<li><a href="https://jenkins.io/blog/2016/11/21/gc-tuning/">jenkins.io - Tuning Jenkins GC For Responsiveness and Stability with Large Instances 🌟</a></li>
+<li><a href="https://dzone.com/articles/how-to-setup-scalable-jenkins-on-top-of-a-kubernet">dzone.com: How to Set Up Scalable Jenkins on Top of a Kubernetes Cluster 🌟</a></li>
+<li><a href="https://devops.com/kubernetes-jenkins-master-slave-scaling-the-scalability-issue/">devops.com: Kubernetes Jenkins Master-Slave: Scaling the Scalability Issue</a></li>
+<li><a href="https://www.sitepoint.com/7-ways-optimize-jenkins/">7 Ways to Optimize Jenkins</a></li>
+<li><a href="https://devopscube.com/docker-containers-as-build-slaves-jenkins/">devopscube.com: How to Setup Docker containers as Build Slaves for Jenkins</a></li>
+</ul>
+<h3 id="ansible-and-jenkins-running-ansible-playbooks-from-jenkins">Ansible and Jenkins. Running Ansible Playbooks From Jenkins<a class="headerlink" href="#ansible-and-jenkins-running-ansible-playbooks-from-jenkins" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://dzone.com/articles/running-ansible-playbooks-from-jenkins">Dzone: Running Ansible Playbooks From Jenkins</a></li>
+<li><a href="https://itnext.io/ansible-and-jenkins-automate-your-scritps-8dff99ef653">itnext.io: Ansible and Jenkins — automate your scritps 🌟</a></li>
+<li><a href="https://github.com/geerlingguy/ansible-role-jenkins">ansible-role-jenkins</a> Installs Jenkins CI on RHEL/CentOS and Debian/Ubuntu servers.</li>
+</ul>
+<h3 id="jenkins-tools">Jenkins Tools<a class="headerlink" href="#jenkins-tools" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.jenkins.io/doc/book/managing/cli/">Jenkins CLI</a></li>
+<li><a href="https://github.com/jenkinsci/configuration-as-code-plugin/blob/master/docs/seed-jobs.md">How to create initial &ldquo;seed&rdquo; job</a></li>
+<li><a href="https://github.com/jenkinsci/jenkinsfile-runner-test-framework">Jenkinsfile Runner Test Framework</a></li>
+<li><a href="https://github.com/jenkinsci/JenkinsPipelineUnit">Jenkins Pipeline Unit testing framework</a></li>
+<li><a href="https://github.com/jenkinsci/plugin-installation-manager-tool">Plugin Installation Manager Tool</a></li>
+<li><a href="https://github.com/jenkinsci/custom-war-packager">Jenkins Custom WAR Packager</a></li>
+</ul>
+<h3 id="jenkins-multibranch-pipeline">Jenkins Multibranch Pipeline<a class="headerlink" href="#jenkins-multibranch-pipeline" title="Permanent link">&para;</a></h3>
+<ul>
+<li>The <a href="https://www.jenkins.io/doc/book/pipeline/multibranch/">Multibranch Pipeline 🌟</a> enable developer to implement different Jenkinsfiles for different branches of the same project. It’s can discover branches and execute pipeline automatically with Jenkinsfiles in version control for better management pipeline.</li>
+</ul>
+<h4 id="multibranch-pipelines-with-kubernetes">Multibranch Pipelines with Kubernetes<a class="headerlink" href="#multibranch-pipelines-with-kubernetes" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://medium.com/@peiruwang/build-ci-cd-multibranch-pipeline-with-jenkins-and-kubernetes-637de560d55a">Build CI/CD Multibranch Pipeline with Jenkins and Kubernetes 🌟</a></li>
+</ul>
+<h3 id="jenkins-plugins">Jenkins Plugins<a class="headerlink" href="#jenkins-plugins" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://dev.to/jcoelho/8-jenkins-plugins-i-cant-live-without-3bin">dev.to: 8 Jenkins plugins I can&rsquo;t live without (2019)</a></li>
+<li><a href="https://caylent.com/jenkins-plugins">caylent: 20 Jenkins Plugins You Can’t Live Without (2018) 🌟</a></li>
+<li><a href="https://www.blazemeter.com/blog/top-jenkins-plugins-you-cant-miss-in-2018/">blazemeter.com: Top Jenkins Plugins You Can’t Miss in 2018</a></li>
+<li><a href="https://dzone.com/articles/5-best-jenkins-plugins-recommended-by-our-team">dzone: Top 5 Jenkins Plugins (2017)</a></li>
+<li><a href="https://devops.com/15-must-jenkins-plugins-increase-productivity/">devops.com: 15 must have Jenkins plugins to increase productivity</a></li>
+<li><a href="https://www.jrebel.com/blog/top-10-jenkins-plugins-and-features">jrebel.com: Top 10 Jenkins Plugins and Features (2014)</a></li>
+<li><a href="https://www.devteam.space/blog/10-best-jenkins-plugins-for-devops/">devteam.space: 10 Best Jenkins Plugins For DevOps</a></li>
+<li><a href="https://devops.com/top-10-best-practices-for-jenkins-pipeline-plugin/">devops.com: Top 10 Best Practices for Jenkins Pipeline Plugin 🌟</a></li>
+</ul>
+<h4 id="selection-of-jenkins-plugins">Selection of Jenkins Plugins<a class="headerlink" href="#selection-of-jenkins-plugins" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://plugins.jenkins.io/job-dsl/">Job DSL Plugin 🌟</a><ul>
+<li><a href="https://jenkinsci.github.io/job-dsl-plugin/">Jenkins Job DSL API 🌟</a></li>
+<li><a href="https://github.com/jenkinsci/job-dsl-plugin#documentation">Jenkins Job DSL Plugin documentation</a> A Groovy DSL for Jenkins Jobs - Sweeeeet!</li>
+</ul>
+</li>
+<li><a href="https://www.jenkins.io/projects/jcasc/">Jenkins Configuration as Code</a></li>
+<li><a href="https://github.com/jenkinsci/performance-plugin">performance-plugin</a></li>
+<li><a href="https://jenkins.io/blog/2019/11/22/welcome-to-the-matrix/">Matrix 🌟</a></li>
+<li><a href="https://plugins.jenkins.io/compress-buildlog">Compress-buildlog</a></li>
+<li><a href="https://plugins.jenkins.io/syslog-logger">syslog-logger</a></li>
+<li><a href="https://plugins.jenkins.io/openshift-pipeline">openshift-pipeline</a></li>
+<li><a href="https://plugins.jenkins.io/openshift-sync">openshift-sync</a></li>
+<li><a href="https://plugins.jenkins.io/openshift-client">openshift-client</a></li>
+<li><a href="https://plugins.jenkins.io/openshift-login">openshift-login</a></li>
+<li><a href="https://plugins.jenkins.io/openshift-deployer">openshift-deployer</a></li>
+<li><a href="https://plugins.jenkins.io/kubernetes">kubernetes plugin</a></li>
+<li><a href="https://plugins.jenkins.io/kubernetes-cd">Kubernetes Continuous Deploy 🌟</a></li>
+<li><a href="https://plugins.jenkins.io/kubernetes-cli/">Kubernetes CLI 🌟</a></li>
+<li><a href="https://jenkins.io/blog/2020/01/08/atlassians-new-bitbucket-server-integration-for-jenkins/">Atlassian&rsquo;s new Bitbucket Server integration for Jenkins 🌟</a></li>
+<li><a href="https://plugins.jenkins.io/blueocean/">Blue Ocean 🌟</a></li>
+<li><a href="https://plugins.jenkins.io/electricflow">Cloudbees Flow 🌟</a></li>
+<li><a href="https://plugins.jenkins.io/cloudbees-credentials">Cloudbees Credentials 🌟</a></li>
+<li><a href="https://plugins.jenkins.io/cloudbees-jenkins-advisor">CloudBees Health Advisor</a></li>
+<li><a href="https://plugins.jenkins.io/cloudbees-disk-usage-simple">CloudBees Disk Usage Simple</a></li>
+<li><a href="https://plugins.jenkins.io/aws-credentials">CloudBees AWS Credentials 🌟</a></li>
+<li><a href="https://plugins.jenkins.io/docker-custom-build-environment">CloudBees Docker Custom Build Environment</a></li>
+<li><a href="https://plugins.jenkins.io/code-coverage-api">Code Average API</a></li>
+<li><a href="https://plugins.jenkins.io/fortify">Fortify</a></li>
+<li><a href="https://plugins.jenkins.io/sonar/">SonarQube Scanner 🌟</a> <ul>
+<li><a href="https://docs.sonarqube.org/latest/analysis/scan/sonarscanner-for-jenkins/">SonarScanner for Jenkins 🌟</a> SonarQube plugin for Jenkins with declarative pipeline</li>
+</ul>
+</li>
+<li><a href="https://medium.com/@jportasa/ecs-jenkins-plugin-to-create-ephemeral-slaves-in-fargate-8cb80b46fb75">medium: ECS Jenkins Plugin to create ephemeral Slaves in Fargate</a></li>
+<li><a href="https://www.jenkins.io/doc/pipeline/steps/workflow-scm-step/">Pipeline: SCM Step (workflow-scm-step)</a> The following plugin provides functionality available through Pipeline-compatible steps.</li>
+<li><a href="https://plugins.jenkins.io/ec2/">Amazon EC2 plugin</a></li>
+<li><a href="https://plugins.jenkins.io/copyartifact/">Copy Artifact</a></li>
+<li><a href="https://plugins.jenkins.io/credentials-binding/">Credentials Binding</a></li>
+<li><a href="https://plugins.jenkins.io/cvs/">CVS plugin</a></li>
+<li><a href="https://plugins.jenkins.io/scm-filter-jervis/">SCM Filter Jervis YAML Plugin</a> This plugin is intended for Jenkins infrastructure relying on <a href="https://github.com/samrocketman/jervis/wiki">jervis</a> to deliver software in a self-service manner. This plugin can also be used for Travis CI YAML.</li>
+<li><a href="https://plugins.jenkins.io/deploy-dashboard/">Deploy Dashboard by Namecheap</a><ul>
+<li><a href="https://www.namecheap.com/blog/visualize-your-deployment-status-with-jenkins/">namecheap.com: Visualize Your Deployment Status with Jenkins 🌟</a></li>
+</ul>
+</li>
+<li><a href="https://plugins.jenkins.io/plugin-usage-plugin/">Plugin Usage</a> This plugin gives you the possibility to analyze the usage of your installed plugins.</li>
+<li><a href="https://plugins.jenkins.io/pipeline-as-yaml/">Pipeline as YAML (Incubated) 🌟</a></li>
+<li><a href="https://plugins.jenkins.io/leastload/">Least Load</a> This plugin overrides the default Load Balancer behavior and assigns jobs to nodes with the least load</li>
+<li><a href="https://plugins.jenkins.io/declarative-pipeline-migration-assistant/">Declarative Pipeline Migration Assistant 🌟</a></li>
+</ul>
+<h4 id="plugin-development-jenkins-plugin-parent-pom-40">Plugin Development. Jenkins Plugin Parent POM 4.0<a class="headerlink" href="#plugin-development-jenkins-plugin-parent-pom-40" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://www.jenkins.io/doc/developer/plugin-development/">Plugin Development</a></li>
+<li><a href="https://www.jenkins.io/doc/developer/plugin-development/dependency-management/">Plugin Development: Dependency Management</a></li>
+<li><a href="https://github.com/jenkinsci/plugin-pom">Parent POM for Jenkins Plugins. Plugin POM 4.0</a> This new parent POM is decoupled from the core Jenkins project, both from the Maven and repository perspectives.</li>
+<li><a href="https://github.com/jenkinsci/plugin-pom/releases/tag/plugin-4.0">4.0 changelog</a></li>
+<li>Maven is widely used for Jenkins plugin development, more than 90% of plugins use it. In order to simplify plugin development, the Jenkins project offers a standard Parent POM which defines the recommended build, verification and release flow. Such parent POM helps us to ensure quality of the Jenkins plugins. In April 2020 we released a new major release of the parent POM which includes a number of important and sometimes incompatible changes: Jenkins core Bill of materials, full migration to SpotBugs, etc.</li>
+<li><a href="https://www.meetup.com/Jenkins-online-meetup/events/270630108/">In this presentation</a> James Nord will talk about the changes introduced in Plugin POM 4.0. What do plugin developers and users get by upgrading? How to upgrade? What obstacles to expect, and how to resolve them?</li>
+</ul>
+<h4 id="jenkins-blue-ocean">Jenkins Blue Ocean<a class="headerlink" href="#jenkins-blue-ocean" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://www.jenkins.io/doc/book/blueocean/getting-started/">Jenkins BlueOcean 🌟</a></li>
+<li><a href="https://plugins.jenkins.io/blueocean/">Blue Ocean plugin</a></li>
+</ul>
+<iframe src="https://www.youtube.com/embed/NVicei-Ew4A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe src="https://www.youtube.com/embed/ZJZW0j2eTQY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h4 id="cloudbees-flow">Cloudbees Flow<a class="headerlink" href="#cloudbees-flow" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://www.cloudbees.com/products/flow/overview"><strong>Cloudbees Flow</strong> 🌟</a></li>
+<li><a href="https://plugins.jenkins.io/electricflow/">CloudBees Flow plugin</a></li>
+</ul>
+<iframe src="https://www.youtube.com/embed/tuhGzaQx8gY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe src="https://www.youtube.com/embed/4RFlwU9klQ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h3 id="monitoring-jenkins">Monitoring jenkins<a class="headerlink" href="#monitoring-jenkins" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://github.com/jenkinsci/performance-plugin">Performance plugin</a></li>
+<li><a href="https://plugins.jenkins.io/splunk-devops">Splunk Plugins</a><ul>
+<li><a href="https://splunkbase.splunk.com/app/3332/">Splunk App for Jenkins</a></li>
+</ul>
+</li>
+<li><a href="https://plugins.jenkins.io/logstash">Logstash</a></li>
+<li><a href="https://wiki.jenkins.io/display/JENKINS/Build+Monitor+Plugin">Build Monitor Plugin</a><ul>
+<li><a href="http://www.ampelofilosofies.gr/software/2017/03/04/monitor-ci-nodes-with-jenkins#sthash.eLP0PanT.dpbs">Monitor CI nodes with Jenkins</a></li>
+<li><a href="https://www.youtube.com/watch?v=WnQK6-puXSM">youtube: How to create Build Monitor View</a></li>
+<li><a href="https://www.youtube.com/watch?v=y6RNLNvnYIw">youtube: monitoring jenkins job with build monitor view</a></li>
+<li><a href="http://tatiyants.com/jenkins-build-monitor/">tatiyants.com: jenkins build monitor</a></li>
+</ul>
+</li>
+<li><a href="https://wiki.jenkins.io/display/JENKINS/Monitor+Pro+Plugin">Monitor Pro Plugin</a></li>
+<li><a href="https://www.almtoolbox.com/jenkins-monitoring.php">ALM Performance: Continuously Monitor Performance and Vitality of your Jenkins Deployment</a></li>
+<li><a href="https://www.instana.com/blog/monitoring-jenkins-using-instana/">Monitoring jenkins using instana</a></li>
+<li><a href="https://medium.com/@gangsta_black/grafana-cool-dashboard-for-monitoring-jenkins-with-prometheus-c7ba4f1c6297">medium: prometheus and grafana dashboard</a></li>
+<li><a href="https://www.youtube.com/watch?v=EWFJem7GUAc">youtube: Monitoring Jenkins with Grafana and Prometheus</a></li>
+<li><a href="https://www.dynatrace.com/news/blog/optimizing-jenkins-to-ensure-fast-build-times-with-dynatrace/">dynatrace.com: optimizing jenkins to ensure fast build times with dynatrace</a></li>
+<li><a href="https://www.opsview.com/product/system-monitoring/application/jenkins-monitoring">opsview.com: opspack</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/monitor-me-jenkins/jhbokpimjgedmpcmfoghhiokhpihlkgc">Chrome Extension</a></li>
+<li><a href="https://plugins.jenkins.io/github-autostatus">Jenkins plugin to provide automatic status for multibranch jobs (Grafana)</a><ul>
+<li><a href="https://github.com/jenkinsci/github-autostatus-plugin">github.com/jenkinsci/github-autostatus-plugin</a></li>
+</ul>
+</li>
+<li><a href="https://caylent.com/jenkins-plugins">20 Jenkins Plugins You Can’t Live Without</a></li>
+<li><a href="https://www.youtube.com/watch?v=yTafQ-e84eY">youtube - CloudBeesTV: Jenkins Performance: Avoiding Pitfalls, Diagnosing Issues &amp; Scaling for Growth</a></li>
+</ul>
+<h3 id="jenkins-and-spring-boot">Jenkins and Spring Boot<a class="headerlink" href="#jenkins-and-spring-boot" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://jaxenter.com/cicd-microservices-docker-162408.html">jaxenter.com - CI/CD for Spring Boot Microservices</a></li>
+<li><a href="https://piotrminkowski.wordpress.com/2019/01/15/kotlin-microservice-with-spring-boot/">piotrminkowski.wordpress.com: Kotlin microservice with spring boot</a></li>
+</ul>
+<h3 id="kubernetes-native-jenkins-operator">Kubernetes Native Jenkins Operator<a class="headerlink" href="#kubernetes-native-jenkins-operator" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://github.com/jenkinsci/kubernetes-operator">github.com/jenkinsci/kubernetes-operator: 🌟</a> Kubernetes platform was released ten years after the first version of Hudson project. It means Jenkins couldn’t be designed to run on top of it. Jenkins Operator tries to bridge that gap.</li>
+</ul>
+<h3 id="cloudbees">CloudBees<a class="headerlink" href="#cloudbees" title="Permanent link">&para;</a></h3>
+<h4 id="cloudbees-rollout-and-feature-flags">CloudBees Rollout and Feature Flags<a class="headerlink" href="#cloudbees-rollout-and-feature-flags" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://app.rollout.io/">CloudBees Rollout 🌟</a></li>
+<li><a href="https://rollout.io/blog/rollout-tutorial-feature-flagging-in-your-react-native-app-in-5-minutes/">rollout.io: CloudBees Rollout Tutorial: Feature Flagging in your React Native App in 5 minutes</a></li>
+<li><a href="https://www.cloudbees.com/blog/how-disable-code-developers-production-kill-switch">How to Disable Code: The Developer&rsquo;s Production Kill Switch 🌟</a></li>
+</ul>
+<h5 id="feature-flags-in-cloudbees-enterprise-on-premise">Feature Flags in CloudBees Enterprise On-Premise<a class="headerlink" href="#feature-flags-in-cloudbees-enterprise-on-premise" title="Permanent link">&para;</a></h5>
+<ul>
+<li><a href="https://www.previous.cloudbees.com/press/cloudbees-releases-another-industry-first-feature-flagging-premise-use">CloudBees Releases Another Industry First: Feature Flagging for On-Premise Use 🌟</a><ul>
+<li>SAN JOSE, CA. – May 5, 2020 – CloudBees, Inc., the enterprise software delivery company, today announced a new release of CloudBees Feature Flags that enables developers to manage production deployments of new functionality in a controlled manner with an on-premise feature manager. The new offering strengthens CloudBees’ leadership in the continuous integration/continuous delivery (CI/CD) space by extending users’ ability to leverage feature flag technology in both on-premise and cloud environments. CloudBees Feature Flags is from the company and application formerly known as Rollout, <a href="https://www.previous.cloudbees.com/press/cloudbees-acquires-rollout-adding-feature-flag-system">acquired last year by CloudBees</a>.</li>
+<li>Feature flags have emerged as popular tools for deploying new features with the added advantage of enabling risk-free experimentation and fast results. As organizations enhance applications with rich new capabilities, many use feature flags to preview features for select audiences, with the ability to pull them back quickly if the functionality is not successful. <a href="https://rollout.io/wp-content/uploads/2018/11/Rising.The_.Flag_.Rollout-1.pdf">In a recent survey</a>, 97% of respondents say that it is important for their organization to implement new application features quickly, yet 65% say it is difficult for their organization to do so safely. CloudBees Feature Flags enables developers to easily release new features with confidence, reduce risk in doing so and manage large numbers of feature flags at scale.</li>
+<li>“Very soon, all features will be released behind a feature flag. It’s a natural evolution in continuous delivery. CloudBees has led the way in feature flag technology, making it a core part of our overall offering,” said Sacha Labourey, CEO and co-founder, CloudBees. “With this release, we are providing the same functionality for on-premise environments that previously had only been available as a cloud-based service. We are committed to the ongoing integration, automation and governance of feature flags within the software delivery lifecycle and giving users choice in selecting the best environment for their project – on-premise or cloud.” </li>
+<li>CloudBees Feature Flags integrates with the company’s deep CI/CD capabilities, giving organizations the most comprehensive feature management capabilities in the software development life cycle (SDLC). The ability to use feature flagging in an on-premise environment also opens up new avenues for usage in industries, such as government, finance, pharmaceuticals, utilities and healthcare, where there can be a mix of on-premise and cloud environments.</li>
+<li>“We recognize that many companies are realizing the benefits of feature flags,” said Moritz Plassnig, senior vice president and general manager, Software Delivery Management and Software Delivery Automation Cloud at CloudBees. “By flagging features, they no longer have to sacrifice innovation to lower risk. We felt that it was critical to offer this technology to any company working in on-premise or hybrid environments.”</li>
+</ul>
+</li>
+</ul>
+<h4 id="cloudbees-accelerator">CloudBees Accelerator<a class="headerlink" href="#cloudbees-accelerator" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://www.cloudbees.com/products/accelerator/overview">CloudBees Accelerator</a> Shorten Build and Test Times</li>
+<li><a href="https://www.cloudbees.com/blog/how-speed-software-development-build-test-acceleration-tools">How to Speed Up Software Development with Build and Test Acceleration Tools</a></li>
+</ul>
+<h3 id="jervis-jenkins-as-a-service">Jervis: Jenkins as a service<a class="headerlink" href="#jervis-jenkins-as-a-service" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://github.com/samrocketman/jervis/wiki">Jervis</a> is <a href="https://github.com/samrocketman">Sam Gleske</a>&lsquo;s vision of a good way to roll out Jenkins as a service in very large organizations.</li>
+<li><a href="https://plugins.jenkins.io/scm-filter-jervis/">SCM Filter Jervis YAML Plugin</a> This plugin is intended for Jenkins infrastructure relying on <a href="https://github.com/samrocketman/jervis/wiki">jervis</a> to deliver software in a self-service manner. This plugin can also be used for Travis CI YAML.</li>
+</ul>
+<h3 id="jenkins-x">Jenkins X<a class="headerlink" href="#jenkins-x" title="Permanent link">&para;</a></h3>
+<p><a href="https://jenkins-x.io"><strong>Jenkins X</strong></a> is a specialized Jenkins for Kubernetes: This is how it works from a bird eye the CI/CD:  a developer creates a branch, then Jenkins X creates a ephemeral namespace with that branch. The developer tests it and once it is ok, a PR is created, then, the branch is deployed in staging.  When I merge it, it goes to QA, and with a manual command &ldquo;jx promote&rdquo; it goes to production.  Jenkins X deletes automatically after N hours the branch namespace.</p>
+<ul>
+<li><a href="https://jenkins-x.io/"><strong>jenkins-x.io</strong></a></li>
+<li><a href="https://itnext.io/tagged/jenkins-x">itnext.io/tagged/jenkins-x</a></li>
+<li><a href="https://itnext.io/jenkins-x-managing-jenkins-926f0e0f8bcf">itnext.io: Jenkins X — Managing Jenkins</a></li>
+<li>Video Tutorials:<ul>
+<li><a href="https://www.youtube.com/watch?v=BF3MhFjvBTU">Youtube: Jenkins X: Continuous Delivery for Kubernetes with James Strachan</a></li>
+<li><a href="https://www.youtube.com/watch?v=oZOZiL6XIfA&amp;feature=emb_title">Youtube: Kubernetes Package Management with Helm and CI/CD with Jenkins X - Webinar by Neependra Khare</a></li>
+<li><a href="https://go.digitalocean.com/cicd-on-k8s">go.digitalocean.com/cicd-on-k8s</a></li>
+</ul>
+</li>
+</ul>
+<p><a href="https://www.cloudbees.com/"><img alt="jenkins and openshift" src="images/jenkins-ose.png" /></a></p>
+<p><a href="https://hostadvice.com/blog/devops-toolbox-jenkins-ansible-chef-puppet-vagrant-saltstack/"><img alt="jenkins hub CD" src="images/jenkins-hub.png" /></a></p></div>
+                </div>
+        </div>
+
+    <hr>
+    <footer class="container">
+        
+        <center>Documentation built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="http://kristopolous.github.io/BOOTSTRA.386">BOOTSTRA.386</a>.</center>
+    </footer>
+        <script src="../../../../search/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="IT projects and resources.. along the way..">
+        <meta name="author" content="mbiscarra">
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Kubernetes Distributions & Installers Matrix Table - document</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/bootstrap-theme.min.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">document</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">home</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../introduction.md">Openshift VS Kubernetes</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../javaee-to-cloud-native.md">From Java EE To Cloud Native</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../faq.md">Microservices FAQ & Kubernetes Native</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../sre.md">Site Reliability Engineering (SRE)</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../serverless.md">Serverless Architectures & Frameworks. OpenFaaS, Knative & Kubeless</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">DevOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../devops.md">DevOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cheatsheets.md">Cheat Sheets</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../gitops.md">GitOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../demos.md">Demos & Screencasts. OpenShift, Kubernetes, Jenkins Pipelines with JCasC and more</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">NoOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../noops.md">NoOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../serverless.md">Serverless Architectures & Frameworks. OpenFaaS, Knative & Kubeless</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../finops.md">FinOps - Cloud Financial Management</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../testops.md">TestOps and Continuous Testing</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Project Management Methodology <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../project-management-methodology.md">Project Management Methodology</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../workfromhome.md">Work From Home</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../appointment-scheduling.md">Appointment Scheduling</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../docker.md">Docker</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kubernetes <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../kubernetes.md">Kubernetes</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../matrix-table.md">Kubernetes Matrix Table</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../kubernetes-alternatives.md">Kubernetes alternatives</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">OpenShift <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../openshift.md">OpenShift docs</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Software Delivery Pipeline <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cicd.md">CI/CD - Continuous Integration & Continuous Delivery</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../git.md">Git & Git Patterns. Trunk Devel, Git Flow & Feature Flags. Merge BOTs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jenkins.md">Jenkins & Cloudbees</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../openshift-pipelines.md">OpenShift Pipelines with Jenkins, Tekton and more...</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../performance-testing-with-jenkins-and-jmeter.md">Performance testing with Jenkins and JMeter or Gatling</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jenkins-alternatives.md">Jenkins Alternatives for Continuous Integration</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../..">Toolchain</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Java Memory Management <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../java-and-java-performance-optimization.md">Java Memory Management & Java Performance Optimization</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jvm-parameters-matrix-table.md">Java Parameters Matrix Table</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../caching.md">Caching Solutions</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../monitoring.md">Monitoring and Performance. Prometheus, Grafana, APMs and more</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Configuration Management <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../ansible.md">Ansible</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../liquibase.md">Liquibase</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../terraform.md">Terraform & Packer</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Databases on Kubernetes <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../databases.md">Relational Databases and Database DevOps. CrunchyData Postgres Operator</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../nosql.md">NoSQL Databases</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../message-queue.md">Cloud Based Integration & Messaging. Data Processing & Streaming (aka Data Pipeline)</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Service Mesh <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../servicemesh.md">Service Mesh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../consul.md">Consul</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../envoyproxy.md">Envoy & xDS protocol</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../istio.md">Istio</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../linkerd.md">Linkerd</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../maesh.md">Maesh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../trafficdirector.md">Traffic Director</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Security and DevSecOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../devsecops.md">DevSecOps. Container Security</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../securityascode.md">Security Policy as Code</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../storage.md">Cloud Native Storage</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">APIs <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../api.md">APIs with SOAP, REST and gRPC</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../swagger-code-generator-for-rest-apis.md">Swagger code generator for REST APIs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../postman.md">API Test Automation with Postman</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../developerportals.md">API Marketplaces. API Management with API Gateways & Developer Portals</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Development & Frameworks <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../angular.md">Angular</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dom.md">Document Object Model (DOM)</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringFramework.md">Java - Spring Framework</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringBoot.md">Java - SpringBoot</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringCloud.md">Java - Spring Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../quarkus.md">Java - Quarkus</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../javascript.md">JavaScript - node.js & npm</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../python.md">Python - Django & Flask</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../xamarin.md">Xamarin</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev Environment <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../visual-studio.md">Visual Studio Code</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../linux-dev-env.md">WSL - Linux Dev Environment on Windows</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../scaffolding.md">Scaffolding Tools</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ChromeDevTools.md">ChromeDevTools</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Public Cloud <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../public-cloud-solutions.md">Public Cloud Solutions</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../edge-computing.md">Edge Computing</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cloud-arch-diagrams.md">Cloud Architecture Diagram Tools</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../aws.md">AWS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../GoogleCloudPlatform.md">Google Cloud Platform</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../azure.md">Microsoft Azure</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ibm_cloud.md">IBM Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../oraclecloud.md">Oracle Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../digitalocean.md">Digital Ocean</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cloudflare.md">Cloudflare</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../elearning.md">E-Learning</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../customer.md">Customer Success Stories</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../newsfeeds.md">Subreddits</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../other-awesome-lists.md">Other Awesome Lists</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../about.md">About</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li>
+                    <a href="https://github.com/melvinpetix/documents.git/">
+                        
+                        github/melvinpetix/dpcuments
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+      
+    
+        <li class="main active"><a href="#kubernetes-distributions-installers-matrix-table">Kubernetes Distributions &amp; Installers Matrix Table</a></li>
+        
+    
+    
+    </ul>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="kubernetes-distributions-installers-matrix-table">Kubernetes Distributions &amp; Installers Matrix Table<a class="headerlink" href="#kubernetes-distributions-installers-matrix-table" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th align="left">Kubernetes Installer or Distribution</th>
+<th align="left">Role</th>
+<th align="left">Ecosystem</th>
+<th align="left">Infra Provider</th>
+<th align="left">On-Premise</th>
+<th align="left">Licence</th>
+<th align="left">HA</th>
+<th align="left">Standalone</th>
+<th align="left">Runs in Docker</th>
+<th align="left">Ingress + Storage <br/>included</th>
+<th align="left">Automated <br/>Deployment</th>
+<th align="left">Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/kubernetes/kubeadm">kubeadm</a></td>
+<td align="left">SRE / DevOps</td>
+<td align="left">Kubernetes Upstream</td>
+<td align="left">Multi platform</td>
+<td align="left">Yes</td>
+<td align="left">OSS</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">No</td>
+<td align="left">No</td>
+<td align="left">No</td>
+<td align="left">Official kubernetes deployment tool</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/geerlingguy/ansible-role-kubernetes">Ansible role for kubeadm automation</a></td>
+<td align="left">SRE / DevOps</td>
+<td align="left">Kubernetes Upstream</td>
+<td align="left">Virtual Machine</td>
+<td align="left">Yes</td>
+<td align="left">OSS</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">Yes (storage?)</td>
+<td align="left">No</td>
+<td align="left">Ansible role for kubeadm automation</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/kubernetes/kops">Kops</a></td>
+<td align="left">SRE / DevOps</td>
+<td align="left">Kubernetes Upstream</td>
+<td align="left">AWS</td>
+<td align="left">No</td>
+<td align="left">OSS</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">AWS compliant, alpha release <br/>for other providers</td>
+</tr>
+<tr>
+<td align="left"><a href="https://kubernetes-incubator.github.io/kube-aws/">kube-aws</a></td>
+<td align="left">SRE / DevOps</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">A command-line tool to declaratively manage Kubernetes clusters on AWS</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/kubernetes/minikube">Minikube</a></td>
+<td align="left">Devel</td>
+<td align="left">Kubernetes Upstream</td>
+<td align="left">Dektop Virtual Machine</td>
+<td align="left">Yes</td>
+<td align="left">OSS</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">Official development environment</td>
+</tr>
+<tr>
+<td align="left"><a href="https://docs.docker.com/docker-for-windows/#kubernetes">Docker Desktop on Windows</a></td>
+<td align="left">Devel</td>
+<td align="left">Kubernetes Upstream</td>
+<td align="left">Desktop Virtual Machine</td>
+<td align="left">Yes</td>
+<td align="left">OSS</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">Development environment available in <br/>Docker Desktop on Windows</td>
+</tr>
+<tr>
+<td align="left"><a href="https://rancher.com/docs/rancher/v2.x/en/">Rancher 2</a></td>
+<td align="left">SRE / DevOps</td>
+<td align="left">Multi-cloud kubernetes <br/>management</td>
+<td align="left">Virtual Machine</td>
+<td align="left">Yes</td>
+<td align="left">OSS</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">No</td>
+<td align="left">No</td>
+<td align="left">No</td>
+<td align="left">Racher is an enterprise kubernetes installer <br/>that competes with OpenShift.</td>
+</tr>
+<tr>
+<td align="left"><a href="https://rancher.com/products/rke/">Rancher 2 RKE</a></td>
+<td align="left">SRE / DevOps</td>
+<td align="left">Rancher</td>
+<td align="left">Virtual Machine</td>
+<td align="left">Yes</td>
+<td align="left">OSS</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">no</td>
+<td align="left">no</td>
+<td align="left">Rancher 2 that runs in docker containers.</td>
+</tr>
+<tr>
+<td align="left"><a href="https://k3s.io/">K3s</a></td>
+<td align="left">SRE / DevOps / IoT</td>
+<td align="left">Rancher</td>
+<td align="left">Virtual Machine</td>
+<td align="left">Yes</td>
+<td align="left">OSS</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">Basic kubernetes with automated installer.</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/rancher/k3d">K3d</a></td>
+<td align="left">SRE / DevOps / IoT</td>
+<td align="left">Rancher</td>
+<td align="left">Virtual Machine</td>
+<td align="left">Yes</td>
+<td align="left">OSS</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">k3s that runs in docker containers.</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/alexellis/k3sup">K3sup (said &lsquo;ketchup&rsquo;)</a></td>
+<td align="left">SRE / DevOps / IoT</td>
+<td align="left">Rancher</td>
+<td align="left">Virtual Machine</td>
+<td align="left">Yes</td>
+<td align="left">OSS</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">get from zero to KUBECONFIG with k3s on any local or remote VM</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/rancher/k3os">K3OS</a></td>
+<td align="left">SRE / DevOps / IoT</td>
+<td align="left">Rancher</td>
+<td align="left">Virtual Machine</td>
+<td align="left">Yes</td>
+<td align="left">OSS</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">Linux distribution designed to remove as much OS maintenance as <br/>possible in a Kubernetes cluster</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/rancher/k3c">K3c</a></td>
+<td align="left">Devel</td>
+<td align="left">Rancher</td>
+<td align="left">Linux</td>
+<td align="left">Yes</td>
+<td align="left">OSS</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">Lightweight local container engine for container development (experiment)</td>
+</tr>
+<tr>
+<td align="left"><a href="https://microk8s.io/">Microk8s</a></td>
+<td align="left">Devel / IoT</td>
+<td align="left">Kubernetes Upstream</td>
+<td align="left">Virtual Machine</td>
+<td align="left">Yes</td>
+<td align="left">OSS</td>
+<td align="left">Yes (beta)</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">Ubuntu. It compites with k3s.</td>
+</tr>
+<tr>
+<td align="left"><a href="https://k8spharos.dev/">Pharos</a></td>
+<td align="left">SRE / DevOPs / IoT</td>
+<td align="left">Kubernetes Upstream</td>
+<td align="left">Multi Platform</td>
+<td align="left">Yes</td>
+<td align="left">OSS</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">Pharos is a vendor neutral community driven Kubernetes that works on any infrastructure at any scale. It works flawlessly on public clouds, private clouds, hybrid clouds, on-premises, bare metal or at the edge, no problem!</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/okd-community-install">OKD</a></td>
+<td align="left">SRE / DevOps</td>
+<td align="left">OpenShift</td>
+<td align="left">Virtual Machine</td>
+<td align="left">Yes</td>
+<td align="left">OSS</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">Yes <br/>(okd-community-install)</td>
+<td align="left">Yes <br/>(okd-community-install)</td>
+<td align="left">okd-community-install is a standalone cluster <br/>of 1 node valid for small projects.</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.okd.io/minishift/">Minishift</a></td>
+<td align="left">Devel</td>
+<td align="left">OpenShift</td>
+<td align="left">Desktop Virtual Machine</td>
+<td align="left">Yes</td>
+<td align="left">OSS</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">OpenShift 3 official development environment.</td>
+</tr>
+<tr>
+<td align="left"><a href="https://try.openshift.com">OCP 4 CodeReady Containers</a></td>
+<td align="left">Devel</td>
+<td align="left">OpenShift</td>
+<td align="left">Desktop Virtual Machine</td>
+<td align="left">Yes</td>
+<td align="left">OSS</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">OpenShift 4 official development environment</td>
+</tr>
+<tr>
+<td align="left"><a href="https://try.openshift.com">OCP 4 Public Cloud</a></td>
+<td align="left">SRE / DevOps</td>
+<td align="left">OpenShift</td>
+<td align="left">AWS, GCP, Azure</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">OpenShift in Public Cloud</td>
+</tr>
+<tr>
+<td align="left"><a href="https://try.openshift.com">OpenShift Dedicated</a></td>
+<td align="left">SRE / DevOps</td>
+<td align="left">OpenShift</td>
+<td align="left">AWS</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">OpenShift In AWS managed by Red Hat</td>
+</tr>
+<tr>
+<td align="left"><a href="https://try.openshift.com">OCP 4 Private Cloud 1</a></td>
+<td align="left">SRE / DevOps</td>
+<td align="left">OpenShift</td>
+<td align="left">OpenStack, <br/>Red Hat Virtualization</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">OpenShift in private cloud with automated <br/>deployment recommeded by Red Hat.</td>
+</tr>
+<tr>
+<td align="left"><a href="https://try.openshift.com">OCP 4 Private Cloud 2</a></td>
+<td align="left">SRE / DevOps</td>
+<td align="left">OpenShift</td>
+<td align="left">vSphere 6.7 U2, Bare Metal</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">OpenShift in private cloud with infra providers <br/>that currently don&rsquo;t support automated <br/>deployments.</td>
+</tr>
+<tr>
+<td align="left"><a href="https://aws.amazon.com/en/eks/">AWS EKS</a></td>
+<td align="left">SRE / DevOps</td>
+<td align="left">AWS Kubernetes</td>
+<td align="left">AWS</td>
+<td align="left">No</td>
+<td align="left">N/A</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">Managed kubernetes by AWS</td>
+</tr>
+<tr>
+<td align="left"><a href="https://azure.microsoft.com/en-en/services/kubernetes-service/">Azure AKS</a></td>
+<td align="left">SRE / DevOps</td>
+<td align="left">Azure Kubernetes</td>
+<td align="left">Azure</td>
+<td align="left">No</td>
+<td align="left">N/A</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">Managed kubernetes by Azure</td>
+</tr>
+<tr>
+<td align="left"><a href="https://cloud.google.com/kubernetes-engine/">Google kubernetes Engine (GKE)</a></td>
+<td align="left">SRE / DevOps</td>
+<td align="left">Google Kubernetes</td>
+<td align="left">GCP</td>
+<td align="left">No</td>
+<td align="left">N/A</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">Managed kubernetes by Google Cloud</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.digitalocean.com/products/kubernetes/">Digital Ocean Kubernetes</a></td>
+<td align="left">SRE / DevOps</td>
+<td align="left">Digital Ocean Kubernetes</td>
+<td align="left">Digital Ocean</td>
+<td align="left">No</td>
+<td align="left">N/A</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">Managed kubernetes by Digital Ocean Cloud</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.alibabacloud.com/product/kubernetes">Alibaba Container Service for kubernetes (ACK)</a></td>
+<td align="left"></td>
+<td align="left">SRE / DevOps</td>
+<td align="left">Alibaba Kubernetes</td>
+<td align="left">Alibaba Cloud</td>
+<td align="left">No</td>
+<td align="left">N/A</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">No</td>
+<td align="left">yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.oracle.com/cloud/compute/container-engine-kubernetes.html">Oracle Kubernetes Engine (OKE)</a></td>
+<td align="left">SRE / DevOps</td>
+<td align="left">Oracle Kubernetes</td>
+<td align="left">Oracle Cloud</td>
+<td align="left">No</td>
+<td align="left">N/A</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">Managed kubernetes by Oracle Cloud</td>
+</tr>
+<tr>
+<td align="left"><a href="https://napo.io/posts/kubernetes-the-real-hard-way-on-aws/">Terraform (kubernetes the hard way)</a></td>
+<td align="left">SRE / DevOps</td>
+<td align="left">Kubernetes Upstream</td>
+<td align="left">AWS EKS, Google GKE, <br/>Azure AKS, Digital Ocean, <br/>Alibaba, Oracle Cloud</td>
+<td align="left">No</td>
+<td align="left">N/A</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">kubernetes installer compliant with all the major public cloud providers<br/> (the hard way). It does not use the official installers offered by each <br/>cloud provider.</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/kubernetes-sigs/kubespray">Kubespray on Public Cloud</a></td>
+<td align="left">SRE / DevOps</td>
+<td align="left">Kubernetes Upstream</td>
+<td align="left">AWS, GCE, Azure, <br/>Oracle Cloud (experimental)</td>
+<td align="left">Yes</td>
+<td align="left">OSS</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/kubernetes-sigs/kubespray">Kubespray on Private Cloud</a></td>
+<td align="left">SRE / DevOps</td>
+<td align="left">Kubernetes Upstream</td>
+<td align="left">OpenStack, vSphere, <br/>Packet (bare metal), or baremetal</td>
+<td align="left">Yes</td>
+<td align="left">OSS</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="https://conjure-up.io/">Conjure-up </a></td>
+<td align="left">SRE / DevOps</td>
+<td align="left">Kubernetes Upstream</td>
+<td align="left"></td>
+<td align="left">Yes</td>
+<td align="left">OSS</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.weave.works/">weave.works</a></td>
+<td align="left">SRE / DevOps / Devel</td>
+<td align="left">Kubernetes Upstream</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/weaveworks/wksctl">WKSctl</a></td>
+<td align="left">SRE / DevOps</td>
+<td align="left">Kubernetes Upstream</td>
+<td align="left"></td>
+<td align="left">Yes</td>
+<td align="left">OSS</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="https://engineering.linecorp.com/en/blog/building-large-kubernetes-clusters/">Caravan</a></td>
+<td align="left">SRE / DevOps</td>
+<td align="left">Kubernetes Upstream</td>
+<td align="left"></td>
+<td align="left">Yes</td>
+<td align="left">OSS</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="https://cluster-api.sigs.k8s.io/">ClusterAPI</a></td>
+<td align="left">SRE / DevOps</td>
+<td align="left">Kubernetes Upstream</td>
+<td align="left"></td>
+<td align="left">Yes</td>
+<td align="left">OSS</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">No</td>
+<td align="left">No</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/kubernetes-sigs/kind">Kind</a></td>
+<td align="left">Devel</td>
+<td align="left">Kubernetes Upstream</td>
+<td align="left"></td>
+<td align="left">Yes</td>
+<td align="left">OSS</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">Not designed for production use; it is intended for development and <br/>testing environments.</td>
+</tr>
+<tr>
+<td align="left"><a href="https://ubuntu.com/kubernetes/features">Ubuntu Charmed Kubernetes</a></td>
+<td align="left">SRE / DevOps / Devel</td>
+<td align="left">Kubernetes Upstream</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="https://pivotal.io/platform/pivotal-container-service">VMware Pivotal Container Service (PKS)</a></td>
+<td align="left">SRE / DevOps</td>
+<td align="left">PKS / Cloud Foundry PaaS <br/>(no kubernetes)</td>
+<td align="left">vSphere, multi-cloud, public-cloud</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">Pivotal Container Service (PKS) adquired by VMware in 2019. <br/>Cloud Foundry PaaS that compites with kubernetes.</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.vmware.com/products/vsphere.html">VMware vSphere 7 with Kubernetes</a></td>
+<td align="left">SRE / DevOps</td>
+<td align="left">VMware Kubernetes</td>
+<td align="left">vSphere</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">VMware&rsquo;s kubernetes</td>
+</tr>
+<tr>
+<td align="left"><a href="https://cloud.vmware.com/tanzu">VMware Kubernetes Tanzu (PKS renamed)</a></td>
+<td align="left">SRE / DevOps</td>
+<td align="left">VMware Kubernetes</td>
+<td align="left">vSphere, multi-cloud, public-cloud</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">Embed kubernetes natively into vSphere. Competes with OpenShift.</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.mirantis.com/software/docker/docker-enterprise/">Mirantis Docker Enterprise 3.1+ with Kubernetes</a></td>
+<td align="left">SRE / DevOps</td>
+<td align="left">Mirantis Kubernetes</td>
+<td align="left">multi-cloud, private &amp; public cloud</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">Istio, Windows and Linux Worker nodes</td>
+</tr>
+<tr>
+<td align="left">====================================</td>
+<td align="left">==================</td>
+<td align="left">======================</td>
+<td align="left">==========================</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">=============================================</td>
+</tr>
+</tbody>
+</table></div>
+                </div>
+        </div>
+
+    <hr>
+    <footer class="container">
+        
+        <center>Documentation built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="http://kristopolous.github.io/BOOTSTRA.386">BOOTSTRA.386</a>.</center>
+    </footer>
+        <script src="../../../../search/main.js"></script>
+    </body>
+</html>

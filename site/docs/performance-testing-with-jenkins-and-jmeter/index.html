@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="IT projects and resources.. along the way..">
+        <meta name="author" content="mbiscarra">
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Performance testing with jenkins and JMeter or Gatling - document</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/bootstrap-theme.min.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">document</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">home</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../introduction.md">Openshift VS Kubernetes</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../javaee-to-cloud-native.md">From Java EE To Cloud Native</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../faq.md">Microservices FAQ & Kubernetes Native</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../sre.md">Site Reliability Engineering (SRE)</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../serverless.md">Serverless Architectures & Frameworks. OpenFaaS, Knative & Kubeless</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">DevOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../devops.md">DevOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cheatsheets.md">Cheat Sheets</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../gitops.md">GitOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../demos.md">Demos & Screencasts. OpenShift, Kubernetes, Jenkins Pipelines with JCasC and more</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">NoOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../noops.md">NoOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../serverless.md">Serverless Architectures & Frameworks. OpenFaaS, Knative & Kubeless</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../finops.md">FinOps - Cloud Financial Management</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../testops.md">TestOps and Continuous Testing</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Project Management Methodology <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../project-management-methodology.md">Project Management Methodology</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../workfromhome.md">Work From Home</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../appointment-scheduling.md">Appointment Scheduling</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../docker.md">Docker</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kubernetes <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../kubernetes.md">Kubernetes</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../matrix-table.md">Kubernetes Matrix Table</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../kubernetes-alternatives.md">Kubernetes alternatives</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">OpenShift <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../openshift.md">OpenShift docs</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Software Delivery Pipeline <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cicd.md">CI/CD - Continuous Integration & Continuous Delivery</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../git.md">Git & Git Patterns. Trunk Devel, Git Flow & Feature Flags. Merge BOTs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jenkins.md">Jenkins & Cloudbees</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../openshift-pipelines.md">OpenShift Pipelines with Jenkins, Tekton and more...</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../performance-testing-with-jenkins-and-jmeter.md">Performance testing with Jenkins and JMeter or Gatling</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jenkins-alternatives.md">Jenkins Alternatives for Continuous Integration</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../..">Toolchain</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Java Memory Management <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../java-and-java-performance-optimization.md">Java Memory Management & Java Performance Optimization</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jvm-parameters-matrix-table.md">Java Parameters Matrix Table</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../caching.md">Caching Solutions</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../monitoring.md">Monitoring and Performance. Prometheus, Grafana, APMs and more</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Configuration Management <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../ansible.md">Ansible</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../liquibase.md">Liquibase</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../terraform.md">Terraform & Packer</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Databases on Kubernetes <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../databases.md">Relational Databases and Database DevOps. CrunchyData Postgres Operator</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../nosql.md">NoSQL Databases</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../message-queue.md">Cloud Based Integration & Messaging. Data Processing & Streaming (aka Data Pipeline)</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Service Mesh <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../servicemesh.md">Service Mesh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../consul.md">Consul</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../envoyproxy.md">Envoy & xDS protocol</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../istio.md">Istio</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../linkerd.md">Linkerd</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../maesh.md">Maesh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../trafficdirector.md">Traffic Director</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Security and DevSecOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../devsecops.md">DevSecOps. Container Security</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../securityascode.md">Security Policy as Code</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../storage.md">Cloud Native Storage</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">APIs <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../api.md">APIs with SOAP, REST and gRPC</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../swagger-code-generator-for-rest-apis.md">Swagger code generator for REST APIs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../postman.md">API Test Automation with Postman</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../developerportals.md">API Marketplaces. API Management with API Gateways & Developer Portals</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Development & Frameworks <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../angular.md">Angular</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dom.md">Document Object Model (DOM)</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringFramework.md">Java - Spring Framework</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringBoot.md">Java - SpringBoot</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringCloud.md">Java - Spring Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../quarkus.md">Java - Quarkus</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../javascript.md">JavaScript - node.js & npm</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../python.md">Python - Django & Flask</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../xamarin.md">Xamarin</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev Environment <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../visual-studio.md">Visual Studio Code</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../linux-dev-env.md">WSL - Linux Dev Environment on Windows</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../scaffolding.md">Scaffolding Tools</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ChromeDevTools.md">ChromeDevTools</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Public Cloud <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../public-cloud-solutions.md">Public Cloud Solutions</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../edge-computing.md">Edge Computing</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cloud-arch-diagrams.md">Cloud Architecture Diagram Tools</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../aws.md">AWS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../GoogleCloudPlatform.md">Google Cloud Platform</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../azure.md">Microsoft Azure</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ibm_cloud.md">IBM Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../oraclecloud.md">Oracle Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../digitalocean.md">Digital Ocean</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cloudflare.md">Cloudflare</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../elearning.md">E-Learning</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../customer.md">Customer Success Stories</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../newsfeeds.md">Subreddits</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../other-awesome-lists.md">Other Awesome Lists</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../about.md">About</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li>
+                    <a href="https://github.com/melvinpetix/documents.git/">
+                        
+                        github/melvinpetix/dpcuments
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+      
+    
+        <li class="main active"><a href="#performance-testing-with-jenkins-and-jmeter-or-gatling">Performance testing with jenkins and JMeter or Gatling</a></li>
+        
+            <li><a href="#introduction">Introduction</a></li>
+        
+            <li><a href="#jmeter">JMeter</a></li>
+        
+            <li><a href="#jmeter-based-cloud-solutions">JMeter based Cloud solutions</a></li>
+        
+            <li><a href="#jenkins-jmeter">Jenkins &amp; JMeter</a></li>
+        
+            <li><a href="#gatling">Gatling</a></li>
+        
+            <li><a href="#jenkins-gatling">Jenkins &amp; Gatling</a></li>
+        
+    
+    
+    </ul>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="performance-testing-with-jenkins-and-jmeter-or-gatling">Performance testing with jenkins and JMeter or Gatling<a class="headerlink" href="#performance-testing-with-jenkins-and-jmeter-or-gatling" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#jmeter">JMeter</a></li>
+<li><a href="#jmeter-based-cloud-solutions">JMeter based Cloud solutions</a></li>
+<li><a href="#jenkins--jmeter">Jenkins &amp; JMeter</a></li>
+<li><a href="#gatling">Gatling</a><ul>
+<li><a href="#api-load-testing">API Load Testing</a></li>
+<li><a href="#gatling-and-maven">Gatling and Maven</a></li>
+</ul>
+</li>
+<li><a href="#jenkins--gatling">Jenkins &amp; Gatling</a></li>
+</ul>
+<h3 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://dzone.com/articles/14-best-performance-testing-tools-and-apm-solution">Dzone: 14 Best Performance Testing Tools and APM Solutions</a></li>
+<li><a href="https://www.blazemeter.com/blog/open-source-load-testing-tools-which-one-should-you-use">blazemeter.com: Open Source Load Testing Tools: Which One Should You Use?</a></li>
+<li><a href="https://www.baeldung.com/gatling-jmeter-grinder-comparison">baeldung.com: Gatling vs JMeter vs The Grinder: Comparing Load Test Tools</a></li>
+<li><a href="https://blog.cloud-mercato.com/new-http-benchmark-tool-pycurlb/">blog.cloud-mercato.com: New HTTP benchmark tool <strong>pycurlb</strong></a></li>
+<li><a href="https://dzone.com/articles/gatling-vs-jmeter">Gatling vs JMeter</a></li>
+</ul>
+<h3 id="jmeter">JMeter<a class="headerlink" href="#jmeter" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://jmeter.apache.org/">jmeter.apache.org</a></li>
+<li><a href="https://jmeter.apache.org/usermanual/best-practices.html">jmeter.apache.org: Best Practices</a></li>
+<li><a href="https://dzone.com/articles/jmeter-tutorial-1">Dzone: JMeter tutorial</a></li>
+<li><a href="https://dzone.com/articles/jmeter-tutorial-for-beginners-jmeter-load-testing">Dzone: JMeter tutorial for beginners</a></li>
+<li><a href="https://dzone.com/articles/getting-started-with-jmeter-a-basic-tutorial">Dzone: Getting started with JMeter</a></li>
+<li><a href="https://dzone.com/articles/apache-jmeter-keyboard-shortcuts">Dzone: Apache JMeter Keyboards shortcuts</a></li>
+<li><a href="https://dzone.com/articles/apache-jmeter-functions-an-introduction">Dzone: Apache JMeter functions</a></li>
+<li><a href="https://dzone.com/articles/whats-new-in-jmeter-33">Dzone: What&rsquo;s new in JMeter 3.3</a></li>
+<li><a href="https://dzone.com/articles/the-simple-anatomy-of-a-good-performance-report">Dzone: The simple anatomy of a good performance report</a></li>
+<li><a href="https://www.tutorialspoint.com/jmeter/pdf/jmeter_quick_guide.pdf">tutorialspoint.com: JMeter Quick Guide</a></li>
+<li><a href="https://venkatmatta.files.wordpress.com/2016/03/jmeter_distributed_testing_step_by_step.pdf">JMeter Distributed Testing Step-by-step</a></li>
+</ul>
+<h3 id="jmeter-based-cloud-solutions">JMeter based Cloud solutions<a class="headerlink" href="#jmeter-based-cloud-solutions" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://octoperf.com/">octoperf.com</a></li>
+<li><a href="https://www.blazemeter.com/">blazemeter.com</a></li>
+<li><a href="https://flood.io/">flood.io</a></li>
+</ul>
+<h3 id="jenkins-jmeter">Jenkins &amp; JMeter<a class="headerlink" href="#jenkins-jmeter" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://github.com/jenkinsci/performance-plugin">jenkinsci/performance-plugin</a><ul>
+<li><a href="https://plugins.jenkins.io/performance/">plugins.jenkins.io: performance</a></li>
+</ul>
+</li>
+<li><a href="https://www.blazemeter.com/blog/continuous-integration-101-how-run-jmeter-jenkins">Blazemeter.com: Continuous Integration 101 - How to run Jmeter with jenkins 🌟</a> </li>
+<li><a href="https://www.baeldung.com/jenkins-and-jmeter">baeldung.com: Configure Jenkins to Run and Show JMeter Tests</a></li>
+<li><a href="https://dzone.com/articles/2-ways-to-integrate-jmeter-tests-into-jenkins">DZone.com: 2 ways to integrate jmeter tests into jenkins</a></li>
+<li><a href="https://www.guru99.com/jenkins-jmeter-blazemeter.html">Guru99.com: Jmeter and BlazeMeter Integration with Jenkins</a></li>
+</ul>
+<h3 id="gatling">Gatling<a class="headerlink" href="#gatling" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://gatling.io/">gatling.io</a></li>
+<li><a href="https://gatling.io/gatling-frontline/cloud-marketplaces/">Gatling Cloud Marketplaces</a></li>
+<li><a href="https://dzone.com/articles/perfomance-testing-with-gatling">Perfomance Testing with Gatling</a> </li>
+<li><a href="https://dzone.com/articles/gatling-light-weight-load-testing-tool">Gatling: A Lightweight Load Testing Tool</a> </li>
+<li><a href="https://dzone.com/articles/gatling-gun-is-now-a-prospecting-tool-for-testers">An Introduction to Load Testing With Gatling</a></li>
+<li><a href="https://dzone.com/articles/8-reasons-you-should-use-gatling-for-your-load-tes">8 Reasons You Should Use Gatling for Your Load Testing</a></li>
+<li><a href="https://dzone.com/articles/let-measure-performance-with-gatling">Measuring Performance With Gatling</a></li>
+<li><a href="https://dzone.com/articles/gatling-performance-testing-pros-and-cons">Gatling Performance Testing Pros and Cons</a></li>
+<li><a href="https://dzone.com/articles/how-to-set-up-a-gatling-tests-implementation-envir">How to Set up a Gatling Test&rsquo;s Implementation Environment 🌟</a></li>
+<li><a href="https://dzone.com/articles/gatling-tool-review-for-performance-tests-written">Gatling Tool Review for Performance Tests (Written in Scala)</a></li>
+<li><a href="https://dzone.com/articles/how-to-use-regex-extractor-in-gatling-projects">How to Use RegEx Extractor in Gatling Projects</a></li>
+<li><a href="https://dzone.com/articles/how-to-implement-load-test-scenarios-in-gatling">How to Implement Load Test Scenarios in Gatling</a></li>
+</ul>
+<h4 id="api-load-testing">API Load Testing<a class="headerlink" href="#api-load-testing" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://dzone.com/articles/api-load-testing-with-gatling">API Load Testing With Gatling</a> In this article, we&rsquo;ll learn how to perform a load test on a REST API endpoint using Gatling and JMeter. Read on for more information!</li>
+<li><a href="https://dzone.com/articles/load-testing-your-database-connected-apis-with-gat">Load Testing Your DataBase-Connected APIs With Gatling</a></li>
+</ul>
+<h4 id="gatling-and-maven">Gatling and Maven<a class="headerlink" href="#gatling-and-maven" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://dzone.com/articles/how-to-use-gatling-with-maven">How to Use Gatling With Maven</a> Learn all the details of how to integrate the Gatling performance testing framework with a Maven project in this tutorial.</li>
+<li><a href="https://dzone.com/articles/gatling-integration-with-maven">Gatling Integration With Maven</a></li>
+</ul>
+<h3 id="jenkins-gatling">Jenkins &amp; Gatling<a class="headerlink" href="#jenkins-gatling" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://gatling.io/docs/current/extensions/jenkins_plugin/">gatling.io: Jenkins plugin</a></li>
+<li><a href="https://www.baeldung.com/jenkins-run-gatling-tests">baeldung.com: Run Gatling Tests From Jenkins</a></li>
+<li><a href="https://plugins.jenkins.io/gatling/">plugins.jenkins.io: gatling</a></li>
+<li><a href="https://medium.com/thepeg/pipeline-performance-testing-with-jenkins-and-gatling-b7b762274680">medium.com: Pipeline Performance Testing with Jenkins and Gatling</a></li>
+</ul></div>
+                </div>
+        </div>
+
+    <hr>
+    <footer class="container">
+        
+        <center>Documentation built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="http://kristopolous.github.io/BOOTSTRA.386">BOOTSTRA.386</a>.</center>
+    </footer>
+        <script src="../../../../search/main.js"></script>
+    </body>
+</html>

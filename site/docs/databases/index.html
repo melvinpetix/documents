@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="IT projects and resources.. along the way..">
+        <meta name="author" content="mbiscarra">
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Relational Databases on Kubernetes. Database DevOps - document</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/bootstrap-theme.min.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">document</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">home</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../introduction.md">Openshift VS Kubernetes</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../javaee-to-cloud-native.md">From Java EE To Cloud Native</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../faq.md">Microservices FAQ & Kubernetes Native</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../sre.md">Site Reliability Engineering (SRE)</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../serverless.md">Serverless Architectures & Frameworks. OpenFaaS, Knative & Kubeless</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">DevOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../devops.md">DevOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cheatsheets.md">Cheat Sheets</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../gitops.md">GitOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../demos.md">Demos & Screencasts. OpenShift, Kubernetes, Jenkins Pipelines with JCasC and more</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">NoOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../noops.md">NoOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../serverless.md">Serverless Architectures & Frameworks. OpenFaaS, Knative & Kubeless</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../finops.md">FinOps - Cloud Financial Management</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../testops.md">TestOps and Continuous Testing</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Project Management Methodology <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../project-management-methodology.md">Project Management Methodology</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../workfromhome.md">Work From Home</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../appointment-scheduling.md">Appointment Scheduling</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../docker.md">Docker</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kubernetes <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../kubernetes.md">Kubernetes</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../matrix-table.md">Kubernetes Matrix Table</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../kubernetes-alternatives.md">Kubernetes alternatives</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">OpenShift <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../openshift.md">OpenShift docs</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Software Delivery Pipeline <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cicd.md">CI/CD - Continuous Integration & Continuous Delivery</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../git.md">Git & Git Patterns. Trunk Devel, Git Flow & Feature Flags. Merge BOTs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jenkins.md">Jenkins & Cloudbees</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../openshift-pipelines.md">OpenShift Pipelines with Jenkins, Tekton and more...</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../performance-testing-with-jenkins-and-jmeter.md">Performance testing with Jenkins and JMeter or Gatling</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jenkins-alternatives.md">Jenkins Alternatives for Continuous Integration</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../..">Toolchain</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Java Memory Management <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../java-and-java-performance-optimization.md">Java Memory Management & Java Performance Optimization</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jvm-parameters-matrix-table.md">Java Parameters Matrix Table</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../caching.md">Caching Solutions</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../monitoring.md">Monitoring and Performance. Prometheus, Grafana, APMs and more</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Configuration Management <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../ansible.md">Ansible</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../liquibase.md">Liquibase</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../terraform.md">Terraform & Packer</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Databases on Kubernetes <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../databases.md">Relational Databases and Database DevOps. CrunchyData Postgres Operator</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../nosql.md">NoSQL Databases</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../message-queue.md">Cloud Based Integration & Messaging. Data Processing & Streaming (aka Data Pipeline)</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Service Mesh <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../servicemesh.md">Service Mesh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../consul.md">Consul</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../envoyproxy.md">Envoy & xDS protocol</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../istio.md">Istio</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../linkerd.md">Linkerd</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../maesh.md">Maesh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../trafficdirector.md">Traffic Director</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Security and DevSecOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../devsecops.md">DevSecOps. Container Security</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../securityascode.md">Security Policy as Code</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../storage.md">Cloud Native Storage</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">APIs <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../api.md">APIs with SOAP, REST and gRPC</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../swagger-code-generator-for-rest-apis.md">Swagger code generator for REST APIs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../postman.md">API Test Automation with Postman</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../developerportals.md">API Marketplaces. API Management with API Gateways & Developer Portals</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Development & Frameworks <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../angular.md">Angular</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dom.md">Document Object Model (DOM)</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringFramework.md">Java - Spring Framework</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringBoot.md">Java - SpringBoot</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringCloud.md">Java - Spring Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../quarkus.md">Java - Quarkus</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../javascript.md">JavaScript - node.js & npm</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../python.md">Python - Django & Flask</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../xamarin.md">Xamarin</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev Environment <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../visual-studio.md">Visual Studio Code</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../linux-dev-env.md">WSL - Linux Dev Environment on Windows</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../scaffolding.md">Scaffolding Tools</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ChromeDevTools.md">ChromeDevTools</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Public Cloud <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../public-cloud-solutions.md">Public Cloud Solutions</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../edge-computing.md">Edge Computing</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cloud-arch-diagrams.md">Cloud Architecture Diagram Tools</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../aws.md">AWS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../GoogleCloudPlatform.md">Google Cloud Platform</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../azure.md">Microsoft Azure</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ibm_cloud.md">IBM Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../oraclecloud.md">Oracle Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../digitalocean.md">Digital Ocean</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cloudflare.md">Cloudflare</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../elearning.md">E-Learning</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../customer.md">Customer Success Stories</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../newsfeeds.md">Subreddits</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../other-awesome-lists.md">Other Awesome Lists</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../about.md">About</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li>
+                    <a href="https://github.com/melvinpetix/documents.git/">
+                        
+                        github/melvinpetix/dpcuments
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+      
+    
+        <li class="main active"><a href="#relational-databases-on-kubernetes-database-devops">Relational Databases on Kubernetes. Database DevOps</a></li>
+        
+            <li><a href="#stateful-and-stateless-applications">Stateful and Stateless Applications</a></li>
+        
+            <li><a href="#databases-on-kubernetes">Databases on Kubernetes</a></li>
+        
+            <li><a href="#database-devops">Database DevOps</a></li>
+        
+            <li><a href="#kubedb-cloud-native-database">KubeDB Cloud Native Database</a></li>
+        
+            <li><a href="#cockroach-cloud-native-database">Cockroach Cloud Native Database</a></li>
+        
+            <li><a href="#operator-lifecycle-manager-olm">Operator Lifecycle Manager (OLM)</a></li>
+        
+            <li><a href="#spilo-postgresql-operator">Spilo PostgreSQL Operator</a></li>
+        
+            <li><a href="#crunchy-data-postgresql-operator">Crunchy Data PostgreSQL Operator</a></li>
+        
+    
+    
+    </ul>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="relational-databases-on-kubernetes-database-devops">Relational Databases on Kubernetes. Database DevOps<a class="headerlink" href="#relational-databases-on-kubernetes-database-devops" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#stateful-and-stateless-applications">Stateful and Stateless Applications</a></li>
+<li><a href="#databases-on-kubernetes">Databases on Kubernetes</a></li>
+<li><a href="#database-devops">Database DevOps</a></li>
+<li><a href="#kubedb-cloud-native-database">KubeDB Cloud Native Database</a></li>
+<li><a href="#cockroach-cloud-native-database">Cockroach Cloud Native Database</a></li>
+<li><a href="#operator-lifecycle-manager-olm">Operator Lifecycle Manager (OLM)</a></li>
+<li><a href="#spilo-postgresql-operator">Spilo PostgreSQL Operator</a></li>
+<li><a href="#crunchy-data-postgresql-operator">Crunchy Data PostgreSQL Operator</a><ul>
+<li><a href="#crunchy-data-developer-portal">Crunchy Data Developer Portal</a></li>
+<li><a href="#crunchy-data-postgres-operator-in-openshift-4-overview--proof-of-concept">Crunchy Data Postgres Operator in OpenShift 4. Overview &amp; Proof of Concept</a><ul>
+<li><a href="#crunchydata-postgres-operator-35">Crunchydata Postgres Operator 3.5</a></li>
+<li><a href="#crunchydata-postgres-operator-401">Crunchydata Postgres Operator 4.0.1</a></li>
+<li><a href="#crunchydata-postgres-operator-401-community-edition">Crunchydata Postgres Operator 4.0.1 Community Edition</a><ul>
+<li><a href="#service-accounts">Service Accounts</a></li>
+<li><a href="#roles-assigned-to-service-accounts">Roles assigned to Service Accounts</a></li>
+<li><a href="#security-context-constraints-scc">Security Context Constraints (SCC)</a><ul>
+<li><a href="#scc-recommendations">SCC Recommendations</a></li>
+</ul>
+</li>
+<li><a href="#add-a-scc-to-a-project">Add a SCC to a Project</a><ul>
+<li><a href="#workflow1-without-custom-service-account-and-without-deploymentconfig">Workflow1 without custom Service Account and without DeploymentConfig</a></li>
+<li><a href="#workflow2-with-custom-service-account-and-without-deploymentconfig">Workflow2 with custom Service Account and without DeploymentConfig</a></li>
+<li><a href="#workflow3-with-custom-service-account-and-deploymentconfig">Workflow3 with custom service Account and DeploymentConfig</a></li>
+</ul>
+</li>
+<li><a href="#environment-setup-port-forward-and-wsl">Environment setup. Port Forward and WSL</a></li>
+<li><a href="#cluster-deployment-and-operation-with-pgo">Cluster Deployment and Operation with pgo</a></li>
+<li><a href="#psql-access-from-postgres-operator-pod">Psql access from postgres operator POD</a></li>
+<li><a href="#list-databases-with-psql">List Databases with psql</a></li>
+<li><a href="#access-from-another-pod-within-the-cluster-with-psql-client">Access from another POD within the cluster with psql client</a></li>
+<li><a href="#access-from-another-pod-within-the-cluster-with-pgadmin4-of-crunchy-containers-community-edition">Access from another POD within the cluster with Pgadmin4 of Crunchy containers Community Edition</a></li>
+<li><a href="#debugging-crunchydata-postgres-operator-401-community-edition">Debugging Crunchydata Postgres Operator 4.0.1 Community Edition</a></li>
+</ul>
+</li>
+<li><a href="#certified-crunchydata-postgres-operator-olmoperatorhub-manual-setup">Certified Crunchydata Postgres Operator (OLM/OperatorHub). Manual Setup</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="stateful-and-stateless-applications">Stateful and Stateless Applications<a class="headerlink" href="#stateful-and-stateless-applications" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.xenonstack.com/insights/stateful-and-stateless-applications/">xenonstack.com: Stateful and Stateless Applications Best Practices and Advantages</a></li>
+</ul>
+<p><a href="https://www.xenonstack.com/insights/stateful-and-stateless-applications/"><img alt="Statefull and Stateless Aplications" src="images/stateful-and-stateless-applications.png" /></a></p>
+<h3 id="databases-on-kubernetes">Databases on Kubernetes<a class="headerlink" href="#databases-on-kubernetes" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://cloud.google.com/blog/products/databases/to-run-or-not-to-run-a-database-on-kubernetes-what-to-consider">cloud.google.com: To run or not to run a database on Kubernetes - What to consider</a></li>
+<li><a href="https://www.reddit.com/r/kubernetes/comments/9d8on5/whats_the_best_proper_way_of_running_a_database/">reddit.com: What&rsquo;s the best, proper way of running a database cluster on top of Kubernetes?</a></li>
+<li><a href="https://caylent.com/the-pros-and-cons-of-running-production-databases-as-containers">caylent.com: The Pros and Cons of Running Production Databases as Containers</a></li>
+<li><a href="https://learnk8s.io/cloud-resources-kubernetes">learnk8s.io: Provisioning cloud resources (AWS, GCP, Azure) in Kubernetes</a></li>
+</ul>
+<h3 id="database-devops">Database DevOps<a class="headerlink" href="#database-devops" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.informationweek.com/devops/can-enterprises-benefit-from-adopting-database-devops/a/d-id/1337238">informationweek.com: Can Enterprises Benefit From Adopting Database DevOps?</a></li>
+</ul>
+<h3 id="kubedb-cloud-native-database">KubeDB Cloud Native Database<a class="headerlink" href="#kubedb-cloud-native-database" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://kubedb.com/">kubedb.com</a> Run production-grade databases easily on Kubernetes</li>
+</ul>
+<h3 id="cockroach-cloud-native-database">Cockroach Cloud Native Database<a class="headerlink" href="#cockroach-cloud-native-database" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.cockroachlabs.com/docs/stable/orchestration.html">Cockroach</a></li>
+</ul>
+<h3 id="operator-lifecycle-manager-olm">Operator Lifecycle Manager (OLM)<a class="headerlink" href="#operator-lifecycle-manager-olm" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://itnext.io/wth-is-a-operator-lifecycle-manager-873cf1661b04">itnext.io: Operator Lifecycle Manager</a></li>
+</ul>
+<h3 id="spilo-postgresql-operator">Spilo PostgreSQL Operator<a class="headerlink" href="#spilo-postgresql-operator" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://github.com/zalando/spilo">Spilo: HA PostgreSQL Clusters with Docker</a> Spilo is a Docker image that provides PostgreSQL and Patroni bundled together. Patroni is a template for PostgreSQL HA. </li>
+<li><a href="https://github.com/zalando/patroni">Patroni</a></li>
+<li><a href="https://disaev.me/p/how-i-have-set-up-ha-postgresql-on-kubernetes/">How I&rsquo;ve Set Up HA PostgreSQL on Kubernetes (powered by Patroni, a template for PostgreSQL HA)</a></li>
+</ul>
+<h3 id="crunchy-data-postgresql-operator">Crunchy Data PostgreSQL Operator<a class="headerlink" href="#crunchy-data-postgresql-operator" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.crunchydata.com/">crunchydata.com</a></li>
+<li><a href="https://learn.crunchydata.com/">learn.crunchydata.com 🌟</a></li>
+<li><a href="https://github.com/CrunchyData">github.com/CrunchyData</a></li>
+<li><a href="https://github.com/CrunchyData/postgres-operator">github.com/CrunchyData/postgres-operator</a></li>
+<li><a href="https://access.crunchydata.com/documentation/crunchy-postgres-containers/latest/">Documentation: Crunchy Data Container Suite 🌟</a></li>
+<li><a href="https://info.crunchydata.com/blog/active-active-on-kubernetes">crunchydata blog: Deploying Active-Active PostgreSQL on Kubernetes</a></li>
+<li><a href="https://info.crunchydata.com/blog/crunchy-postgres-kubernetes-operator-4.0">crunchydata blog: What&rsquo;s New in Crunchy PostgreSQL Operator 4.0</a></li>
+<li><a href="https://www.slideshare.net/vyruss000/deploying-postgresql-on-kubernetes">slideshare.net: Deploying PostgreSQL on Kubernetes</a></li>
+<li><a href="https://www.slideshare.net/jkatz05/operating-postgresql-at-scale-with-kubernetes-137132067">slideshare.net: Operating PostgreSQL at Scale with Kubernetes</a></li>
+<li><a href="https://www.youtube.com/watch?v=HX10WWTRiTY">Youtube: Demo of Crunchy Data Postgres Operator v1.0.0 (2017)</a></li>
+<li><a href="https://www.youtube.com/watch?v=gaXlrlz7GVc">Youtube: Crunchy PostgreSQL Operator for Kubernetes 3.4 Overview (2018)</a></li>
+<li><a href="https://www.youtube.com/watch?v=X4vuktlK0Tg">Youtube: OpenShift Meetup Tokyo #05 - Operator and Operator Lifecycle Manager on OpenShift (2019, openshift 4.1)</a></li>
+<li><a href="https://info.crunchydata.com/blog/monitoring-postgresql-clusters-in-kubernetes">info.crunchydata.com: Monitoring PostgreSQL clusters in kubernetes</a></li>
+<li><a href="https://thenewstack.io/advanced-kubernetes-namespace-management-with-the-postgresql-operator/">thenewstack.io: Advanced Kubernetes Namespace Management with the PostgreSQL Operator</a></li>
+<li><a href="https://info.crunchydata.com/blog/deploy-high-availability-postgresql-on-kubernetes">info.crunchydata.com: Deploy High-Availability PostgreSQL Clusters on Kubernetes by Example</a></li>
+<li><a href="https://info.crunchydata.com/blog/migrating-from-oracle-to-postgresql-questions-and-considerations">info.crunchydata.com: Migrating from Oracle to PostgreSQL: Tips and Tricks</a></li>
+<li><a href="https://info.crunchydata.com/blog/schedule-postgresql-backups-and-retention-with-kubernetes">info.crunchydata.com: Scheduled PostgreSQL Backups and Retention Policies with Kubernetes</a></li>
+<li><a href="https://info.crunchydata.com/blog/synchronous-replication-in-the-postgresql-operator-for-kubernetes-guarding-against-transactions-loss">info.crunchydata.com: Guard Against Transaction Loss with PostgreSQL Synchronous Replication</a></li>
+<li><a href="https://info.crunchydata.com/news/crunchy-postgresql-for-kuberenetes-4.3">info.crunchydata.com: Crunchy PostgreSQL for Kubernetes 4.3 Released</a> Crunchy #PostgreSQL for #Kubernetes 4.3 released! Now supports multi-Kubernetes deployments, easier customization + installation, TLS, pgAdmin 4, improved pgBouncer support, and much more!</li>
+<li><a href="https://info.crunchydata.com/blog/deploy-pgadmin4-with-postgresql-on-kubernetes">info.crunchydata.com: Deploy pgAdmin4 with PostgreSQL on Kubernetes</a></li>
+<li><a href="https://info.crunchydata.com/blog/multi-kubernetes-cluster-postgresql-deployments">info.crunchydata.com: Multi-Kubernetes Cluster PostgreSQL Deployments</a></li>
+<li><a href="https://info.crunchydata.com/blog/d-meta">info.crunchydata.com: Quickly Document Your Postgres Database Using psql Meta-Commands</a></li>
+<li><a href="https://info.crunchydata.com/blog/fast-csv-and-json-ingestion-in-postgresql-with-copy">info.crunchydata.com: Fast CSV and JSON Ingestion in PostgreSQL with COPY</a></li>
+</ul>
+<h4 id="crunchy-data-developer-portal">Crunchy Data Developer Portal<a class="headerlink" href="#crunchy-data-developer-portal" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://info.crunchydata.com/blog/announcing-the-crunchy-data-developer-portal">Announcing the Crunchy Data Developer Portal</a></li>
+<li><a href="https://www.crunchydata.com/developers">Crunchy Data Developer Portal</a> Self-service tools for developers and data scientists to easily get productive with PostgreSQL and Crunchy Data products.</li>
+</ul>
+<h4 id="crunchy-data-postgres-operator-in-openshift-4-overview-proof-of-concept">Crunchy Data Postgres Operator in OpenShift 4. Overview &amp; Proof of Concept<a class="headerlink" href="#crunchy-data-postgres-operator-in-openshift-4-overview-proof-of-concept" title="Permanent link">&para;</a></h4>
+<ul>
+<li>In earlier days, Red Hat recommended running PostgreSQL database outside the Kubernetes cluster. Now, with <a href="https://kubernetes.io/docs/concepts/extend-kubernetes/operator/">Kubernetes Operator</a> technology, you can run stateful database applications on Kubernetes.</li>
+<li><a href="https://github.com/CrunchyData/postgres-operator">Crunchy PostgreSQL Operator</a> extends Kubernetes to give you the power to easily  create, configure and manage PostgreSQL clusters at scale.  When combined with the <a href="https://github.com/CrunchyData/crunchy-containers">Crunchy PostgreSQL Container Suite</a>, the Crunchy PostgreSQL Operator provides an open source software solution for PostgreSQL scaling, high-availability, disaster recovery, monitoring, and more.  All of this capability comes with the repeatability and automation that comes from Operators on Kubernetes.</li>
+<li>Crunchy PostgreSQL Operator is open source and developed in close collaboration with users to support enterprise deployments of cloud agnostic PostgreSQL-as-a-Service capability. This release comes after extensive feedback from our customers and the community to ensure the scalability and security that sysadmins, DBAs, and developers have come to rely on.</li>
+<li><a href="https://www.openshift.com/blog/leveraging-the-crunchy-postgresql">Crunchy PostgreSQL and Openshift</a></li>
+<li>Crunchy Postgres Solutions: <ol>
+<li><strong><a href="https://github.com/CrunchyData/postgres-operator">Postgres Operator Community Edition</a>:</strong><ul>
+<li>‘pgo’ CLI tool</li>
+<li>Not certified by Red Hat</li>
+<li>The Operator can be deployed by multiple methods including:<ul>
+<li><a href="https://access.crunchydata.com/documentation/postgres-operator/4.3.0/installation/postgres-operator/">The PostgreSQL Operator Installer with kubectl</a></li>
+<li><a href="https://access.crunchydata.com/documentation/postgres-operator/4.3.0/installation/other/bash/">Install Operator Using Bash (the one used in this overview)</a></li>
+<li><a href="https://access.crunchydata.com/documentation/postgres-operator/4.3.0/installation/other/ansible/">Ansible playbook installation</a></li>
+<li>CLI installation using OLM <strong>(Deprecated)</strong>: new CatalogSource added via “pgo.catalogsource.yaml”.</li>
+<li>Openshift Console installation using OLM (OperatorHub):<ul>
+<li>New CatalogSource requirement. </li>
+<li>CLI settings required.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Certified Crunchydata Postgres Operator (OLM/OperatorHub):</strong><ul>
+<li>Openshift Console installation using OLM (OperatorHub): One-click deployment and Web based operation</li>
+<li><strong>No ‘pgo’ CLI tool?</strong> (compatibility issues: unable to find in github the version that matches the server API - Sept 2019)</li>
+<li>Certified by Red Hat</li>
+<li>Provided by CrunchyData</li>
+</ul>
+</li>
+<li>Other non-certified installations (unsupported by Red Hat): with or without OLM, CLI, etc.</li>
+</ol>
+</li>
+<li><strong><a href="https://github.com/CrunchyData/crunchy-containers">Crunchy Containers Community Edition</a>:</strong><ul>
+<li>Installation:<ol>
+<li><a href="https://access.crunchydata.com/documentation/crunchy-postgres-containers/latest/installation-guide/installation-guide/">Installation guide</a></li>
+<li><a href="https://access.crunchydata.com/documentation/crunchy-postgres-containers/latest/examples/administration/pgadmin4/">Pgadmin4 install</a> (easy)</li>
+</ol>
+</li>
+<li>Not certified by Red Hat</li>
+</ul>
+</li>
+</ul>
+<p><center>
+<img alt="crunchdydata in operatorhub" src="images/crunchydata_operator_hub.png" />
+</center></p>
+<h5 id="crunchydata-postgres-operator-35">Crunchydata Postgres Operator 3.5<a class="headerlink" href="#crunchydata-postgres-operator-35" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Release date: Januay 2019</li>
+<li>pgBackRest Architecture Enhancements</li>
+<li>pgBackRest Point-In-Time-Recovery</li>
+<li>Fast Failover</li>
+<li>Archive Storage Configuration</li>
+<li>Preferred Failover Node Label</li>
+<li>pgo-scheduler</li>
+</ul>
+<p><img alt="crunchydata operator 3.5" src="images/crunchydata_operator_3_5.png" /></p>
+<h5 id="crunchydata-postgres-operator-401">Crunchydata Postgres Operator 4.0.1<a class="headerlink" href="#crunchydata-postgres-operator-401" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Release date: June 2019</li>
+<li><strong>Namespace Deployment Options:</strong> Ability to deploy the operator its own namespace but manage PostgreSQL clusters in multiple namespace. The new namespace management features lets users create multi-tenant PostgreSQL environments that add further isolation and security to their deployments. </li>
+<li><strong>Further Enhancements to pgBackRest Integration:</strong> Perform pgBackRest backups to <strong>Amazon S3</strong>. This allows  users to create an automated, geographically distributed, and hybrid cloud disaster recovery strategy.</li>
+<li>Integrated PostgreSQL <strong>Benchmarking</strong></li>
+<li><strong>Ansible</strong> Playbook Based Installation</li>
+<li><strong>Operator Lifecycle Management (OLM):</strong> The OLM project is a component of the Operator Framework, an open source toolkit to manage Operators, in an effective, automated, and scalable way. OLM concepts were included into Crunchy PostgreSQL Operator to assist in the deployment on Kubernetes using OLM integration.</li>
+</ul>
+<p><img alt="crunchdydata operator 4.0.1" src="images/crunchydata_operator_4_0_1.png" /></p>
+<h5 id="crunchydata-postgres-operator-401-community-edition">Crunchydata Postgres Operator 4.0.1 Community Edition<a class="headerlink" href="#crunchydata-postgres-operator-401-community-edition" title="Permanent link">&para;</a></h5>
+<h6 id="service-accounts">Service Accounts<a class="headerlink" href="#service-accounts" title="Permanent link">&para;</a></h6>
+<ul>
+<li>Service accounts give us flexibility to control access to API without sharing user’s credentials. </li>
+<li>Service Accounts are also used by pods and other non-human actors to perform various actions and are a central vehicle by which their access to resources is managed. <strong>By default, three service accounts are created in each project:</strong><ol>
+<li><strong>Builder:</strong> Used by build pods and assigned the <strong>system:image-builder</strong> role, which grants push capability into the internal registry to any image stream in the project.</li>
+<li><strong>Deployer:</strong> Used by deploy pods and assigned the <strong>system:deployer role</strong>, which allows modifying replication controllers in the project.</li>
+<li><strong>Default:</strong> Used by all other pods by default.</li>
+</ol>
+</li>
+<li>You can see them by running the following command: </li>
+</ul>
+<pre><code>oc get serviceaccounts
+oc get sa
+</code></pre>
+<ul>
+<li><strong>Running a Pod with a Different Service Account.</strong> You can run a pod with a service account other than the default:<ul>
+<li>Edit the deployment configuration:  <code>$ oc edit dc/&lt;deployment_config&gt;</code></li>
+<li>Add the serviceAccount and serviceAccountName parameters to the spec field, and specify the service account you want to use:</li>
+</ul>
+</li>
+</ul>
+<pre><code>spec:
+    securityContext: {}
+    serviceAccount: &lt;service_account&gt;
+    serviceAccountName: &lt;service_account&gt;
+</code></pre>
+<ul>
+<li>
+<p>Refs:</p>
+<ul>
+<li><a href="https://docs.openshift.com/container-platform/4.1/authentication/using-service-accounts-in-applications.html">ref1</a></li>
+<li><a href="https://docs.okd.io/latest/dev_guide/deployments/basic_deployment_operations.html#run-pod-with-different-service-account">ref2</a> </li>
+<li><a href="https://dzone.com/articles/understanding-openshift-security-context-constrain">ref3</a> </li>
+</ul>
+</li>
+<li>
+<p>Each service account is represented by the ServiceAccount resource and is associated with two additional secrets for access to the OpenShift API and the internal registry:</p>
+</li>
+</ul>
+<pre><code>$ oc describe serviceaccounts/default
+Name:                default
+Namespace:           pgouser1
+Labels:              &lt;none&gt;
+Annotations:         &lt;none&gt;
+Image pull secrets:  default-dockercfg-nrhwt
+Mountable secrets:   default-token-vm8b5
+                     default-dockercfg-nrhwt
+Tokens:              default-token-p6rhz
+                     default-token-vm8b5
+Events:              &lt;none&gt;
+
+</code></pre>
+<ul>
+<li>The service account can be created and deleted with a simple command: <ul>
+<li><code>oc create sa myserviceaccount</code></li>
+<li><code>oc delete sa/myserviceaccount</code>  </li>
+</ul>
+</li>
+<li>Every service account is also a member of two groups:<ul>
+<li><strong>system:serviceaccounts</strong>, which includes all service accounts in the cluster</li>
+<li><strong>system:serviceaccounts:&lt;project></strong>, which includes all service accounts in the project</li>
+</ul>
+</li>
+</ul>
+<h6 id="roles-assigned-to-service-accounts">Roles assigned to Service Accounts<a class="headerlink" href="#roles-assigned-to-service-accounts" title="Permanent link">&para;</a></h6>
+<ul>
+<li>When you create a pod, if you do not specify a service account, it is automatically assigned the <strong>default service account</strong> in the same namespace. If you get the raw json or yaml for a pod you have created (e.g. <code>oc get pods/podname -o yaml</code>), you can see the <strong>spec.serviceAccountName</strong> field has been automatically set.</li>
+<li>You can grant privileges to groups of service accounts, which will effectively grant those privileges to all accounts in the group:</li>
+</ul>
+<pre><code>$ oc adm policy add-role-to-group view system:serviceaccounts -n myproject
+role &quot;view&quot; added: &quot;system:serviceaccounts&quot; 
+</code></pre>
+<ul>
+<li>For example, to grant view privileges to all service accounts in the cluster in the project myproject:</li>
+</ul>
+<pre><code>$ oc adm policy remove-role-from-group view system:serviceaccounts –n myproject
+role &quot;view&quot; removed: &quot;system:serviceaccounts&quot; 
+</code></pre>
+<h6 id="security-context-constraints-scc">Security Context Constraints (SCC)<a class="headerlink" href="#security-context-constraints-scc" title="Permanent link">&para;</a></h6>
+<ul>
+<li><strong>Security Context Constraints (SCCs)</strong> control what actions pods can perform and what resources they can access. </li>
+<li>SCCs combine a set of security configurations into a single policy object that can be applied to pods. </li>
+<li>These security configurations include, but are not limited to, Linux Capabilities, Seccomp Profiles, User and Group ID Ranges, and types of mounts. </li>
+<li>OpenShift ships with several SCCs:<ul>
+<li>The most constrained is the <strong>restricted SCC</strong>, and the least constrained is the <strong>privileged SCC</strong>:<ul>
+<li><code>oc edit scc restricted</code></li>
+<li><code>oc edit scc privileged</code> </li>
+</ul>
+</li>
+<li>The other SCCs provide intermediate levels of constraint for various use cases. </li>
+<li><strong>The restricted SCC is granted to all authenticated users by default.</strong></li>
+<li><strong>The default SCC for most pods should be the restricted SCC.</strong></li>
+</ul>
+</li>
+<li>If required, a cluster administrator may <strong>allow certain pods to run with different SCCs</strong>. Pods should be run with the most restrictive SCC possible. <strong>Pods inherit their SCC from the Service Account used to run the pod</strong>. With the default project template, new projects get a <strong>Service Account named default</strong> that is used to run pods. This default service account is only granted the ability to run the restricted SCC.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="crunchdydata scc1" src="images/crunchydata_scc1.png" /></th>
+<th align="center"><img alt="crunchdydata scc2" src="images/crunchydata_scc2.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h6 id="scc-recommendations">SCC Recommendations<a class="headerlink" href="#scc-recommendations" title="Permanent link">&para;</a></h6>
+<ul>
+<li>Use OpenShift&rsquo;s Security Context Constraint feature, which has been contributed to Kubernetes as <a href="https://kubernetes.io/docs/concepts/policy/pod-security-policy/">Pod Security Policies (PSP)</a>. PSPs are still beta in Kubernetes 1.10, 1.11, 1.12, 1.13, 1.14, 1.15 .</li>
+<li><strong>Use the restricted SCC as the default</strong> </li>
+<li>For pods that require additional access, use the SCC that grants the least amount of additional privileges or create a custom SCC </li>
+<li>Remediation: Apply the SCC with the least privilege required</li>
+<li>Audit: <ul>
+<li>To show all available SCCs: <code>oc describe scc</code> </li>
+<li>To audit a single pod:  </li>
+</ul>
+</li>
+</ul>
+<pre><code>oc describe pod &lt;POD&gt; | grep openshift.io\/scc
+openshift.io/scc: restricted             
+</code></pre>
+<p><img alt="crunchdydata scc3" src="images/crunchydata_scc3.png" /></p>
+<ul>
+<li>
+<p><strong>Problem:</strong> Default SCC is “restricted” SCC -&gt; Crunchydata Postgres Cluster PODs are not rolled out</p>
+<ul>
+<li><code>oc get rs</code>: </li>
+</ul>
+<p><img alt="crunchdydata restricted scc" src="images/crunchydata_restricted_scc.png" /></p>
+<ul>
+<li><code>oc describe rs mycluster5-lgyb-84b58f5dd9</code>: Warning <strong>FailedCreate</strong> 3m24s (x17 over 7m30s) <strong>replicaset-controller Error creating: pods &ldquo;mycluster5-lgyb-84b58f5dd9-&rdquo; is forbidden: unable to validate against any security context constraint: [fsGroup: Invalid value: []int64{26}: 26 is not an allowed group]</strong></li>
+</ul>
+</li>
+</ul>
+<h6 id="add-a-scc-to-a-project">Add a SCC to a Project<a class="headerlink" href="#add-a-scc-to-a-project" title="Permanent link">&para;</a></h6>
+<ul>
+<li>SCCs are not granted directly to a project. Instead, you add a service account to an SCC and either specify the service account name on your pod or, when unspecified, run as the <strong>default</strong> service account.</li>
+<li><strong>To add a SCC to a user:</strong>  <code>oc adm policy add-scc-to-group &lt;scc_name&gt; &lt;group_name&gt;</code></li>
+<li><strong>To add a SCC to all service accounts in a namespace:</strong><br />
+<code>oc adm policy add-scc-to-group &lt;scc_name&gt;  system:serviceaccounts:&lt;serviceaccount_namespace&gt;</code></li>
+<li>If you are currently in the project to which the service account belongs, you can use the -z flag and just specify the <strong>serviceaccount_name</strong>:<br />
+<code>oc adm policy add-scc-to-user &lt;scc_name&gt; -z &lt;serviceaccount_name&gt;</code></li>
+<li>
+<p>Examples:</p>
+<ul>
+<li><code>oc describe scc anyuid</code></li>
+<li><code>oc adm policy add-scc-to-group anyuid system:serviceaccounts:pgouser1</code></li>
+<li>
+<p>‘default’ serviceAccount: </p>
+<p><code>oc adm policy add-scc-to-user anyuid system:serviceaccounts:pgouser1:default</code> </p>
+</li>
+<li>
+<p>User registered in Identity Provider: </p>
+<p><code>oc adm policy add-scc-to-user anyuid myuser</code>    </p>
+</li>
+<li>
+<p>Custom serviceAccount: </p>
+<p><code>oc adm policy add-scc-to-user anyuid system:serviceaccounts:pgouser1:my-sa</code>    </p>
+</li>
+</ul>
+</li>
+<li>
+<p>Refs:</p>
+<ul>
+<li><a href="https://docs.openshift.com/container-platform/3.6/admin_guide/manage_scc.html">ref1</a></li>
+<li><a href="https://docs.openshift.com/container-platform/3.6/admin_guide/manage_scc.html#add-scc-to-user-group-project">ref2</a></li>
+<li><a href="https://dzone.com/articles/understanding-openshift-security-context-constrain">ref3 🌟</a></li>
+</ul>
+</li>
+</ul>
+<h6 id="workflow1-without-custom-service-account-and-without-deploymentconfig">Workflow1 without custom Service Account and without DeploymentConfig<a class="headerlink" href="#workflow1-without-custom-service-account-and-without-deploymentconfig" title="Permanent link">&para;</a></h6>
+<p><img alt="crunchdydata scc workflow1" src="images/crunchydata_scc_workflow1.png" /></p>
+<h6 id="workflow2-with-custom-service-account-and-without-deploymentconfig">Workflow2 with custom Service Account and without DeploymentConfig<a class="headerlink" href="#workflow2-with-custom-service-account-and-without-deploymentconfig" title="Permanent link">&para;</a></h6>
+<p><img alt="crunchdydata scc workflow2" src="images/crunchydata_scc_workflow2.png" /></p>
+<ul>
+<li>Create a custom ServiceAccount and add a role to it within a Project:<ol>
+<li><code>oc project pgouser1</code></li>
+<li><code>oc get scc</code></li>
+<li><code>oc create serviceaccount my-sa –n pgouser1</code></li>
+<li><code>oc describe sa my-sa</code></li>
+<li><code>oc get scc</code></li>
+<li><code>oc adm policy add-scc-to-user anyuid system:serviceaccount:pgouser1:my-sa</code></li>
+<li><code>oc policy add-role-to-user edit system:serviceaccount:pgouser1:my-sa</code></li>
+<li>Alternative to step #6:</li>
+</ol>
+</li>
+</ul>
+<pre><code>oc edit scc anyuid 
+</code></pre>
+<pre><code>users:
+- system:serviceaccount:pgouser1:my-sa
+</code></pre>
+<ul>
+<li>
+<p>Other commands of interest:</p>
+<ul>
+<li><code>oc get role</code></li>
+<li><code>oc describe role pgo-role</code></li>
+<li><code>oc edit role pgo-role</code> </li>
+</ul>
+</li>
+<li>
+<p>References:</p>
+<ul>
+<li><a href="https://blog.openshift.com/understanding-service-accounts-sccs/">ref1</a></li>
+<li><a href="https://docs.openshift.com/container-platform/4.1/authentication/understanding-and-creating-service-accounts.html">ref2</a></li>
+<li><a href="https://docs.openshift.com/container-platform/4.1/authentication/managing-security-context-constraints.html#role-based-access-to-ssc_configuring-internal-oauth">ref3</a></li>
+</ul>
+</li>
+</ul>
+<h6 id="workflow3-with-custom-service-account-and-deploymentconfig">Workflow3 with custom service Account and DeploymentConfig<a class="headerlink" href="#workflow3-with-custom-service-account-and-deploymentconfig" title="Permanent link">&para;</a></h6>
+<p><img alt="crunchdydata scc workflow3" src="images/crunchydata_scc_workflow3.png" /></p>
+<h6 id="environment-setup-port-forward-and-wsl">Environment setup. Port Forward and WSL<a class="headerlink" href="#environment-setup-port-forward-and-wsl" title="Permanent link">&para;</a></h6>
+<ul>
+<li>Deployment method used in this presentation: <a href="https://access.crunchydata.com/documentation/postgres-operator/4.3.0/installation/other/bash/">Install Operator Using Bash</a></li>
+<li>Config files setup by installer are saved in:<ul>
+<li>“pgo” Project -&gt; Deployments</li>
+<li>“pgo” Project -&gt; Deployment Configs (empty, openshift feature not provided by CrunchyData)</li>
+<li>“pgo” Project -&gt; Secrets</li>
+<li>“pgo” Project -&gt; Config Maps</li>
+</ul>
+</li>
+<li>References:<ul>
+<li><a href="https://access.crunchydata.com/documentation/postgres-operator/latest/operatorcli/pgo-overview/">ref1</a></li>
+<li><a href="https://crunchydata.github.io/postgres-operator/latest/operatorcli/common-pgo-cli-operations/">ref2</a></li>
+</ul>
+</li>
+<li>WSL (Windows Subystem for Linux): <strong>alog/olog/clog</strong> functions must be adapted to be run in WSL&rsquo;s Ubuntu:</li>
+</ul>
+<pre><code>vim $HOME/.bashrc
+</code></pre>
+<pre><code># ~/.bashrc: executed by bash(1) for non-login shells.
+# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
+# for examples
+# If not running interactively, don't do anything
+case $- in
+    *i*) ;;
+    *) return;;
+esac
+# don't put duplicate lines or lines starting with space in the history.
+# See bash(1) for more options
+HISTCONTROL=ignoreboth
+# append to the history file, don't overwrite it
+shopt -s histappend
+# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+HISTSIZE=1000
+HISTFILESIZE=2000
+# check the window size after each command and, if necessary,
+# update the values of LINES and COLUMNS.
+shopt -s checkwinsize
+# If set, the pattern &quot;**&quot; used in a pathname expansion context will
+# match all files and zero or more directories and subdirectories.
+#shopt -s globstar
+# make less more friendly for non-text input files, see lesspipe(1)
+[ -x /usr/bin/lesspipe ] &amp;&amp; eval &quot;$(SHELL=/bin/sh lesspipe)&quot;
+# set variable identifying the chroot you work in (used in the prompt below)
+if [ -z &quot;${debian_chroot:-}&quot; ] &amp;&amp; [ -r /etc/debian_chroot ]; then
+    debian_chroot=$(cat /etc/debian_chroot)
+fi
+# set a fancy prompt (non-color, unless we know we &quot;want&quot; color)
+case &quot;$TERM&quot; in
+    xterm-color|*-256color) color_prompt=yes;;
+esac
+# uncomment for a colored prompt, if the terminal has the capability; turned
+# off by default to not distract the user: the focus in a terminal window
+# should be on the output of commands, not on the prompt
+#force_color_prompt=yes
+if [ -n &quot;$force_color_prompt&quot; ]; then
+    if [ -x /usr/bin/tput ] &amp;&amp; tput setaf 1 &gt;&amp;/dev/null; then
+    # We have color support; assume it's compliant with Ecma-48
+    # (ISO/IEC-6429). (Lack of such support is extremely rare, and such
+    # a case would tend to support setf rather than setaf.)
+    color_prompt=yes
+    else
+    color_prompt=
+    fi
+fi
+if [ &quot;$color_prompt&quot; = yes ]; then
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+else
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+fi
+unset color_prompt force_color_prompt
+# If this is an xterm set the title to user@host:dir
+case &quot;$TERM&quot; in
+xterm*|rxvt*)
+    PS1=&quot;\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1&quot;
+    ;;
+*)
+    ;;
+esac
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors &amp;&amp; eval &quot;$(dircolors -b ~/.dircolors)&quot; || eval &quot;$(dircolors -b)&quot;
+    alias ls='ls --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+# colored GCC warnings and errors
+#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+# some more ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+# Add an &quot;alert&quot; alias for long running commands.  Use like so:
+#   sleep 10; alert
+alias alert='notify-send --urgency=low -i &quot;$([ $? = 0 ] &amp;&amp; echo terminal || echo error)&quot; &quot;$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&amp;|]\s*alert$//'\'')&quot;'
+# Alias definitions.
+# You may want to put all your additions into a separate file like
+# ~/.bash_aliases, instead of adding them here directly.
+# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+# enable programmable completion features (you don't need to enable
+# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
+# sources /etc/bash.bashrc).
+if ! shopt -oq posix; then
+if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+fi
+fi
+#########################################
+# CRUNCHYDATA POSTGRES OPERATOR SETTINGS:
+#########################################
+# operator env vars
+export PATH=$PATH:$HOME/odev/bin
+export PGO_APISERVER_URL=https://127.0.0.1:18443
+#export PGO_APISERVER_URL=https://172.25.212.138:8443
+export PGO_CA_CERT=$HOME/odev/src/github.com/crunchydata/postgres-operator/conf/postgres-operator/server.crt
+export PGO_CLIENT_CERT=$HOME/odev/src/github.com/crunchydata/postgres-operator/conf/postgres-operator/server.crt
+export PGO_CLIENT_KEY=$HOME/odev/src/github.com/crunchydata/postgres-operator/conf/postgres-operator/server.key
+#alias setip='export PGO_APISERVER_URL=https://`kubectl get service postgres-operator -o=jsonpath=&quot;{.spec.clusterIP}&quot;`:18443'
+#alias alog='kubectl logs `kubectl get pod --selector=name=postgres-operator -o jsonpath=&quot;{.items[0].metadata.name}&quot;` -c apiserver'
+#alias olog='kubectl logs `kubectl get pod --selector=name=postgres-operator -o jsonpath=&quot;{.items[0].metadata.name}&quot;` -c operator'
+#
+export CCP_IMAGE_TAG=rhel7-11.1-2.3.0
+export CCP_IMAGE_PREFIX=registry.connect.redhat.com/crunchydata
+export PGO_CMD=oc
+export PGO_BASEOS=rhel7
+export PGO_VERSION=4.0.1
+export PGO_NAMESPACE=pgo
+export PGO_IMAGE_TAG=rhel7-4.0.1
+export PGO_IMAGE_PREFIX=registry.connect.redhat.com/crunchydata
+export GOPATH=$HOME/odev
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOBIN
+# NAMESPACE is the list of namespaces the Operator will watch
+export NAMESPACE=pgouser1,pgouser2
+# PGO_OPERATOR_NAMESPACE is the namespace the Operator is deployed into
+export PGO_OPERATOR_NAMESPACE=pgo
+# PGO_CMD values are either kubectl or oc, use oc if Openshift
+export PGO_CMD=kubectl
+# the directory location of the Operator scripts
+export PGOROOT=$GOPATH/src/github.com/crunchydata/postgres-operator
+# the version of the Operator you run is set by these vars
+export PGO_IMAGE_PREFIX=crunchydata
+export PGO_BASEOS=centos7
+export PGO_VERSION=4.0.1
+export PGO_IMAGE_TAG=$PGO_BASEOS-$PGO_VERSION
+# for the pgo CLI to authenticate with using TLS
+export PGO_CA_CERT=$PGOROOT/conf/postgres-operator/server.crt
+export PGO_CLIENT_CERT=$PGOROOT/conf/postgres-operator/server.crt
+export PGO_CLIENT_KEY=$PGOROOT/conf/postgres-operator/server.key
+# common bash functions for working with the Operator
+function setip() { 
+export PGO_APISERVER_URL=https://`$PGO_CMD -n &quot;$PGO_OPERATOR_NAMESPACE&quot; get service postgres-operator -o=jsonpath=&quot;{.spec.clusterIP}&quot;`:18443 
+export CO_APISERVER_URL=https://`$PGO_CMD -n &quot;$PGO_OPERATOR_NAMESPACE&quot; get service postgres-operator -o=jsonpath=&quot;{.spec.clusterIP}&quot;`:18443 
+}
+function alog() {
+$PGO_CMD  -n &quot;$PGO_OPERATOR_NAMESPACE&quot; logs `$PGO_CMD  -n &quot;$PGO_OPERATOR_NAMESPACE&quot; get pod --selector=name=postgres-operator -o jsonpath=&quot;{.items[0].metadata.name}&quot;` -c apiserver
+}
+function olog () {
+$PGO_CMD  -n &quot;$PGO_OPERATOR_NAMESPACE&quot; logs `$PGO_CMD  -n &quot;$PGO_OPERATOR_NAMESPACE&quot; get pod --selector=name=postgres-operator -o jsonpath=&quot;{.items[0].metadata.name}&quot;` -c operator
+}
+function slog () {
+$PGO_CMD  -n &quot;$PGO_OPERATOR_NAMESPACE&quot; logs `$PGO_CMD  -n &quot;$PGO_OPERATOR_NAMESPACE&quot; get pod --selector=name=postgres-operator -o jsonpath=&quot;{.items[0].metadata.name}&quot;` -c scheduler
+}
+#export DOCKER_HOST=tcp://localhost:2375
+# crunchy containers: https://github.com/CrunchyData/crunchy-containers/tree/2.4.1
+export GOPATH=$HOME/cdev        # set path to your new Go workspace
+export GOBIN=$GOPATH/bin        # set bin path 
+export PATH=$PATH:$GOBIN        # add Go bin path to your overall path
+export CCP_BASEOS=centos7       # centos7 for Centos, rhel7 for Redhat
+export CCP_PGVERSION=10         # The PostgreSQL major version
+export CCP_PG_FULLVERSION=10.9
+export CCP_VERSION=2.4.1
+export CCP_IMAGE_PREFIX=crunchydata # Prefix to put before all the container image names
+export CCP_IMAGE_TAG=$CCP_BASEOS-$CCP_PG_FULLVERSION-$CCP_VERSION   # Used to tag the images
+export CCPROOT=$GOPATH/src/github.com/crunchydata/crunchy-containers    # The base of the clone github repo
+export CCP_SECURITY_CONTEXT=&quot;&quot;
+export CCP_CLI=oc          # kubectl for K8s, oc for OpenShift
+export CCP_NAMESPACE=crunchy-containers       # Change this to whatever namespace/openshift project name you want to use
+export CCP_SECURITY_CONTEXT='&quot;fsGroup&quot;:26'
+export CCP_STORAGE_CLASS=gp2
+export CCP_STORAGE_MODE=ReadWriteOnce
+export CCP_STORAGE_CAPACITY=400M
+</code></pre>
+<ul>
+<li><strong>port-forward</strong> to reach postgres-operator POD with ‘pgo’ tool (18443 port defined in previous .bashrc): </li>
+</ul>
+<pre><code>oc project pgo
+oc get pod 
+oc port-forward postgres-operator-844d8f9777-8d5k5 -n pgo 18443:8443
+</code></pre>
+<h6 id="cluster-deployment-and-operation-with-pgo">Cluster Deployment and Operation with pgo<a class="headerlink" href="#cluster-deployment-and-operation-with-pgo" title="Permanent link">&para;</a></h6>
+<pre><code>pgo create cluster mycluster --pgpool -n pgouser1 --resources-config=small --replica-count=1
+pgo show cluster --all -n pgouser1
+pgo backup mycluster --backup-type=pgbackrest –n pgouser1
+pgo failover mycluster --query –n pgouser1
+pgo failover mycluster --target=mycluster-olvhy –n pgouser1
+pgo test mycluster -n pgouser1
+pgo create cluster somefastpg -n pgouser1 --node-label=speed=fast
+pgo create cluster abouncer --pgbouncer  (sidecar pgbouncer added to this PG cluster)
+pgo create cluster apgpool --pgpool 
+pgo status cluster mycluster –n pgouser1
+pgo ls mycluster –n pgouser1
+pgo reload mycluster –n pgouser1
+pgo scale mycluster –n pgouser1
+</code></pre>
+<p>PGO USER allows you to manage users and passwords across a set of clusters:</p>
+<pre><code>pgo user –-selector=name=mycluster --expired=300 –-update-password –n pgouser1
+pgo user –-change-password=bob –n pgouser1 --selector=name=mycluster --password=newpass
+</code></pre>
+<h6 id="psql-access-from-postgres-operator-pod">Psql access from postgres operator POD<a class="headerlink" href="#psql-access-from-postgres-operator-pod" title="Permanent link">&para;</a></h6>
+<pre><code>oc project pgo
+oc get pods
+oc rsh postgres-operator-844d8f9777-ppjv9
+export PGPASSWORD=password
+psql -h mycluster-pgpool.pgouser1 -U testuser -l
+psql -h mycluster-pgpool.pgouser1 -U postgres -c &quot;CREATE DATABASE testdb&quot;
+psql -h mycluster-pgpool.pgouser1 -U postgres testdb -c &quot;CREATE TABLE test (ID CHAR(4) NOT NULL, name TEXT NOT NULL, PRIMARY KEY (id))&quot;
+psql -h mycluster-pgpool.pgouser1 -U postgres testdb -c &quot;INSERT INTO test (id,name) VALUES (1, 'user01')&quot;
+psql -h mycluster-pgpool.pgouser1 -U postgres testdb -c &quot;select * from test&quot;
+</code></pre>
+<h6 id="list-databases-with-psql">List Databases with psql<a class="headerlink" href="#list-databases-with-psql" title="Permanent link">&para;</a></h6>
+<pre><code>postgres=# \l
+                                 List of databases
+   Name    |  Owner   | Encoding |  Collate   |   Ctype    |   Access privileges
+-----------+----------+----------+------------+------------+-----------------------
+ postgres  | postgres | UTF8     | en_US.UTF8 | en_US.UTF8 |
+ template0 | postgres | UTF8     | en_US.UTF8 | en_US.UTF8 | =c/postgres          +
+           |          |          |            |            | postgres=CTc/postgres
+ template1 | postgres | UTF8     | en_US.UTF8 | en_US.UTF8 | =c/postgres          +
+           |          |          |            |            | postgres=CTc/postgres
+ userdb    | postgres | UTF8     | en_US.UTF8 | en_US.UTF8 | =Tc/postgres         +
+           |          |          |            |            | postgres=CTc/postgres+
+           |          |          |            |            | testuser=CTc/postgres+
+           |          |          |            |            | user1=CTc/postgres
+(4 rows)
+</code></pre>
+<h6 id="access-from-another-pod-within-the-cluster-with-psql-client">Access from another POD within the cluster with psql client<a class="headerlink" href="#access-from-another-pod-within-the-cluster-with-psql-client" title="Permanent link">&para;</a></h6>
+<p>For example with <a href="https://hub.docker.com/r/centos/postgresql-10-centos7">this psql client</a></p>
+<pre><code>oc rsh postgresql-10-centos7-1-pjh46
+sh-4.2$ psql -p 5432 -h mycluster-pgpool.pgouser1 -U postgres postgres
+psql (10.6, server 11.3)
+WARNING: psql major version 10, server major version 11.
+         Some psql features might not work.
+Type &quot;help&quot; for help.
+
+postgres=#
+</code></pre>
+<h6 id="access-from-another-pod-within-the-cluster-with-pgadmin4-of-crunchy-containers-community-edition">Access from another POD within the cluster with Pgadmin4 of Crunchy containers Community Edition<a class="headerlink" href="#access-from-another-pod-within-the-cluster-with-pgadmin4-of-crunchy-containers-community-edition" title="Permanent link">&para;</a></h6>
+<ul>
+<li><a href="https://access.crunchydata.com/documentation/crunchy-postgres-containers/4.3.0/container-specifications/crunchy-pgadmin4/">crunchy-pgadmin4</a></li>
+<li><a href="https://access.crunchydata.com/documentation/crunchy-postgres-containers/4.3.0/examples/administration/pgadmin4/">pgAdmin 4</a></li>
+</ul>
+<p><img alt="crunchdydata pgadmin" src="images/crunchydata_pgadmin.png" /></p>
+<h6 id="debugging-crunchydata-postgres-operator-401-community-edition">Debugging Crunchydata Postgres Operator 4.0.1 Community Edition<a class="headerlink" href="#debugging-crunchydata-postgres-operator-401-community-edition" title="Permanent link">&para;</a></h6>
+<ul>
+<li>Debug level logging in turned on by default when deploying the Operator.</li>
+<li>Sample bash functions are supplied in examples/envs.sh to view the Operator logs.</li>
+<li>You can view the Operator REST API logs with the <strong>alog</strong> bash function.</li>
+<li>You can view the Operator core logic logs with the <strong>olog</strong> bash function.</li>
+<li>You can view the Scheduler logs with the <strong>slog</strong> bash function.</li>
+<li>You can enable the pgo CLI debugging with the following flag:
+    <code>$ pgo version --debug</code></li>
+<li>You can set the REST API URL as follows after a deployment if you are developing on your local host by executing the <strong>setip</strong> bash function.</li>
+<li>“alog”, “olog”, “slog” and “setip” are defined in $HOME/.bashrc</li>
+</ul>
+<h5 id="certified-crunchydata-postgres-operator-olmoperatorhub-manual-setup">Certified Crunchydata Postgres Operator (OLM/OperatorHub). Manual Setup<a class="headerlink" href="#certified-crunchydata-postgres-operator-olmoperatorhub-manual-setup" title="Permanent link">&para;</a></h5>
+<ul>
+<li>We will set this up manually:<ul>
+<li>StorageClass changed to “gp2” in YAML file (AWS)</li>
+<li>‘pgo’ tool compatibility issues</li>
+</ul>
+</li>
+</ul>
+<p><center>
+<img alt="crunchdydata operatorhub install2" src="images/crunchydata_operatorhub_install1.png" />
+</center></p>
+<p><img alt="crunchdydata operatorhub install2" src="images/crunchydata_operatorhub_install2.png" /></p>
+<ul>
+<li>NO PODs are deployed -&gt; configuration needed:</li>
+</ul>
+<p><img alt="crunchdydata operatorhub install3" src="images/crunchydata_operatorhub_install3.png" /></p>
+<p><img alt="crunchdydata operatorhub install4" src="images/crunchydata_operatorhub_install4.png" /></p>
+<ul>
+<li>Replica Sets: where PODs should be launched</li>
+</ul>
+<p><img alt="crunchdydata operatorhub install5" src="images/crunchydata_operatorhub_install5.png" /></p>
+<ul>
+<li>ReplicaSets (environment) and Deployment:</li>
+</ul>
+<p><img alt="crunchdydata operatorhub install6" src="images/crunchydata_operatorhub_install6.png" /></p>
+<p><img alt="crunchdydata operatorhub install7" src="images/crunchydata_operatorhub_install7.png" /></p>
+<ul>
+<li>Error detected. Solution: </li>
+</ul>
+<pre><code>oc adm policy add-scc-to-user anyuid system:serviceaccount:pgophub:default
+</code></pre>
+<p><img alt="crunchdydata operatorhub install8" src="images/crunchydata_operatorhub_install8.png" /></p>
+<ul>
+<li>We see now a new POD being created:</li>
+</ul>
+<p><img alt="crunchdydata operatorhub install9" src="images/crunchydata_operatorhub_install9.png" /></p>
+<ul>
+<li>New errors: “secrets” need to be setup:</li>
+</ul>
+<p><img alt="crunchdydata operatorhub install10" src="images/crunchydata_operatorhub_install10.png" /></p>
+<p><img alt="crunchdydata operatorhub install11" src="images/crunchydata_operatorhub_install11.png" /></p>
+<p><center>
+<img alt="crunchdydata operatorhub install12" src="images/crunchydata_operatorhub_install12.png" />
+</center></p>
+<ul>
+<li>New errors: 3 “secrets” need to be setup manually -&gt; POD is started successfully and we have psql access.</li>
+</ul>
+<p><center>
+<img alt="crunchdydata operatorhub install13" src="images/crunchydata_operatorhub_install13.png" />
+</center></p>
+<p><center>
+<img alt="crunchdydata operatorhub install14" src="images/crunchydata_operatorhub_install14.png" />
+</center></p>
+<p><img alt="crunchdydata operatorhub install15" src="images/crunchydata_operatorhub_install15.png" /></p>
+<p><img alt="crunchdydata operatorhub install16" src="images/crunchydata_operatorhub_install16.png" /></p></div>
+                </div>
+        </div>
+
+    <hr>
+    <footer class="container">
+        
+        <center>Documentation built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="http://kristopolous.github.io/BOOTSTRA.386">BOOTSTRA.386</a>.</center>
+    </footer>
+        <script src="../../../../search/main.js"></script>
+    </body>
+</html>

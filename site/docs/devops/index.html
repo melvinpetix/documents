@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="IT projects and resources.. along the way..">
+        <meta name="author" content="mbiscarra">
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>DevOps - document</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/bootstrap-theme.min.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">document</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">home</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../introduction.md">Openshift VS Kubernetes</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../javaee-to-cloud-native.md">From Java EE To Cloud Native</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../faq.md">Microservices FAQ & Kubernetes Native</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../sre.md">Site Reliability Engineering (SRE)</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../serverless.md">Serverless Architectures & Frameworks. OpenFaaS, Knative & Kubeless</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">DevOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../devops.md">DevOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cheatsheets.md">Cheat Sheets</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../gitops.md">GitOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../demos.md">Demos & Screencasts. OpenShift, Kubernetes, Jenkins Pipelines with JCasC and more</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">NoOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../noops.md">NoOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../serverless.md">Serverless Architectures & Frameworks. OpenFaaS, Knative & Kubeless</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../finops.md">FinOps - Cloud Financial Management</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../testops.md">TestOps and Continuous Testing</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Project Management Methodology <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../project-management-methodology.md">Project Management Methodology</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../workfromhome.md">Work From Home</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../appointment-scheduling.md">Appointment Scheduling</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../docker.md">Docker</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kubernetes <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../kubernetes.md">Kubernetes</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../matrix-table.md">Kubernetes Matrix Table</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../kubernetes-alternatives.md">Kubernetes alternatives</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">OpenShift <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../openshift.md">OpenShift docs</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Software Delivery Pipeline <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cicd.md">CI/CD - Continuous Integration & Continuous Delivery</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../git.md">Git & Git Patterns. Trunk Devel, Git Flow & Feature Flags. Merge BOTs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jenkins.md">Jenkins & Cloudbees</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../openshift-pipelines.md">OpenShift Pipelines with Jenkins, Tekton and more...</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../performance-testing-with-jenkins-and-jmeter.md">Performance testing with Jenkins and JMeter or Gatling</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jenkins-alternatives.md">Jenkins Alternatives for Continuous Integration</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../..">Toolchain</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Java Memory Management <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../java-and-java-performance-optimization.md">Java Memory Management & Java Performance Optimization</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jvm-parameters-matrix-table.md">Java Parameters Matrix Table</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../caching.md">Caching Solutions</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../monitoring.md">Monitoring and Performance. Prometheus, Grafana, APMs and more</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Configuration Management <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../ansible.md">Ansible</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../liquibase.md">Liquibase</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../terraform.md">Terraform & Packer</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Databases on Kubernetes <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../databases.md">Relational Databases and Database DevOps. CrunchyData Postgres Operator</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../nosql.md">NoSQL Databases</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../message-queue.md">Cloud Based Integration & Messaging. Data Processing & Streaming (aka Data Pipeline)</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Service Mesh <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../servicemesh.md">Service Mesh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../consul.md">Consul</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../envoyproxy.md">Envoy & xDS protocol</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../istio.md">Istio</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../linkerd.md">Linkerd</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../maesh.md">Maesh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../trafficdirector.md">Traffic Director</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Security and DevSecOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../devsecops.md">DevSecOps. Container Security</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../securityascode.md">Security Policy as Code</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../storage.md">Cloud Native Storage</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">APIs <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../api.md">APIs with SOAP, REST and gRPC</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../swagger-code-generator-for-rest-apis.md">Swagger code generator for REST APIs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../postman.md">API Test Automation with Postman</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../developerportals.md">API Marketplaces. API Management with API Gateways & Developer Portals</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Development & Frameworks <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../angular.md">Angular</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dom.md">Document Object Model (DOM)</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringFramework.md">Java - Spring Framework</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringBoot.md">Java - SpringBoot</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringCloud.md">Java - Spring Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../quarkus.md">Java - Quarkus</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../javascript.md">JavaScript - node.js & npm</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../python.md">Python - Django & Flask</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../xamarin.md">Xamarin</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev Environment <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../visual-studio.md">Visual Studio Code</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../linux-dev-env.md">WSL - Linux Dev Environment on Windows</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../scaffolding.md">Scaffolding Tools</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ChromeDevTools.md">ChromeDevTools</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Public Cloud <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../public-cloud-solutions.md">Public Cloud Solutions</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../edge-computing.md">Edge Computing</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cloud-arch-diagrams.md">Cloud Architecture Diagram Tools</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../aws.md">AWS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../GoogleCloudPlatform.md">Google Cloud Platform</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../azure.md">Microsoft Azure</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ibm_cloud.md">IBM Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../oraclecloud.md">Oracle Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../digitalocean.md">Digital Ocean</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cloudflare.md">Cloudflare</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../elearning.md">E-Learning</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../customer.md">Customer Success Stories</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../newsfeeds.md">Subreddits</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../other-awesome-lists.md">Other Awesome Lists</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../about.md">About</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li>
+                    <a href="https://github.com/melvinpetix/documents.git/">
+                        
+                        github/melvinpetix/dpcuments
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+      
+    
+        <li class="main active"><a href="#devops">DevOps</a></li>
+        
+            <li><a href="#introduction-to-digital-business-transformation">Introduction to Digital Business Transformation</a></li>
+        
+            <li><a href="#devops_1">DevOps</a></li>
+        
+            <li><a href="#blogs">Blogs</a></li>
+        
+            <li><a href="#xebia-labs-and-devops">Xebia Labs and DevOps</a></li>
+        
+            <li><a href="#netflix-and-devops">Netflix and DevOps</a></li>
+        
+            <li><a href="#public-cloud-devops">Public Cloud DevOps</a></li>
+        
+    
+    
+    </ul>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="devops">DevOps<a class="headerlink" href="#devops" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#introduction-to-digital-business-transformation">Introduction to Digital Business Transformation</a></li>
+<li><a href="#devops">DevOps</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#xebia-labs-and-devops">Xebia Labs and DevOps</a></li>
+<li><a href="#netflix-and-devops">Netflix and DevOps</a></li>
+<li><a href="#public-cloud-devops">Public Cloud DevOps</a><ul>
+<li><a href="#aws-devops">AWS DevOps</a></li>
+<li><a href="#azure-devops">Azure DevOps</a></li>
+<li><a href="#google-cloud-platform">Google Cloud Platform</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="introduction-to-digital-business-transformation">Introduction to Digital Business Transformation<a class="headerlink" href="#introduction-to-digital-business-transformation" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://stxnext.com/blog/2019/04/25/aiops-bizdevops-cloudops-devops-itops-noops-introduction-digital-business-transformation/">What Is AIOps, BizDevOps, CloudOps, DevOps, ITOps, NoOps? A Gentle Introduction to Digital Business Transformation 🌟</a></li>
+</ul>
+<h3 id="devops_1">DevOps<a class="headerlink" href="#devops_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/DevOps">Wikipedia: DevOps</a></li>
+<li><a href="https://hostadvice.com/blog/devops-toolbox-jenkins-ansible-chef-puppet-vagrant-saltstack/">DevOps Toolbox: Jenkins, Ansible, Chef, Puppet, Vagrant, &amp; SaltStack</a></li>
+<li><a href="https://thenewstack.io/category/kubernetes/">thenewstack.io: Kubernetes is the Accepted Platform for Cloud Native Computing</a></li>
+<li><a href="https://opensource.com/article/19/7/devops-vs-sysadmin">opensource.com: The case for making the transition from sysadmin to DevOps engineer 🌟</a> There&rsquo;s a learning curve, but there&rsquo;s no time like the present to get started.</li>
+<li><a href="https://opensource.com/article/19/7/devops-vs-sysadmin">opensource.com: The case for making the transition from sysadmin to DevOps engineer</a> There&rsquo;s a learning curve, but there&rsquo;s no time like the present to get started.</li>
+<li><a href="https://opensource.com/article/19/7/how-transition-career-devops-engineer">opensource.com: How to transition into a career as a DevOps engineer</a> Whether you&rsquo;re a recent college graduate or a seasoned IT pro looking to advance your career, these tips can help you get hired as a DevOps engineer.</li>
+<li><a href="https://opensource.com/article/20/2/devops-beginners">opensource.com: A beginner&rsquo;s guide to everything DevOps 🌟</a> Take a fresh look at why DevOps is important, what it means for IT professionals, and its methods, frameworks, and tools.</li>
+<li><a href="https://enterprisersproject.com/article/2020/3/how-get-devops-noops-5-steps">How to get from DevOps to NoOps: 5 steps</a></li>
+<li><a href="https://www.zdnet.com/article/corporate-culture-complicates-kubernetes-and-container-collaboration/">Corporate culture complicates Kubernetes and container collaboration 🌟</a> &lsquo;As the DevOps crew likes to say: containers won&rsquo;t fix your broken culture&rsquo;</li>
+<li><a href="https://www.mindtheproduct.com/what-the-hell-are-ci-cd-and-devops-a-cheatsheet-for-the-rest-of-us/">mindtheproduct.com: The Product Managers’ Guide to Continuous Delivery and DevOps 🌟</a></li>
+<li><a href="https://devopscube.com/become-devops-engineer/">devopscube.com: Become A DevOps Engineer in 2020: A Comprehensive Guide 🌟</a></li>
+<li><a href="https://blog.shippable.com/how-to-be-a-great-devops-engineer">How to be a great DevOps Engineer 🌟</a></li>
+<li><a href="https://www.smartsheet.com/devops">smartsheet.com: The Way of DevOps: A Primer on DevOps Principles and Practices</a></li>
+<li><a href="https://dzone.com/articles/are-you-stuck-in-the-new-devops-matrix-from-hell">dzone: Are You Stuck in the New DevOps Matrix From Hell? 🌟</a> See how Docker solved the matrix-from-hell problem, and how DevOps techniques can help avoid the config sprawl that comes with microservices.</li>
+<li><a href="https://kenmugrage.com/2017/05/05/my-new-definition-of-devops/#more-4">kenmugrage.com 🌟</a> DevOps: A culture where people, regardless of title or background, work together to imagine, develop, deploy and operate a system. </li>
+</ul>
+<h3 id="blogs">Blogs<a class="headerlink" href="#blogs" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://devops.com/">devops.com</a></li>
+<li><a href="https://devopscube.com/">devopscube.com</a></li>
+<li><a href="https://www.devopszone.info/">devopszone.info</a></li>
+</ul>
+<h3 id="xebia-labs-and-devops">Xebia Labs and DevOps<a class="headerlink" href="#xebia-labs-and-devops" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://xebialabs.com/glossary/">DevOps Glosary of Terms 🌟</a></li>
+<li><a href="https://xebialabs.com/the-ultimate-devops-tool-chest/">The Ultimate DevOps Tool Chest 🌟</a></li>
+<li><a href="https://xebialabs.com/periodic-table-of-devops-tools/">Periodic Table of DevOps 🌟</a></li>
+</ul>
+<h3 id="netflix-and-devops">Netflix and DevOps<a class="headerlink" href="#netflix-and-devops" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://netflixtechblog.com/full-cycle-developers-at-netflix-a08c31f83249">Full Cycle Developers at Netflix — Operate What You Build</a> </li>
+<li><a href="https://netflixtechblog.com/applying-netflix-devops-patterns-to-windows-2a57f2dbbf79">Applying Netflix DevOps Patterns to Windows</a></li>
+</ul>
+<h3 id="public-cloud-devops">Public Cloud DevOps<a class="headerlink" href="#public-cloud-devops" title="Permanent link">&para;</a></h3>
+<h4 id="aws-devops">AWS DevOps<a class="headerlink" href="#aws-devops" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://aws.amazon.com/devops/">AWS DevOps 🌟</a></li>
+</ul>
+<h4 id="azure-devops">Azure DevOps<a class="headerlink" href="#azure-devops" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://azure.microsoft.com/services/devops/">Azure DevOps 🌟</a></li>
+</ul>
+<h4 id="google-cloud-platform">Google Cloud Platform<a class="headerlink" href="#google-cloud-platform" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://cloud.google.com/devops">cloud.google.com: DevOps</a></li>
+<li><a href="https://cloud.google.com/products/tools">Cloud Developer Tools</a></li>
+<li><a href="https://cloud.google.com/code">Google Cloud Code</a><ul>
+<li><a href="https://github.com/GoogleCloudPlatform/cloud-code-samples">github: Google Cloud Code samples</a></li>
+</ul>
+</li>
+<li><a href="https://cloud.google.com/cloud-build">Google Cloud Build</a></li>
+<li><a href="https://medium.com/google-cloud/tagged/devops">medium.com/google-cloud/tagged/devops</a></li>
+</ul>
+<p><center>
+<a href="https://dzone.com/articles/are-you-stuck-in-the-new-devops-matrix-from-hell"><img alt="Dynamic kubernetes config" src="images/dynamic-kubernetes-config.png" /></a></p>
+<p><a href="https://www.mindtheproduct.com/what-the-hell-are-ci-cd-and-devops-a-cheatsheet-for-the-rest-of-us/"><img alt="DevOps culture" src="images/devops-culture.jpg" /></a></p>
+<p><a href="https://www.tecmint.com/"><img alt="Programmer Move" src="images/programmer-move.jpg" /></a></p>
+<p><a href="https://itrevolution.com/faculty/gene-kim/"><img alt="DevOps Gene Kim" src="images/term_devops.jpg" /></a></p>
+<p><a href="https://www.dynatrace.com/"><img alt="DevOps to no ops" src="images/devops-to-no-ops.jpg" /></a></p>
+<p><a href="https://kenmugrage.com/2017/05/05/my-new-definition-of-devops/#more-4"><img alt="DevOps Ken Mugrage" src="images/devops_culture_ken_mugrage.jpg" /></a></p>
+<p><a href="https://en.wikipedia.org/wiki/DevOps"><img alt="DevOps wikipedia" src="images/devops_wikipedia.png" /></a></p>
+<p><a href="https://www.appdynamics.com/"><img alt="DevOps today" src="images/todays_devops.jpg" /></a></p>
+<p><img alt="DevOps dilbert" src="images/dilbert_devops.jpg" /></p>
+<p><a href="https://www.cognizant.com/InsightsWhitepapers/Jumpstarting-DevOps-with-Continuous-Testing-codex1719.pdf"><img alt="DevOps vs Agile" src="images/devops_vs_agile.jpg" /></a></p>
+<p><a href="https://www.capgemini.com/2016/05/assessing-state-of-your-devops-adoption-use-of-a-quality-blueprint-qbp/"><img alt="DevOps capgemini" src="images/why_devops_capgemini.png" /></a></p>
+<p><a href="https://www.capgemini.com/2016/05/assessing-state-of-your-devops-adoption-use-of-a-quality-blueprint-qbp/"><img alt="DevOps practices" src="images/key_devops_practices.png" /></a></p>
+<p><a href="https://www.capgemini.com/2016/05/assessing-state-of-your-devops-adoption-use-of-a-quality-blueprint-qbp/"><img alt="DevOps qbp" src="images/devopsqbp.jpg" /></a></p>
+<p><a href="https://blogs.gartner.com/cameron_haight/2014/10/13/getting-your-arms-around-devops-devops-patterns-and-practices/"><img alt="DevOps patterns" src="images/devopspatternsandpractices.png" /></a></p>
+<p><a href="https://dzone.com/articles/what-is-devops-2"><img alt="What-is-DevOps" src="images/What-is-DevOps.jpg" /></a></p>
+<p><a href="https://dzone.com/articles/automate-to-save-mental-energy-not-time-1"><img alt="automation" src="images/automation.png" /></a></p>
+<p><a href="http://www.softwaretestingnews.co.uk/a-software-testing-and-devops-tools-directory-for-digital-programmes/"><img alt="devops1" src="images/devops1.png" /></a></p>
+<div class="container">
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/ch64DsNKnrQRC1" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen class="video"> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/IQGroup/how-will-devops-benefit-enterprise" title="How will DevOps benefit enterprise? " target="_blank">How will DevOps benefit enterprise? </a> </strong> from <strong><a href="//www.slideshare.net/IQGroup" target="_blank">InterQuest Group</a></strong> </div>
+</div>
+<p></center>
+<br/></p></div>
+                </div>
+        </div>
+
+    <hr>
+    <footer class="container">
+        
+        <center>Documentation built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="http://kristopolous.github.io/BOOTSTRA.386">BOOTSTRA.386</a>.</center>
+    </footer>
+        <script src="../../../../search/main.js"></script>
+    </body>
+</html>

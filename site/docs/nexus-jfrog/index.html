@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="IT projects and resources.. along the way..">
+        <meta name="author" content="mbiscarra">
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Nexus & JFrog Artifactory - document</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/bootstrap-theme.min.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">document</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">home</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../introduction.md">Openshift VS Kubernetes</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../javaee-to-cloud-native.md">From Java EE To Cloud Native</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../faq.md">Microservices FAQ & Kubernetes Native</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../sre.md">Site Reliability Engineering (SRE)</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../serverless.md">Serverless Architectures & Frameworks. OpenFaaS, Knative & Kubeless</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">DevOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../devops.md">DevOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cheatsheets.md">Cheat Sheets</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../gitops.md">GitOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../demos.md">Demos & Screencasts. OpenShift, Kubernetes, Jenkins Pipelines with JCasC and more</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">NoOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../noops.md">NoOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../serverless.md">Serverless Architectures & Frameworks. OpenFaaS, Knative & Kubeless</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../finops.md">FinOps - Cloud Financial Management</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../testops.md">TestOps and Continuous Testing</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Project Management Methodology <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../project-management-methodology.md">Project Management Methodology</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../workfromhome.md">Work From Home</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../appointment-scheduling.md">Appointment Scheduling</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../docker.md">Docker</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kubernetes <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../kubernetes.md">Kubernetes</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../matrix-table.md">Kubernetes Matrix Table</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../kubernetes-alternatives.md">Kubernetes alternatives</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">OpenShift <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../openshift.md">OpenShift docs</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Software Delivery Pipeline <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cicd.md">CI/CD - Continuous Integration & Continuous Delivery</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../git.md">Git & Git Patterns. Trunk Devel, Git Flow & Feature Flags. Merge BOTs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jenkins.md">Jenkins & Cloudbees</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../openshift-pipelines.md">OpenShift Pipelines with Jenkins, Tekton and more...</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../performance-testing-with-jenkins-and-jmeter.md">Performance testing with Jenkins and JMeter or Gatling</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jenkins-alternatives.md">Jenkins Alternatives for Continuous Integration</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../..">Toolchain</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Java Memory Management <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../java-and-java-performance-optimization.md">Java Memory Management & Java Performance Optimization</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jvm-parameters-matrix-table.md">Java Parameters Matrix Table</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../caching.md">Caching Solutions</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../monitoring.md">Monitoring and Performance. Prometheus, Grafana, APMs and more</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Configuration Management <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../ansible.md">Ansible</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../liquibase.md">Liquibase</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../terraform.md">Terraform & Packer</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Databases on Kubernetes <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../databases.md">Relational Databases and Database DevOps. CrunchyData Postgres Operator</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../nosql.md">NoSQL Databases</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../message-queue.md">Cloud Based Integration & Messaging. Data Processing & Streaming (aka Data Pipeline)</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Service Mesh <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../servicemesh.md">Service Mesh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../consul.md">Consul</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../envoyproxy.md">Envoy & xDS protocol</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../istio.md">Istio</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../linkerd.md">Linkerd</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../maesh.md">Maesh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../trafficdirector.md">Traffic Director</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Security and DevSecOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../devsecops.md">DevSecOps. Container Security</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../securityascode.md">Security Policy as Code</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../storage.md">Cloud Native Storage</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">APIs <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../api.md">APIs with SOAP, REST and gRPC</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../swagger-code-generator-for-rest-apis.md">Swagger code generator for REST APIs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../postman.md">API Test Automation with Postman</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../developerportals.md">API Marketplaces. API Management with API Gateways & Developer Portals</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Development & Frameworks <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../angular.md">Angular</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dom.md">Document Object Model (DOM)</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringFramework.md">Java - Spring Framework</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringBoot.md">Java - SpringBoot</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringCloud.md">Java - Spring Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../quarkus.md">Java - Quarkus</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../javascript.md">JavaScript - node.js & npm</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../python.md">Python - Django & Flask</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../xamarin.md">Xamarin</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev Environment <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../visual-studio.md">Visual Studio Code</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../linux-dev-env.md">WSL - Linux Dev Environment on Windows</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../scaffolding.md">Scaffolding Tools</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ChromeDevTools.md">ChromeDevTools</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Public Cloud <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../public-cloud-solutions.md">Public Cloud Solutions</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../edge-computing.md">Edge Computing</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cloud-arch-diagrams.md">Cloud Architecture Diagram Tools</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../aws.md">AWS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../GoogleCloudPlatform.md">Google Cloud Platform</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../azure.md">Microsoft Azure</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ibm_cloud.md">IBM Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../oraclecloud.md">Oracle Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../digitalocean.md">Digital Ocean</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cloudflare.md">Cloudflare</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../elearning.md">E-Learning</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../customer.md">Customer Success Stories</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../newsfeeds.md">Subreddits</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../other-awesome-lists.md">Other Awesome Lists</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../about.md">About</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li>
+                    <a href="https://github.com/melvinpetix/documents.git/">
+                        
+                        github/melvinpetix/dpcuments
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+      
+    
+        <li class="main active"><a href="#nexus-jfrog-artifactory">Nexus &amp; JFrog Artifactory</a></li>
+        
+            <li><a href="#nexus-repository-manager-nxrm-3">Nexus Repository Manager (NXRM) 3</a></li>
+        
+            <li><a href="#jfrog-artifactory">JFrog Artifactory</a></li>
+        
+    
+    
+    </ul>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="nexus-jfrog-artifactory">Nexus &amp; JFrog Artifactory<a class="headerlink" href="#nexus-jfrog-artifactory" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#nexus-repository-manager-nxrm-3">Nexus Repository Manager (NXRM) 3</a><ul>
+<li><a href="#getting-started">Getting Started</a></li>
+<li><a href="#setup-nexus-kubernetes-run-nexus3-with-docker-in-a-kubernetes-cluster">Setup Nexus Kubernetes. Run nexus3 with docker in a kubernetes cluster</a></li>
+<li><a href="#nexus-as-a-docker-repo">Nexus as a Docker repo</a><ul>
+<li><a href="#secure-docker-registries">Secure Docker Registries</a></li>
+</ul>
+</li>
+<li><a href="#ssltls-certificates">SSL/TLS Certificates</a><ul>
+<li><a href="#add-insecure-registry-to-docker">Add Insecure Registry to Docker</a></li>
+</ul>
+</li>
+<li><a href="#jenkins-integration-with-nexus">Jenkins Integration with Nexus</a></li>
+<li><a href="#nexus-3-configuration-as-code">Nexus 3 Configuration as Code</a></li>
+<li><a href="#nexus-cli">Nexus CLI</a></li>
+<li><a href="#sonatype-nexus-community">Sonatype Nexus Community</a></li>
+</ul>
+</li>
+<li><a href="#jfrog-artifactory">JFrog Artifactory</a></li>
+</ul>
+<h3 id="nexus-repository-manager-nxrm-3">Nexus Repository Manager (NXRM) 3<a class="headerlink" href="#nexus-repository-manager-nxrm-3" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.sonatype.com/nexus-repository-oss">sonatype.com/nexus-repository-oss</a></li>
+<li><a href="https://help.sonatype.com/repomanager3">Nexus Repository Manager (NXRM) 3 🌟</a></li>
+</ul>
+<h4 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://dzone.com/refcardz/binary-repository-management">Dzone refcard: Using Repository Managers</a> The Best Way to Organize, Store, and Distribute Software Components</li>
+<li><a href="https://dzone.com/refcardz/binary-repository-management">Dzone Refcard: Binary Repository Management</a></li>
+<li><a href="https://dzone.com/articles/getting-started-nexus-maven">Dzone: Getting started with Nexus</a></li>
+<li><a href="https://dzone.com/articles/nexus-guide-update-january-2018">Dzone: Nexus Guide Update January 2018</a></li>
+</ul>
+<h4 id="setup-nexus-kubernetes-run-nexus3-with-docker-in-a-kubernetes-cluster">Setup Nexus Kubernetes. Run nexus3 with docker in a kubernetes cluster<a class="headerlink" href="#setup-nexus-kubernetes-run-nexus3-with-docker-in-a-kubernetes-cluster" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://github.com/sonatype-nexus-community/nexus-kubernetes-openshift">Sonatype Nexus Community: Nexus Kubernetes OpenShift 🌟</a></li>
+<li><a href="https://devopscube.com/setup-nexus-kubernetes/">Devopscube.com: Setup Nexus Kubernetes 🌟</a></li>
+<li><a href="https://stackoverflow.com/questions/42766349/run-nexus-3-with-docker-in-a-kubernetes-cluster">stackoverflow: run nexus3 with docker in a kubernetes cluster</a></li>
+<li><a href="https://github.com/jetstack/cert-manager/">https://github.com/jetstack/cert-manager/</a></li>
+</ul>
+<h4 id="nexus-as-a-docker-repo">Nexus as a Docker repo<a class="headerlink" href="#nexus-as-a-docker-repo" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://help.sonatype.com/repomanager3/formats/docker-registry">Docker Registry</a></li>
+<li><a href="https://blog.sonatype.com/using-nexus-3-as-your-repository-part-3-docker-images">blog.sonatype.com: Using Nexus 3 as Your Repository – Part 3: Docker Images 🌟</a></li>
+<li><a href="https://dzone.com/articles/setting-up-a-docker-private-registry-with-authenti">Dzone: Setting up a docker private registry with authentication</a></li>
+<li><a href="https://support.sonatype.com/hc/en-us/articles/360009696054-How-to-delete-docker-images-from-Nexus-Repository-Manager">sonatype: how to delete docker images from Nexus Repository Manager</a></li>
+<li><a href="https://hackernoon.com/cleanup-old-docker-images-from-nexus-repository-617b1004dad8">hackermoon.com: cleanup old docker images from nexus repository</a></li>
+</ul>
+<h5 id="secure-docker-registries">Secure Docker Registries<a class="headerlink" href="#secure-docker-registries" title="Permanent link">&para;</a></h5>
+<ul>
+<li><a href="https://guides.sonatype.com/repo3/technical-guides/secure-docker-registries/">guides.sonatype.com: secure docker registries</a></li>
+<li><a href="https://support.sonatype.com/hc/en-us/articles/217542177-Using-Self-Signed-Certificates-with-Nexus-Repository-Manager-and-Docker-Daemon">support.sonatype.com: Using self signed certificates with Nexus Repository Manager and Docker Daemon</a></li>
+</ul>
+<h4 id="ssltls-certificates">SSL/TLS Certificates<a class="headerlink" href="#ssltls-certificates" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://guides.sonatype.com/repo3/technical-guides/secure-docker-registries/">guides.sonatype.com: secure docker registries</a></li>
+<li><a href="https://support.sonatype.com/hc/en-us/articles/213465768-SSL-Certificate-Guide">support.sonatype.com: SSL Certificate Guide</a></li>
+<li><a href="https://help.sonatype.com/repomanager3/security/configuring-ssl?_ga=2.250230211.411976214.1575978022-1513910029.1575978022#ConfiguringSSL-InboundSSL-ConfiguringtoServeContentviaHTTPS">help.sonatype.com: Inbound SSL - Configuring to Serve Content via HTTPS</a></li>
+<li><a href="https://www.nginx.com/blog/using-free-ssltls-certificates-from-lets-encrypt-with-nginx/">nginx.com: Using Free Let’s Encrypt SSL/TLS Certificates with NGINX</a></li>
+</ul>
+<h5 id="add-insecure-registry-to-docker">Add Insecure Registry to Docker<a class="headerlink" href="#add-insecure-registry-to-docker" title="Permanent link">&para;</a></h5>
+<ul>
+<li><a href="https://docs.docker.com/registry/insecure/">Test an insecure registry 🌟</a></li>
+<li><a href="https://github.com/Juniper/contrail-docker/wiki/Configure-docker-service-to-use-insecure-registry">Configure Docker Service To Use Insecure Registry</a></li>
+<li><a href="https://forums.docker.com/t/running-an-insecure-registry-insecure-registry/8159">Running an insecure registry –insecure-registry</a></li>
+<li><a href="https://intellipaat.com/community/19079/add-insecure-registry-to-docker">Add Insecure Registry to Docker</a></li>
+</ul>
+<h4 id="jenkins-integration-with-nexus">Jenkins Integration with Nexus<a class="headerlink" href="#jenkins-integration-with-nexus" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://help.sonatype.com/integrations/nexus-and-continuous-integration/nexus-platform-plugin-for-jenkins">Nexus Platform Plugin for Jenkins</a></li>
+<li><a href="https://dzone.com/articles/jenkins-publish-maven-artifacts-to-nexus-oss-using">Jenkins: Publish Maven Artifacts to Nexus OSS Using Pipelines or Maven Jobs 🌟</a> Check out how following this tutorial to connect Maven and Nexus OSS can help increase your CI/CD pipelines.</li>
+<li><a href="https://cloudogu.com/en/blog/cd-with-nexus-jenkins-ces">Continuous Delivery with Sonatype Nexus, Jenkins and the Cloudogu Ecosystem</a></li>
+<li><a href="https://www.youtube.com/watch?v=qbO4MTESiJQ">youtube: Jenkins Integration with Nexus</a></li>
+<li><a href="https://www.youtube.com/watch?v=7NmGSnqLd58">youtube: uploading artifacts from jenkins to nexus</a></li>
+</ul>
+<h4 id="nexus-3-configuration-as-code">Nexus 3 Configuration as Code<a class="headerlink" href="#nexus-3-configuration-as-code" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://github.com/samrocketman/nexus3-config-as-code">github.com/samrocketman/nexus3-config-as-code</a> </li>
+<li><a href="https://blog.mimacom.com/automate-nexus/">blog.mimacom.com/automate-nexus</a> </li>
+<li><a href="https://github.com/cinhtau/sonatype-nexus-waffle">github.com/cinhtau/sonatype-nexus-waffle</a> </li>
+</ul>
+<h4 id="nexus-cli">Nexus CLI<a class="headerlink" href="#nexus-cli" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://github.com/mlabouardy/nexus-cli">GitHub: Nexus-CLI</a></li>
+<li><a href="https://nexus3-cli.readthedocs.io">nexus3-cli.readthedocs.io</a></li>
+</ul>
+<h4 id="sonatype-nexus-community">Sonatype Nexus Community<a class="headerlink" href="#sonatype-nexus-community" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://github.com/sonatype-nexus-community">Sonatype Nexus Community 🌟</a></li>
+<li>Check out the <a href="https://stackoverflow.com/questions/tagged/nexus3">Nexus3</a> tag on Stack Overflow</li>
+</ul>
+<h3 id="jfrog-artifactory">JFrog Artifactory<a class="headerlink" href="#jfrog-artifactory" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://jfrog.com/blog/jfrog-artifactory-kubernetes-registry/">JFrog Artifactory: Your Kubernetes Registry</a></li>
+<li><a href="https://jfrog.com/whitepaper/the-jfrog-journey-to-kubernetes-best-practices-for-taking-your-containers-all-the-way-to-production/">The JFrog journey to kubernetes: best practices for taking your containers all the way to production</a></li>
+</ul></div>
+                </div>
+        </div>
+
+    <hr>
+    <footer class="container">
+        
+        <center>Documentation built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="http://kristopolous.github.io/BOOTSTRA.386">BOOTSTRA.386</a>.</center>
+    </footer>
+        <script src="../../../../search/main.js"></script>
+    </body>
+</html>

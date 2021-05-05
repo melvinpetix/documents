@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="IT projects and resources.. along the way..">
+        <meta name="author" content="mbiscarra">
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>OpenShift Pipelines - document</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/bootstrap-theme.min.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">document</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">home</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../introduction.md">Openshift VS Kubernetes</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../javaee-to-cloud-native.md">From Java EE To Cloud Native</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../faq.md">Microservices FAQ & Kubernetes Native</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../sre.md">Site Reliability Engineering (SRE)</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../serverless.md">Serverless Architectures & Frameworks. OpenFaaS, Knative & Kubeless</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">DevOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../devops.md">DevOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cheatsheets.md">Cheat Sheets</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../gitops.md">GitOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../demos.md">Demos & Screencasts. OpenShift, Kubernetes, Jenkins Pipelines with JCasC and more</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">NoOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../noops.md">NoOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../serverless.md">Serverless Architectures & Frameworks. OpenFaaS, Knative & Kubeless</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../finops.md">FinOps - Cloud Financial Management</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../testops.md">TestOps and Continuous Testing</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Project Management Methodology <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../project-management-methodology.md">Project Management Methodology</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../workfromhome.md">Work From Home</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../appointment-scheduling.md">Appointment Scheduling</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../docker.md">Docker</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kubernetes <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../kubernetes.md">Kubernetes</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../matrix-table.md">Kubernetes Matrix Table</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../kubernetes-alternatives.md">Kubernetes alternatives</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">OpenShift <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../openshift.md">OpenShift docs</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Software Delivery Pipeline <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cicd.md">CI/CD - Continuous Integration & Continuous Delivery</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../git.md">Git & Git Patterns. Trunk Devel, Git Flow & Feature Flags. Merge BOTs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jenkins.md">Jenkins & Cloudbees</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../openshift-pipelines.md">OpenShift Pipelines with Jenkins, Tekton and more...</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../performance-testing-with-jenkins-and-jmeter.md">Performance testing with Jenkins and JMeter or Gatling</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jenkins-alternatives.md">Jenkins Alternatives for Continuous Integration</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../..">Toolchain</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Java Memory Management <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../java-and-java-performance-optimization.md">Java Memory Management & Java Performance Optimization</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jvm-parameters-matrix-table.md">Java Parameters Matrix Table</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../caching.md">Caching Solutions</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../monitoring.md">Monitoring and Performance. Prometheus, Grafana, APMs and more</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Configuration Management <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../ansible.md">Ansible</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../liquibase.md">Liquibase</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../terraform.md">Terraform & Packer</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Databases on Kubernetes <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../databases.md">Relational Databases and Database DevOps. CrunchyData Postgres Operator</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../nosql.md">NoSQL Databases</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../message-queue.md">Cloud Based Integration & Messaging. Data Processing & Streaming (aka Data Pipeline)</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Service Mesh <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../servicemesh.md">Service Mesh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../consul.md">Consul</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../envoyproxy.md">Envoy & xDS protocol</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../istio.md">Istio</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../linkerd.md">Linkerd</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../maesh.md">Maesh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../trafficdirector.md">Traffic Director</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Security and DevSecOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../devsecops.md">DevSecOps. Container Security</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../securityascode.md">Security Policy as Code</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../storage.md">Cloud Native Storage</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">APIs <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../api.md">APIs with SOAP, REST and gRPC</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../swagger-code-generator-for-rest-apis.md">Swagger code generator for REST APIs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../postman.md">API Test Automation with Postman</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../developerportals.md">API Marketplaces. API Management with API Gateways & Developer Portals</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Development & Frameworks <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../angular.md">Angular</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dom.md">Document Object Model (DOM)</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringFramework.md">Java - Spring Framework</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringBoot.md">Java - SpringBoot</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringCloud.md">Java - Spring Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../quarkus.md">Java - Quarkus</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../javascript.md">JavaScript - node.js & npm</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../python.md">Python - Django & Flask</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../xamarin.md">Xamarin</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev Environment <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../visual-studio.md">Visual Studio Code</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../linux-dev-env.md">WSL - Linux Dev Environment on Windows</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../scaffolding.md">Scaffolding Tools</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ChromeDevTools.md">ChromeDevTools</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Public Cloud <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../public-cloud-solutions.md">Public Cloud Solutions</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../edge-computing.md">Edge Computing</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cloud-arch-diagrams.md">Cloud Architecture Diagram Tools</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../aws.md">AWS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../GoogleCloudPlatform.md">Google Cloud Platform</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../azure.md">Microsoft Azure</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ibm_cloud.md">IBM Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../oraclecloud.md">Oracle Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../digitalocean.md">Digital Ocean</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cloudflare.md">Cloudflare</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../elearning.md">E-Learning</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../customer.md">Customer Success Stories</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../newsfeeds.md">Subreddits</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../other-awesome-lists.md">Other Awesome Lists</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../about.md">About</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li>
+                    <a href="https://github.com/melvinpetix/documents.git/">
+                        
+                        github/melvinpetix/dpcuments
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+      
+    
+        <li class="main active"><a href="#openshift-pipelines">OpenShift Pipelines</a></li>
+        
+            <li><a href="#deploying-jenkins-on-openshift">Deploying Jenkins on OpenShift</a></li>
+        
+            <li><a href="#external-jenkins-integration-with-openshift">External Jenkins Integration with OpenShift</a></li>
+        
+            <li><a href="#improving-jenkins-performance-on-openshift">Improving Jenkins’ performance on Openshift</a></li>
+        
+            <li><a href="#building-applications-in-openshift">Building applications in OpenShift</a></li>
+        
+            <li><a href="#openshift-deployments-with-deployment-descriptor">OpenShift Deployments with Deployment Descriptor</a></li>
+        
+            <li><a href="#openshift-deployments-with-github-actions">OpenShift Deployments with GitHub Actions</a></li>
+        
+            <li><a href="#deployments-with-openshift-ha-in-multiple-datacenters">Deployments with OpenShift HA in Multiple Datacenters</a></li>
+        
+            <li><a href="#odo-openshift-command-line-for-developers">ODO - OpenShift Command line for Developers</a></li>
+        
+            <li><a href="#openshift-pipelines_1">OpenShift Pipelines</a></li>
+        
+            <li><a href="#slides">Slides</a></li>
+        
+    
+    
+    </ul>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="openshift-pipelines">OpenShift Pipelines<a class="headerlink" href="#openshift-pipelines" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#deploying-jenkins-on-openshift">Deploying Jenkins on OpenShift</a><ul>
+<li><a href="#jenkins-container-images-in-openshift">Jenkins Container Images in OpenShift</a></li>
+</ul>
+</li>
+<li><a href="#external-jenkins-integration-with-openshift">External Jenkins Integration with OpenShift</a></li>
+<li><a href="#improving-jenkins-performance-on-openshift">Improving Jenkins’ performance on Openshift</a></li>
+<li><a href="#building-applications-in-openshift">Building applications in OpenShift</a><ul>
+<li><a href="#openshift-pipelines-with-build-config">OpenShift Pipelines with Build Config</a></li>
+<li><a href="#openshift-pipelines-with-s2i">OpenShift Pipelines with S2i</a><ul>
+<li><a href="#openshift-pipelines-with-s2i-and-jenkins-blue-ocean-deploying-blue-ocean-on-openshift">OpenShift Pipelines with S2i and Jenkins Blue Ocean. Deploying Blue Ocean on OpenShift</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#openshift-deployments-with-deployment-descriptor">OpenShift Deployments with Deployment Descriptor</a></li>
+<li><a href="#openshift-deployments-with-github-actions">OpenShift Deployments with GitHub Actions</a></li>
+<li><a href="#deployments-with-openshift-ha-in-multiple-datacenters">Deployments with OpenShift HA in Multiple Datacenters</a></li>
+<li><a href="#odo---openshift-command-line-for-developers">ODO - OpenShift Command line for Developers</a></li>
+<li><a href="#openshift-pipelines">OpenShift Pipelines</a><ul>
+<li><a href="#jenkins-cicd-getting-started-with-groovy-and-docker-containers">Jenkins CICD Getting started with Groovy and Docker Containers</a></li>
+<li><a href="#fabric8-pipeline-library">Fabric8 Pipeline Library</a></li>
+<li><a href="#jenkins-pipelines-with-openshift-3">Jenkins Pipelines with OpenShift 3</a></li>
+<li><a href="#openshift-jenkins-pipeline-dsl-plugin">OpenShift Jenkins Pipeline (DSL) Plugin</a><ul>
+<li><a href="#red-hat-communities-of-practice">Red Hat Communities of Practice</a></li>
+<li><a href="#jenkins-pipelines-in-openshift-4">Jenkins Pipelines in OpenShift 4</a></li>
+</ul>
+</li>
+<li><a href="#openshift-pipelines-aka-tekton-cicd-pipelines">OpenShift Pipelines (aka Tekton CI/CD Pipelines)</a><ul>
+<li><a href="#tekton-and-tekton-pipelines">Tekton and Tekton Pipelines</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#slides">Slides</a></li>
+</ul>
+<h3 id="deploying-jenkins-on-openshift">Deploying Jenkins on OpenShift<a class="headerlink" href="#deploying-jenkins-on-openshift" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://github.com/openshift/jenkins">Jenkins Docker Image for Openshift v3</a></li>
+<li><a href="https://opensource.com/article/18/4/running-jenkins-builds-containers">opensource.com: Running Jenkins builds in Openshift containers</a></li>
+<li><a href="https://blog.openshift.com/deploying-jenkins-on-openshift-part-1/">blog.openshift.com: Deploying Jenkins on OpenShift: Part 1</a></li>
+<li><a href="https://cloudowski.com/articles/jenkins-on-openshift/">cloudowski.com: Jenkins on OpenShift - how to use and customize it in a cloud-native way 🌟</a></li>
+</ul>
+<h4 id="jenkins-container-images-in-openshift">Jenkins Container Images in OpenShift<a class="headerlink" href="#jenkins-container-images-in-openshift" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://docs.okd.io/latest/using_images/other_images/jenkins.html">docs.okd.io: Jenkins in Openshift</a> Openshift provides a container image for running Jenkins. This image provides a Jenkins server instance, which can be used to set up a basic flow for continuous testing, integration, and delivery.</li>
+<li><a href="https://docs.openshift.com/container-platform/4.2/openshift_images/using_images/images-other-jenkins-agent.html">OCP 4.2 - Jenkins image</a></li>
+</ul>
+<h3 id="external-jenkins-integration-with-openshift">External Jenkins Integration with OpenShift<a class="headerlink" href="#external-jenkins-integration-with-openshift" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://v1.uncontained.io/playbooks/continuous_delivery/external-jenkins-integration.html"><strong>uncontained.io</strong>: External Jenkins Integration 🌟</a></li>
+</ul>
+<h3 id="improving-jenkins-performance-on-openshift">Improving Jenkins’ performance on Openshift<a class="headerlink" href="#improving-jenkins-performance-on-openshift" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://blog.openshift.com/deploying-jenkins-on-openshift-part-1/">blog.openshift.com: Deploying jenkins on openshift - part 1</a></li>
+<li><a href="https://blog.openshift.com/improving-jenkins-performance-on-openshift-part-2/">blog.openshift.com: Improving jenkins performance on openshift - part 2</a></li>
+</ul>
+<h3 id="building-applications-in-openshift">Building applications in OpenShift<a class="headerlink" href="#building-applications-in-openshift" title="Permanent link">&para;</a></h3>
+<h4 id="openshift-pipelines-with-build-config">OpenShift Pipelines with Build Config<a class="headerlink" href="#openshift-pipelines-with-build-config" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://dzone.com/articles/4-ways-to-build-applications-in-openshift-1">Dzone: 4 ways to build applications in openshift</a></li>
+<li><a href="https://dzone.com/articles/openshift-quick-start-build-deployment-and-pipelin">Dzone: OpenShift Quick Start: Build, Deployment, and Pipeline 🌟</a> Automation is the key to microservices success. Learn how to use the OpenShift platform to implement a continuous build and deployment platform. </li>
+<li><a href="https://www.slideshare.net/mozillabros/openshift-container-platform-cicd-build-deploy">slideshare.net: OpenShift Container Platform CI/CD Build &amp; Deploy 🌟</a></li>
+</ul>
+<h4 id="openshift-pipelines-with-s2i">OpenShift Pipelines with S2i<a class="headerlink" href="#openshift-pipelines-with-s2i" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://developers.redhat.com/blog/2018/09/26/source-versus-binary-s2i-workflows-with-red-hat-openshift-application-runtimes/">developers.redhat.com - S2i</a></li>
+<li><a href="https://blog.openshift.com/openshift-3-walkthrough/">blog.openshift.com: From zero to container deployment hero with OpenShift 3 and S2i (Video) 🌟</a></li>
+<li><a href="https://developers.redhat.com/blog/2018/09/26/source-versus-binary-s2i-workflows-with-red-hat-openshift-application-runtimes/">developers.redhat.com: Source versus binary S2I workflows with Red Hat OpenShift Application Runtimes</a></li>
+</ul>
+<h5 id="openshift-pipelines-with-s2i-and-jenkins-blue-ocean-deploying-blue-ocean-on-openshift">OpenShift Pipelines with S2i and Jenkins Blue Ocean. Deploying Blue Ocean on OpenShift<a class="headerlink" href="#openshift-pipelines-with-s2i-and-jenkins-blue-ocean-deploying-blue-ocean-on-openshift" title="Permanent link">&para;</a></h5>
+<ul>
+<li><a href="https://www.openshift.com/blog/openshift-pipelines-jenkins-blue-ocean">OpenShift Pipelines with Jenkins Blue Ocean 🌟</a></li>
+<li><a href="https://github.com/siamaksade/jenkins-blueocean">github.com/siamaksade/jenkins-blueocean</a> Jenkins Blue Ocean for OpenShift Jenkins S2I</li>
+</ul>
+<p><center></p>
+<iframe src="https://www.youtube.com/embed/IQ8H7XNbQ-8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p></center></p>
+<h3 id="openshift-deployments-with-deployment-descriptor">OpenShift Deployments with Deployment Descriptor<a class="headerlink" href="#openshift-deployments-with-deployment-descriptor" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://dzone.com/articles/a-quick-guide-to-deploying-java-apps-on-openshift">Dzone: a quick guide to deploying java apps on openshift</a></li>
+</ul>
+<h3 id="openshift-deployments-with-github-actions">OpenShift Deployments with GitHub Actions<a class="headerlink" href="#openshift-deployments-with-github-actions" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://developers.redhat.com/blog/2020/02/13/openshift-actions-deploy-to-red-hat-openshift-directly-from-your-github-repository/">developers.redhat.com: OpenShift Actions: Deploy to Red Hat OpenShift directly from your GitHub repository</a></li>
+</ul>
+<h3 id="deployments-with-openshift-ha-in-multiple-datacenters">Deployments with OpenShift HA in Multiple Datacenters<a class="headerlink" href="#deployments-with-openshift-ha-in-multiple-datacenters" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.openshift.com/blog/deploying-openshift-applications-multiple-datacenters">blog.openshift.com: Deploying OpenShift Applications to Multiple Datacenters (with Jenkins)</a></li>
+<li><a href="https://blog.openshift.comusing-kubefed-to-deploy-applications-to-ocp3-and-ocp4-clusters/">Using <strong>KubeFed</strong> to deploy applications</a></li>
+</ul>
+<h3 id="odo-openshift-command-line-for-developers">ODO - OpenShift Command line for Developers<a class="headerlink" href="#odo-openshift-command-line-for-developers" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://github.com/redhat-developer/odo">ODO: OpenShift Command line for Developers 🌟</a> OpenShift Do (Odo) is a CLI tool for developers who are writing, building, and deploying applications on OpenShift. With Odo, developers get an opinionated CLI tool that supports fast, iterative development which abstracts away Kubernetes and OpenShift concepts, thus allowing them to focus on what&rsquo;s most important to them: code.</li>
+<li><a href="https://developers.redhat.com/cheat-sheets/odo-cheat-sheet/">developers.redhat.com: odo Cheat Sheet</a></li>
+</ul>
+<h3 id="openshift-pipelines_1">OpenShift Pipelines<a class="headerlink" href="#openshift-pipelines_1" title="Permanent link">&para;</a></h3>
+<h4 id="jenkins-cicd-getting-started-with-groovy-and-docker-containers">Jenkins CICD Getting started with Groovy and Docker Containers<a class="headerlink" href="#jenkins-cicd-getting-started-with-groovy-and-docker-containers" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://blog.isaack.io/articles/2016-08/Jenkins-CICD-Getting-Started-With-Groovy-Part-1">medium: Jenkins CICD Getting started with Groovy and Docker Containers — Part 1</a></li>
+<li><a href="https://medium.com/@fvtool/jenkins-cicd-getting-started-with-groovy-and-docker-containers-part-2-b03a1b934a49">medium: Jenkins CICD Getting started with Groovy and Docker Containers — Part 2</a></li>
+</ul>
+<h4 id="fabric8-pipeline-library">Fabric8 Pipeline Library<a class="headerlink" href="#fabric8-pipeline-library" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://fabric8.io/">Fabric8</a> has been available as a Java client for Kubernetes since 2015, and today is one of the most popular client libraries for Kubernetes (the most popular is <a href="https://github.com/kubernetes/client-go">client-go</a>, which is the client library for the Go programming language on Kubernetes). In recent years, <strong>fabric8 has evolved from a Java client for the Kubernetes REST API to a full-fledged alternative to the kubectl command-line tool for Java-based development</strong>.</li>
+<li><a href="https://developers.redhat.com/blog/2020/05/20/getting-started-with-the-fabric8-kubernetes-java-client/">developers.redhat.com: Getting started with the fabric8 Kubernetes Java client</a></li>
+<li><a href="http://fabric8.io/guide/cdelivery.html">CI/CD with fabric8</a></li>
+<li><a href="https://github.com/fabric8io/fabric8-pipeline-library">Fabric8 Pipeline Library</a></li>
+<li><a href="https://medium.com/@jstrachan/fabric8-please-check-out-jenkins-x-instead-8295a025173a">medium - fabric8, please check out jenkins X instead</a></li>
+<li><a href="https://github.com/fabric8io/fabric8-maven-plugin">github - fabric8, maven plugin</a></li>
+</ul>
+<h4 id="jenkins-pipelines-with-openshift-3">Jenkins Pipelines with OpenShift 3<a class="headerlink" href="#jenkins-pipelines-with-openshift-3" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://www.slideshare.net/arilivigni/cicd-with-openshift-and-jenkins">slideshare.net: CI/CD with Openshift and Jenkins 🌟</a></li>
+<li><a href="https://github.com/openshift/origin/tree/master/examples/jenkins/pipeline">github - using jenkins pipelines with OKD</a></li>
+</ul>
+<h4 id="openshift-jenkins-pipeline-dsl-plugin">OpenShift Jenkins Pipeline (DSL) Plugin<a class="headerlink" href="#openshift-jenkins-pipeline-dsl-plugin" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://blog.openshift.com/building-declarative-pipelines-openshift-dsl-plugin/">Building Declarative Pipelines with OpenShift DSL Plugin 🌟</a></li>
+<li><a href="https://blog.openshift.com/building-declarative-pipelines-openshift-dsl-plugin/">blog.openshift.com - Building Declarative Pipelines with OpenShift DSL Plugin</a></li>
+<li><a href="https://dzone.com/articles/continuous-delivery-with-openshift-and-jenkins-ab">Dzone - Continuous Delivery with OpenShift and Jenkins: A/B Testing 🌟</a></li>
+<li><a href="https://docs.openshift.com/container-platform/3.11/dev_guide/dev_tutorials/openshift_pipeline.html">docs.openshift.com: OpenShift 3.11 Pipeline Builds with OpenShift Jenkins Image and OpenShift DSL</a></li>
+</ul>
+<h5 id="red-hat-communities-of-practice">Red Hat Communities of Practice<a class="headerlink" href="#red-hat-communities-of-practice" title="Permanent link">&para;</a></h5>
+<ul>
+<li><a href="https://github.com/redhat-cop/container-pipelines">OpenShift Container Pipelines Samples 🌟</a></li>
+<li><a href="https://github.com/redhat-cop/pipeline-library">OpenShift Pipeline Library 🌟</a> A repository of Jenkins pipeline files we can reference from elsewhere</li>
+</ul>
+<h5 id="jenkins-pipelines-in-openshift-4">Jenkins Pipelines in OpenShift 4<a class="headerlink" href="#jenkins-pipelines-in-openshift-4" title="Permanent link">&para;</a></h5>
+<ul>
+<li><a href="https://developers.redhat.com/blog/2019/05/02/get-started-with-jenkins-ci-cd-in-red-hat-openshift-4/">developers.redhat.com - Get started with Jenkins CI/CD in Red Hat OpenShift 4</a></li>
+</ul>
+<h4 id="openshift-pipelines-aka-tekton-cicd-pipelines">OpenShift Pipelines (aka Tekton CI/CD Pipelines)<a class="headerlink" href="#openshift-pipelines-aka-tekton-cicd-pipelines" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://blog.openshift.com/cloud-native-ci-cd-with-openshift-pipelines/">https://blog.openshift.com: Cloud-Native CI/CD with OpenShift Pipelines based on Tekton</a></li>
+<li><a href="https://github.com/openshift/pipelines-tutorial">github: OpenShift Pipelines Tutorial 🌟</a></li>
+<li><a href="https://github.com/csantanapr/faststart2020-pipelines-lab">github: OpenShift Pipelines Node.js Tutorial</a></li>
+<li><a href="https://developers.redhat.com/blog/2020/04/27/modern-web-applications-on-openshift-part-4-openshift-pipelines/">developers.redhat.com: Modern web applications on OpenShift, Part 4: Openshift Pipelines</a></li>
+</ul>
+<h5 id="tekton-and-tekton-pipelines">Tekton and Tekton Pipelines<a class="headerlink" href="#tekton-and-tekton-pipelines" title="Permanent link">&para;</a></h5>
+<ul>
+<li><a href="https://tekton.dev/"><strong>tekton.dev</strong></a></li>
+<li><a href="https://tekton.dev/try/">tekton.dev/try: Interactive Tutorials</a></li>
+<li><a href="https://github.com/tektoncd/community">Tekton community</a></li>
+<li><a href="https://github.com/tektoncd/pipeline">github: Tekton Pipelines</a></li>
+<li><a href="https://tekton.dev/docs/pipelines/pipelines/">Tekton Pipelines Docs</a></li>
+<li><a href="https://opensource.googleblog.com/2020/05/the-tekton-pipelines-beta-release.html">opensource.googleblog.com: The Tekton Pipelines Beta release</a></li>
+</ul>
+<h3 id="slides">Slides<a class="headerlink" href="#slides" title="Permanent link">&para;</a></h3>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/GNg4EksIW8cNFg" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/arilivigni/cicd-with-openshift-and-jenkins" title="CI/CD with Openshift and Jenkins" target="_blank">CI/CD with Openshift and Jenkins</a> </strong> von <strong><a href="https://www.slideshare.net/arilivigni" target="_blank">Ari LiVigni</a></strong> </div>
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/rL59hI2J3e7j6T" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/mozillabros/openshift-container-platform-cicd-build-deploy" title="OPENSHIFT CONTAINER PLATFORM CI/CD Build &amp; Deploy" target="_blank">OPENSHIFT CONTAINER PLATFORM CI/CD Build &amp; Deploy</a> </strong> from <strong><a href="https://www.slideshare.net/mozillabros" target="_blank">Natale Vinto</a></strong> </div></div>
+                </div>
+        </div>
+
+    <hr>
+    <footer class="container">
+        
+        <center>Documentation built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="http://kristopolous.github.io/BOOTSTRA.386">BOOTSTRA.386</a>.</center>
+    </footer>
+        <script src="../../../../search/main.js"></script>
+    </body>
+</html>

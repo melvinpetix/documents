@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="IT projects and resources.. along the way..">
+        <meta name="author" content="mbiscarra">
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Cheat Sheets - document</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/bootstrap-theme.min.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">document</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">home</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../introduction.md">Openshift VS Kubernetes</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../javaee-to-cloud-native.md">From Java EE To Cloud Native</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../faq.md">Microservices FAQ & Kubernetes Native</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../sre.md">Site Reliability Engineering (SRE)</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../serverless.md">Serverless Architectures & Frameworks. OpenFaaS, Knative & Kubeless</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">DevOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../devops.md">DevOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cheatsheets.md">Cheat Sheets</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../gitops.md">GitOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../demos.md">Demos & Screencasts. OpenShift, Kubernetes, Jenkins Pipelines with JCasC and more</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">NoOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../noops.md">NoOps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../serverless.md">Serverless Architectures & Frameworks. OpenFaaS, Knative & Kubeless</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../finops.md">FinOps - Cloud Financial Management</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../testops.md">TestOps and Continuous Testing</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Project Management Methodology <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../project-management-methodology.md">Project Management Methodology</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../workfromhome.md">Work From Home</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../appointment-scheduling.md">Appointment Scheduling</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../docker.md">Docker</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kubernetes <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../kubernetes.md">Kubernetes</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../matrix-table.md">Kubernetes Matrix Table</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../kubernetes-alternatives.md">Kubernetes alternatives</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">OpenShift <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../openshift.md">OpenShift docs</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Software Delivery Pipeline <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cicd.md">CI/CD - Continuous Integration & Continuous Delivery</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../git.md">Git & Git Patterns. Trunk Devel, Git Flow & Feature Flags. Merge BOTs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jenkins.md">Jenkins & Cloudbees</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../openshift-pipelines.md">OpenShift Pipelines with Jenkins, Tekton and more...</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../performance-testing-with-jenkins-and-jmeter.md">Performance testing with Jenkins and JMeter or Gatling</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jenkins-alternatives.md">Jenkins Alternatives for Continuous Integration</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../..">Toolchain</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Java Memory Management <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../java-and-java-performance-optimization.md">Java Memory Management & Java Performance Optimization</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../jvm-parameters-matrix-table.md">Java Parameters Matrix Table</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../caching.md">Caching Solutions</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../monitoring.md">Monitoring and Performance. Prometheus, Grafana, APMs and more</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Configuration Management <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../ansible.md">Ansible</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../liquibase.md">Liquibase</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../terraform.md">Terraform & Packer</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Databases on Kubernetes <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../databases.md">Relational Databases and Database DevOps. CrunchyData Postgres Operator</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../nosql.md">NoSQL Databases</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../message-queue.md">Cloud Based Integration & Messaging. Data Processing & Streaming (aka Data Pipeline)</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Service Mesh <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../servicemesh.md">Service Mesh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../consul.md">Consul</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../envoyproxy.md">Envoy & xDS protocol</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../istio.md">Istio</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../linkerd.md">Linkerd</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../maesh.md">Maesh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../trafficdirector.md">Traffic Director</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Security and DevSecOps <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../devsecops.md">DevSecOps. Container Security</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../securityascode.md">Security Policy as Code</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../storage.md">Cloud Native Storage</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">APIs <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../api.md">APIs with SOAP, REST and gRPC</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../swagger-code-generator-for-rest-apis.md">Swagger code generator for REST APIs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../postman.md">API Test Automation with Postman</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../developerportals.md">API Marketplaces. API Management with API Gateways & Developer Portals</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Development & Frameworks <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../angular.md">Angular</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dom.md">Document Object Model (DOM)</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringFramework.md">Java - Spring Framework</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringBoot.md">Java - SpringBoot</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../SpringCloud.md">Java - Spring Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../quarkus.md">Java - Quarkus</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../javascript.md">JavaScript - node.js & npm</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../python.md">Python - Django & Flask</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../xamarin.md">Xamarin</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev Environment <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../visual-studio.md">Visual Studio Code</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../linux-dev-env.md">WSL - Linux Dev Environment on Windows</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../scaffolding.md">Scaffolding Tools</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ChromeDevTools.md">ChromeDevTools</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Public Cloud <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../public-cloud-solutions.md">Public Cloud Solutions</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../edge-computing.md">Edge Computing</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cloud-arch-diagrams.md">Cloud Architecture Diagram Tools</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../aws.md">AWS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../GoogleCloudPlatform.md">Google Cloud Platform</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../azure.md">Microsoft Azure</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ibm_cloud.md">IBM Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../oraclecloud.md">Oracle Cloud</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../digitalocean.md">Digital Ocean</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cloudflare.md">Cloudflare</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../elearning.md">E-Learning</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../customer.md">Customer Success Stories</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../newsfeeds.md">Subreddits</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../other-awesome-lists.md">Other Awesome Lists</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../about.md">About</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li>
+                    <a href="https://github.com/melvinpetix/documents.git/">
+                        
+                        github/melvinpetix/dpcuments
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+      
+    
+        <li class="main active"><a href="#cheat-sheets">Cheat Sheets</a></li>
+        
+            <li><a href="#cheat-sheets_1">Cheat Sheets</a></li>
+        
+            <li><a href="#kubernetes-knowledge-hubs">Kubernetes Knowledge Hubs</a></li>
+        
+            <li><a href="#kubectl-cheat-sheets">Kubectl Cheat Sheets</a></li>
+        
+            <li><a href="#docker-cheat-sheets">Docker Cheat Sheets</a></li>
+        
+            <li><a href="#git-and-github-cheat-sheets">Git and GitHub Cheat Sheets</a></li>
+        
+            <li><a href="#ansible-cheat-sheets">Ansible Cheat Sheets</a></li>
+        
+            <li><a href="#packer-and-terraform-cheat-sheets">Packer and Terraform Cheat Sheets</a></li>
+        
+            <li><a href="#linux-command-cheat-sheets">Linux Command Cheat Sheets</a></li>
+        
+            <li><a href="#openshift-cheat-sheets">OpenShift Cheat Sheets</a></li>
+        
+            <li><a href="#kubernetes-operator-cheat-sheets">Kubernetes Operator Cheat Sheets</a></li>
+        
+            <li><a href="#kubernetes-pod-cheat-sheets">Kubernetes POD Cheat Sheets</a></li>
+        
+            <li><a href="#helm-cheat-sheets">Helm Cheat Sheets</a></li>
+        
+            <li><a href="#maven-cheat-sheets">Maven Cheat Sheets</a></li>
+        
+            <li><a href="#gradle-cheat-sheets">Gradle Cheat Sheets</a></li>
+        
+            <li><a href="#jenkins-cheat-sheets">Jenkins Cheat Sheets</a></li>
+        
+            <li><a href="#jmeter-cheat-sheets">JMeter Cheat Sheets</a></li>
+        
+    
+    
+    </ul>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="cheat-sheets">Cheat Sheets<a class="headerlink" href="#cheat-sheets" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#cheat-sheets">Cheat Sheets</a></li>
+<li><a href="#kubernetes-knowledge-hubs">Kubernetes Knowledge Hubs</a></li>
+<li><a href="#kubectl-cheat-sheets">Kubectl Cheat Sheets</a></li>
+<li><a href="#docker-cheat-sheets">Docker Cheat Sheets</a></li>
+<li><a href="#git-and-github-cheat-sheets">Git and GitHub Cheat Sheets</a><ul>
+<li><a href="#git-flow-cheat-sheets">Git Flow Cheat Sheets</a></li>
+</ul>
+</li>
+<li><a href="#ansible-cheat-sheets">Ansible Cheat Sheets</a></li>
+<li><a href="#packer-and-terraform-cheat-sheets">Packer and Terraform Cheat Sheets</a></li>
+<li><a href="#linux-command-cheat-sheets">Linux Command Cheat Sheets</a><ul>
+<li><a href="#ssh-cheat-sheets">SSH Cheat Sheets</a></li>
+</ul>
+</li>
+<li><a href="#openshift-cheat-sheets">OpenShift Cheat Sheets</a></li>
+<li><a href="#kubernetes-operator-cheat-sheets">Kubernetes Operator Cheat Sheets</a></li>
+<li><a href="#kubernetes-pod-cheat-sheets">Kubernetes POD Cheat Sheets</a></li>
+<li><a href="#helm-cheat-sheets">Helm Cheat Sheets</a></li>
+<li><a href="#maven-cheat-sheets">Maven Cheat Sheets</a></li>
+<li><a href="#gradle-cheat-sheets">Gradle Cheat Sheets</a></li>
+<li><a href="#jenkins-cheat-sheets">Jenkins Cheat Sheets</a></li>
+<li><a href="#jmeter-cheat-sheets">JMeter Cheat Sheets</a></li>
+</ul>
+<h3 id="cheat-sheets_1">Cheat Sheets<a class="headerlink" href="#cheat-sheets_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://lzone.de/cheat-sheet/">lzone.de/cheat-sheet</a></li>
+<li><a href="https://cheatography.com/">cheatography.com</a></li>
+<li><a href="https://github.com/LeCoupa/awesome-cheatsheets">LeCoupa/awesome-cheatsheets</a></li>
+<li><a href="https://github.com/detailyang/awesome-cheatsheet">detailyang/awesome-cheatsheet</a></li>
+</ul>
+<h3 id="kubernetes-knowledge-hubs">Kubernetes Knowledge Hubs<a class="headerlink" href="#kubernetes-knowledge-hubs" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.k8sref.io/">k8sref.io 🌟</a> Kubernetes Reference</li>
+<li><a href="https://learnk8s.io/research">Kubernetes Research. Research documents on node instance types, managed services, ingress controllers, CNIs, etc. 🌟</a> A research hub to collect all knowledge around Kubernetes. Those are in-depth reports and comparisons designed to drive your decisions. Should you use GKE, AKS, EKS? How many nodes? What instance type?</li>
+</ul>
+<h3 id="kubectl-cheat-sheets">Kubectl Cheat Sheets<a class="headerlink" href="#kubectl-cheat-sheets" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://developers.redhat.com/cheat-sheets/kubernetes/">developers.redhat.com: Kubernetes Cheat Sheet</a></li>
+<li><a href="https://kubernetes.io/docs/reference/kubectl/cheatsheet/">kubernetes.io 🌟</a></li>
+<li><a href="https://linuxacademy.com/blog/containers/kubernetes-cheat-sheet/">linuxacademy</a></li>
+<li><a href="https://github.com/fabric8io/kansible/blob/master/vendor/k8s.io/kubernetes/docs/user-guide/kubectl-cheatsheet.md">fabric8 - kubectl</a></li>
+<li><a href="https://intellipaat.com/blog/tutorial/devops-tutorial/kubernetes-cheat-sheet/">intellipaat.com 🌟</a></li>
+<li><a href="https://dzone.com/articles/kubectl-commands-cheat-sheet">dzone: kubectl commands cheat sheet</a></li>
+<li><a href="https://jimmysong.io/kubernetes-handbook/guide/using-kubectl.html">jimmysong.io: kubectl cheat sheet 🌟</a></li>
+<li><a href="https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-a4">cheatsheet.dennyzhang.com: kubectl kubernetes free cheat sheet 🌟</a></li>
+<li><a href="https://opensource.com/article/20/5/kubectl-cheat-sheet">opensource.com: 9 kubectl commands sysadmins need to know 🌟</a> Keep these 9 critical kubectl commands handy to help you with troubleshooting and managing your Kubernetes cluster administration.</li>
+</ul>
+<h3 id="docker-cheat-sheets">Docker Cheat Sheets<a class="headerlink" href="#docker-cheat-sheets" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://dockerlux.github.io/pdfcheat-sheet-v2.pdf">dockerlux.github.io: Docker Cheat Sheet</a></li>
+<li><a href="https://dzone.com/articlesdocker-command-cheatsheet">Dzone: docker cheet sheet</a></li>
+<li><a href="https://developers.redhatcom/cheat-sheets/containers/">developers.redhat.com: Containers Cheat Sheet</a></li>
+<li><a href="https://github.com/wsargentdocker-cheat-sheet">github.com: Docker cheat Sheet</a></li>
+<li><a href="https://linuxhero.tkdockercommands/">linuxhero.tk: Docker command cheat sheet</a></li>
+<li><a href="https://www.docker.com/sites/default/files/d8/2019-09/docker-cheat-sheet.pdf">docker.com: Docker Cheat Sheet🌟</a></li>
+</ul>
+<h3 id="git-and-github-cheat-sheets">Git and GitHub Cheat Sheets<a class="headerlink" href="#git-and-github-cheat-sheets" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://dev.to/zinox9/git-github-cheatsheet-22ok">dev.to: Git &amp; Github Cheatsheet 🌟</a></li>
+<li><a href="https://git-scm.com/docs">git-scm.com: Git reference</a></li>
+<li><a href="https://www.jrebel.com/blog/git-cheat-sheet">zeroturnaround.com: Git cheat sheet 🌟</a></li>
+<li><a href="https://ndpsoftware.com/git-cheatsheet.html">ndpsoftware.com: Interactive git cheat sheet 🌟</a></li>
+<li><a href="https://the-awesome-git-cheat-sheet.com/">The awesome git cheat sheet</a></li>
+<li><a href="https://developers.redhat.com/cheat-sheetsgit/">developers.redhat.com: Git cheat sheet</a></li>
+<li><a href="https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet">atlassian.com: Git cheat sheet</a></li>
+<li><a href="https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf">github.github.com/training-kit: Git cheat sheet</a></li>
+<li><a href="https://education.github.com/git-cheat-sheet-education.pdf">education.github.com: Git cheat sheet</a></li>
+<li><a href="https://dzone.com/refcardz/getting-started-git">dzone.com: refcard - getting started with git</a></li>
+<li><a href="https://www.git-tower.com/blog/git-cheat-sheet/">git-tower.com: Git cheat sheet</a></li>
+<li><a href="https://rogerdudler.github.io/git-guide">rogerdudler.github.io: git - the simple guide 🌟</a> Just a simple guide for getting started with git. no deep shit ;)<ul>
+<li><a href="https://rogerdudler.github.io/git-guide/files/git_cheat_sheet.pdf">rogerdudler.github.io: git cheat sheet pdf</a></li>
+</ul>
+</li>
+</ul>
+<h4 id="git-flow-cheat-sheets">Git Flow Cheat Sheets<a class="headerlink" href="#git-flow-cheat-sheets" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://danielkummer.github.io/git-flow-cheatsheet/index.html">Git-flow cheatsheet</a></li>
+</ul>
+<h3 id="ansible-cheat-sheets">Ansible Cheat Sheets<a class="headerlink" href="#ansible-cheat-sheets" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://linuxacademy.com/blog/red-hat/ansible-roles-explained/">Ansible Roles Explained | Cheat Sheet</a></li>
+<li><a href="https://www.edureka.co/blog/cheatsheets/ansible-cheat-sheet-guide/">edureka.co: Ansible Cheat Sheet – A DevOps Quick Start Guide</a></li>
+<li><a href="https://intellipaat.com/blog/tutorial/devops-tutorial/ansible-basic-cheat-sheet/">intellipaat.com: Ansible Basic Cheat Sheet</a></li>
+<li><a href="https://sites.google.com/site/mrxpalmeiras/ansible/ansible-cheat-sheet">mrxpalmeiras: Ansible Cheat Sheet</a></li>
+<li><a href="https://sites.google.com/site/mrxpalmeiras/ansible/ansible-cheat-sheet">google.com/site/mrxpalmeiras: Ansible Cheat Sheet 🌟</a></li>
+</ul>
+<h3 id="packer-and-terraform-cheat-sheets">Packer and Terraform Cheat Sheets<a class="headerlink" href="#packer-and-terraform-cheat-sheets" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://adamrushuk.github.io/cheatsheets/packer/">Packer Cheatsheet</a></li>
+<li><a href="https://dzone.com/articles/terraform-cli-cheat-sheet">dzone: Terraform Cheat Sheet</a></li>
+<li><a href="https://www.terraform.io/docs/commands/index.html">terraform.io: Terraform Commands</a></li>
+<li><a href="https://github.com/scraly/terraform-cheat-sheet/blob/master/terraform-cheat-sheet.pdf">github.com/scraly: Terraform Cheat sheet</a></li>
+<li><a href="https://lzone.de/cheat-sheet/Terraform">lzone.de: Terraform Cheat Sheet</a></li>
+<li><a href="https://thedevopsblog.co.uk/terraform-cli-cheat-sheet">thedevopsblog.co.uk: Terraform Cheat Sheet</a></li>
+<li><a href="https://terraform-infraestructura.readthedocs.io/es/latest/comandos/">terraform-infraestructura.readthedocs.io: comandos</a></li>
+</ul>
+<h3 id="linux-command-cheat-sheets">Linux Command Cheat Sheets<a class="headerlink" href="#linux-command-cheat-sheets" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://linoxide.com/linux-command/linux-commands-cheat-sheet/">linoxide.com: Linux Commands Cheat Sheet</a></li>
+<li><a href="https://www.commandlinefu.com/">commandlinefu.com</a></li>
+</ul>
+<h4 id="ssh-cheat-sheets">SSH Cheat Sheets<a class="headerlink" href="#ssh-cheat-sheets" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://cheatsheet.dennyzhang.com/cheatsheet-ssh-a4">ssh cheat sheet</a></li>
+<li><a href="https://lzone.de/cheat-sheet/SSH">lzone.de: ssh cheat sheet</a></li>
+<li><a href="http://pentestmonkey.net/cheat-sheet/ssh-cheat-sheet">pentestmonkey.net: ssh cheat sheet</a></li>
+<li><a href="https://computingforgeeks.com/ssh-cheatsheet-for-sysadmins/">The SSH Commands Cheat Sheet for Linux SysAdmins / Users</a></li>
+<li><a href="https://opensource.com/article/18/4/learn-advanced-ssh-commands-new-cheat-sheet">opensource.com: Learn advanced SSH commands with this cheat sheet</a></li>
+</ul>
+<h3 id="openshift-cheat-sheets">OpenShift Cheat Sheets<a class="headerlink" href="#openshift-cheat-sheets" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://www.mastertheboss.com/soa-cloud/openshift/openshift-cheatsheet">mastertheboss.com: OpenShift Cheat Sheet</a></li>
+<li><a href="https://developersredhat.com/cheat-sheets/red-hat-openshift-container-platform/">developers.redhat.com: Red Hat OpenShift Container Platform Cheat Sheet</a></li>
+<li><a href="https://github.com/nekop/openshift-sandbox/blob/masterdocs/command-cheatsheet.md">github.com: Openshift cheat sheet 1</a></li>
+<li><a href="https://gist.github.com/rafaeltuelho111850b0db31106a4d12a186e1fbc53e">gist.github.com: Openshift cheat sheet 2</a></li>
+<li><a href="https://github.com/mhausenblas/openshift-cheat-sheet">github.com: openshift cheat sheet 3</a></li>
+<li><a href="https://monodot.co.uk/openshift-cheatsheet/">monodot.co.uk: openshift cheat sheet 4</a></li>
+</ul>
+<h3 id="kubernetes-operator-cheat-sheets">Kubernetes Operator Cheat Sheets<a class="headerlink" href="#kubernetes-operator-cheat-sheets" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://developers.redhat.com/cheat-sheets/writing-kubernetes-operator-java/">developers.redhat.com: Writing a Kubernetes Operator in Java using Quarkus - <strong>Cheat Sheet</strong> 🌟</a></li>
+</ul>
+<h3 id="kubernetes-pod-cheat-sheets">Kubernetes POD Cheat Sheets<a class="headerlink" href="#kubernetes-pod-cheat-sheets" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://jimmysong.io/kubernetes-handbook/concepts/pod.html">jimmysong.io/kubernetes-handbook/concepts/pod.html 🌟</a></li>
+<li><a href="https://dev.to/aurelievache/kubernetes-sketchnotes-pods-4ib0">https://dev.to/aurelievache: Understanding Kubernetes: part 1 – Pods</a></li>
+</ul>
+<p><center>
+<a href="https://jimmysong.io/kubernetes-handbook/concepts/pod.html"><img alt="pod cheat sheets" src="images/pod_cheat_sheet.png" /></a>
+</center></p>
+<h3 id="helm-cheat-sheets">Helm Cheat Sheets<a class="headerlink" href="#helm-cheat-sheets" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://gist.github.com/tuannvm/4e1bcc993f683ee275ed36e67c30ac49">Helm Cheat Sheet</a></li>
+</ul>
+<h3 id="maven-cheat-sheets">Maven Cheat Sheets<a class="headerlink" href="#maven-cheat-sheets" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://maven.apache.org/guides/MavenQuickReferenceCard.pdf">maven.apache.org: Maven Quick Reference Card</a></li>
+<li><a href="https://www.jrebel.com/blog/maven-cheat-sheet">jrebel.com/blog/maven-cheat-sheet</a></li>
+<li><a href="https://medium.com/@TimvanBaarsen/maven-cheat-sheet-45942d8c0b86">medium 1</a></li>
+<li><a href="https://www.journaldev.com/33645/maven-commands-options-cheat-sheet">journaldev.com</a></li>
+<li><a href="https://www.cheatography.com/mikesac/cheat-sheets/maven/">cheatography.com</a></li>
+<li><a href="https://www.javaguides.net/2018/06/maven-cheat-sheet.html">javaguides.net</a></li>
+<li><a href="https://www.bogotobogo.com/Java/tutorials/Spring-Boot/Maven-mvn-command-cheat-sheet.php">bogotobogo.com</a></li>
+<li><a href="https://lzone.de/cheat-sheet/Maven">lzone.de/cheat-sheet/Maven</a></li>
+<li><a href="https://gist.github.com/michaellihs/b08c89581ec597fa198cf74e2239f4a6">gist.github.com/michaellihs (jenkins pipeline)</a></li>
+<li><a href="https://confluence.sakaiproject.org/display/REL/Maven+release+plugin+cheat+sheet">confluence.sakaiproject.org</a></li>
+</ul>
+<h3 id="gradle-cheat-sheets">Gradle Cheat Sheets<a class="headerlink" href="#gradle-cheat-sheets" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.polyglotdeveloper.com/cheatsheet/2015-01-08-Gradle-cheatsheet/">polyglotdeveloper.com: Gradle Cheat Sheet</a></li>
+<li><a href="https://eta-lang.org/docs/cheatsheets/gradle-cheatsheet">eta-lang.org: Gradle Cheat Sheet</a></li>
+<li><a href="https://mingliang.me/blog/gradle-cheatsheet/">mingliang.me: Gradle Cheat Sheet</a></li>
+<li><a href="https://www.rratliff.com/gradle-cheat-sheet/">rratliff.com: Gradle Cheat Sheet</a></li>
+<li><a href="https://gist.github.com/jahe/59557d507f43574b0d96">github.com/jahe: Gradle Cheat Sheet</a></li>
+<li><a href="https://gist.github.com/jiffle/499caa5f53ab8f90dc19a3040ee40f48">github.com/jiffle: Gradle Cheat Sheet</a></li>
+</ul>
+<h3 id="jenkins-cheat-sheets">Jenkins Cheat Sheets<a class="headerlink" href="#jenkins-cheat-sheets" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.edureka.co/blog/cheatsheets/jenkins-cheat-sheet/">edureka.co: Jenkins Cheat Sheet 🌟</a><ul>
+<li><a href="https://miro.medium.com/max/1400/1*5tZVl-tqZwSoxH97v4u45w.png">Jenkins Cheat Sheet</a></li>
+</ul>
+</li>
+<li><a href="https://medium.com/edureka/jenkins-cheat-sheet-e0f7e25558a3">medium: Jenkins Cheat Sheet</a></li>
+<li><a href="https://cheatography.com/funthomas424242/cheat-sheets/jenkins/">cheatography.com: Jenkins Cheat Sheet</a></li>
+</ul>
+<h3 id="jmeter-cheat-sheets">JMeter Cheat Sheets<a class="headerlink" href="#jmeter-cheat-sheets" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://dzone.com/refcardz/getting-started-with-apache-jmeter?chapter=1">Dzone Refcard: Getting Started with Apache JMeter</a></li>
+<li><a href="https://dzone.com/articles/the-groovy-templates-cheat-sheet-for-jmeter">Groovy Templates Cheat Sheet for JMeter</a> Need help with your Groovy templates? Check out this cheat sheet to help you get started with scripting in Apache JMeter.</li>
+<li><a href="http://blog.extremehacking.org/blog/2015/11/09/jmeter-web-application-testing-cheatsheet/">JMeter Web Application Testing Cheatsheet</a></li>
+<li><a href="https://hellotestworld.com/2016/02/02/cheatsheet-for-jmeter-__time-function-calls/">CheatSheet for JMeter __time Function Calls</a></li>
+<li><a href="https://martkos-it.co.uk/our-work/jmeter-testing-cheat-sheet-ng5zm-97y43-af8tj">martkos-it.co.uk: JMeter Cheat Sheet</a> This jmeter cheat sheet provides gentle reminders of the usage of jmeter gui/non-gui. It includes installation/execution, plugins, shortcut keys and functions and variables.<ul>
+<li><a href="https://martkos-it.co.uk/s/jmeter-testing-cheat-sheet-v10.pdf">jmeter-testing-cheat-sheet-v10.pdf</a></li>
+</ul>
+</li>
+<li><a href="http://performanceoptimize.blogspot.com/2017/04/RegularExpressionCheatSheet.html">Cheat Sheet for Regular Expression in Jmeter</a></li>
+</ul></div>
+                </div>
+        </div>
+
+    <hr>
+    <footer class="container">
+        
+        <center>Documentation built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="http://kristopolous.github.io/BOOTSTRA.386">BOOTSTRA.386</a>.</center>
+    </footer>
+        <script src="../../../../search/main.js"></script>
+    </body>
+</html>
