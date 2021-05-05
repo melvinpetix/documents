@@ -26,10 +26,6 @@ jobs:
 
       - run: pip install mkdocs
 
-     
+      - run: pip install mkdocs-bootstrap386
 
-
-
-      - run: pip install mkdocs-ivory
-
-      - run: mkdocs gh-deploy --force
+      - run: python -m mkdocs gh-deploy --force
