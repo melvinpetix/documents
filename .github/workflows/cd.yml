@@ -20,10 +20,9 @@ jobs:
         run: |
           python3 -m pip install --upgrade pip   
           python3 -m pip install mkdocs
-          python3 -m pip install pip install mkdocs-psinder
-          python3 -m pip install mkdocs-bootstrap
           python3 -m pip install mkdocs-bootswatch
-          
+          python3 -m pip install mkdocs-bootstrap
+          python3 -m pip install mkdocs-bootswatch        
       - name: Build site
         run: mkdocs build
       - name: Deploy
