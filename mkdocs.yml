@@ -1,8 +1,7 @@
 site_name: S.O.S
 site_author: Melvin Biscarra
 
-theme:
-    name: cyborg
+theme: cyborg
 
 markdown_extensions:
 
