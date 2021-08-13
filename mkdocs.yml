@@ -2,11 +2,140 @@ site_name: S.O.S
 site_author: Melvin Biscarra
 
 theme: cyborg
+site_name: petix wiki-ed 
+site_author: melvinpetix
+docs_dir: docs/
+theme: 
+  name: cyborg
+nav:
+  - Home: index.md
+  - Introduction:
+    - From Java EE To Cloud Native. Openshift VS Kubernetes: introduction.md
+    - Microservices FAQ & Kubernetes Native: faq.md
+  - Site Reliability Engineering (SRE): sre.md
+  - Serverless Architectures & Frameworks. OpenFaaS, Knative & Kubeless: serverless.md
+  - DevOps:
+    - DevOps: devops.md
+    - Cheat Sheets: cheatsheets.md
+    - GitOps: gitops.md
+    - MLOps: mlops.md
+    - Demos & Screencasts. OpenShift, Kubernetes, Jenkins Pipelines with JCasC and more: demos.md
+  - NoOps: 
+    - NoOps: noops.md
+    - Serverless Architectures & Frameworks. OpenFaaS, Knative & Kubeless: serverless.md
+  - FinOps - Cloud Financial Management: finops.md
+  - TestOps and Continuous Testing: testops.md
+  - Project Management Methodology:
+    - Project Management Methodology: project-management-methodology.md
+    - Project Management Tools: project-management-tools.md
+    - Appointment Scheduling: appointment-scheduling.md
+    - Work From Home: workfromhome.md
+  - Docker: docker.md
+  - Kubernetes: 
+    - Kubernetes: kubernetes.md
+    - Rancher - Enterprise management for Kubernetes: rancher.md
+    - Kubernetes Matrix Table: matrix-table.md
+    - Kubernetes alternatives: kubernetes-alternatives.md
+  - OpenShift: 
+    - OpenShift docs: openshift.md
+    - OCP 3: ocp3.md
+    - OCP 4: ocp4.md
+    - Customer Success Stories: customer.md
+  - Software Delivery Pipeline: 
+    - CI/CD - Continuous Integration & Continuous Delivery: cicd.md
+    - Git & Git Patterns. Trunk Devel, Git Flow & Feature Flags. Merge BOTs: git.md 
+    - Jenkins & Cloudbees: jenkins.md
+    - OpenShift Pipelines with Jenkins, Tekton and more...: openshift-pipelines.md
+    - Performance testing with Jenkins and JMeter or Gatling : performance-testing-with-jenkins-and-jmeter.md
+    - Jenkins Alternatives for Continuous Integration: jenkins-alternatives.md
+    - Toolchain:
+      - Container Runtimes/Managers & Base Images. Podman, Buildah & Skopeo: container-managers.md
+      - Maven, Gradle & SDKMAN: maven-gradle.md
+      - SonarQube: sonarqube.md
+      - Nexus & JFrog Artifactory: nexus-jfrog.md
+      - Selenium, Cucumber, Appium & Zephyr Jira plugin: selenium-appium-zephyr.md
+      - Linux & SSH: linux.md
+      - MkDocs & GitHub Pages: mkdocs.md
+    - Web Servers, Reverse Proxies, Java Runtimes & Caching Solutions: 
+      - Web Servers & Reverse Proxies - Apache, Nginx, HAProxy, Traefik and more: web-servers.md
+      - Java EE/Jakarta EE and MicroProfile Runtimes - Payara, JBoss EAP, WebSphere Liberty, WildFly and more: java_app_servers.md
+      - Embedded Servlet Containers in SpringBoot: embedded-servlet-containers.md
+      - Caching Solutions: caching.md
+  - Monitoring and Performance. Prometheus, Grafana, APMs and more: monitoring.md
+  - Configuration Management:
+    - Ansible: ansible.md
+    - Chef: chef.md
+    - CI/CD Kubernetes Plugins: cicd-kubernetes-plugins.md
+    - Client Libraries for Kubernetes - Go client & Fabric8: kubernetes-client-libraries.md
+    - Helm Kubernetes Tool: helm.md
+    - Liquibase & Flyway: liquibase.md
+    - Pulumi: pulumi.md
+    - Terraform & Packer: terraform.md
+    - Template-Free Kubernetes Configuration Customization with Kustomize: kustomize.md
+    - Templating YAML with YAML Processors. Static Checking of Kubernetes YAML Files: yaml.md
+  - Databases on Kubernetes: 
+    - Relational Databases and Database DevOps. CrunchyData Postgres Operator: databases.md
+    - NoSQL Databases: nosql.md
+  - Cloud Based Integration & Messaging. Data Processing & Streaming (aka Data Pipeline): message-queue.md
+  - Service Mesh: 
+    - Service Mesh: servicemesh.md
+    - Istio: istio.md
+  - Security and DevSecOps:
+    - DevSecOps. Container Security: devsecops.md
+    - Security Policy as Code: securityascode.md
+  - Cloud Native Storage: storage.md
+  - APIs:
+    - APIs with SOAP, REST and gRPC: api.md
+    - Swagger code generator for REST APIs: swagger-code-generator-for-rest-apis.md
+    - API Test Automation with Postman: postman.md
+    - API Marketplaces. API Management with API Gateways & Developer Portals : developerportals.md
+  - Development & Frameworks:
+    - Angular: angular.md
+    - Document Object Model (DOM): dom.md
+    - JavaScript - node.js & npm: javascript.md
+    - Python - Django & Flask: python.md
+    - Xamarin: xamarin.md
+    - Java:
+      - Java & Open Source Microservices Frameworks. SpringBoot, MicroProfile, Quarkus and more: java_frameworks.md
+      - Java Memory Management & Java Performance Optimization: java-and-java-performance-optimization.md
+      - Java Parameters Matrix Table: jvm-parameters-matrix-table.md
+  - Dev Environment:
+    - Visual Studio Code: visual-studio.md
+    - WSL - Linux Dev Environment on Windows: linux-dev-env.md
+    - Scaffolding Tools: scaffolding.md
+    - Chrome & Firefox DevTools. HTTP Protocols & WebSockets: ChromeDevTools.md
+  - Public Cloud: 
+    - Public Cloud Solutions: public-cloud-solutions.md
+    - Edge Computing: edge-computing.md
+    - Cloud Architecture Diagram Tools: cloud-arch-diagrams.md
+    - AWS: aws.md
+    - Google Cloud Platform: GoogleCloudPlatform.md
+    - Microsoft Azure: azure.md
+    - IBM & IBM Cloud: ibm_cloud.md
+    - Oracle Cloud: oraclecloud.md
+    - Digital Ocean: digitalocean.md
+    - Cloudflare: cloudflare.md
+  - More References:
+    - E-Learning: elearning.md
+    - Subreddits: newsfeeds.md
+    - Other Awesome Lists: other-awesome-lists.md
 
-markdown_extensions:
+copyright: 2020 melvinpetix™
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+    
+    - icon: fontawesome/brands/linkedin
+   
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/melvinpetix
+    - icon: fontawesome/brands/youtube
+      link: 
+    - icon: fontawesome/brands/speaker-deck
+     
+    - icon: fontawesome/brands/slideshare
+     
+    - icon: fontawesome/brands/slack
+     
 
-    - toc:
-        permalink: '#'
 
-plugins:
-    - search
